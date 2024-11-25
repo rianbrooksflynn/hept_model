@@ -1,0 +1,367 @@
+INFO-FLOW: Workspace /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1 opened at Mon Nov 25 14:08:46 EST 2024
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -default_interface 
+Execute       get_config_interface -default_slave_interface 
+Execute       get_config_rtl -register_reset_num 
+Execute     config_array_partition -maximum_size 4096 
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+ERROR: [HLS 200-642] The 'config_array_partition -maximum_size' command is not supported.
+Command     config_array_partition done; error code: 1; 
+Execute     config_compile -name_max_length 80 
+INFO: [XFORM 203-1161] The maximum of name length is set into 80.
+Execute     set_part xcvu13p-flga2577-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.1
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.1/data:/tools/Xilinx/Vitis/2020.1/data
+Execute       ap_part_info -name xcvu13p-flga2577-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis/2020.1/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2020.1/data/parts/arch.xml
+Command       ap_part_info done; 1.8 sec.
+Execute       ap_part_info -name xcvu13p-flga2577-2-e -data info 
+Execute       ap_family_info -name virtexuplus -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu13p:-flga2577:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute             source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute           source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/virtexuplus/dsp48e2.hlp 
+Execute         source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute           source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute             source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute             source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute             source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute             source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/util.gen 
+Execute             source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute             source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute             source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.11 sec.
+Command         ap_source done; 0.11 sec.
+Execute         ap_part_info -data single -name xcvu13p-flga2577-2-e 
+Execute         ap_part_info -name xcvu13p-flga2577-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 216000} {LUT 1728000} {FF 3456000} {DSP 12288} {BRAM 5376} {URAM 1280} {SLR 4} 
+Execute         ap_part_info -name xcvu13p-flga2577-2-e -data info 
+Execute         config_chip_info -speed medium 
+Command       add_library done; 0.14 sec.
+Execute       add_library xilinx/virtexuplus/virtexuplus_fpv7 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute           source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute           source /tools/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xcvu13p-flga2577-2-e'
+Execute       ap_part_info -name xcvu13p-flga2577-2-e -data info 
+Execute       get_default_platform 
+Command     set_part done; 2 sec.
+Execute     config_schedule -enable_dsp_full_reg=false 
+Execute     create_clock -period 5 -name default 
+Execute       ap_set_clock -name default -period 5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+Execute     set_clock_uncertainty 12.5% default 
+Execute       get_clock_period -default -name=default 
+Execute       ap_set_clock -name default -uncertainty 0.625 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
+Execute     csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute       is_encrypted /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_test.cpp 
+Execute       is_xip /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_test.cpp 
+Execute       is_encrypted /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/firmware/myproject.cpp 
+Execute       is_xip /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/firmware/myproject.cpp 
+Execute       ap_part_info -name xcvu13p-flga2577-2-e -data info 
+Execute       source run_sim.tcl 
+Command       ap_source done; 0.48 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command     csim_design done; 13.19 sec.
+Execute     csynth_design 
+Execute       get_config_compile -dump_cfg 
+Execute       get_config_compile -effort 
+Execute       get_config_compile -enable_clang39 
+Execute       get_config_compile -g 
+Execute       get_config_compile -ng 
+Execute       get_config_compile -opt_fp 
+Execute       get_config_compile -skip_cdt 
+Execute       get_config_compile -skip_syncheck 
+Execute       get_config_compile -skip_transform 
+Execute       get_config_compile -keep_printf 
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-10] Analyzing design file 'firmware/myproject.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute         get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling firmware/myproject.cpp as C++
+Execute         ap_part_info -name xcvu13p-flga2577-2-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/clang -fsave-optimization-record -foptimization-record-file=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang.myproject.cpp.diag.yml -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E firmware/myproject.cpp -std=c++0x -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/39 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis/2020.1/common/technology/autopilot -I /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp > /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang.myproject.cpp.out.log 2> /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang.myproject.cpp.err.log 
+Command         ap_eval done; 0.32 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.3 seconds per iteration
+Execute         set_directive_top myproject -name=myproject 
+INFO-FLOW: Setting directive 'TOP' name=myproject 
+INFO-FLOW: Setting directive 'TOP' name=myproject 
+Execute         source /tools/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute         source /tools/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute           source /tools/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'TOP' name=myproject 
+Execute         list_core -type functional_unit 
+Execute         clang_tidy xilinx-systemc-detector /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x -target fpga  -directive=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/.systemc_flag -fix-errors /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 4.98 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute         clang_tidy xilinx-directive2pragma /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x -target fpga  -directive=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/all.directive.json -fix-errors /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 5.41 sec.
+Execute         clang_tidy xilinx-constantarray-param,xilinx-remove-assert /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x -target fpga  
+INFO-FLOW: exec /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 7.93 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 13.3 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+Execute         clang_tidy -errorcheck xilinx-label-all-loops /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x -target fpga  
+Execute           ap_eval exec -ignorestderr /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang-tidy.myproject.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops -fix-errors /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0 > /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang-tidy.myproject.pp.0.cpp.out.log 2> /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang-tidy.myproject.pp.0.cpp.err.log 
+Command           ap_eval done; 13.06 sec.
+Execute           source /tools/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute             source /tools/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Command         clang_tidy done; 13.93 sec.
+Execute         clang_tidy -errorcheck xilinx-top-parameters /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x -target fpga  
+Execute           ap_eval exec -ignorestderr /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang-tidy.myproject.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-top-parameters -fix-errors /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0 > /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang-tidy.myproject.pp.0.cpp.out.log 2> /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang-tidy.myproject.pp.0.cpp.err.log 
+Command           ap_eval done; 7.29 sec.
+Command         clang_tidy done; 7.29 sec.
+Execute         clang_tidy -errorcheck xilinx-array-stream-check /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x -target fpga  
+Execute           ap_eval exec -ignorestderr /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang-tidy.myproject.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-array-stream-check -fix-errors /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0 > /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang-tidy.myproject.pp.0.cpp.out.log 2> /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang-tidy.myproject.pp.0.cpp.err.log 
+Command           ap_eval done; 6.5 sec.
+Command         clang_tidy done; 6.5 sec.
+Execute         get_config_dataflow -strict_mode 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.myproject.pp.0.cpp.diag.yml /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.myproject.pp.0.cpp.out.log 2> /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.myproject.pp.0.cpp.err.log 
+Command         ap_eval done; 4.69 sec.
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:50:75
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:50:80
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:58:78
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:58:82
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:70:85
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:70:90
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:78:78
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:78:82
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:90:85
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:90:90
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:98:78
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:98:82
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:110:87
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:110:92
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:118:81
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:118:86
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:128:89
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:128:94
+Execute         send_msg_by_id WARNING @200-471@%s%s 18 firmware/myproject.cpp 
+WARNING: [HLS 200-471] Dataflow form checks found 18 issue(s) in file firmware/myproject.cpp
+Execute         clang_tidy -errorcheck xilinx-warn-mayneed-no-ctor-attribute /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x -target fpga  
+Execute           ap_eval exec -ignorestderr /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang-tidy.myproject.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0 > /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang-tidy.myproject.pp.0.cpp.out.log 2> /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang-tidy.myproject.pp.0.cpp.err.log 
+Command           ap_eval done; 6.15 sec.
+Command         clang_tidy done; 6.15 sec.
+Execute         ap_part_info -name xcvu13p-flga2577-2-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/clang -fsave-optimization-record -foptimization-record-file=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang.myproject.pragma.2.cpp.diag.yml -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.pragma.2.cpp -std=c++0x -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-linux-gnu -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis/2020.1/common/technology/autopilot -I /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.bc > /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang.myproject.pragma.2.cpp.out.log 2> /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang.myproject.pragma.2.cpp.err.log 
+Command         ap_eval done; 5.09 sec.
+WARNING: [HLS 207-5324] unused parameter 'keep': firmware/nnet_utils/nnet_helpers.h:285:99
+WARNING: [HLS 207-5324] unused parameter 'data': firmware/nnet_utils/nnet_function_stubs.h:14:36
+WARNING: [HLS 207-5324] unused parameter 'buffer': firmware/nnet_utils/nnet_function_stubs.h:15:36
+WARNING: [HLS 207-5324] unused parameter 'partition': firmware/nnet_utils/nnet_function_stubs.h:16:44
+WARNING: [HLS 207-5324] unused parameter 'data': firmware/nnet_utils/nnet_function_stubs.h:24:24
+WARNING: [HLS 207-5324] unused parameter 'buffer': firmware/nnet_utils/nnet_function_stubs.h:25:24
+WARNING: [HLS 207-5324] unused parameter 'partition': firmware/nnet_utils/nnet_function_stubs.h:26:32
+WARNING: [HLS 207-5324] unused parameter 'data': firmware/nnet_utils/nnet_function_stubs.h:33:30
+WARNING: [HLS 207-5324] unused parameter 'res': firmware/nnet_utils/nnet_function_stubs.h:33:58
+WARNING: [HLS 207-5324] unused parameter 'weights': firmware/nnet_utils/nnet_function_stubs.h:34:51
+WARNING: [HLS 207-5324] unused parameter 'biases': firmware/nnet_utils/nnet_function_stubs.h:35:49
+WARNING: [HLS 207-1534] 'function_instantiate' is deprecated, and it will be removed in future release: firmware/nnet_utils/nnet_activation.h:456:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_stream.h:28:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_stream.h:29:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_stream.h:53:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_stream.h:54:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_stream.h:55:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_stream.h:78:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_stream.h:96:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_stream.h:144:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_stream.h:163:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_stream.h:198:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:24:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:46:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:85:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:157:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:238:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:308:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:397:9
+WARNING: [HLS 207-1534] 'function_instantiate' is deprecated, and it will be removed in future release: firmware/nnet_utils/nnet_activation_stream.h:421:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:430:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:456:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:481:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:510:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:536:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:575:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:616:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:657:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:705:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:737:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:762:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_activation_stream.h:787:9
+WARNING: [HLS 207-1534] 'function_instantiate' is deprecated, and it will be removed in future release: firmware/nnet_utils/nnet_dense_latency.h:21:9
+WARNING: [HLS 207-1534] 'function_instantiate' is deprecated, and it will be removed in future release: firmware/nnet_utils/nnet_dense_resource.h:28:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: firmware/nnet_utils/nnet_dense_resource.h:33:9
+WARNING: [HLS 207-1534] 'function_instantiate' is deprecated, and it will be removed in future release: firmware/nnet_utils/nnet_dense_resource.h:102:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: firmware/nnet_utils/nnet_dense_resource.h:107:9
+WARNING: [HLS 207-1534] 'function_instantiate' is deprecated, and it will be removed in future release: firmware/nnet_utils/nnet_dense_resource.h:184:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: firmware/nnet_utils/nnet_dense_resource.h:189:9
+WARNING: [HLS 207-1536] 'region' in '#pragma HLS Inline' is deprecated, and it will be removed in future release: firmware/nnet_utils/nnet_conv1d.h:38:26
+WARNING: [HLS 207-1536] 'region' in '#pragma HLS Inline' is deprecated, and it will be removed in future release: firmware/nnet_utils/nnet_conv1d.h:54:26
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /tools/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+WARNING: [HLS 207-1534] 'function_instantiate' is deprecated, and it will be removed in future release: firmware/nnet_utils/nnet_layernorm.h:161:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_conv_stream.h:278:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_conv_stream.h:344:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_conv1d_stream.h:39:9
+WARNING: [HLS 207-1534] 'function_instantiate' is deprecated, and it will be removed in future release: firmware/nnet_utils/nnet_sepconv_stream.h:20:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_sepconv_stream.h:148:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_sepconv_stream.h:195:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_sepconv_stream.h:260:9
+WARNING: [HLS 207-3889] the pragma is not supported and will be ignored: firmware/nnet_utils/nnet_sepconv1d_stream.h:26:9
+WARNING: [HLS 207-1602] Unsupported interface port data type in '#pragma HLS interface ap_vld': firmware/myproject.cpp:15:35
+WARNING: [HLS 207-1602] Unsupported interface port data type in '#pragma HLS interface ap_vld': firmware/myproject.cpp:15:37
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute         run_link_or_opt -out /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.0.bc -args  "/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.g.bc"  
+Execute           ap_eval exec -ignorestderr /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/myproject.g.bc -o /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.0.bc > /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+Command           ap_eval done; 0.25 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 0.25 sec.
+Execute         run_link_or_opt -opt -out /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc -args /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute           ap_eval exec -ignorestderr /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=.* -pass-remarks-output=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc > /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+Command           ap_eval done; 0.4 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 0.4 sec.
+INFO-FLOW: Linking math bc lib
+Execute         run_link_or_opt -out /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis/2020.1/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis/2020.1/lnx64/lib/libhlsmc++_39.bc 
+Execute           ap_eval exec -ignorestderr /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis/2020.1/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis/2020.1/lnx64/lib/libhlsmc++_39.bc -o /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc > /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command           ap_eval done; 3.68 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 3.68 sec.
+Execute         run_link_or_opt -opt -out /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=myproject -reflow-float-conversion 
+Execute           ap_eval exec -ignorestderr /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=.* -pass-remarks-output=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=myproject -reflow-float-conversion -o /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command           ap_eval done; 1.59 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 1.59 sec.
+Execute         run_link_or_opt -out /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis/2020.1/lnx64/lib/libfloatconversion_39.bc 
+Execute           ap_eval exec -ignorestderr /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis/2020.1/lnx64/lib/libfloatconversion_39.bc -o /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc > /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
+Command           ap_eval done; 0.61 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 0.61 sec.
+Execute         run_link_or_opt -opt -out /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=myproject 
+Execute           ap_eval exec -ignorestderr /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=.* -pass-remarks-output=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=myproject -o /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc > /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
+Command           ap_eval done; 0.61 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 0.61 sec.
+Execute         get_solution -flow_target 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_interface -default_interface 
+Execute         send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+Execute         get_config_interface -default_slave_interface 
+Execute         get_solution -flow_target 
+Execute         get_config_export -xo 
+Execute         get_config_export -format 
+Execute         get_config_interface -m_axi_offset 
+Execute         get_config_interface -m_axi_latency 
+Execute         get_config_interface -m_axi_alignment_byte_size 
+Execute         get_config_interface -m_axi_min_bitwidth 
+Execute         get_config_interface -m_axi_max_bitwidth 
+Execute         get_config_interface -m_axi_max_widen_bitwidth 
+Execute         get_config_interface -m_axi_num_read_outstanding 
+Execute         get_config_interface -m_axi_num_write_outstanding 
+Execute         get_config_interface -m_axi_max_read_burst_length 
+Execute         get_config_interface -m_axi_max_write_burst_length 
+Execute         get_config_interface -m_axi_min_bitwidth 
+Execute         get_config_interface -m_axi_max_bitwidth 
+Execute         get_config_interface -m_axi_latency 
+Execute         get_config_interface -m_axi_min_bitwidth 
+Execute         get_config_interface -m_axi_max_bitwidth 
+Execute         get_config_interface -m_axi_max_widen_bitwidth 
+Execute         get_config_interface -m_axi_auto_max_ports 
+Execute         get_config_interface -m_axi_num_read_outstanding 
+Execute         get_config_interface -m_axi_num_write_outstanding 
+Execute         get_config_interface -m_axi_max_read_burst_length 
+Execute         get_config_interface -m_axi_max_write_burst_length 
+Execute         get_config_interface -s_axilite_data64 
+Execute         get_config_interface -m_axi_alignment_byte_size 
+Execute         get_config_compile -pragma_strict_mode 
+INFO-FLOW: Doing LTO.
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis/2020.1/lnx64/tools/clang-3.9-csynth/bin/clang -fsave-optimization-record -foptimization-record-file=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -fhls -mllvm -hls-top-function-name=myproject -mllvm -hls-db-dir -mllvm /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db -emit-llvm -c -mllvm -hls-bitcode-version=3.1 -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/top-io-fe.xml -mllvm -pass-remarks=supported-subset -mllvm -reflow-enable-interface-default-setting=false -mllvm -reflow-enable-slave-interface-default-setting=false -mllvm -gen-kernel-xml=false -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -x ir /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/a.g.lto.bc > /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> /home/rian/A3D3/hept_model/hls4ml_projects/mlp_model_uniform_lut/myproject_prj/solution1/.autopilot/db/clang.a.g.ld.0.bc.err.log 
+Command         ap_eval done; error code: 1; 51.41 sec.
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::conv_1d_latency_cl<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config28>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config28::weight_t*, config28::bias_t*)' (firmware/nnet_utils/nnet_conv1d_latency.h:54:25)
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::layernorm_1d<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config3>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config3::scale_t*, config3::bias_t*)' (firmware/nnet_utils/nnet_layernorm.h:138:11)
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::layernorm_1d<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config3>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config3::scale_t*, config3::bias_t*)' (firmware/nnet_utils/nnet_layernorm.h:130:12)
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::conv_1d_latency_cl<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config29>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config29::weight_t*, config29::bias_t*)' (firmware/nnet_utils/nnet_conv1d_latency.h:54:25)
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::layernorm_1d<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config6>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config6::scale_t*, config6::bias_t*)' (firmware/nnet_utils/nnet_layernorm.h:138:11)
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::layernorm_1d<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config6>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config6::scale_t*, config6::bias_t*)' (firmware/nnet_utils/nnet_layernorm.h:130:12)
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::conv_1d_latency_cl<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config30>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config30::weight_t*, config30::bias_t*)' (firmware/nnet_utils/nnet_conv1d_latency.h:54:25)
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::layernorm_1d<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config9>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config9::scale_t*, config9::bias_t*)' (firmware/nnet_utils/nnet_layernorm.h:138:11)
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::layernorm_1d<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config9>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config9::scale_t*, config9::bias_t*)' (firmware/nnet_utils/nnet_layernorm.h:130:12)
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::conv_1d_latency_cl<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config31>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config31::weight_t*, config31::bias_t*)' (firmware/nnet_utils/nnet_conv1d_latency.h:54:25)
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::layernorm_1d<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config12>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config12::scale_t*, config12::bias_t*)' (firmware/nnet_utils/nnet_layernorm.h:138:11)
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<22, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::layernorm_1d<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config12>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config12::scale_t*, config12::bias_t*)' (firmware/nnet_utils/nnet_layernorm.h:130:12)
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::conv_1d_latency_cl<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config32>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config32::weight_t*, config32::bias_t*)' (firmware/nnet_utils/nnet_conv1d_latency.h:54:25)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (firmware/myproject.cpp:13:9)
+WARNING: [HLS 214-180] Unsupport array_partition pragma on function argument, in 'call' (firmware/nnet_utils/nnet_layernorm.h:91:87)
+WARNING: [HLS 214-180] Unsupport array_partition pragma on function argument, in 'call' (firmware/nnet_utils/nnet_layernorm.h:93:9)
+WARNING: [HLS 214-180] Unsupport array_partition pragma on function argument, in 'call' (firmware/nnet_utils/nnet_layernorm.h:91:87)
+WARNING: [HLS 214-180] Unsupport array_partition pragma on function argument, in 'call' (firmware/nnet_utils/nnet_layernorm.h:93:9)
+WARNING: [HLS 214-180] Unsupport array_partition pragma on function argument, in 'call' (firmware/nnet_utils/nnet_layernorm.h:91:87)
+WARNING: [HLS 214-180] Unsupport array_partition pragma on function argument, in 'call' (firmware/nnet_utils/nnet_layernorm.h:93:9)
+WARNING: [HLS 214-180] Unsupport array_partition pragma on function argument, in 'call (firmware/nnet_utils/nnet_layernorm.h:91:87)
+Command       elaborate done; error code: 2; 122.39 sec.
+Command     csynth_design done; error code: 2; 122.39 sec.
+Command   ap_source done; error code: 1; 137.61 sec.
+Execute   cleanup_all 

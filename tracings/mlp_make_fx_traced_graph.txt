@@ -1,0 +1,87 @@
+graph():
+    %arg0_1 : [num_users=2] = placeholder[target=arg0_1]
+    %sym_size_int : [num_users=1] = call_function[target=torch.ops.aten.sym_size.int](args = (%arg0_1, 0), kwargs = {})
+    %view : [num_users=1] = call_function[target=torch.ops.aten.view.default](args = (%arg0_1, [1, %sym_size_int]), kwargs = {})
+    %_param_constant0 : [num_users=1] = get_attr[target=_param_constant0]
+    %t : [num_users=1] = call_function[target=torch.ops.aten.t.default](args = (%_param_constant0,), kwargs = {})
+    %_param_constant1 : [num_users=1] = get_attr[target=_param_constant1]
+    %addmm : [num_users=1] = call_function[target=torch.ops.aten.addmm.default](args = (%_param_constant1, %view, %t), kwargs = {})
+    %view_1 : [num_users=2] = call_function[target=torch.ops.aten.view.default](args = (%addmm, [256]), kwargs = {})
+    %mean : [num_users=1] = call_function[target=torch.ops.aten.mean.default](args = (%view_1,), kwargs = {})
+    %sub : [num_users=2] = call_function[target=torch.ops.aten.sub.Tensor](args = (%view_1, %mean), kwargs = {})
+    %std : [num_users=2] = call_function[target=torch.ops.aten.std.correction](args = (%sub,), kwargs = {correction: 0})
+    %detach : [num_users=0] = call_function[target=torch.ops.aten.detach.default](args = (%std,), kwargs = {})
+    %add : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%std, 1e-05), kwargs = {})
+    %div : [num_users=1] = call_function[target=torch.ops.aten.div.Tensor](args = (%sub, %add), kwargs = {})
+    %_param_constant2 : [num_users=1] = get_attr[target=_param_constant2]
+    %mul : [num_users=1] = call_function[target=torch.ops.aten.mul.Tensor](args = (%div, %_param_constant2), kwargs = {})
+    %_param_constant3 : [num_users=1] = get_attr[target=_param_constant3]
+    %add_1 : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%mul, %_param_constant3), kwargs = {})
+    %tanh : [num_users=2] = call_function[target=torch.ops.aten.tanh.default](args = (%add_1,), kwargs = {})
+    %detach_1 : [num_users=0] = call_function[target=torch.ops.aten.detach.default](args = (%tanh,), kwargs = {})
+    %clone : [num_users=1] = call_function[target=torch.ops.aten.clone.default](args = (%tanh,), kwargs = {})
+    %view_2 : [num_users=1] = call_function[target=torch.ops.aten.view.default](args = (%clone, [1, 256]), kwargs = {})
+    %_param_constant4 : [num_users=1] = get_attr[target=_param_constant4]
+    %t_1 : [num_users=1] = call_function[target=torch.ops.aten.t.default](args = (%_param_constant4,), kwargs = {})
+    %_param_constant5 : [num_users=1] = get_attr[target=_param_constant5]
+    %addmm_1 : [num_users=1] = call_function[target=torch.ops.aten.addmm.default](args = (%_param_constant5, %view_2, %t_1), kwargs = {})
+    %view_3 : [num_users=2] = call_function[target=torch.ops.aten.view.default](args = (%addmm_1, [256]), kwargs = {})
+    %mean_1 : [num_users=1] = call_function[target=torch.ops.aten.mean.default](args = (%view_3,), kwargs = {})
+    %sub_1 : [num_users=2] = call_function[target=torch.ops.aten.sub.Tensor](args = (%view_3, %mean_1), kwargs = {})
+    %std_1 : [num_users=2] = call_function[target=torch.ops.aten.std.correction](args = (%sub_1,), kwargs = {correction: 0})
+    %detach_2 : [num_users=0] = call_function[target=torch.ops.aten.detach.default](args = (%std_1,), kwargs = {})
+    %add_2 : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%std_1, 1e-05), kwargs = {})
+    %div_1 : [num_users=1] = call_function[target=torch.ops.aten.div.Tensor](args = (%sub_1, %add_2), kwargs = {})
+    %_param_constant6 : [num_users=1] = get_attr[target=_param_constant6]
+    %mul_1 : [num_users=1] = call_function[target=torch.ops.aten.mul.Tensor](args = (%div_1, %_param_constant6), kwargs = {})
+    %_param_constant7 : [num_users=1] = get_attr[target=_param_constant7]
+    %add_3 : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%mul_1, %_param_constant7), kwargs = {})
+    %tanh_1 : [num_users=2] = call_function[target=torch.ops.aten.tanh.default](args = (%add_3,), kwargs = {})
+    %detach_3 : [num_users=0] = call_function[target=torch.ops.aten.detach.default](args = (%tanh_1,), kwargs = {})
+    %clone_1 : [num_users=1] = call_function[target=torch.ops.aten.clone.default](args = (%tanh_1,), kwargs = {})
+    %view_4 : [num_users=1] = call_function[target=torch.ops.aten.view.default](args = (%clone_1, [1, 256]), kwargs = {})
+    %_param_constant8 : [num_users=1] = get_attr[target=_param_constant8]
+    %t_2 : [num_users=1] = call_function[target=torch.ops.aten.t.default](args = (%_param_constant8,), kwargs = {})
+    %_param_constant9 : [num_users=1] = get_attr[target=_param_constant9]
+    %addmm_2 : [num_users=1] = call_function[target=torch.ops.aten.addmm.default](args = (%_param_constant9, %view_4, %t_2), kwargs = {})
+    %view_5 : [num_users=2] = call_function[target=torch.ops.aten.view.default](args = (%addmm_2, [256]), kwargs = {})
+    %mean_2 : [num_users=1] = call_function[target=torch.ops.aten.mean.default](args = (%view_5,), kwargs = {})
+    %sub_2 : [num_users=2] = call_function[target=torch.ops.aten.sub.Tensor](args = (%view_5, %mean_2), kwargs = {})
+    %std_2 : [num_users=2] = call_function[target=torch.ops.aten.std.correction](args = (%sub_2,), kwargs = {correction: 0})
+    %detach_4 : [num_users=0] = call_function[target=torch.ops.aten.detach.default](args = (%std_2,), kwargs = {})
+    %add_4 : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%std_2, 1e-05), kwargs = {})
+    %div_2 : [num_users=1] = call_function[target=torch.ops.aten.div.Tensor](args = (%sub_2, %add_4), kwargs = {})
+    %_param_constant10 : [num_users=1] = get_attr[target=_param_constant10]
+    %mul_2 : [num_users=1] = call_function[target=torch.ops.aten.mul.Tensor](args = (%div_2, %_param_constant10), kwargs = {})
+    %_param_constant11 : [num_users=1] = get_attr[target=_param_constant11]
+    %add_5 : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%mul_2, %_param_constant11), kwargs = {})
+    %tanh_2 : [num_users=2] = call_function[target=torch.ops.aten.tanh.default](args = (%add_5,), kwargs = {})
+    %detach_5 : [num_users=0] = call_function[target=torch.ops.aten.detach.default](args = (%tanh_2,), kwargs = {})
+    %clone_2 : [num_users=1] = call_function[target=torch.ops.aten.clone.default](args = (%tanh_2,), kwargs = {})
+    %view_6 : [num_users=1] = call_function[target=torch.ops.aten.view.default](args = (%clone_2, [1, 256]), kwargs = {})
+    %_param_constant12 : [num_users=1] = get_attr[target=_param_constant12]
+    %t_3 : [num_users=1] = call_function[target=torch.ops.aten.t.default](args = (%_param_constant12,), kwargs = {})
+    %_param_constant13 : [num_users=1] = get_attr[target=_param_constant13]
+    %addmm_3 : [num_users=1] = call_function[target=torch.ops.aten.addmm.default](args = (%_param_constant13, %view_6, %t_3), kwargs = {})
+    %view_7 : [num_users=2] = call_function[target=torch.ops.aten.view.default](args = (%addmm_3, [256]), kwargs = {})
+    %mean_3 : [num_users=1] = call_function[target=torch.ops.aten.mean.default](args = (%view_7,), kwargs = {})
+    %sub_3 : [num_users=2] = call_function[target=torch.ops.aten.sub.Tensor](args = (%view_7, %mean_3), kwargs = {})
+    %std_3 : [num_users=2] = call_function[target=torch.ops.aten.std.correction](args = (%sub_3,), kwargs = {correction: 0})
+    %detach_6 : [num_users=0] = call_function[target=torch.ops.aten.detach.default](args = (%std_3,), kwargs = {})
+    %add_6 : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%std_3, 1e-05), kwargs = {})
+    %div_3 : [num_users=1] = call_function[target=torch.ops.aten.div.Tensor](args = (%sub_3, %add_6), kwargs = {})
+    %_param_constant14 : [num_users=1] = get_attr[target=_param_constant14]
+    %mul_3 : [num_users=1] = call_function[target=torch.ops.aten.mul.Tensor](args = (%div_3, %_param_constant14), kwargs = {})
+    %_param_constant15 : [num_users=1] = get_attr[target=_param_constant15]
+    %add_7 : [num_users=1] = call_function[target=torch.ops.aten.add.Tensor](args = (%mul_3, %_param_constant15), kwargs = {})
+    %tanh_3 : [num_users=2] = call_function[target=torch.ops.aten.tanh.default](args = (%add_7,), kwargs = {})
+    %detach_7 : [num_users=0] = call_function[target=torch.ops.aten.detach.default](args = (%tanh_3,), kwargs = {})
+    %clone_3 : [num_users=1] = call_function[target=torch.ops.aten.clone.default](args = (%tanh_3,), kwargs = {})
+    %view_8 : [num_users=1] = call_function[target=torch.ops.aten.view.default](args = (%clone_3, [1, 256]), kwargs = {})
+    %_param_constant16 : [num_users=1] = get_attr[target=_param_constant16]
+    %t_4 : [num_users=1] = call_function[target=torch.ops.aten.t.default](args = (%_param_constant16,), kwargs = {})
+    %_param_constant17 : [num_users=1] = get_attr[target=_param_constant17]
+    %addmm_4 : [num_users=1] = call_function[target=torch.ops.aten.addmm.default](args = (%_param_constant17, %view_8, %t_4), kwargs = {})
+    %view_9 : [num_users=1] = call_function[target=torch.ops.aten.view.default](args = (%addmm_4, [12]), kwargs = {})
+    %clone_4 : [num_users=1] = call_function[target=torch.ops.aten.clone.default](args = (%view_9,), kwargs = {})
+    return clone_4

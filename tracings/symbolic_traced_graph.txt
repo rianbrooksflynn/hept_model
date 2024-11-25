@@ -1,0 +1,82 @@
+graph():
+    %x : [num_users=1] = placeholder[target=x]
+    %coords : [num_users=1] = placeholder[target=coords]
+    %batch : [num_users=1] = placeholder[target=batch](default=None)
+    %regions : [num_users=1] = get_attr[target=regions]
+    %prepare_input : [num_users=3] = call_function[target=transformer_traceable.prepare_input](args = (%x, %coords, %batch, {block_size: 100, regions: %regions, num_heads: 8}), kwargs = {})
+    %getitem : [num_users=1] = call_function[target=operator.getitem](args = (%prepare_input, 0), kwargs = {})
+    %getitem_1 : [num_users=1] = call_function[target=operator.getitem](args = (%prepare_input, 1), kwargs = {})
+    %getitem_2 : [num_users=1] = call_function[target=operator.getitem](args = (%prepare_input, 2), kwargs = {})
+    %feat_encoder_0 : [num_users=1] = call_module[target=feat_encoder.0](args = (%getitem,), kwargs = {})
+    %feat_encoder_1 : [num_users=1] = call_module[target=feat_encoder.1](args = (%feat_encoder_0,), kwargs = {})
+    %feat_encoder_2 : [num_users=1] = call_module[target=feat_encoder.2](args = (%feat_encoder_1,), kwargs = {})
+    %attns : [num_users=1] = get_attr[target=attns]
+    %stack_encodings : [num_users=1] = call_function[target=transformer_traceable.stack_encodings](args = (%feat_encoder_2, %getitem_1, %attns), kwargs = {})
+    %w : [num_users=1] = call_module[target=W](args = (%stack_encodings,), kwargs = {})
+    %tanh : [num_users=2] = call_method[target=tanh](args = (%w,), kwargs = {})
+    %mlp_out_lins_0_weight : [num_users=1] = get_attr[target=mlp_out.lins.0.weight]
+    %mlp_out_lins_0_bias : [num_users=1] = get_attr[target=mlp_out.lins.0.bias]
+    %linear : [num_users=2] = call_function[target=torch._C._nn.linear](args = (%tanh, %mlp_out_lins_0_weight, %mlp_out_lins_0_bias), kwargs = {})
+    %mean : [num_users=1] = call_method[target=mean](args = (%linear,), kwargs = {})
+    %sub : [num_users=2] = call_function[target=operator.sub](args = (%linear, %mean), kwargs = {})
+    %std : [num_users=1] = call_method[target=std](args = (%sub,), kwargs = {unbiased: False})
+    %add : [num_users=1] = call_function[target=operator.add](args = (%std, 1e-05), kwargs = {})
+    %truediv : [num_users=1] = call_function[target=operator.truediv](args = (%sub, %add), kwargs = {})
+    %mlp_out_norms_0_weight : [num_users=1] = get_attr[target=mlp_out.norms.0.weight]
+    %mlp_out_norms_0_bias : [num_users=1] = get_attr[target=mlp_out.norms.0.bias]
+    %mul : [num_users=1] = call_function[target=operator.mul](args = (%truediv, %mlp_out_norms_0_weight), kwargs = {})
+    %add_1 : [num_users=1] = call_function[target=operator.add](args = (%mul, %mlp_out_norms_0_bias), kwargs = {})
+    %mlp_out_act : [num_users=1] = call_module[target=mlp_out.act](args = (%add_1,), kwargs = {})
+    %dropout : [num_users=1] = call_function[target=torch.nn.functional.dropout](args = (%mlp_out_act,), kwargs = {p: 0.0, training: True, inplace: False})
+    %mlp_out_lins_1_weight : [num_users=1] = get_attr[target=mlp_out.lins.1.weight]
+    %mlp_out_lins_1_bias : [num_users=1] = get_attr[target=mlp_out.lins.1.bias]
+    %linear_1 : [num_users=2] = call_function[target=torch._C._nn.linear](args = (%dropout, %mlp_out_lins_1_weight, %mlp_out_lins_1_bias), kwargs = {})
+    %mean_1 : [num_users=1] = call_method[target=mean](args = (%linear_1,), kwargs = {})
+    %sub_1 : [num_users=2] = call_function[target=operator.sub](args = (%linear_1, %mean_1), kwargs = {})
+    %std_1 : [num_users=1] = call_method[target=std](args = (%sub_1,), kwargs = {unbiased: False})
+    %add_2 : [num_users=1] = call_function[target=operator.add](args = (%std_1, 1e-05), kwargs = {})
+    %truediv_1 : [num_users=1] = call_function[target=operator.truediv](args = (%sub_1, %add_2), kwargs = {})
+    %mlp_out_norms_1_weight : [num_users=1] = get_attr[target=mlp_out.norms.1.weight]
+    %mlp_out_norms_1_bias : [num_users=1] = get_attr[target=mlp_out.norms.1.bias]
+    %mul_1 : [num_users=1] = call_function[target=operator.mul](args = (%truediv_1, %mlp_out_norms_1_weight), kwargs = {})
+    %add_3 : [num_users=1] = call_function[target=operator.add](args = (%mul_1, %mlp_out_norms_1_bias), kwargs = {})
+    %mlp_out_act_1 : [num_users=1] = call_module[target=mlp_out.act](args = (%add_3,), kwargs = {})
+    %dropout_1 : [num_users=1] = call_function[target=torch.nn.functional.dropout](args = (%mlp_out_act_1,), kwargs = {p: 0.0, training: True, inplace: False})
+    %mlp_out_lins_2_weight : [num_users=1] = get_attr[target=mlp_out.lins.2.weight]
+    %mlp_out_lins_2_bias : [num_users=1] = get_attr[target=mlp_out.lins.2.bias]
+    %linear_2 : [num_users=2] = call_function[target=torch._C._nn.linear](args = (%dropout_1, %mlp_out_lins_2_weight, %mlp_out_lins_2_bias), kwargs = {})
+    %mean_2 : [num_users=1] = call_method[target=mean](args = (%linear_2,), kwargs = {})
+    %sub_2 : [num_users=2] = call_function[target=operator.sub](args = (%linear_2, %mean_2), kwargs = {})
+    %std_2 : [num_users=1] = call_method[target=std](args = (%sub_2,), kwargs = {unbiased: False})
+    %add_4 : [num_users=1] = call_function[target=operator.add](args = (%std_2, 1e-05), kwargs = {})
+    %truediv_2 : [num_users=1] = call_function[target=operator.truediv](args = (%sub_2, %add_4), kwargs = {})
+    %mlp_out_norms_2_weight : [num_users=1] = get_attr[target=mlp_out.norms.2.weight]
+    %mlp_out_norms_2_bias : [num_users=1] = get_attr[target=mlp_out.norms.2.bias]
+    %mul_2 : [num_users=1] = call_function[target=operator.mul](args = (%truediv_2, %mlp_out_norms_2_weight), kwargs = {})
+    %add_5 : [num_users=1] = call_function[target=operator.add](args = (%mul_2, %mlp_out_norms_2_bias), kwargs = {})
+    %mlp_out_act_2 : [num_users=1] = call_module[target=mlp_out.act](args = (%add_5,), kwargs = {})
+    %dropout_2 : [num_users=1] = call_function[target=torch.nn.functional.dropout](args = (%mlp_out_act_2,), kwargs = {p: 0.0, training: True, inplace: False})
+    %mlp_out_lins_3_weight : [num_users=1] = get_attr[target=mlp_out.lins.3.weight]
+    %mlp_out_lins_3_bias : [num_users=1] = get_attr[target=mlp_out.lins.3.bias]
+    %linear_3 : [num_users=2] = call_function[target=torch._C._nn.linear](args = (%dropout_2, %mlp_out_lins_3_weight, %mlp_out_lins_3_bias), kwargs = {})
+    %mean_3 : [num_users=1] = call_method[target=mean](args = (%linear_3,), kwargs = {})
+    %sub_3 : [num_users=2] = call_function[target=operator.sub](args = (%linear_3, %mean_3), kwargs = {})
+    %std_3 : [num_users=1] = call_method[target=std](args = (%sub_3,), kwargs = {unbiased: False})
+    %add_6 : [num_users=1] = call_function[target=operator.add](args = (%std_3, 1e-05), kwargs = {})
+    %truediv_3 : [num_users=1] = call_function[target=operator.truediv](args = (%sub_3, %add_6), kwargs = {})
+    %mlp_out_norms_3_weight : [num_users=1] = get_attr[target=mlp_out.norms.3.weight]
+    %mlp_out_norms_3_bias : [num_users=1] = get_attr[target=mlp_out.norms.3.bias]
+    %mul_3 : [num_users=1] = call_function[target=operator.mul](args = (%truediv_3, %mlp_out_norms_3_weight), kwargs = {})
+    %add_7 : [num_users=1] = call_function[target=operator.add](args = (%mul_3, %mlp_out_norms_3_bias), kwargs = {})
+    %mlp_out_act_3 : [num_users=1] = call_module[target=mlp_out.act](args = (%add_7,), kwargs = {})
+    %dropout_3 : [num_users=1] = call_function[target=torch.nn.functional.dropout](args = (%mlp_out_act_3,), kwargs = {p: 0.0, training: True, inplace: False})
+    %mlp_out_lins_4_weight : [num_users=1] = get_attr[target=mlp_out.lins.4.weight]
+    %mlp_out_lins_4_bias : [num_users=1] = get_attr[target=mlp_out.lins.4.bias]
+    %linear_4 : [num_users=1] = call_function[target=torch._C._nn.linear](args = (%dropout_3, %mlp_out_lins_4_weight, %mlp_out_lins_4_bias), kwargs = {})
+    %dropout_4 : [num_users=1] = call_function[target=torch.nn.functional.dropout](args = (%linear_4,), kwargs = {p: 0.0, training: True, inplace: False})
+    %dropout_5 : [num_users=1] = call_module[target=dropout](args = (%dropout_4,), kwargs = {})
+    %add_8 : [num_users=1] = call_function[target=operator.add](args = (%tanh, %dropout_5), kwargs = {})
+    %getitem_3 : [num_users=1] = call_function[target=operator.getitem](args = (%add_8, %getitem_2), kwargs = {})
+    %mean_4 : [num_users=1] = call_function[target=torch.mean](args = (%getitem_3,), kwargs = {dim: 0})
+    %out_proj : [num_users=1] = call_module[target=out_proj](args = (%mean_4,), kwargs = {})
+    return out_proj

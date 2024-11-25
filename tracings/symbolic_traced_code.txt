@@ -1,0 +1,84 @@
+
+torch.fx._symbolic_trace.wrap("transformer_traceable_prepare_input")
+torch.fx._symbolic_trace.wrap("transformer_traceable_stack_encodings")
+
+def forward(self, x, coords, batch = None):
+    regions = self.regions
+    prepare_input = transformer_traceable_prepare_input(x, coords, batch, {'block_size': 100, 'regions': regions, 'num_heads': 8});  x = coords = batch = regions = None
+    getitem = prepare_input[0]
+    getitem_1 = prepare_input[1]
+    getitem_2 = prepare_input[2];  prepare_input = None
+    feat_encoder_0 = getattr(self.feat_encoder, "0")(getitem);  getitem = None
+    feat_encoder_1 = getattr(self.feat_encoder, "1")(feat_encoder_0);  feat_encoder_0 = None
+    feat_encoder_2 = getattr(self.feat_encoder, "2")(feat_encoder_1);  feat_encoder_1 = None
+    attns = self.attns
+    stack_encodings = transformer_traceable_stack_encodings(feat_encoder_2, getitem_1, attns);  feat_encoder_2 = getitem_1 = attns = None
+    w = self.W(stack_encodings);  stack_encodings = None
+    tanh = w.tanh();  w = None
+    mlp_out_lins_0_weight = getattr(self.mlp_out.lins, "0").weight
+    mlp_out_lins_0_bias = getattr(self.mlp_out.lins, "0").bias
+    linear = torch._C._nn.linear(tanh, mlp_out_lins_0_weight, mlp_out_lins_0_bias);  mlp_out_lins_0_weight = mlp_out_lins_0_bias = None
+    mean = linear.mean()
+    sub = linear - mean;  linear = mean = None
+    std = sub.std(unbiased = False)
+    add = std + 1e-05;  std = None
+    truediv = sub / add;  sub = add = None
+    mlp_out_norms_0_weight = getattr(self.mlp_out.norms, "0").weight
+    mlp_out_norms_0_bias = getattr(self.mlp_out.norms, "0").bias
+    mul = truediv * mlp_out_norms_0_weight;  truediv = mlp_out_norms_0_weight = None
+    add_1 = mul + mlp_out_norms_0_bias;  mul = mlp_out_norms_0_bias = None
+    mlp_out_act = self.mlp_out.act(add_1);  add_1 = None
+    dropout = torch.nn.functional.dropout(mlp_out_act, p = 0.0, training = True, inplace = False);  mlp_out_act = None
+    mlp_out_lins_1_weight = getattr(self.mlp_out.lins, "1").weight
+    mlp_out_lins_1_bias = getattr(self.mlp_out.lins, "1").bias
+    linear_1 = torch._C._nn.linear(dropout, mlp_out_lins_1_weight, mlp_out_lins_1_bias);  dropout = mlp_out_lins_1_weight = mlp_out_lins_1_bias = None
+    mean_1 = linear_1.mean()
+    sub_1 = linear_1 - mean_1;  linear_1 = mean_1 = None
+    std_1 = sub_1.std(unbiased = False)
+    add_2 = std_1 + 1e-05;  std_1 = None
+    truediv_1 = sub_1 / add_2;  sub_1 = add_2 = None
+    mlp_out_norms_1_weight = getattr(self.mlp_out.norms, "1").weight
+    mlp_out_norms_1_bias = getattr(self.mlp_out.norms, "1").bias
+    mul_1 = truediv_1 * mlp_out_norms_1_weight;  truediv_1 = mlp_out_norms_1_weight = None
+    add_3 = mul_1 + mlp_out_norms_1_bias;  mul_1 = mlp_out_norms_1_bias = None
+    mlp_out_act_1 = self.mlp_out.act(add_3);  add_3 = None
+    dropout_1 = torch.nn.functional.dropout(mlp_out_act_1, p = 0.0, training = True, inplace = False);  mlp_out_act_1 = None
+    mlp_out_lins_2_weight = getattr(self.mlp_out.lins, "2").weight
+    mlp_out_lins_2_bias = getattr(self.mlp_out.lins, "2").bias
+    linear_2 = torch._C._nn.linear(dropout_1, mlp_out_lins_2_weight, mlp_out_lins_2_bias);  dropout_1 = mlp_out_lins_2_weight = mlp_out_lins_2_bias = None
+    mean_2 = linear_2.mean()
+    sub_2 = linear_2 - mean_2;  linear_2 = mean_2 = None
+    std_2 = sub_2.std(unbiased = False)
+    add_4 = std_2 + 1e-05;  std_2 = None
+    truediv_2 = sub_2 / add_4;  sub_2 = add_4 = None
+    mlp_out_norms_2_weight = getattr(self.mlp_out.norms, "2").weight
+    mlp_out_norms_2_bias = getattr(self.mlp_out.norms, "2").bias
+    mul_2 = truediv_2 * mlp_out_norms_2_weight;  truediv_2 = mlp_out_norms_2_weight = None
+    add_5 = mul_2 + mlp_out_norms_2_bias;  mul_2 = mlp_out_norms_2_bias = None
+    mlp_out_act_2 = self.mlp_out.act(add_5);  add_5 = None
+    dropout_2 = torch.nn.functional.dropout(mlp_out_act_2, p = 0.0, training = True, inplace = False);  mlp_out_act_2 = None
+    mlp_out_lins_3_weight = getattr(self.mlp_out.lins, "3").weight
+    mlp_out_lins_3_bias = getattr(self.mlp_out.lins, "3").bias
+    linear_3 = torch._C._nn.linear(dropout_2, mlp_out_lins_3_weight, mlp_out_lins_3_bias);  dropout_2 = mlp_out_lins_3_weight = mlp_out_lins_3_bias = None
+    mean_3 = linear_3.mean()
+    sub_3 = linear_3 - mean_3;  linear_3 = mean_3 = None
+    std_3 = sub_3.std(unbiased = False)
+    add_6 = std_3 + 1e-05;  std_3 = None
+    truediv_3 = sub_3 / add_6;  sub_3 = add_6 = None
+    mlp_out_norms_3_weight = getattr(self.mlp_out.norms, "3").weight
+    mlp_out_norms_3_bias = getattr(self.mlp_out.norms, "3").bias
+    mul_3 = truediv_3 * mlp_out_norms_3_weight;  truediv_3 = mlp_out_norms_3_weight = None
+    add_7 = mul_3 + mlp_out_norms_3_bias;  mul_3 = mlp_out_norms_3_bias = None
+    mlp_out_act_3 = self.mlp_out.act(add_7);  add_7 = None
+    dropout_3 = torch.nn.functional.dropout(mlp_out_act_3, p = 0.0, training = True, inplace = False);  mlp_out_act_3 = None
+    mlp_out_lins_4_weight = getattr(self.mlp_out.lins, "4").weight
+    mlp_out_lins_4_bias = getattr(self.mlp_out.lins, "4").bias
+    linear_4 = torch._C._nn.linear(dropout_3, mlp_out_lins_4_weight, mlp_out_lins_4_bias);  dropout_3 = mlp_out_lins_4_weight = mlp_out_lins_4_bias = None
+    dropout_4 = torch.nn.functional.dropout(linear_4, p = 0.0, training = True, inplace = False);  linear_4 = None
+    dropout_5 = self.dropout(dropout_4);  dropout_4 = None
+    add_8 = tanh + dropout_5;  tanh = dropout_5 = None
+    getitem_3 = add_8[getitem_2];  add_8 = getitem_2 = None
+    mean_4 = torch.mean(getitem_3, dim = 0);  getitem_3 = None
+    out_proj = self.out_proj(mean_4);  mean_4 = None
+    return out_proj
+    
