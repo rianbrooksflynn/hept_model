@@ -36,7 +36,7 @@ class CustomMLP(nn.Module):
 
 if __name__ == "__main__":
     in_shape = (32, 32)
-    mlp = CustomMLP(32, 32, 32, 5)
+    mlp = CustomMLP(32, 32, 32, 2)
     mlp.eval()
     
     x = np.random.randn(1, *in_shape)
@@ -54,7 +54,7 @@ if __name__ == "__main__":
         channels_last_conversion='off',
         transpose_outputs=False,
     )
-    output_dir = str(Path(__file__).parent / 'hls4ml_projects' / 'mlp_model_log_lut')
+    output_dir = str(Path(__file__).parent / 'hls4ml_projects' / 'mlp_model_2_layers')
 
     hls_model = hls4ml.converters.convert_from_pytorch_model(mlp, hls_config=config, io_type='io_parallel', output_dir=output_dir, input_data_tb=in_file, output_data_tb=out_file)
     hls_model.compile()
