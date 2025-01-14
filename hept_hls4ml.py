@@ -46,10 +46,10 @@ if __name__ == "__main__":
     np.random.seed(0)
 
     n_hashes = 1
-    n_heads = 4
-    n_blocks = 5
-    block_size = 5
-    dim_per_head = 10
+    n_heads = 2
+    n_blocks = 3
+    block_size = 4
+    dim_per_head = 5
     coords_dim = 2
 
     model = HEPTModel(n_heads, n_blocks, block_size, dim_per_head, coords_dim)
