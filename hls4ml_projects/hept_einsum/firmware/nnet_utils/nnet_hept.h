@@ -52,7 +52,7 @@ void negative_half_sum_square(
     #pragma HLS ARRAY_PARTITION variable=output complete
     #pragma HLS ARRAY_PARTITION variable=input complete
 
-    typename CONFIG_T::accum_t negative_half = -0.5;
+    const typename CONFIG_T::accum_t negative_half = -0.5;
     for (unsigned i = 0; i < CONFIG_T::n_heads * CONFIG_T::n_blocks * CONFIG_T::block_size; i++) {
         #pragma HLS UNROLL factor=CONFIG_T::parallelization_factor
         typename CONFIG_T::accum_t sum = 0;
