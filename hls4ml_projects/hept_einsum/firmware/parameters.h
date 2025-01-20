@@ -15,13 +15,13 @@
 // hls-fpga-machine-learning insert layer-config
 // hept
 struct config4_dense_qk : nnet::dense_config {
-    static const unsigned n_in = 30;
-    static const unsigned n_out = 100;
+    static const unsigned n_in = 16;
+    static const unsigned n_out = 10;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
     static const unsigned n_zeros = 0;
-    static const unsigned n_nonzeros = 3000;
+    static const unsigned n_nonzeros = 160;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in * n_out, reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef hept_accum_t accum_t;
@@ -35,13 +35,13 @@ struct config4_dense_qk : nnet::dense_config {
 };
 
 struct config4_dense_qkv : nnet::dense_config {
-    static const unsigned n_in = 100;
-    static const unsigned n_out = 24;
+    static const unsigned n_in = 10;
+    static const unsigned n_out = 12;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
     static const unsigned n_zeros = 0;
-    static const unsigned n_nonzeros = 2400;
+    static const unsigned n_nonzeros = 120;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in * n_out, reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef hept_accum_t accum_t;
@@ -56,17 +56,17 @@ struct config4_dense_qkv : nnet::dense_config {
 
 struct config4_transpose_qk {
     static const unsigned dims = 4;
-    static const unsigned N = 480000;
+    static const unsigned N = 160;
     static const unsigned* const from_shape;
     static const unsigned* const to_shape;
     static const unsigned* const perm;
     static const unsigned* const perm_strides;
 };
 
-unsigned config4_transpose_qk_from_shape[4] = {8, 20, 100, 30};
-unsigned config4_transpose_qk_to_shape[4] = {8, 20, 30, 100};
+unsigned config4_transpose_qk_from_shape[4] = {1, 1, 10, 16};
+unsigned config4_transpose_qk_to_shape[4] = {1, 1, 16, 10};
 unsigned config4_transpose_qk_perm[4] = {0, 1, 3, 2};
-unsigned config4_transpose_qk_perm_strides[4] = {60000, 3000, 1, 30};
+unsigned config4_transpose_qk_perm_strides[4] = {160, 160, 1, 16};
 
 const unsigned* const config4_transpose_qk::from_shape = config4_transpose_qk_from_shape;
 const unsigned* const config4_transpose_qk::to_shape = config4_transpose_qk_to_shape;
@@ -83,11 +83,11 @@ struct config4 : nnet::hept_config {
     typedef config4_dense_qkv dense_conf_qkv;
     typedef config4_transpose_qk transpose_conf_qk;
 
-    static const unsigned n_heads = 8;
-    static const unsigned n_blocks = 20;
-    static const unsigned block_size = 100;
-    static const unsigned dim_per_head = 24;
-    static const unsigned coords_dim = 6;
+    static const unsigned n_heads = 1;
+    static const unsigned n_blocks = 1;
+    static const unsigned block_size = 10;
+    static const unsigned dim_per_head = 12;
+    static const unsigned coords_dim = 4;
 
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;

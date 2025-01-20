@@ -8,22 +8,22 @@
 #include <cstdio>
 
 // hls-fpga-machine-learning insert numbers
-#define N_INPUT_1_1 8
-#define N_INPUT_2_1 20
-#define N_INPUT_3_1 100
-#define N_INPUT_4_1 30
-#define N_INPUT_1_2 8
-#define N_INPUT_2_2 20
-#define N_INPUT_3_2 100
-#define N_INPUT_4_2 30
-#define N_INPUT_1_3 8
-#define N_INPUT_2_3 20
-#define N_INPUT_3_3 100
-#define N_INPUT_4_3 24
-#define N_HEADS_4 8
-#define N_BLOCKS_4 20
-#define BLOCK_SIZE_4 100
-#define DIM_PER_HEAD_4 24
+#define N_INPUT_1_1 1
+#define N_INPUT_2_1 1
+#define N_INPUT_3_1 10
+#define N_INPUT_4_1 16
+#define N_INPUT_1_2 1
+#define N_INPUT_2_2 1
+#define N_INPUT_3_2 10
+#define N_INPUT_4_2 16
+#define N_INPUT_1_3 1
+#define N_INPUT_2_3 1
+#define N_INPUT_3_3 10
+#define N_INPUT_4_3 12
+#define N_HEADS_4 1
+#define N_BLOCKS_4 1
+#define BLOCK_SIZE_4 10
+#define DIM_PER_HEAD_4 12
 
 
 // hls-fpga-machine-learning insert layer-precision

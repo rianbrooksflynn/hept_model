@@ -45,12 +45,12 @@ class HEPTModel(nn.Module):
 if __name__ == "__main__":
     np.random.seed(0)
 
-    n_hashes = 3
-    n_heads = 8
-    n_blocks = 20
-    block_size = 100
-    dim_per_head = 24
-    coords_dim = 6
+    n_hashes = 1
+    n_heads = 1
+    n_blocks = 1
+    block_size = 10
+    dim_per_head = 12
+    coords_dim = 4
 
     model = HEPTModel(n_heads, n_blocks, block_size, dim_per_head, coords_dim)
     model.eval()

@@ -34,20 +34,20 @@ IOType: io_parallel
 InputData: /home/rian/A3D3/hept_model/data/hept_in.dat
 InputShape:
 - !!python/tuple
-  - 8
-  - 20
-  - 100
-  - 30
+  - 1
+  - 1
+  - 10
+  - 16
 - !!python/tuple
-  - 8
-  - 20
-  - 100
-  - 30
+  - 1
+  - 1
+  - 10
+  - 16
 - !!python/tuple
-  - 8
-  - 20
-  - 100
-  - 24
+  - 1
+  - 1
+  - 10
+  - 12
 OutputDir: /home/rian/A3D3/hept_model/hls4ml_projects/hept_einsum
 OutputPredictions: /home/rian/A3D3/hept_model/data/hept_out.dat
 Part: xcvu13p-flga2577-2-e
@@ -102,11 +102,11 @@ PytorchModel: !!python/object:__main__.HEPTModel
       - []
       _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
       - []
-      block_size: 100
-      coords_dim: 6
-      dim_per_head: 24
-      n_blocks: 20
-      n_heads: 8
+      block_size: 10
+      coords_dim: 4
+      dim_per_head: 12
+      n_blocks: 1
+      n_heads: 1
       training: false
   _non_persistent_buffers_set: !!set {}
   _parameters: {}
@@ -115,7 +115,7 @@ PytorchModel: !!python/object:__main__.HEPTModel
   _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
   - []
   training: false
-Stamp: 26b43102
+Stamp: 8c39c52b
 Version: 1.0.0
 WriterConfig:
   Namespace: null
