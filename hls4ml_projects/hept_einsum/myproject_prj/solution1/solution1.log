@@ -1,0 +1,923 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-1510] Running: config_array_partition -maximum_size 4096 
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+ERROR: [HLS 200-642] The 'config_array_partition -maximum_size' command is not supported.
+INFO: [HLS 200-1510] Running: config_compile -name_max_length 80 
+INFO: [XFORM 203-1161] The maximum of name length is set to 80.
+INFO: [HLS 200-1510] Running: set_part xcvu13p-flga2577-2-e 
+INFO: [HLS 200-1611] Setting target device to 'xcvu13p-flga2577-2-e'
+INFO: [XFORM 203-1161] The maximum of name length is set to 80.
+INFO: [HLS 200-1510] Running: config_schedule -enable_dsp_full_reg=false 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% default 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 9.92 seconds. CPU system time: 0.81 seconds. Elapsed time: 11.21 seconds; current allocated memory: 0.234 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 254.375 MB.
+INFO: [HLS 200-10] Analyzing design file 'firmware/myproject.cpp' ... 
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (firmware/nnet_utils/nnet_dense_resource.h:33:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (firmware/nnet_utils/nnet_dense_resource.h:107:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (firmware/nnet_utils/nnet_dense_resource.h:189:9)
+WARNING: [HLS 207-5292] unused parameter 'keep' (firmware/nnet_utils/nnet_helpers.h:285:99)
+WARNING: [HLS 207-5292] unused parameter 'data' (firmware/nnet_utils/nnet_function_stubs.h:14:36)
+WARNING: [HLS 207-5292] unused parameter 'buffer' (firmware/nnet_utils/nnet_function_stubs.h:15:36)
+WARNING: [HLS 207-5292] unused parameter 'partition' (firmware/nnet_utils/nnet_function_stubs.h:16:44)
+WARNING: [HLS 207-5292] unused parameter 'data' (firmware/nnet_utils/nnet_function_stubs.h:24:24)
+WARNING: [HLS 207-5292] unused parameter 'buffer' (firmware/nnet_utils/nnet_function_stubs.h:25:24)
+WARNING: [HLS 207-5292] unused parameter 'partition' (firmware/nnet_utils/nnet_function_stubs.h:26:32)
+WARNING: [HLS 207-5292] unused parameter 'data' (firmware/nnet_utils/nnet_function_stubs.h:33:30)
+WARNING: [HLS 207-5292] unused parameter 'res' (firmware/nnet_utils/nnet_function_stubs.h:33:58)
+WARNING: [HLS 207-5292] unused parameter 'weights' (firmware/nnet_utils/nnet_function_stubs.h:34:51)
+WARNING: [HLS 207-5292] unused parameter 'biases' (firmware/nnet_utils/nnet_function_stubs.h:35:49)
+WARNING: [HLS 207-5292] unused parameter 'data' (firmware/nnet_utils/nnet_function_stubs.h:42:29)
+WARNING: [HLS 207-5292] unused parameter 'res' (firmware/nnet_utils/nnet_function_stubs.h:42:80)
+WARNING: [HLS 207-5292] unused parameter 'weights' (firmware/nnet_utils/nnet_function_stubs.h:43:50)
+WARNING: [HLS 207-5292] unused parameter 'biases' (firmware/nnet_utils/nnet_function_stubs.h:44:48)
+WARNING: [HLS 207-5292] unused parameter 'data' (firmware/nnet_utils/nnet_code_gen.h:16:39)
+WARNING: [HLS 207-5292] unused parameter 'res' (firmware/nnet_utils/nnet_code_gen.h:17:38)
+WARNING: [HLS 207-5292] unused parameter 'weights' (firmware/nnet_utils/nnet_code_gen.h:18:60)
+WARNING: [HLS 207-5292] unused parameter 'biases' (firmware/nnet_utils/nnet_code_gen.h:19:58)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 24.6 seconds. CPU system time: 1.51 seconds. Elapsed time: 26.96 seconds; current allocated memory: 262.801 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 6,084 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+WARNING: [HLS 200-1995] There were 223,897 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 77,711 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 72,521 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 68,883 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+WARNING: [HLS 200-1995] There were 116,365 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 48,563 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 48,563 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 48,563 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 48,563 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 45,143 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 42,877 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 41,337 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 41,337 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 41,897 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 41,259 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qk>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4_dense_qk::weight_t*, config4_dense_qk::bias_t*)' (firmware/nnet_utils/nnet_dense_latency.h:42:27)
+INFO: [HLS 214-131] Inlining function 'nnet::DenseLatency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qk>::dense(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'void nnet::dense<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qk>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4_dense_qk::weight_t*, config4_dense_qk::bias_t*)' (firmware/nnet_utils/nnet_dense.h:45:2)
+INFO: [HLS 214-131] Inlining function 'void nnet::dense<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qk>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4_dense_qk::weight_t*, config4_dense_qk::bias_t*)' into 'void nnet::qk_einsum<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (firmware/nnet_utils/nnet_hept.h:147:2)
+INFO: [HLS 214-131] Inlining function 'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::product(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'void nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qkv>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4_dense_qkv::weight_t*, config4_dense_qkv::bias_t*)' (firmware/nnet_utils/nnet_dense_latency.h:42:27)
+INFO: [HLS 214-131] Inlining function 'nnet::DenseLatency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qkv>::dense(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'void nnet::dense<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qkv>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4_dense_qkv::weight_t*, config4_dense_qkv::bias_t*)' (firmware/nnet_utils/nnet_dense.h:45:2)
+INFO: [HLS 214-131] Inlining function 'void nnet::dense<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qkv>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4_dense_qkv::weight_t*, config4_dense_qkv::bias_t*)' into 'void nnet::qk_v_einsum<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (firmware/nnet_utils/nnet_hept.h:178:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_174_1' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_hept.h:174:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_176_2' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_hept.h:176:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_180_3' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_hept.h:180:31)
+INFO: [HLS 214-291] Loop 'Result' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_dense_latency.h:64:5)
+INFO: [HLS 214-291] Loop 'Accum1' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_dense_latency.h:54:5)
+INFO: [HLS 214-291] Loop 'Accum2' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_dense_latency.h:56:9)
+INFO: [HLS 214-291] Loop 'ResetAccum' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_dense_latency.h:48:5)
+INFO: [HLS 214-291] Loop 'Product1' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_dense_latency.h:37:5)
+INFO: [HLS 214-291] Loop 'Product2' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_dense_latency.h:40:9)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_105_1' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_hept.h:105:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_107_2' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_hept.h:107:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_109_3' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_hept.h:109:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_143_1' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_hept.h:143:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_145_2' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_hept.h:145:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_149_3' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_hept.h:149:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_30_1' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_transpose.h:30:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_21_1' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_transpose.h:21:22)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (/opt/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h:752:7)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_56_1' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_hept.h:56:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_59_2' is marked as complete unroll implied by the pipeline pragma (firmware/nnet_utils/nnet_hept.h:59:26)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_174_1' (firmware/nnet_utils/nnet_hept.h:174:23) in function 'nnet::qk_v_einsum<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 1 (firmware/nnet_utils/nnet_hept.h:161:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_176_2' (firmware/nnet_utils/nnet_hept.h:176:20) in function 'nnet::qk_v_einsum<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 10 (firmware/nnet_utils/nnet_hept.h:161:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_180_3' (firmware/nnet_utils/nnet_hept.h:180:31) in function 'nnet::qk_v_einsum<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 12 (firmware/nnet_utils/nnet_hept.h:161:0)
+INFO: [HLS 214-186] Unrolling loop 'Result' (firmware/nnet_utils/nnet_dense_latency.h:64:5) in function 'nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qkv>' completely with a factor of 12 (firmware/nnet_utils/nnet_dense_latency.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'Accum1' (firmware/nnet_utils/nnet_dense_latency.h:54:5) in function 'nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qkv>' completely with a factor of 10 (firmware/nnet_utils/nnet_dense_latency.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'Accum2' (firmware/nnet_utils/nnet_dense_latency.h:56:9) in function 'nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qkv>' completely with a factor of 12 (firmware/nnet_utils/nnet_dense_latency.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'ResetAccum' (firmware/nnet_utils/nnet_dense_latency.h:48:5) in function 'nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qkv>' completely with a factor of 12 (firmware/nnet_utils/nnet_dense_latency.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'Product1' (firmware/nnet_utils/nnet_dense_latency.h:37:5) in function 'nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qkv>' completely with a factor of 10 (firmware/nnet_utils/nnet_dense_latency.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'Product2' (firmware/nnet_utils/nnet_dense_latency.h:40:9) in function 'nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qkv>' completely with a factor of 12 (firmware/nnet_utils/nnet_dense_latency.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_105_1' (firmware/nnet_utils/nnet_hept.h:105:23) in function 'nnet::add_clamp_exp<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 1 (firmware/nnet_utils/nnet_hept.h:81:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_107_2' (firmware/nnet_utils/nnet_hept.h:107:20) in function 'nnet::add_clamp_exp<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 10 (firmware/nnet_utils/nnet_hept.h:81:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_109_3' (firmware/nnet_utils/nnet_hept.h:109:20) in function 'nnet::add_clamp_exp<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 10 (firmware/nnet_utils/nnet_hept.h:81:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_143_1' (firmware/nnet_utils/nnet_hept.h:143:23) in function 'nnet::qk_einsum<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 1 (firmware/nnet_utils/nnet_hept.h:127:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_145_2' (firmware/nnet_utils/nnet_hept.h:145:20) in function 'nnet::qk_einsum<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 10 (firmware/nnet_utils/nnet_hept.h:127:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_149_3' (firmware/nnet_utils/nnet_hept.h:149:31) in function 'nnet::qk_einsum<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 10 (firmware/nnet_utils/nnet_hept.h:127:0)
+INFO: [HLS 214-186] Unrolling loop 'Result' (firmware/nnet_utils/nnet_dense_latency.h:64:5) in function 'nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qk>' completely with a factor of 10 (firmware/nnet_utils/nnet_dense_latency.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'Accum1' (firmware/nnet_utils/nnet_dense_latency.h:54:5) in function 'nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qk>' completely with a factor of 16 (firmware/nnet_utils/nnet_dense_latency.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'Accum2' (firmware/nnet_utils/nnet_dense_latency.h:56:9) in function 'nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qk>' completely with a factor of 10 (firmware/nnet_utils/nnet_dense_latency.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'ResetAccum' (firmware/nnet_utils/nnet_dense_latency.h:48:5) in function 'nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qk>' completely with a factor of 10 (firmware/nnet_utils/nnet_dense_latency.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'Product1' (firmware/nnet_utils/nnet_dense_latency.h:37:5) in function 'nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qk>' completely with a factor of 16 (firmware/nnet_utils/nnet_dense_latency.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'Product2' (firmware/nnet_utils/nnet_dense_latency.h:40:9) in function 'nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qk>' completely with a factor of 10 (firmware/nnet_utils/nnet_dense_latency.h:15:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_30_1' (firmware/nnet_utils/nnet_transpose.h:30:22) in function 'nnet::transpose<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_transpose_qk>' completely with a factor of 160 (firmware/nnet_utils/nnet_transpose.h:29:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_21_1' (firmware/nnet_utils/nnet_transpose.h:21:22) in function 'nnet::transfer_idx<config4_transpose_qk>' completely with a factor of 4 (firmware/nnet_utils/nnet_transpose.h:18:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_56_1' (firmware/nnet_utils/nnet_hept.h:56:22) in function 'nnet::negative_half_sum_square<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 10 (firmware/nnet_utils/nnet_hept.h:50:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_59_2' (firmware/nnet_utils/nnet_hept.h:59:26) in function 'nnet::negative_half_sum_square<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 16 (firmware/nnet_utils/nnet_hept.h:50:0)
+INFO: [HLS 214-367] Instantiating function 'void nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qkv>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4_dense_qkv::weight_t*, config4_dense_qkv::bias_t*)' to 'void nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qkv>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4_dense_qkv::weight_t*, config4_dense_qkv::bias_t*)' by setting 'weights' to 'value', 'biases' to 'arraydecay' (firmware/nnet_utils/nnet_dense.h:54:2)
+INFO: [HLS 214-367] Instantiating function 'void nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qk>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4_dense_qk::weight_t*, config4_dense_qk::bias_t*)' to 'void nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qk>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4_dense_qk::weight_t*, config4_dense_qk::bias_t*)' by setting 'weights' to 'arraydecay1', 'biases' to 'arraydecay' (firmware/nnet_utils/nnet_dense.h:54:2)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>* std::__niter_base<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>* std::fill_n<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, unsigned long, double>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, unsigned long, double const&)' (/opt/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h:785:0)
+INFO: [HLS 214-178] Inlining function '__gnu_cxx::__enable_if<__is_scalar<double>::__value, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*>::__type std::__fill_n_a<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, unsigned long, double>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, unsigned long, double const&)' into 'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>* std::fill_n<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, unsigned long, double>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, unsigned long, double const&)' (/opt/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h:785:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>* std::fill_n<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, unsigned long, double>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, unsigned long, double const&)' into 'void nnet::fill_zero<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 10ul>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (firmware/nnet_utils/nnet_helpers.h:304:0)
+INFO: [HLS 214-178] Inlining function 'std::enable_if<!(std::is_same<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_uint<1> >::value), ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::type nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qk>(config4_dense_qk::accum_t)' into 'void nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qk>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4_dense_qk::weight_t*, config4_dense_qk::bias_t*)' (firmware/nnet_utils/nnet_dense_latency.h:15:0)
+INFO: [HLS 214-178] Inlining function 'void nnet::fill_zero<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 10ul>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'void nnet::qk_einsum<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (firmware/nnet_utils/nnet_hept.h:127:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>* std::fill_n<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, unsigned long, double>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, unsigned long, double const&)' into 'void nnet::fill_zero<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 12ul>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (firmware/nnet_utils/nnet_helpers.h:304:0)
+INFO: [HLS 214-178] Inlining function 'std::enable_if<!(std::is_same<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_uint<1> >::value), ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::type nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qkv>(config4_dense_qkv::accum_t)' into 'void nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qkv>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, config4_dense_qkv::weight_t*, config4_dense_qkv::bias_t*)' (firmware/nnet_utils/nnet_dense_latency.h:15:0)
+INFO: [HLS 214-178] Inlining function 'void nnet::fill_zero<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 12ul>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'void nnet::qk_v_einsum<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (firmware/nnet_utils/nnet_hept.h:161:0)
+INFO: [HLS 214-178] Inlining function 'void nnet::hept<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'myproject(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (firmware/myproject.cpp:10:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (/opt/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h:752:7) in function 'nnet::qk_v_einsum<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 12 (firmware/nnet_utils/nnet_hept.h:161:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (/opt/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h:752:7) in function 'nnet::qk_einsum<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 10 (firmware/nnet_utils/nnet_hept.h:127:0)
+WARNING: [HLS 214-267] Partition and reshape on the same dimension of 'query' may not commute. Partition is applied first.
+WARNING: [HLS 214-267] Partition and reshape on the same dimension of 'key' may not commute. Partition is applied first.
+WARNING: [HLS 214-267] Partition and reshape on the same dimension of 'value' may not commute. Partition is applied first.
+INFO: [HLS 214-248] Applying array_partition to 'mult': Complete partitioning on dimension 1. (firmware/nnet_utils/nnet_dense_latency.h:17:32)
+INFO: [HLS 214-248] Applying array_partition to 'key_transpose': Complete partitioning on dimension 1. (firmware/nnet_utils/nnet_hept.h:128:12)
+INFO: [HLS 214-248] Applying array_partition to 'biases': Complete partitioning on dimension 1. (firmware/nnet_utils/nnet_hept.h:130:46)
+INFO: [HLS 214-248] Applying array_partition to 'biases': Complete partitioning on dimension 1. (firmware/nnet_utils/nnet_hept.h:163:47)
+INFO: [HLS 214-248] Applying array_partition to 'q_sq_05.i': Complete partitioning on dimension 1. (firmware/nnet_utils/nnet_hept.h:193:11)
+INFO: [HLS 214-248] Applying array_partition to 'k_sq_05.i': Complete partitioning on dimension 1. (firmware/nnet_utils/nnet_hept.h:194:11)
+INFO: [HLS 214-248] Applying array_partition to 'cluster_sum.i': Complete partitioning on dimension 1. (firmware/nnet_utils/nnet_hept.h:195:11)
+INFO: [HLS 214-248] Applying array_partition to 'qk.i': Complete partitioning on dimension 1. (firmware/nnet_utils/nnet_hept.h:196:11)
+INFO: [HLS 214-248] Applying array_partition to 'query': Complete partitioning on dimension 1. (firmware/myproject.cpp:10:0)
+INFO: [HLS 214-248] Applying array_partition to 'key': Complete partitioning on dimension 1. (firmware/myproject.cpp:10:0)
+INFO: [HLS 214-248] Applying array_partition to 'value': Complete partitioning on dimension 1. (firmware/myproject.cpp:10:0)
+INFO: [HLS 214-248] Applying array_partition to 'layer4_out': Complete partitioning on dimension 1. (firmware/myproject.cpp:10:0)
+WARNING: [HLS 214-322] Unsuported scalar variable on pragma 'Array_Reshape', ignore it.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 22.78 seconds. CPU system time: 0.6 seconds. Elapsed time: 25.31 seconds; current allocated memory: 267.180 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 267.180 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.33 seconds; current allocated memory: 282.629 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-120] firmware/nnet_utils/nnet_hept.h:61: multiplication is assumed not to overflow by default, otherwise, please add option '-fwrapv'.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1.6 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.61 seconds; current allocated memory: 291.484 MB.
+INFO: [XFORM 203-102] Partitioning array 'out_buffer' (firmware/nnet_utils/nnet_hept.h:129) automatically.
+INFO: [XFORM 203-102] Partitioning array 'out_buffer' (firmware/nnet_utils/nnet_hept.h:162) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qkv>' (firmware/nnet_utils/nnet_dense_latency.h:33:21)...108 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'nnet::dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_dense_qk>' (firmware/nnet_utils/nnet_dense_latency.h:33:27)...150 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 6.9 seconds. CPU system time: 0.03 seconds. Elapsed time: 6.97 seconds; current allocated memory: 338.211 MB.
+INFO: [XFORM 203-603] Evaluating the output(s) of a call to function 'nnet::transfer_idx<config4_transpose_qk>' (firmware/nnet_utils/nnet_transpose.h:32:6) in function 'nnet::transpose<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config4_transpose_qk>' and propagating its result(s) since all actual argument(s) to the function are constants.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2.82 seconds. CPU system time: 0.05 seconds. Elapsed time: 2.88 seconds; current allocated memory: 450.828 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'myproject' ...
+WARNING: [SYN 201-103] Legalizing function name 'negative_half_sum_square<ap_fixed,ap_fixed<16,6,5,3,0>,config4>' to 'negative_half_sum_square_ap_fixed_ap_fixed_16_6_5_3_0_config4_s'.
+WARNING: [SYN 201-103] Legalizing function name 'transpose<ap_fixed,ap_fixed<16,6,5,3,0>,config4_transpose_qk>' to 'transpose_ap_fixed_ap_fixed_16_6_5_3_0_config4_transpose_qk_s'.
+WARNING: [SYN 201-103] Legalizing function name 'dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config4_dense_qk>' to 'dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config4_dense_qk_s'.
+WARNING: [SYN 201-103] Legalizing function name 'qk_einsum<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>' to 'qk_einsum_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s'.
+WARNING: [SYN 201-103] Legalizing function name 'add_clamp_exp<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>' to 'add_clamp_exp_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s'.
+WARNING: [SYN 201-103] Legalizing function name 'dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config4_dense_qkv>' to 'dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config4_dense_qkv_s'.
+WARNING: [SYN 201-103] Legalizing function name 'qk_v_einsum<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>' to 'qk_v_einsum_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'negative_half_sum_square_ap_fixed_ap_fixed_16_6_5_3_0_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'negative_half_sum_square<ap_fixed,ap_fixed<16,6,5,3,0>,config4>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 15, function 'negative_half_sum_square<ap_fixed,ap_fixed<16,6,5,3,0>,config4>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.71 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.8 seconds; current allocated memory: 460.723 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 460.723 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'transpose_ap_fixed_ap_fixed_16_6_5_3_0_config4_transpose_qk_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'transpose<ap_fixed,ap_fixed<16,6,5,3,0>,config4_transpose_qk>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'transpose<ap_fixed,ap_fixed<16,6,5,3,0>,config4_transpose_qk>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.27 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 461.668 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 461.668 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config4_dense_qk_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config4_dense_qk>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, function 'dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config4_dense_qk>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.55 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.58 seconds; current allocated memory: 476.297 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.38 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.4 seconds; current allocated memory: 480.918 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'qk_einsum_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'qk_einsum<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, function 'qk_einsum<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.92 seconds. CPU system time: 0 seconds. Elapsed time: 0.93 seconds; current allocated memory: 485.770 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 485.770 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'add_clamp_exp_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'add_clamp_exp<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, function 'add_clamp_exp<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.87 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.89 seconds; current allocated memory: 494.547 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 494.824 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config4_dense_qkv_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config4_dense_qkv>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, function 'dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config4_dense_qkv>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.17 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.19 seconds; current allocated memory: 504.270 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.55 seconds. CPU system time: 0 seconds. Elapsed time: 0.56 seconds; current allocated memory: 506.566 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'qk_v_einsum_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'qk_v_einsum<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, function 'qk_v_einsum<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.35 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.36 seconds; current allocated memory: 509.203 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 509.203 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'myproject' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'myproject'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 20, function 'myproject'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2.54 seconds. CPU system time: 0.01 seconds. Elapsed time: 2.56 seconds; current allocated memory: 520.418 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.23 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 525.145 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'negative_half_sum_square_ap_fixed_ap_fixed_16_6_5_3_0_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'negative_half_sum_square_ap_fixed_ap_fixed_16_6_5_3_0_config4_s' is 19040 from HDL expression: ((1'b1 == ap_ce_reg) & (1'b0 == ap_block_pp0_stage0_11001))
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_26ns_26_1_0': 150 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_26_1_0': 10 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'negative_half_sum_square_ap_fixed_ap_fixed_16_6_5_3_0_config4_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.67 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.7 seconds; current allocated memory: 536.004 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'transpose_ap_fixed_ap_fixed_16_6_5_3_0_config4_transpose_qk_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'transpose_ap_fixed_ap_fixed_16_6_5_3_0_config4_transpose_qk_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.21 seconds. CPU system time: 0.08 seconds. Elapsed time: 1.3 seconds; current allocated memory: 639.199 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config4_dense_qk_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_26_1_0': 160 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_291_8_16_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config4_dense_qk_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.5 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.52 seconds; current allocated memory: 644.211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'qk_einsum_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'qk_einsum_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.65 seconds. CPU system time: 0.09 seconds. Elapsed time: 1.76 seconds; current allocated memory: 766.430 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'add_clamp_exp_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'add_clamp_exp_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s_exp_table_ROM_AUTO_1R' to 'add_clamp_exp_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s_exp_table_ROMbkb' due to the length limit 80
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'add_clamp_exp_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s' pipeline 'add_clamp_exp<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'add_clamp_exp_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s'.
+INFO: [RTMG 210-279] Implementing memory 'myproject_add_clamp_exp_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s_exp_table_ROMbkb' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.97 seconds. CPU system time: 0.06 seconds. Elapsed time: 1.04 seconds; current allocated memory: 804.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config4_dense_qkv_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_26_1_0': 120 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_183_7_16_1_1': 10 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config4_dense_qkv_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.73 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.81 seconds; current allocated memory: 824.270 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'qk_v_einsum_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'qk_v_einsum_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.99 seconds. CPU system time: 0.06 seconds. Elapsed time: 1.07 seconds; current allocated memory: 896.617 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'myproject' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_2' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_3' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_4' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_5' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_6' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_7' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_8' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_9' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_10' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_11' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_12' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_13' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_14' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_15' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_16' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_17' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_18' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_19' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_20' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_21' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_22' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_23' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_24' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_25' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_26' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_27' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_28' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_29' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_30' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_31' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_32' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_33' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_34' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_35' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_36' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_37' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_38' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_39' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_40' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_41' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_42' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_43' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_44' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_45' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_46' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_47' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_48' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_49' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_50' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_51' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_52' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_53' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_54' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_55' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_56' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_57' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_58' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_59' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_60' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_61' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_62' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_63' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_64' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_65' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_66' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_67' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_68' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_69' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_70' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_71' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_72' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_73' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_74' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_75' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_76' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_77' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_78' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_79' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_80' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_81' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_82' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_83' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_84' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_85' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_86' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_87' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_88' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_89' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_90' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_91' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_92' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_93' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_94' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_95' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_96' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_97' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_98' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_99' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_100' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_101' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_102' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_103' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_104' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_105' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_106' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_107' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_108' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_109' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_110' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_111' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_112' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_113' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_114' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_115' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_116' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_117' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_118' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_119' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_120' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_121' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_122' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_123' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_124' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_125' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_126' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_127' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_128' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_129' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_130' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_131' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_132' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_133' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_134' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_135' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_136' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_137' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_138' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_139' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_140' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_141' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_142' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_143' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_144' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_145' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_146' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_147' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_148' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_149' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_150' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_151' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_152' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_153' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_154' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_155' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_156' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_157' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_158' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/query_159' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_2' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_3' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_4' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_5' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_6' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_7' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_8' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_9' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_10' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_11' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_12' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_13' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_14' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_15' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_16' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_17' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_18' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_19' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_20' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_21' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_22' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_23' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_24' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_25' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_26' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_27' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_28' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_29' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_30' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_31' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_32' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_33' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_34' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_35' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_36' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_37' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_38' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_39' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_40' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_41' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_42' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_43' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_44' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_45' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_46' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_47' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_48' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_49' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_50' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_51' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_52' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_53' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_54' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_55' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_56' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_57' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_58' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_59' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_60' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_61' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_62' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_63' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_64' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_65' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_66' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_67' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_68' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_69' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_70' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_71' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_72' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_73' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_74' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_75' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_76' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_77' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_78' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_79' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_80' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_81' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_82' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_83' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_84' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_85' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_86' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_87' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_88' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_89' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_90' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_91' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_92' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_93' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_94' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_95' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_96' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_97' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_98' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_99' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_100' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_101' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_102' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_103' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_104' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_105' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_106' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_107' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_108' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_109' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_110' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_111' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_112' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_113' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_114' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_115' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_116' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_117' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_118' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_119' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_120' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_121' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_122' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_123' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_124' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_125' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_126' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_127' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_128' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_129' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_130' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_131' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_132' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_133' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_134' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_135' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_136' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_137' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_138' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_139' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_140' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_141' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_142' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_143' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_144' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_145' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_146' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_147' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_148' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_149' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_150' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_151' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_152' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_153' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_154' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_155' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_156' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_157' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_158' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/key_159' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_2' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_3' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_4' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_5' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_6' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_7' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_8' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_9' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_10' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_11' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_12' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_13' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_14' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_15' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_16' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_17' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_18' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_19' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_20' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_21' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_22' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_23' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_24' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_25' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_26' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_27' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_28' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_29' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_30' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_31' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_32' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_33' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_34' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_35' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_36' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_37' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_38' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_39' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_40' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_41' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_42' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_43' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_44' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_45' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_46' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_47' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_48' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_49' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_50' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_51' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_52' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_53' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_54' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_55' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_56' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_57' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_58' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_59' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_60' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_61' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_62' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_63' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_64' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_65' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_66' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_67' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_68' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_69' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_70' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_71' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_72' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_73' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_74' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_75' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_76' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_77' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_78' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_79' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_80' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_81' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_82' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_83' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_84' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_85' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_86' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_87' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_88' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_89' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_90' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_91' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_92' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_93' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_94' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_95' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_96' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_97' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_98' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_99' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_100' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_101' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_102' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_103' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_104' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_105' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_106' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_107' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_108' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_109' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_110' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_111' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_112' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_113' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_114' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_115' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_116' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_117' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_118' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/value_119' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_2' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_3' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_4' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_5' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_6' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_7' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_8' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_9' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_10' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_11' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_12' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_13' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_14' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_15' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_16' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_17' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_18' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_19' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_20' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_21' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_22' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_23' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_24' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_25' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_26' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_27' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_28' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_29' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_30' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_31' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_32' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_33' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_34' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_35' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_36' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_37' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_38' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_39' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_40' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_41' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_42' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_43' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_44' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_45' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_46' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_47' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_48' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_49' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_50' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_51' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_52' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_53' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_54' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_55' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_56' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_57' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_58' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_59' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_60' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_61' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_62' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_63' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_64' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_65' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_66' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_67' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_68' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_69' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_70' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_71' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_72' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_73' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_74' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_75' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_76' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_77' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_78' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_79' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_80' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_81' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_82' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_83' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_84' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_85' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_86' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_87' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_88' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_89' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_90' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_91' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_92' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_93' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_94' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_95' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_96' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_97' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_98' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_99' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_100' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_101' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_102' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_103' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_104' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_105' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_106' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_107' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_108' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_109' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_110' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_111' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_112' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_113' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_114' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_115' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_116' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_117' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_118' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer4_out_119' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'myproject' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'myproject' pipeline 'myproject' pipeline type 'function pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'myproject' is 55040 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Finished creating RTL model for 'myproject'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5.12 seconds. CPU system time: 0.22 seconds. Elapsed time: 5.4 seconds; current allocated memory: 1010.484 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.85 seconds. CPU system time: 0.07 seconds. Elapsed time: 1.93 seconds; current allocated memory: 1019.773 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 35.19 seconds. CPU system time: 0.07 seconds. Elapsed time: 35.4 seconds; current allocated memory: 1.040 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for myproject.
+INFO: [VLOG 209-307] Generating Verilog RTL for myproject.
+INFO: [HLS 200-789] **** Estimated Fmax: 236.45 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 121.23 seconds. CPU system time: 3.16 seconds. Elapsed time: 127.7 seconds; current allocated memory: 811.352 MB.
+INFO: [HLS 200-1510] Running: add_files -tb myproject_test.cpp -cflags -std=c++0x -DRTL_SIM 
+INFO: [HLS 200-10] Adding test bench file 'myproject_test.cpp' to the project
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all -setup 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 277.25 seconds. CPU system time: 2.55 seconds. Elapsed time: 281.18 seconds; current allocated memory: 39.824 MB.
+INFO: [COSIM 212-302] Starting C TB testing ...  
+INFO: [COSIM 212-323] Starting verilog simulation...
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...

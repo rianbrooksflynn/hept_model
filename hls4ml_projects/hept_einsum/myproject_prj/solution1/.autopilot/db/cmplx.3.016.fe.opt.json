@@ -1,0 +1,117 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "5 5 6 1 7",
+    "file": "myproject.cpp",
+    "fileloc": 7,
+    "instructions": 2008,
+    "loads": {
+      "L": 220,
+      "T": 440
+    },
+    "name": "myproject",
+    "total_instructions": 41259
+  },
+  "1": {
+    "basicblocks": 301,
+    "calls": "",
+    "file": "nnet_hept.h",
+    "fileloc": 77,
+    "instructions": 3941,
+    "loads": {
+      "G": 100
+    },
+    "name": "add_clamp_exp<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config4>",
+    "stores": {
+      "L": 100
+    },
+    "total_instructions": 3941
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_transpose.h",
+    "fileloc": 18,
+    "instructions": 6,
+    "name": "transfer_idx<config4_transpose_qk>",
+    "total_instructions": 6
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2",
+    "file": "nnet_transpose.h",
+    "fileloc": 29,
+    "instructions": 641,
+    "name": "transpose<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config4_transpose_qk>",
+    "stores": {
+      "L": 160
+    },
+    "total_instructions": 1601
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 1746,
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config4_dense_qk>",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 1746
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_hept.h",
+    "fileloc": 48,
+    "instructions": 1301,
+    "name": "negative_half_sum_square<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config4>",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 1301
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "3 4 4 4 4 4 4 4 4 4 4",
+    "file": "nnet_hept.h",
+    "fileloc": 124,
+    "instructions": 543,
+    "loads": {
+      "L": 260
+    },
+    "name": "qk_einsum<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config4>",
+    "stores": {
+      "L": 100
+    },
+    "total_instructions": 19604
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "8 8 8 8 8 8 8 8 8 8",
+    "file": "nnet_hept.h",
+    "fileloc": 158,
+    "instructions": 264,
+    "loads": {
+      "L": 120
+    },
+    "name": "qk_v_einsum<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config4>",
+    "stores": {
+      "L": 120
+    },
+    "total_instructions": 13104
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 1284,
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config4_dense_qkv>",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 1284
+  }
+}

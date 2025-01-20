@@ -1,0 +1,50 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'myproject'" level="0">
+<item name = "Date">Mon Jan 20 20:46:59 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu13p-flga2577-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 4.229 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">19, 19, 95.000 ns, 95.000 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_negative_half_sum_square_ap_fixed_ap_fixed_16_6_5_3_0_config4_s_fu_4632">negative_half_sum_square_ap_fixed_ap_fixed_16_6_5_3_0_config4_s, 14, 14, 70.000 ns, 70.000 ns, 1, 1, yes</column>
+<column name="grp_negative_half_sum_square_ap_fixed_ap_fixed_16_6_5_3_0_config4_s_fu_4956">negative_half_sum_square_ap_fixed_ap_fixed_16_6_5_3_0_config4_s, 14, 14, 70.000 ns, 70.000 ns, 1, 1, yes</column>
+<column name="grp_qk_einsum_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s_fu_5280">qk_einsum_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
+<column name="grp_add_clamp_exp_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s_fu_5924">add_clamp_exp_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
+<column name="grp_qk_v_einsum_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s_fu_6050">qk_v_einsum_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

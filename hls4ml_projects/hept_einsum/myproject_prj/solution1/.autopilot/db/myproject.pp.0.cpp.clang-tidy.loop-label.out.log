@@ -1,0 +1,897 @@
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:28369:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:28369:7: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29343:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29343:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29357:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29357:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29371:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29371:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:30988:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:30988:7: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:32971:9: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_27_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:32971:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:32984:9: warning: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+        for (size_t i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_40_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:32984:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55908:5: warning: Added loop label VITIS_LOOP_265_1:   [xilinx-label-all-loops]
+    for (typename std::vector<src_T>::const_iterator i = in_begin; i != in_end; ++i) {
+    ^~~
+    VITIS_LOOP_265_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55908:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55918:5: warning: Added loop label VITIS_LOOP_275_1:   [xilinx-label-all-loops]
+    for (auto i = 0; i < SIZE; i++)
+    ^~~
+    VITIS_LOOP_275_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55918:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55929:5: warning: Added loop label VITIS_LOOP_286_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE; i++) {
+    ^~~
+    VITIS_LOOP_286_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55929:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55936:5: warning: Added loop label VITIS_LOOP_293_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / res_T::size; i++) {
+    ^~~
+    VITIS_LOOP_293_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55936:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55938:9: warning: Added loop label VITIS_LOOP_295_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < res_T::size; j++) {
+        ^~~
+        VITIS_LOOP_295_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55938:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55950:5: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / data_T::size; i++) {
+    ^~~
+    VITIS_LOOP_307_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55950:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55952:9: warning: Added loop label VITIS_LOOP_309_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < data_T::size; j++) {
+        ^~~
+        VITIS_LOOP_309_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55952:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55967:5: warning: Added loop label VITIS_LOOP_324_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^~~
+    VITIS_LOOP_324_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55967:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55987:5: warning: Added loop label VITIS_LOOP_344_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^~~
+    VITIS_LOOP_344_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55987:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55988:9: warning: Added loop label VITIS_LOOP_345_2:   [xilinx-label-all-loops]
+        for (int jj = 0; jj < ncols; jj++) {
+        ^~~
+        VITIS_LOOP_345_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:55988:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56003:5: warning: Added loop label VITIS_LOOP_360_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^~~
+    VITIS_LOOP_360_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56003:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56010:5: warning: Added loop label VITIS_LOOP_367_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^~~
+    VITIS_LOOP_367_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56010:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56319:5: warning: Added loop label VITIS_LOOP_135_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::reuse_factor; ii++) {
+    ^~~
+    VITIS_LOOP_135_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56319:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56320:9: warning: Added loop label VITIS_LOOP_136_2:   [xilinx-label-all-loops]
+        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+        ^~~
+        VITIS_LOOP_136_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56320:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56341:5: warning: Added loop label VITIS_LOOP_157_3:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::reuse_factor; ii++) {
+    ^~~
+    VITIS_LOOP_157_3: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56341:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56342:9: warning: Added loop label VITIS_LOOP_158_4:   [xilinx-label-all-loops]
+        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+        ^~~
+        VITIS_LOOP_158_4: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:56342:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58367:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58368:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58369:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58370:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K3 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58371:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K4 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58401:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58402:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58403:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58404:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58405:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58406:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58407:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58408:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58409:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58410:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58460:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                      ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58461:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                      ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58462:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                      ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58489:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58490:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58491:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58492:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58493:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58494:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58530:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                        ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58531:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                        ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58805:5: warning: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_61_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58805:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58851:5: warning: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_117_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58851:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59014:9: warning: Added loop label VITIS_LOOP_289_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_289_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59014:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59166:9: warning: Added loop label VITIS_LOOP_449_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_449_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59166:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59346:5: warning: Added loop label VITIS_LOOP_629_1:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_629_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59346:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59350:5: warning: Added loop label VITIS_LOOP_633_2:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_633_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59350:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59460:5: warning: Added loop label VITIS_LOOP_743_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_743_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59460:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59550:7: warning: Added loop label VITIS_LOOP_840_1:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_840_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59550:7: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59569:7: warning: Added loop label VITIS_LOOP_859_2:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_859_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59569:7: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59859:5: warning: Added loop label VITIS_LOOP_1173_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1173_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59859:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59942:5: warning: Added loop label VITIS_LOOP_1256_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1256_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59942:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60348:13: warning: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
+            for (int j = 3; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_68_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60348:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60354:17: warning: Added loop label VITIS_LOOP_74_2:   [xilinx-label-all-loops]
+                for (int j = 3; j >= I_+1; j--){
+                ^~~
+                VITIS_LOOP_74_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60354:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60358:17: warning: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_78_3: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60358:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60406:13: warning: Added loop label VITIS_LOOP_145_4:   [xilinx-label-all-loops]
+            for (int j = 9; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_145_4: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60406:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60412:17: warning: Added loop label VITIS_LOOP_151_5:   [xilinx-label-all-loops]
+                for (int j = 9; j >= I_+4; j--){
+                ^~~
+                VITIS_LOOP_151_5: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60412:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60416:17: warning: Added loop label VITIS_LOOP_155_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_155_6: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60416:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60431:9: warning: Added loop label VITIS_LOOP_170_7:   [xilinx-label-all-loops]
+        for (int j = 14; j < 22; j++){
+        ^~~
+        VITIS_LOOP_170_7: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60431:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60439:17: warning: Added loop label VITIS_LOOP_178_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++){
+                ^~~
+                VITIS_LOOP_178_8: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60439:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60504:13: warning: Added loop label VITIS_LOOP_243_9:   [xilinx-label-all-loops]
+            for (int j = 21; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_243_9: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60504:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60510:17: warning: Added loop label VITIS_LOOP_249_10:   [xilinx-label-all-loops]
+                for (int j = 21; j >= I_+10; j--) {
+                ^~~
+                VITIS_LOOP_249_10: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60510:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60514:17: warning: Added loop label VITIS_LOOP_253_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_253_11: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60514:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60529:9: warning: Added loop label VITIS_LOOP_268_12:   [xilinx-label-all-loops]
+        for (int j = 27; j < 46; j++){
+        ^~~
+        VITIS_LOOP_268_12: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60529:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60537:17: warning: Added loop label VITIS_LOOP_276_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_276_13: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60537:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60766:13: warning: Added loop label VITIS_LOOP_505_14:   [xilinx-label-all-loops]
+            for (int j = 45; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_505_14: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60766:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60772:17: warning: Added loop label VITIS_LOOP_511_15:   [xilinx-label-all-loops]
+                for (int j = 45; j >= I_+22; j--){
+                ^~~
+                VITIS_LOOP_511_15: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60772:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60776:17: warning: Added loop label VITIS_LOOP_515_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_515_16: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60776:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60786:9: warning: Added loop label VITIS_LOOP_525_17:   [xilinx-label-all-loops]
+        for (int j = 32-F_; j < 32+I_; j++){
+        ^~~
+        VITIS_LOOP_525_17: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60786:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60790:9: warning: Added loop label VITIS_LOOP_529_18:   [xilinx-label-all-loops]
+        for (int j = 32+I_; j <= 64; j++){
+        ^~~
+        VITIS_LOOP_529_18: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60790:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60800:9: warning: Added loop label VITIS_LOOP_539_19:   [xilinx-label-all-loops]
+        for (int j = 37; j < 64; j++) {
+        ^~~
+        VITIS_LOOP_539_19: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60800:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60808:17: warning: Added loop label VITIS_LOOP_547_20:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++){
+                ^~~
+                VITIS_LOOP_547_20: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60808:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61169:13: warning: Added loop label VITIS_LOOP_908_21:   [xilinx-label-all-loops]
+            for (int j = 63; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_908_21: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61169:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61175:17: warning: Added loop label VITIS_LOOP_914_22:   [xilinx-label-all-loops]
+                for (int j = 63; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_914_22: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61175:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61179:17: warning: Added loop label VITIS_LOOP_918_23:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_918_23: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61179:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61295:13: warning: Added loop label VITIS_LOOP_1034_1:   [xilinx-label-all-loops]
+            for (int j = 4; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_1034_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61295:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61301:17: warning: Added loop label VITIS_LOOP_1040_2:   [xilinx-label-all-loops]
+                for (int j = 4; j >= I_+1; j--) {
+                ^~~
+                VITIS_LOOP_1040_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61301:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61305:17: warning: Added loop label VITIS_LOOP_1044_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1044_3: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61305:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61392:13: warning: Added loop label VITIS_LOOP_1131_4:   [xilinx-label-all-loops]
+            for (int j = 10; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_1131_4: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61392:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61398:17: warning: Added loop label VITIS_LOOP_1137_5:   [xilinx-label-all-loops]
+                for (int j = 10; j >= I_+4; j--) {
+                ^~~
+                VITIS_LOOP_1137_5: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61398:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61402:17: warning: Added loop label VITIS_LOOP_1141_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1141_6: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61402:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61421:9: warning: Added loop label VITIS_LOOP_1160_7:   [xilinx-label-all-loops]
+        for (int j = wf+3; j < w-1; j++) {
+        ^~~
+        VITIS_LOOP_1160_7: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61421:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61428:17: warning: Added loop label VITIS_LOOP_1167_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++) {
+                ^~~
+                VITIS_LOOP_1167_8: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61428:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61544:13: warning: Added loop label VITIS_LOOP_1283_9:   [xilinx-label-all-loops]
+            for (int j = 22; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_1283_9: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61544:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61550:17: warning: Added loop label VITIS_LOOP_1289_10:   [xilinx-label-all-loops]
+                for (int j = 22; j >= I_+10; j--){
+                ^~~
+                VITIS_LOOP_1289_10: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61550:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61554:17: warning: Added loop label VITIS_LOOP_1293_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1293_11: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61554:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61574:9: warning: Added loop label VITIS_LOOP_1313_12:   [xilinx-label-all-loops]
+        for (int j = wf+4; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1313_12: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61574:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61581:17: warning: Added loop label VITIS_LOOP_1320_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_1320_13: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61581:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61843:13: warning: Added loop label VITIS_LOOP_1582_14:   [xilinx-label-all-loops]
+            for (int j = 46; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_1582_14: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61843:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61849:17: warning: Added loop label VITIS_LOOP_1588_15:   [xilinx-label-all-loops]
+                for (int j = 46; j >= I_+22; j--) {
+                ^~~
+                VITIS_LOOP_1588_15: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61849:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61853:17: warning: Added loop label VITIS_LOOP_1592_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1592_16: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61853:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61877:9: warning: Added loop label VITIS_LOOP_1616_17:   [xilinx-label-all-loops]
+        for (int j = wf+5; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1616_17: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61877:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61884:17: warning: Added loop label VITIS_LOOP_1623_18:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++) {
+                ^~~
+                VITIS_LOOP_1623_18: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61884:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62314:13: warning: Added loop label VITIS_LOOP_2053_19:   [xilinx-label-all-loops]
+            for (int j = 64; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_2053_19: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62314:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62320:17: warning: Added loop label VITIS_LOOP_2059_20:   [xilinx-label-all-loops]
+                for (int j = 64; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_2059_20: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62320:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62324:17: warning: Added loop label VITIS_LOOP_2063_21:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_2063_21: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62324:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62454:13: warning: Added loop label VITIS_LOOP_2193_1:   [xilinx-label-all-loops]
+            for(int j=3; j>=I+1; j--) {
+            ^~~
+            VITIS_LOOP_2193_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62454:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62461:17: warning: Added loop label VITIS_LOOP_2200_2:   [xilinx-label-all-loops]
+                for(int j=3; j>=I+1; j--) {
+                ^~~
+                VITIS_LOOP_2200_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62461:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62465:17: warning: Added loop label VITIS_LOOP_2204_3:   [xilinx-label-all-loops]
+                for(int j=I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2204_3: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62465:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62512:13: warning: Added loop label VITIS_LOOP_2251_4:   [xilinx-label-all-loops]
+            for(int j=7; j>=3+I; j--) {
+            ^~~
+            VITIS_LOOP_2251_4: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62512:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62519:17: warning: Added loop label VITIS_LOOP_2258_5:   [xilinx-label-all-loops]
+                for(int j=7; j>=3+I; j--) {
+                ^~~
+                VITIS_LOOP_2258_5: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62519:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62523:17: warning: Added loop label VITIS_LOOP_2262_6:   [xilinx-label-all-loops]
+                for(int j=I+2; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2262_6: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62523:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62541:9: warning: Added loop label VITIS_LOOP_2280_7:   [xilinx-label-all-loops]
+        for(int j=11; j<16; j++) {
+        ^~~
+        VITIS_LOOP_2280_7: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62541:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62596:13: warning: Added loop label VITIS_LOOP_2335_8:   [xilinx-label-all-loops]
+            for(int j=15; j>=7+I; j--) {
+            ^~~
+            VITIS_LOOP_2335_8: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62596:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62603:17: warning: Added loop label VITIS_LOOP_2342_9:   [xilinx-label-all-loops]
+                for(int j=15; j>=7+I; j--) {
+                ^~~
+                VITIS_LOOP_2342_9: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62603:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62607:17: warning: Added loop label VITIS_LOOP_2346_10:   [xilinx-label-all-loops]
+                for(int j=6+I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2346_10: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62607:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62625:9: warning: Added loop label VITIS_LOOP_2364_11:   [xilinx-label-all-loops]
+        for(int j=20; j<32; j++) {
+        ^~~
+        VITIS_LOOP_2364_11: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62625:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62714:13: warning: Added loop label VITIS_LOOP_2453_12:   [xilinx-label-all-loops]
+            for(int j=31; j>=I+15; j--) {
+            ^~~
+            VITIS_LOOP_2453_12: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62714:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62721:17: warning: Added loop label VITIS_LOOP_2460_13:   [xilinx-label-all-loops]
+                for(int j=31; j>=I+15; j--) {
+                ^~~
+                VITIS_LOOP_2460_13: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62721:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62725:17: warning: Added loop label VITIS_LOOP_2464_14:   [xilinx-label-all-loops]
+                for(int j=I+14; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2464_14: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62725:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62735:9: warning: Added loop label VITIS_LOOP_2474_15:   [xilinx-label-all-loops]
+        for(int j=32-F; j<32+I; j++) {
+        ^~~
+        VITIS_LOOP_2474_15: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62735:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62739:9: warning: Added loop label VITIS_LOOP_2478_16:   [xilinx-label-all-loops]
+        for(int j=32+I; j<=64; j++) {
+        ^~~
+        VITIS_LOOP_2478_16: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62739:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62750:9: warning: Added loop label VITIS_LOOP_2489_17:   [xilinx-label-all-loops]
+        for(int j=37; j<64; j++) {
+        ^~~
+        VITIS_LOOP_2489_17: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62750:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62758:17: warning: Added loop label VITIS_LOOP_2497_18:   [xilinx-label-all-loops]
+                for(int j=0; j<64; j++) {
+                ^~~
+                VITIS_LOOP_2497_18: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62758:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63083:13: warning: Added loop label VITIS_LOOP_2822_19:   [xilinx-label-all-loops]
+            for(int j=63; j>=I+31; j--) {
+            ^~~
+            VITIS_LOOP_2822_19: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63083:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63090:17: warning: Added loop label VITIS_LOOP_2829_20:   [xilinx-label-all-loops]
+                for(int j=63; j>=I+31; j--) {
+                ^~~
+                VITIS_LOOP_2829_20: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63090:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63094:17: warning: Added loop label VITIS_LOOP_2833_21:   [xilinx-label-all-loops]
+                for(int j=I+30; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2833_21: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63094:17: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63182:4: warning: Added loop label VITIS_LOOP_2921_1:   [xilinx-label-all-loops]
+   for(int j = 5; j>=I_+2; j--) {
+   ^~~
+   VITIS_LOOP_2921_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63182:4: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63189:5: warning: Added loop label VITIS_LOOP_2928_2:   [xilinx-label-all-loops]
+    for(int j = 5; j>=I_+2; j--) {
+    ^~~
+    VITIS_LOOP_2928_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63189:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63193:5: warning: Added loop label VITIS_LOOP_2932_3:   [xilinx-label-all-loops]
+    for(int j = I_+1; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2932_3: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63193:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63208:3: warning: Added loop label VITIS_LOOP_2947_4:   [xilinx-label-all-loops]
+  for(int j = 11; j >=7; j--) {
+  ^~~
+  VITIS_LOOP_2947_4: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63208:3: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63240:4: warning: Added loop label VITIS_LOOP_2979_5:   [xilinx-label-all-loops]
+   for(int j = 11; j >= I_+5; j--) {
+   ^~~
+   VITIS_LOOP_2979_5: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63240:4: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63247:5: warning: Added loop label VITIS_LOOP_2986_6:   [xilinx-label-all-loops]
+    for(int j = 11; j>= I_+5; j--) {
+    ^~~
+    VITIS_LOOP_2986_6: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63247:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63251:5: warning: Added loop label VITIS_LOOP_2990_7:   [xilinx-label-all-loops]
+    for(int j = I_+4; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2990_7: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63251:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63266:3: warning: Added loop label VITIS_LOOP_3005_8:   [xilinx-label-all-loops]
+  for(int j = 25; j>=15; j--) {
+  ^~~
+  VITIS_LOOP_3005_8: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63266:3: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63316:4: warning: Added loop label VITIS_LOOP_3055_9:   [xilinx-label-all-loops]
+   for(int j = 25; j>= I_+12; j--) {
+   ^~~
+   VITIS_LOOP_3055_9: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63316:4: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63323:5: warning: Added loop label VITIS_LOOP_3062_10:   [xilinx-label-all-loops]
+    for(int j = 25; j>=I_+12; j--) {
+    ^~~
+    VITIS_LOOP_3062_10: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63323:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63327:5: warning: Added loop label VITIS_LOOP_3066_11:   [xilinx-label-all-loops]
+    for(int j = I_+11; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3066_11: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63327:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63342:3: warning: Added loop label VITIS_LOOP_3081_12:   [xilinx-label-all-loops]
+  for(int j = 51; j >= 29; j--) {
+  ^~~
+  VITIS_LOOP_3081_12: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63342:3: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63479:4: warning: Added loop label VITIS_LOOP_3218_13:   [xilinx-label-all-loops]
+   for(int j = 51; j >= 25 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3218_13: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63479:4: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63486:5: warning: Added loop label VITIS_LOOP_3225_14:   [xilinx-label-all-loops]
+    for(int j = 51; j>=25 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3225_14: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63486:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63490:5: warning: Added loop label VITIS_LOOP_3229_15:   [xilinx-label-all-loops]
+    for(int j = 24 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3229_15: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63490:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63505:3: warning: Added loop label VITIS_LOOP_3244_16:   [xilinx-label-all-loops]
+  for(int j = 63; j >= 36; j--) {
+  ^~~
+  VITIS_LOOP_3244_16: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63505:3: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63665:4: warning: Added loop label VITIS_LOOP_3404_17:   [xilinx-label-all-loops]
+   for(int j = 63; j >= 31 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3404_17: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63665:4: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63672:5: warning: Added loop label VITIS_LOOP_3411_18:   [xilinx-label-all-loops]
+    for(int j = 63; j >= 31 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3411_18: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63672:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63676:5: warning: Added loop label VITIS_LOOP_3415_19:   [xilinx-label-all-loops]
+    for(int j = 30 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3415_19: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:63676:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:64391:13: warning: Added loop label VITIS_LOOP_703_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_703_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:64391:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:64609:13: warning: Added loop label VITIS_LOOP_921_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_921_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:64609:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:65026:13: warning: Added loop label VITIS_LOOP_1345_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_1345_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:65026:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:65346:9: warning: Added loop label VITIS_LOOP_240_1:   [xilinx-label-all-loops]
+        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        ^~~
+        VITIS_LOOP_240_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:65346:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:65374:9: warning: Added loop label VITIS_LOOP_268_2:   [xilinx-label-all-loops]
+        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        ^~~
+        VITIS_LOOP_268_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:65374:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66076:13: warning: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < W_-1; j++){
+            ^~~
+            VITIS_LOOP_48_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66076:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66129:5: warning: Added loop label VITIS_LOOP_109_2:   [xilinx-label-all-loops]
+    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    ^~~
+    VITIS_LOOP_109_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66129:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66143:13: warning: Added loop label VITIS_LOOP_123_3:   [xilinx-label-all-loops]
+            for (int j = WO_m-1; j >= W_-1; j--) {
+            ^~~
+            VITIS_LOOP_123_3: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66143:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66173:13: warning: Added loop label VITIS_LOOP_153_4:   [xilinx-label-all-loops]
+            for (int j = W_-2; j >= 0; j--){
+            ^~~
+            VITIS_LOOP_153_4: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66173:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66258:12: warning: Added loop label VITIS_LOOP_281_1:   [xilinx-label-all-loops]
+           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           ^~~
+           VITIS_LOOP_281_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66258:12: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66278:16: warning: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+               for (int j = WO_e-1; j >= W_-1; j--) {
+               ^~~
+               VITIS_LOOP_301_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66278:16: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66292:20: warning: Added loop label VITIS_LOOP_315_3:   [xilinx-label-all-loops]
+                   for(int i = 0; i < W_-1; ++i) {
+                   ^~~
+                   VITIS_LOOP_315_3: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66292:20: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66385:12: warning: Added loop label VITIS_LOOP_433_1:   [xilinx-label-all-loops]
+           for (int j =WO_d-1; j >= W_-1; j--) {
+           ^~~
+           VITIS_LOOP_433_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66385:12: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66399:15: warning: Added loop label VITIS_LOOP_447_2:   [xilinx-label-all-loops]
+              for(int i = 0; i < W_-1; ++i) {
+              ^~~
+              VITIS_LOOP_447_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66399:15: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66519:13: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_33_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66519:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66643:13: warning: Added loop label VITIS_LOOP_183_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_183_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66643:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66698:13: warning: Added loop label VITIS_LOOP_248_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_248_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:66698:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67217:2: warning: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_16_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67217:2: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67228:2: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_27_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67228:2: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67239:2: warning: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_38_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67239:2: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67250:2: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_49_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67250:2: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67261:2: warning: Added loop label VITIS_LOOP_60_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_60_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67261:2: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67272:2: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_71_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67272:2: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67283:2: warning: Added loop label VITIS_LOOP_82_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_82_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67283:2: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67294:2: warning: Added loop label VITIS_LOOP_93_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_93_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:67294:2: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:69619:12: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+           for(int i = 0; i < W_-1; ++i) {
+           ^~~
+           VITIS_LOOP_26_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:69619:12: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:69683:7: warning: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      ^~~
+      VITIS_LOOP_40_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:69683:7: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:69800:9: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+        for(int pos = msbr - 1; pos >= 0; pos--) {
+        ^~~
+        VITIS_LOOP_49_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:69800:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:69825:5: warning: Added loop label VITIS_LOOP_81_2:   [xilinx-label-all-loops]
+    for(int pos = -1; pos >= -F-1; pos--) {
+    ^~~
+    VITIS_LOOP_81_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:69825:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:69895:8: warning: Added loop label VITIS_LOOP_169_3:   [xilinx-label-all-loops]
+       for(int i = 0; i < W - 1; ++i) {
+       ^~~
+       VITIS_LOOP_169_3: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:69895:8: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72253:9: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+        ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72327:9: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+        ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72409:9: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+        ^
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72590:5: warning: Added loop label VITIS_LOOP_21_1:   [xilinx-label-all-loops]
+    for (int i = CONFIG_T::dims - 1; i >= 0; i--) {
+    ^~~
+    VITIS_LOOP_21_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72590:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72599:5: warning: Added loop label VITIS_LOOP_30_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::N; i++) {
+    ^~~
+    VITIS_LOOP_30_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72599:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72655:5: warning: Added loop label VITIS_LOOP_56_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_heads * CONFIG_T::n_blocks * CONFIG_T::block_size; i++) {
+    ^~~
+    VITIS_LOOP_56_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72655:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72658:9: warning: Added loop label VITIS_LOOP_59_2:   [xilinx-label-all-loops]
+        for (unsigned j = 0; j < CONFIG_T::dim_per_head + CONFIG_T::coords_dim; j++) {
+        ^~~
+        VITIS_LOOP_59_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72658:9: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72669:5: warning: Added loop label VITIS_LOOP_70_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_70_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72669:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72704:5: warning: Added loop label VITIS_LOOP_105_1:   [xilinx-label-all-loops]
+    for (unsigned a = 0; a < A; a++) {
+    ^~~
+    VITIS_LOOP_105_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72704:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72706:2: warning: Added loop label VITIS_LOOP_107_2:   [xilinx-label-all-loops]
+ for (unsigned b = 0; b < B; b++) {
+ ^~~
+ VITIS_LOOP_107_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72706:2: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72708:2: warning: Added loop label VITIS_LOOP_109_3:   [xilinx-label-all-loops]
+ for (unsigned b1 = 0; b1 < B; b1++) {
+ ^~~
+ VITIS_LOOP_109_3: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72708:2: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72742:5: warning: Added loop label VITIS_LOOP_143_1:   [xilinx-label-all-loops]
+    for (unsigned a = 0; a < A; a++) {
+    ^~~
+    VITIS_LOOP_143_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72742:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72744:2: warning: Added loop label VITIS_LOOP_145_2:   [xilinx-label-all-loops]
+ for (unsigned b = 0; b < B; b++) {
+ ^~~
+ VITIS_LOOP_145_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72744:2: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72748:13: warning: Added loop label VITIS_LOOP_149_3:   [xilinx-label-all-loops]
+            for (unsigned b1 = 0; b1 < B; b1++) {
+            ^~~
+            VITIS_LOOP_149_3: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72748:13: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72773:5: warning: Added loop label VITIS_LOOP_174_1:   [xilinx-label-all-loops]
+    for (unsigned a = 0; a < A; a++) {
+    ^~~
+    VITIS_LOOP_174_1: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72773:5: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72775:2: warning: Added loop label VITIS_LOOP_176_2:   [xilinx-label-all-loops]
+ for (unsigned b = 0; b < B; b++) {
+ ^~~
+ VITIS_LOOP_176_2: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72775:2: note: FIX-IT applied suggested code changes
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72779:13: warning: Added loop label VITIS_LOOP_180_3:   [xilinx-label-all-loops]
+            for (unsigned c = 0; c < C; c++) {
+            ^~~
+            VITIS_LOOP_180_3: 
+/data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:72779:13: note: FIX-IT applied suggested code changes
