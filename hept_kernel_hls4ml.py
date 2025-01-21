@@ -14,8 +14,7 @@ def save_data(data, file_path):
 
 class HEPT(nn.Module):
     '''
-    This will become HEPT.
-    For now it's just einsum (twice).
+    This will become HEPT. For now it's just the kernel.
     '''
     def __init__(self, n_heads, n_blocks, block_size, dim_per_head, coords_dim):
         super().__init__()

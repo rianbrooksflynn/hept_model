@@ -32,7 +32,7 @@ typedef ap_fixed<16,6> input2_t;
 typedef ap_fixed<16,6> input3_t;
 typedef ap_fixed<16,6,AP_TRN,AP_SAT,0> hept_accum_t;
 typedef ap_fixed<16,6> result_t;
-typedef ap_ufixed<16,1> hept_table_t;
+typedef ap_ufixed<16,0> hept_table_t;
 
 
 #endif
