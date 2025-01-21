@@ -73,6 +73,12 @@ if __name__ == "__main__":
         channels_last_conversion='off',
         transpose_outputs=False,
     )
+    config['LayerName']['query']['Precision']['result'] = (f'ap_fixed<16,4,AP_RND_CONV,AP_SAT>')
+    config['LayerName']['key']['Precision']['result'] = (f'ap_fixed<16,4,AP_RND_CONV,AP_SAT>')
+    config['LayerName']['value']['Precision']['result'] = (f'ap_fixed<16,4,AP_RND_CONV,AP_SAT>')
+    config['LayerName']['hept']['Precision']['result'] = (f'ap_fixed<16,4,AP_RND_CONV,AP_SAT>')
+    config['LayerName']['hept']['Precision']['accum'] = (f'ap_fixed<16,4,AP_RND_CONV,AP_SAT>')
+    config['LayerName']['hept']['Precision']['table'] = (f'ap_ufixed<16,0>')
     output_dir = str(Path(__file__).parent / 'hls4ml_projects' / 'hept_einsum')
 
     hls_model = hls4ml.converters.convert_from_pytorch_model(model, hls_config=config, io_type='io_parallel', output_dir=output_dir, input_data_tb=in_file, output_data_tb=out_file)

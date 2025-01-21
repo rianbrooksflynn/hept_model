@@ -5,21 +5,22 @@ HLSConfig:
   LayerName:
     hept:
       Precision:
-        accum: auto
-        result: auto
+        accum: ap_fixed<16,4,AP_RND_CONV,AP_SAT>
+        result: ap_fixed<16,4,AP_RND_CONV,AP_SAT>
+        table: ap_ufixed<16,0>
       ReuseFactor: 1
       Trace: false
     key:
       Precision:
-        result: auto
+        result: ap_fixed<16,4,AP_RND_CONV,AP_SAT>
       Trace: false
     query:
       Precision:
-        result: auto
+        result: ap_fixed<16,4,AP_RND_CONV,AP_SAT>
       Trace: false
     value:
       Precision:
-        result: auto
+        result: ap_fixed<16,4,AP_RND_CONV,AP_SAT>
       Trace: false
   Model:
     BramFactor: 1000000000
@@ -115,7 +116,7 @@ PytorchModel: !!python/object:__main__.HEPTModel
   _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
   - []
   training: false
-Stamp: 951c95f8
+Stamp: 1314c4be
 Version: 1.0.0
 WriterConfig:
   Namespace: null

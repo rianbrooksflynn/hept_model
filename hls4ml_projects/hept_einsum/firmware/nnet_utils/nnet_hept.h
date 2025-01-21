@@ -71,8 +71,6 @@ template <typename CONFIG_T, int N_TABLE> void init_exp_table(typename CONFIG_T:
     for (int i = 0; i < N_TABLE; i++) {
         table_out[i] = (typename CONFIG_T::table_t)(std::exp(CONFIG_T::table_min + step * i));
     }
-    std::cout << "first value of table: " << table_out[0] << std::endl;
-    std::cout << "last value of table: " << table_out[N_TABLE - 1] << std::endl;
 }
 
 template <class data_T, class res_T, typename CONFIG_T>
