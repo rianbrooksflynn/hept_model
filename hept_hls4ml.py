@@ -48,16 +48,16 @@ if __name__ == "__main__":
     n_hashes = 1
     n_heads = 1
     n_blocks = 1
-    block_size = 10
-    dim_per_head = 12
-    coords_dim = 4
+    block_size = 100
+    dim_per_head = 24
+    coords_dim = 6
 
     model = HEPTModel(n_heads, n_blocks, block_size, dim_per_head, coords_dim)
     model.eval()
 
-    query = np.random.randn(n_hashes, n_heads, n_blocks, block_size, dim_per_head + coords_dim)
-    key = np.random.randn(n_hashes, n_heads, n_blocks, block_size, dim_per_head + coords_dim)
-    value = np.random.randn(n_hashes, n_heads, n_blocks, block_size, dim_per_head)
+    query = 0.1 * np.random.randn(n_hashes, n_heads, n_blocks, block_size, dim_per_head + coords_dim)
+    key = 0.1 * np.random.randn(n_hashes, n_heads, n_blocks, block_size, dim_per_head + coords_dim)
+    value = 0.1 * np.random.randn(n_hashes, n_heads, n_blocks, block_size, dim_per_head)
     pytorch_prediction = model(torch.Tensor(query), torch.Tensor(key), torch.Tensor(value)).detach().numpy().flatten()
     in_file = str(Path(__file__).parent / 'data' / 'hept_in.dat')
     out_file = str(Path(__file__).parent / 'data' / 'hept_out.dat')
@@ -86,3 +86,5 @@ if __name__ == "__main__":
     rel_diff = diff / pytorch_prediction
     print(f"Max absolute difference: {np.max(diff)}")
     print(f"Average absolute difference: {np.mean(diff)}")
+    print(f"Max relative difference: {np.max(rel_diff)}")
+    print(f"Average relative difference: {np.mean(rel_diff)}")

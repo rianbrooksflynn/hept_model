@@ -36,18 +36,18 @@ InputShape:
 - !!python/tuple
   - 1
   - 1
-  - 10
-  - 16
+  - 100
+  - 30
 - !!python/tuple
   - 1
   - 1
-  - 10
-  - 16
+  - 100
+  - 30
 - !!python/tuple
   - 1
   - 1
-  - 10
-  - 12
+  - 100
+  - 24
 OutputDir: /home/rian/A3D3/hept_model/hls4ml_projects/hept_einsum
 OutputPredictions: /home/rian/A3D3/hept_model/data/hept_out.dat
 Part: xcvu13p-flga2577-2-e
@@ -102,9 +102,9 @@ PytorchModel: !!python/object:__main__.HEPTModel
       - []
       _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
       - []
-      block_size: 10
-      coords_dim: 4
-      dim_per_head: 12
+      block_size: 100
+      coords_dim: 6
+      dim_per_head: 24
       n_blocks: 1
       n_heads: 1
       training: false
@@ -115,7 +115,7 @@ PytorchModel: !!python/object:__main__.HEPTModel
   _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
   - []
   training: false
-Stamp: 8c39c52b
+Stamp: 0a168241
 Version: 1.0.0
 WriterConfig:
   Namespace: null
