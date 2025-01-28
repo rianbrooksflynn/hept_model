@@ -17,4 +17,4 @@ def print_report(report_dir, save_path):
 
 if __name__ == "__main__":
     for project in argv[1:]:
-        print_report(f"hls4ml_projects/{project}/", file_path / f"{project}_report.txt")
+        print_report(f"hls4ml/hls4ml_projects/{project}/", file_path / f"{project}_report.txt")

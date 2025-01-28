@@ -112,7 +112,7 @@ PytorchModel: !!python/object:__main__.SimplifiedHEPTModel
   _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
   - []
   training: false
-Stamp: ef776416
+Stamp: b047580a
 Version: 1.0.0
 WriterConfig:
   Namespace: null

@@ -7,7 +7,7 @@
 #include "nnet_utils/nnet_code_gen.h"
 #include "nnet_utils/nnet_helpers.h"
 // hls-fpga-machine-learning insert includes
-#include "nnet_utils/nnet_hept.h"
+#include "nnet_utils/nnet_hept_simplified.h"
 
 // hls-fpga-machine-learning insert weights
 
@@ -53,7 +53,7 @@ const unsigned* const config3_transpose_qk::to_shape = config3_transpose_qk_to_s
 const unsigned* const config3_transpose_qk::perm = config3_transpose_qk_perm;
 const unsigned* const config3_transpose_qk::perm_strides = config3_transpose_qk_perm_strides;
 
-struct config3 : nnet::hept_config {
+struct config3 : nnet::hept_simplified_config {
     static const unsigned exp_table_size = 1024;
     static const int exp_table_min = -8;
     static const int exp_table_max = 0;

@@ -28,7 +28,7 @@ void myproject(
 
     // hls-fpga-machine-learning insert layers
 
-    nnet::hept<input_t, result_t, config3>(query, key, layer3_out); // hept
+    nnet::hept_simplified<input_t, result_t, config3>(query, key, layer3_out); // hept
 
 }
 

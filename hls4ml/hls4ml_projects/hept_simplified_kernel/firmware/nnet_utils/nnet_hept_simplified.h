@@ -14,7 +14,7 @@
 
 namespace nnet {
 
-struct hept_config {
+struct hept_simplified_config {
     // Lookup table sizes
     static const unsigned exp_table_size = 1024;
     static const int exp_table_min = -8;
