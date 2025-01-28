@@ -41,6 +41,9 @@ class HEPTModel(nn.Module):
 
 
 class SimplifiedHEPT(nn.Module):
+    '''
+    The simplified HEPT kernel.
+    '''
     def __init__(self, n_heads, batch_size, seq_len, dim_per_head):
         super().__init__()
         self.n_heads = n_heads
