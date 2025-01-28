@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished File checks and directory preparation: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.09 seconds; current allocated memory: 254.359 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;firmware/myproject.cpp&apos; ..." resolution=""/>
+	<Message severity="INFO" prefix="[Common 17-41]" key="Common 17-41" tag="" content="Interrupt caught. Command should exit soon." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command csynth_design CPU user time: 0.29 seconds. CPU system time: 0.14 seconds. Elapsed time: 1.55 seconds; current allocated memory: 9.055 MB." resolution=""/>
+	<Message severity="INFO" prefix="[Common 17-344]" key="Common 17-344" tag="" content="&apos;source&apos; was cancelled" resolution=""/>
+</Messages>
