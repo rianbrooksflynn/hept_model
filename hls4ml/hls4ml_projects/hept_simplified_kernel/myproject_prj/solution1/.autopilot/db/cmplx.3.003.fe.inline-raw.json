@@ -1,0 +1,27 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "myproject.cpp",
+    "fileloc": 7,
+    "instructions": 5,
+    "name": "myproject",
+    "total_instructions": 33063
+  },
+  "1": {
+    "basicblocks": 1981,
+    "calls": "",
+    "file": "nnet_hept_simplified.h",
+    "fileloc": 54,
+    "instructions": 33058,
+    "loads": {
+      "G": 60,
+      "L": 420
+    },
+    "name": "pairwise_dist_sq_rbf<ap_fixed<16, 4, AP_RND_CONV, AP_SAT, 0>, ap_fixed<16, 4, AP_RND_CONV, AP_SAT, 0>, config3>",
+    "stores": {
+      "L": 60
+    },
+    "total_instructions": 33058
+  }
+}

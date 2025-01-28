@@ -1,0 +1,23 @@
+{
+    "1": {
+        "name": "pairwise_dist_sq_rbf<ap_fixed,ap_fixed<16,4,4,0,0>,config3>",
+        "file": "firmware\/nnet_utils\/nnet_hept_simplified.h",
+        "fileloc": "86",
+        "instructions": "19681",
+        "total_instructions": "19681",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "60"
+        }
+    },
+    "0": {
+        "name": "myproject",
+        "file": "myproject.cpp",
+        "fileloc": "7",
+        "instructions": "1504",
+        "total_instructions": "21185",
+        "calls": "1",
+        "basicblocks": "1"
+    }
+}

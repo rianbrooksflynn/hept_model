@@ -1,0 +1,50 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "myproject.cpp",
+    "fileloc": 7,
+    "instructions": 8,
+    "name": "myproject",
+    "total_instructions": 3948
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "nnet_hept_simplified.h",
+    "fileloc": 105,
+    "instructions": 2,
+    "name": "hept_simplified<ap_fixed<16, 4, AP_RND_CONV, AP_SAT, 0>, ap_fixed<16, 4, AP_RND_CONV, AP_SAT, 0>, config3>",
+    "total_instructions": 3940
+  },
+  "2": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "nnet_hept_simplified.h",
+    "fileloc": 46,
+    "instructions": 24,
+    "loads": {
+      "L": 1
+    },
+    "name": "init_exp_table<config3, 1024>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 422
+  },
+  "3": {
+    "basicblocks": 31,
+    "calls": "2",
+    "file": "nnet_hept_simplified.h",
+    "fileloc": 54,
+    "instructions": 160,
+    "loads": {
+      "L": 1
+    },
+    "name": "pairwise_dist_sq_rbf<ap_fixed<16, 4, AP_RND_CONV, AP_SAT, 0>, ap_fixed<16, 4, AP_RND_CONV, AP_SAT, 0>, config3>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3938
+  }
+}

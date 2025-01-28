@@ -28366,7 +28366,7 @@ struct ap_int_base : public ssdm_int<_AP_W, _AP_S> {
       int NZeros = 0;
       int i = 0;
       bool hitNonZero = false;
-      for (i = 0; i < __N - 1; ++i) {
+      VITIS_LOOP_1207_1: for (i = 0; i < __N - 1; ++i) {
         ap_int_base<64, false> t;
         t.V = ({ typename _ap_type::remove_const<__typeof__(this->V)>::type __Result__ = 0; __typeof__(this->V) __Val2__ = this->V; __builtin_bit_part_select((void*)(&__Result__), (void*)(&__Val2__), _AP_W - i * 64 - 64, _AP_W - i * 64 - 1); __Result__; });
         NZeros += hitNonZero ? 0 : __builtin_clzll(t.V);
@@ -29340,7 +29340,7 @@ struct ap_range_ref {
     bool reverse = l_index > h_index;
     unsigned low = reverse ? h_index : l_index;
     unsigned high = reverse ? l_index : h_index;
-    for (unsigned i = low; i != high; ++i) {
+    VITIS_LOOP_676_1: for (unsigned i = low; i != high; ++i) {
 
 #pragma HLS unroll
 
@@ -29354,7 +29354,7 @@ struct ap_range_ref {
     bool reverse = l_index > h_index;
     unsigned low = reverse ? h_index : l_index;
     unsigned high = reverse ? l_index : h_index;
-    for (unsigned i = low; i != high; ++i) {
+    VITIS_LOOP_690_1: for (unsigned i = low; i != high; ++i) {
 
 #pragma HLS unroll
 
@@ -29368,7 +29368,7 @@ struct ap_range_ref {
     bool reverse = l_index > h_index;
     unsigned low = reverse ? h_index : l_index;
     unsigned high = reverse ? l_index : h_index;
-    for (unsigned i = low; i != high; ++i) {
+    VITIS_LOOP_704_1: for (unsigned i = low; i != high; ++i) {
 
 #pragma HLS unroll
 
@@ -30985,7 +30985,7 @@ struct ap_fixed_base : ssdm_int<_AP_W, _AP_S> {
       int NZeros = 0;
       int i = 0;
       bool hitNonZero = false;
-      for (i = 0; i < __N - 1; ++i) {
+      VITIS_LOOP_1247_1: for (i = 0; i < __N - 1; ++i) {
         ap_int_base<64, false> t;
         t.range(0, 63) = this->range(_AP_W - i * 64 - 64, _AP_W - i * 64 - 1);
         NZeros += hitNonZero ? 0 : __builtin_clzll(t.V);
@@ -32968,7 +32968,7 @@ template <typename T, unsigned N> struct array {
 
         ({ bool _AssertPred = N == other.size && "Array sizes must match."; __builtin_assume(_AssertPred); });
 
-        for (unsigned i = 0; i < N; i++) {
+        VITIS_LOOP_27_1: for (unsigned i = 0; i < N; i++) {
 #pragma HLS UNROLL
  data[i] = other[i];
         }
@@ -32981,7 +32981,7 @@ template <typename T, unsigned N, T (*func)(T)> class lookup_table {
   public:
     lookup_table(T from, T to) : range_start(from), range_end(to), base_div(ap_uint<16>(N) / T(to - from)) {
         T step = (range_end - range_start) / ap_uint<16>(N);
-        for (size_t i = 0; i < N; i++) {
+        VITIS_LOOP_40_1: for (size_t i = 0; i < N; i++) {
             T num = range_start + ap_uint<16>(i) * step;
             T sample = func(num);
             samples[i] = sample;
@@ -33019,7 +33019,7 @@ typedef ap_ufixed<16,0> hept_exp_table_t;
 
 
 
-void myproject(
+__attribute__((sdx_kernel("myproject", 0))) void myproject(
     input_t query[5*3*2*7], input2_t key[5*3*2*7],
     result_t layer3_out[5*3*2*2]
 );
@@ -55904,7 +55904,7 @@ void copy_data(std::vector<src_T> src, hls::stream<dst_T> &dst) {
 
     size_t i_pack = 0;
     dst_T dst_pack;
-    for (typename std::vector<src_T>::const_iterator i = in_begin; i != in_end; ++i) {
+    VITIS_LOOP_265_1: for (typename std::vector<src_T>::const_iterator i = in_begin; i != in_end; ++i) {
         dst_pack[i_pack++] = typename dst_T::value_type(*i);
         if (i_pack == dst_T::size) {
             i_pack = 0;
@@ -55914,7 +55914,7 @@ void copy_data(std::vector<src_T> src, hls::stream<dst_T> &dst) {
 }
 
 template <class src_T, class dst_T, size_t OFFSET, size_t SIZE> void copy_data_axi(std::vector<src_T> src, dst_T dst[SIZE]) {
-    for (auto i = 0; i < SIZE; i++)
+    VITIS_LOOP_275_1: for (auto i = 0; i < SIZE; i++)
         if (i == SIZE - 1) {
             dst[i].data = src[i];
             dst[i].last = 1;
@@ -55925,16 +55925,16 @@ template <class src_T, class dst_T, size_t OFFSET, size_t SIZE> void copy_data_a
 }
 
 template <class res_T, size_t SIZE> void print_result(res_T result[SIZE], std::ostream &out, bool keep = false) {
-    for (int i = 0; i < SIZE; i++) {
+    VITIS_LOOP_286_1: for (int i = 0; i < SIZE; i++) {
         out << result[i] << " ";
     }
     out << std::endl;
 }
 
 template <class res_T, size_t SIZE> void print_result(hls::stream<res_T> &result, std::ostream &out, bool keep = false) {
-    for (int i = 0; i < SIZE / res_T::size; i++) {
+    VITIS_LOOP_293_1: for (int i = 0; i < SIZE / res_T::size; i++) {
         res_T res_pack = result.read();
-        for (int j = 0; j < res_T::size; j++) {
+        VITIS_LOOP_295_2: for (int j = 0; j < res_T::size; j++) {
             out << res_pack[j] << " ";
         }
         if (keep)
@@ -55946,9 +55946,9 @@ template <class res_T, size_t SIZE> void print_result(hls::stream<res_T> &result
 template <class data_T, size_t SIZE> void fill_zero(data_T data[SIZE]) { std::fill_n(data, SIZE, 0.); }
 
 template <class data_T, size_t SIZE> void fill_zero(hls::stream<data_T> &data) {
-    for (int i = 0; i < SIZE / data_T::size; i++) {
+    VITIS_LOOP_307_1: for (int i = 0; i < SIZE / data_T::size; i++) {
         data_T data_pack;
-        for (int j = 0; j < data_T::size; j++) {
+        VITIS_LOOP_309_2: for (int j = 0; j < data_T::size; j++) {
             data_pack[j] = 0.;
         }
         data.write(data_pack);
@@ -55963,7 +55963,7 @@ template <class dataType, unsigned int nrows> int read_file_1D(const char *filen
     }
 
     float newval;
-    for (int ii = 0; ii < nrows; ii++) {
+    VITIS_LOOP_324_1: for (int ii = 0; ii < nrows; ii++) {
         if (fscanf(fp, "%f\n", &newval) != 0) {
             data[ii] = newval;
         } else {
@@ -55983,8 +55983,8 @@ int read_file_2D(const char *filename, dataType data[nrows][ncols]) {
     }
 
     float newval;
-    for (int ii = 0; ii < nrows; ii++) {
-        for (int jj = 0; jj < ncols; jj++) {
+    VITIS_LOOP_344_1: for (int ii = 0; ii < nrows; ii++) {
+        VITIS_LOOP_345_2: for (int jj = 0; jj < ncols; jj++) {
             if (fscanf(fp, "%f\n", &newval) != 0) {
                 data[ii][jj] = newval;
             } else {
@@ -55999,14 +55999,14 @@ int read_file_2D(const char *filename, dataType data[nrows][ncols]) {
 template <class in_T, class out_T, int N_IN> void change_type(hls::stream<in_T> &in, hls::stream<out_T> &out) {
     in_T datareg;
     hls::stream<out_T> input_trunc;
-    for (int ii = 0; ii < N_IN; ii++) {
+    VITIS_LOOP_360_1: for (int ii = 0; ii < N_IN; ii++) {
         out << (out_T)in.read();
     }
 }
 
 template <class data_T, int N_IN> void hls_stream_debug(hls::stream<data_T> &data, hls::stream<data_T> &res) {
     data_T datareg;
-    for (int ii = 0; ii < N_IN; ii++) {
+    VITIS_LOOP_367_1: for (int ii = 0; ii < N_IN; ii++) {
         datareg = data.read();
         std::cout << "[" << ii << "]: " << datareg << std::endl;
         res << datareg;
@@ -56315,8 +56315,8 @@ ConvOut:
     }
 
 
-    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::reuse_factor; ii++) {
-        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+    VITIS_LOOP_135_1: for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::reuse_factor; ii++) {
+        VITIS_LOOP_136_2: for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
 #pragma HLS UNROLL
  acc[ii][ff] = biases[ff];
         }
@@ -56337,8 +56337,8 @@ AccumOut:
     }
 
 
-    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::reuse_factor; ii++) {
-        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+    VITIS_LOOP_157_3: for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::reuse_factor; ii++) {
+        VITIS_LOOP_158_4: for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
 #pragma HLS UNROLL
  res[ii * CONFIG_T::n_filt + ff] = cast<data_T, res_T, typename CONFIG_T::mult_config>(acc[ii][ff]);
         }
@@ -56414,7 +56414,7 @@ template <class data_T, class res_T, typename CONFIG_T> class PointwiseConv1D {
 # 8 "firmware/parameters.h" 2
 
 
-# 1 "firmware/nnet_utils/nnet_hept.h" 1
+# 1 "firmware/nnet_utils/nnet_hept_simplified.h" 1
 
 
 
@@ -58801,7 +58801,7 @@ namespace cordic_apfixed {
     ap_fixed<W,I> x_s, y_s, z_s;
     ap_uint<1> d;
 
-    for (int n=0; n<Nmax; n++){
+    VITIS_LOOP_61_1: for (int n=0; n<Nmax; n++){
 #pragma HLS pipeline
 
  if(MODE == 1) {
@@ -58847,7 +58847,7 @@ namespace cordic_apfixed {
 
     const int Nmax = W - I + 1;
 
-    for (int n=0; n<Nmax; n++){
+    VITIS_LOOP_117_1: for (int n=0; n<Nmax; n++){
 
       if(INTYPE==64){
 #pragma HLS pipeline II=5
@@ -59010,7 +59010,7 @@ namespace cordic_apfixed {
     if(I==1){
       if(out[W-1]==1){
         out[W-1] = 0;
-        for(int i=0;i<W-1;i++){
+        VITIS_LOOP_289_1: for(int i=0;i<W-1;i++){
 #pragma HLS UNROLL
  out[i] = 1;
         }
@@ -59162,7 +59162,7 @@ namespace cordic_apfixed {
     if(I==1||bpoint){
       if( out[W-1]==1 ){
         out[W-1] = 0;
-        for(int i=0;i<W-1;i++){
+        VITIS_LOOP_449_1: for(int i=0;i<W-1;i++){
 #pragma HLS UNROLL
  out[i] = 1;
         }
@@ -59342,11 +59342,11 @@ namespace cordic_apfixed {
 
     ap_fixed<W+1,2> in1abs_sft;
     ap_fixed<W+1,2> in2abs_sft;
-    for(int i=0;i<W+1;i++){
+    VITIS_LOOP_629_1: for(int i=0;i<W+1;i++){
 #pragma HLS UNROLL
  in1abs_sft[i] = in1abs[i];
     }
-    for(int i=0;i<W+1;i++){
+    VITIS_LOOP_633_2: for(int i=0;i<W+1;i++){
 #pragma HLS UNROLL
  in2abs_sft[i] = in2abs[i];
     }
@@ -59456,7 +59456,7 @@ namespace cordic_apfixed {
     ap_fixed<W,I> x_s, y_s, z_s;
     ap_uint<1> d;
 
-    for (int n=0; n<Nmax; n++){
+    VITIS_LOOP_743_1: for (int n=0; n<Nmax; n++){
 
       int k = hyperb_table_tau_128[n];
 
@@ -59546,7 +59546,7 @@ namespace cordic_apfixed {
 
     if(s_out_tmp[W-1]==1){
       s_out_tmp[W-1] = 0;
-      for(int i=0;i<W-1;i++){
+      VITIS_LOOP_840_1: for(int i=0;i<W-1;i++){
 #pragma HLS UNROLL
  s_out_tmp[i] = 1;
       }
@@ -59565,7 +59565,7 @@ namespace cordic_apfixed {
 
     if(c_out_tmp[W-1]==1){
       c_out[W-1] = 0;
-      for(int i=0;i<W-1;i++){
+      VITIS_LOOP_859_2: for(int i=0;i<W-1;i++){
 #pragma HLS UNROLL
  c_out[i] = 1;
       }
@@ -59855,7 +59855,7 @@ namespace cordic_apfixed {
     ap_fixed<W,I> y_semi_recovery;
     ap_fixed<W,I> in_s;
 
-    for(int i=0; i<Nmax; i++) {
+    VITIS_LOOP_1173_1: for(int i=0; i<Nmax; i++) {
 
       xk = x_r << k;
       x_k = x_r >> k;
@@ -59938,7 +59938,7 @@ namespace cordic_apfixed {
     ap_fixed<W,I> x_semi_recovery;
     ap_fixed<W,I> in_s;
 
-    for(int i=0; i<Nmax; i++) {
+    VITIS_LOOP_1256_1: for(int i=0; i<Nmax; i++) {
 
       xk = x_r << k;
       x_k = x_r >> k;
@@ -60344,17 +60344,17 @@ ap_fixed<W_,I_> exp(ap_fixed<W_,I_> x)
         }
         if (I_<3) {
             bool overf = 0;
-            for (int j = 3; j >= I_+1; j--) {
+            VITIS_LOOP_68_1: for (int j = 3; j >= I_+1; j--) {
 #pragma HLS unroll
  if (y[j])
                     overf = 1;
             }
             if (overf) {
-                for (int j = 3; j >= I_+1; j--){
+                VITIS_LOOP_74_2: for (int j = 3; j >= I_+1; j--){
 #pragma HLS unroll
  y[j] = 0;
                 }
-                for (int j = I_; j >= 0; j--){
+                VITIS_LOOP_78_3: for (int j = I_; j >= 0; j--){
 #pragma HLS unroll
  y[j] = 1;
                }
@@ -60402,17 +60402,17 @@ ap_fixed<W_,I_> exp(ap_fixed<W_,I_> x)
         }
         if (I_<6) {
             bool overf = 0;
-            for (int j = 9; j >= I_+4; j--) {
+            VITIS_LOOP_145_4: for (int j = 9; j >= I_+4; j--) {
 #pragma HLS unroll
  if (y[j])
                     overf = 1;
             }
             if (overf) {
-                for (int j = 9; j >= I_+4; j--){
+                VITIS_LOOP_151_5: for (int j = 9; j >= I_+4; j--){
 #pragma HLS unroll
  y[j] = 0;
                 }
-                for (int j = I_+3; j >= 0; j--){
+                VITIS_LOOP_155_6: for (int j = I_+3; j >= 0; j--){
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -60427,7 +60427,7 @@ ap_fixed<W_,I_> exp(ap_fixed<W_,I_> x)
         ap_ufixed<11,0> x_l_fract;
         x_l_fract(10,0) = x_l(10,0);
         bool overf = 0;
-        for (int j = 14; j < 22; j++){
+        VITIS_LOOP_170_7: for (int j = 14; j < 22; j++){
 #pragma HLS unroll
  if (x_l[22]!=x_l[j])
                 overf = 1;
@@ -60435,7 +60435,7 @@ ap_fixed<W_,I_> exp(ap_fixed<W_,I_> x)
 
         if (overf||((x_l_int==7)&&(x_l_fract>ap_ufixed<11,0>("0x0.ap0")))) {
             if (!x_l[22]) {
-                for (int j = 0; j < 22; j++){
+                VITIS_LOOP_178_8: for (int j = 0; j < 22; j++){
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -60500,17 +60500,17 @@ ap_fixed<W_,I_> exp(ap_fixed<W_,I_> x)
         }
         if (I_<12) {
             bool overf = 0;
-            for (int j = 21; j >= I_+10; j--) {
+            VITIS_LOOP_243_9: for (int j = 21; j >= I_+10; j--) {
 #pragma HLS unroll
  if (y[j])
                     overf = 1;
             }
             if (overf) {
-                for (int j = 21; j >= I_+10; j--) {
+                VITIS_LOOP_249_10: for (int j = 21; j >= I_+10; j--) {
 #pragma HLS unroll
  y[j] = 0;
                 }
-                for (int j = I_+9; j >= 0; j--) {
+                VITIS_LOOP_253_11: for (int j = I_+9; j >= 0; j--) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -60525,7 +60525,7 @@ ap_fixed<W_,I_> exp(ap_fixed<W_,I_> x)
         ap_ufixed<23,0> x_l_fract;
         x_l_fract(22,0) = x_l(22,0);
         bool overf = 0;
-        for (int j = 27; j < 46; j++){
+        VITIS_LOOP_268_12: for (int j = 27; j < 46; j++){
 #pragma HLS unroll
  if (x_l[46]!=x_l[j])
                 overf = 1;
@@ -60533,7 +60533,7 @@ ap_fixed<W_,I_> exp(ap_fixed<W_,I_> x)
 
         if (overf||((x_l_int==15)&&(x_l_fract>=ap_ufixed<23,0>("0x0.f14028p0")))) {
             if (!x_l[46]) {
-                for (int j = 0; j < 46; j++) {
+                VITIS_LOOP_276_13: for (int j = 0; j < 46; j++) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -60762,17 +60762,17 @@ ap_fixed<W_,I_> exp(ap_fixed<W_,I_> x)
         }
         if (I_<24) {
             bool overf = 0;
-            for (int j = 45; j >= I_+22; j--) {
+            VITIS_LOOP_505_14: for (int j = 45; j >= I_+22; j--) {
 #pragma HLS unroll
  if (y[j])
                     overf = 1;
             }
             if (overf) {
-                for (int j = 45; j >= I_+22; j--){
+                VITIS_LOOP_511_15: for (int j = 45; j >= I_+22; j--){
 #pragma HLS unroll
  y[j] = 0;
                 }
-                for (int j = I_+21; j >= 0; j--) {
+                VITIS_LOOP_515_16: for (int j = I_+21; j >= 0; j--) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -60782,11 +60782,11 @@ ap_fixed<W_,I_> exp(ap_fixed<W_,I_> x)
     } else {
 
         ap_fixed<65,33> x_l = 0;
-        for (int j = 32-F_; j < 32+I_; j++){
+        VITIS_LOOP_525_17: for (int j = 32-F_; j < 32+I_; j++){
 #pragma HLS unroll
  x_l[j] = x[j-(32-F_)];
         }
-        for (int j = 32+I_; j <= 64; j++){
+        VITIS_LOOP_529_18: for (int j = 32+I_; j <= 64; j++){
 #pragma HLS unroll
  x_l[j] = x[W_-1];
         }
@@ -60796,7 +60796,7 @@ ap_fixed<W_,I_> exp(ap_fixed<W_,I_> x)
         ap_ufixed<32,0> x_l_fract;
         x_l_fract(31,0) = x_l(31,0);
         bool overf = 0;
-        for (int j = 37; j < 64; j++) {
+        VITIS_LOOP_539_19: for (int j = 37; j < 64; j++) {
 #pragma HLS unroll
  if (x_l[64]!=x_l[j])
                 overf = 1;
@@ -60804,7 +60804,7 @@ ap_fixed<W_,I_> exp(ap_fixed<W_,I_> x)
 
         if (overf||(x_l_int>22)||((x_l_int==22)&&(x_l_fract>=ap_ufixed<32,0>("0x0.2e42fefap0")))) {
             if (!x_l[64]) {
-                for (int j = 0; j < 64; j++){
+                VITIS_LOOP_547_20: for (int j = 0; j < 64; j++){
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -61165,17 +61165,17 @@ ap_fixed<W_,I_> exp(ap_fixed<W_,I_> x)
         }
         if (I_<33) {
             bool overf = 0;
-            for (int j = 63; j >= I_+31; j--) {
+            VITIS_LOOP_908_21: for (int j = 63; j >= I_+31; j--) {
 #pragma HLS unroll
  if (y[j])
                     overf = 1;
             }
             if (overf) {
-                for (int j = 63; j >= I_+31; j--) {
+                VITIS_LOOP_914_22: for (int j = 63; j >= I_+31; j--) {
 #pragma HLS unroll
  y[j] = 0;
                 }
-                for (int j = I_+30; j >= 0; j--) {
+                VITIS_LOOP_918_23: for (int j = I_+30; j >= 0; j--) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -61291,17 +61291,17 @@ ap_fixed<WO_,I_> exp_core(ap_fixed<WI_,I_> x)
         }
         y += delta;
             bool overf = 0;
-            for (int j = 4; j >= I_+1; j--) {
+            VITIS_LOOP_1034_1: for (int j = 4; j >= I_+1; j--) {
 #pragma HLS unroll
  if (y[j])
                     overf = 1;
             }
             if (overf) {
-                for (int j = 4; j >= I_+1; j--) {
+                VITIS_LOOP_1040_2: for (int j = 4; j >= I_+1; j--) {
 #pragma HLS unroll
  y[j] = 0;
                 }
-                for (int j = I_; j >= 0; j--) {
+                VITIS_LOOP_1044_3: for (int j = I_; j >= 0; j--) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -61388,17 +61388,17 @@ ap_fixed<WO_,I_> exp_core(ap_fixed<WI_,I_> x)
         y += delta;
 
             bool overf = 0;
-            for (int j = 10; j >= I_+4; j--) {
+            VITIS_LOOP_1131_4: for (int j = 10; j >= I_+4; j--) {
 #pragma HLS unroll
  if (y[j])
                     overf = 1;
             }
             if (overf) {
-                for (int j = 10; j >= I_+4; j--) {
+                VITIS_LOOP_1137_5: for (int j = 10; j >= I_+4; j--) {
 #pragma HLS unroll
  y[j] = 0;
                 }
-                for (int j = I_+3; j >= 0; j--) {
+                VITIS_LOOP_1141_6: for (int j = I_+3; j >= 0; j--) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -61417,14 +61417,14 @@ ap_fixed<WO_,I_> exp_core(ap_fixed<WI_,I_> x)
         ap_ufixed<wf,0> x_l_fract;
         x_l_fract(wf-1,0) = x_l(wf-1,0);
         bool overf = 0;
-        for (int j = wf+3; j < w-1; j++) {
+        VITIS_LOOP_1160_7: for (int j = wf+3; j < w-1; j++) {
 #pragma HLS unroll
  if (x_l[w-1]!=x_l[j])
                 overf = 1;
         }
         if (overf||((x_l_int==7)&&(x_l_fract>ap_ufixed<wf,0>("0x0.9fe7038p0")))) {
             if (!x_l[w-1]) {
-                for (int j = 0; j < 22; j++) {
+                VITIS_LOOP_1167_8: for (int j = 0; j < 22; j++) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -61540,17 +61540,17 @@ ap_fixed<WO_,I_> exp_core(ap_fixed<WI_,I_> x)
         y += delta;
 
             overf = 0;
-            for (int j = 22; j >= I_+10; j--) {
+            VITIS_LOOP_1283_9: for (int j = 22; j >= I_+10; j--) {
 #pragma HLS unroll
  if (y[j])
                     overf = 1;
             }
             if (overf) {
-                for (int j = 22; j >= I_+10; j--){
+                VITIS_LOOP_1289_10: for (int j = 22; j >= I_+10; j--){
 #pragma HLS unroll
  y[j] = 0;
                 }
-                for (int j = I_+9; j >= 0; j--) {
+                VITIS_LOOP_1293_11: for (int j = I_+9; j >= 0; j--) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -61570,14 +61570,14 @@ ap_fixed<WO_,I_> exp_core(ap_fixed<WI_,I_> x)
         ap_ufixed<wf,0> x_l_fract;
         x_l_fract(wf-1,0) = x_l(wf-1,0);
         bool overf = 0;
-        for (int j = wf+4; j < w-1; j++){
+        VITIS_LOOP_1313_12: for (int j = wf+4; j < w-1; j++){
 #pragma HLS unroll
  if (x_l[w-1]!=x_l[j])
                 overf = 1;
         }
         if (overf||((x_l_int==15)&&(x_l_fract>=ap_ufixed<wf,0>("0x0.F1402743D99F8p0")))) {
             if (!x_l[w-1]) {
-                for (int j = 0; j < 46; j++) {
+                VITIS_LOOP_1320_13: for (int j = 0; j < 46; j++) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -61839,17 +61839,17 @@ ap_fixed<WO_,I_> exp_core(ap_fixed<WI_,I_> x)
         y += delta;
 
             overf = 0;
-            for (int j = 46; j >= I_+22; j--) {
+            VITIS_LOOP_1582_14: for (int j = 46; j >= I_+22; j--) {
 #pragma HLS unroll
  if (y[j])
                     overf = 1;
             }
             if (overf) {
-                for (int j = 46; j >= I_+22; j--) {
+                VITIS_LOOP_1588_15: for (int j = 46; j >= I_+22; j--) {
 #pragma HLS unroll
  y[j] = 0;
                 }
-                for (int j = I_+21; j >= 0; j--) {
+                VITIS_LOOP_1592_16: for (int j = I_+21; j >= 0; j--) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -61873,14 +61873,14 @@ ap_fixed<WO_,I_> exp_core(ap_fixed<WI_,I_> x)
         x_l_fract(wf-1,0) = x_l(wf-1,0);
 
         bool overf = 0;
-        for (int j = wf+5; j < w-1; j++){
+        VITIS_LOOP_1616_17: for (int j = wf+5; j < w-1; j++){
 #pragma HLS unroll
  if (x_l[w-1]!=x_l[j])
                 overf = 1;
         }
         if (overf||(x_l_int>22)||((x_l_int==22)&&(x_l_fract>=ap_ufixed<wf,0>("0x0.2E42FEFA39EF35783p0")))) {
             if (!x_l[w-1]) {
-                for (int j = 0; j < 64; j++) {
+                VITIS_LOOP_1623_18: for (int j = 0; j < 64; j++) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -62310,17 +62310,17 @@ ap_fixed<WO_,I_> exp_core(ap_fixed<WI_,I_> x)
         y += delta;
 
             overf = 0;
-            for (int j = 64; j >= I_+31; j--) {
+            VITIS_LOOP_2053_19: for (int j = 64; j >= I_+31; j--) {
 #pragma HLS unroll
  if (y[j])
                     overf = 1;
             }
             if (overf) {
-                for (int j = 64; j >= I_+31; j--) {
+                VITIS_LOOP_2059_20: for (int j = 64; j >= I_+31; j--) {
 #pragma HLS unroll
  y[j] = 0;
                 }
-                for (int j = I_+30; j >= 0; j--) {
+                VITIS_LOOP_2063_21: for (int j = I_+30; j >= 0; j--) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -62450,18 +62450,18 @@ ap_fixed<W,I> exp2(ap_fixed<W,I> x) {
 
         if(I<3) {
             bool overf = 0;
-            for(int j=3; j>=I+1; j--) {
+            VITIS_LOOP_2193_1: for(int j=3; j>=I+1; j--) {
 #pragma HLS unroll
  if(y[j]) {
                     overf = 1;
                 }
             }
             if (overf) {
-                for(int j=3; j>=I+1; j--) {
+                VITIS_LOOP_2200_2: for(int j=3; j>=I+1; j--) {
 #pragma HLS unroll
  y[j] = 0;
                 }
-                for(int j=I; j>=0; j--) {
+                VITIS_LOOP_2204_3: for(int j=I; j>=0; j--) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -62508,18 +62508,18 @@ ap_fixed<W,I> exp2(ap_fixed<W,I> x) {
 
         if(I < 5) {
             bool overf = 0;
-            for(int j=7; j>=3+I; j--) {
+            VITIS_LOOP_2251_4: for(int j=7; j>=3+I; j--) {
 #pragma HLS unroll
  if(y[j]) {
                     overf = 1;
                 }
             }
             if(overf) {
-                for(int j=7; j>=3+I; j--) {
+                VITIS_LOOP_2258_5: for(int j=7; j>=3+I; j--) {
 #pragma HLS unroll
  y[j] = 0;
                 }
-                for(int j=I+2; j>=0; j--) {
+                VITIS_LOOP_2262_6: for(int j=I+2; j>=0; j--) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -62537,7 +62537,7 @@ ap_fixed<W,I> exp2(ap_fixed<W,I> x) {
         x_l_fract(7,0) = x_l(7,0);
 
         bool overf_1 = 0;
-        for(int j=11; j<16; j++) {
+        VITIS_LOOP_2280_7: for(int j=11; j<16; j++) {
 #pragma HLS unroll
  if(x_l[16]!=x_l[j]) {
                 overf_1 = 1;
@@ -62592,18 +62592,18 @@ ap_fixed<W,I> exp2(ap_fixed<W,I> x) {
 
         if(I < 9) {
             bool overf_2 = 0;
-            for(int j=15; j>=7+I; j--) {
+            VITIS_LOOP_2335_8: for(int j=15; j>=7+I; j--) {
 #pragma HLS unroll
  if(y[j]) {
                     overf_2 = 1;
                 }
             }
             if(overf_2) {
-                for(int j=15; j>=7+I; j--) {
+                VITIS_LOOP_2342_9: for(int j=15; j>=7+I; j--) {
 #pragma HLS unroll
  y[j] = 0;
                 }
-                for(int j=6+I; j>=0; j--) {
+                VITIS_LOOP_2346_10: for(int j=6+I; j>=0; j--) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -62621,7 +62621,7 @@ ap_fixed<W,I> exp2(ap_fixed<W,I> x) {
         x_l_fract(15,0) = x_l(15,0);
 
         bool overf_1 = 0;
-        for(int j=20; j<32; j++) {
+        VITIS_LOOP_2364_11: for(int j=20; j<32; j++) {
 #pragma HLS unroll
  if(x_l[32]!=x_l[j]) {
                 overf_1 = 1;
@@ -62710,18 +62710,18 @@ ap_fixed<W,I> exp2(ap_fixed<W,I> x) {
 
         if(I<17) {
             bool overf_2 = 0;
-            for(int j=31; j>=I+15; j--) {
+            VITIS_LOOP_2453_12: for(int j=31; j>=I+15; j--) {
 #pragma HLS unroll
  if(y[j]) {
                     overf_2 = 1;
                 }
             }
             if(overf_2) {
-                for(int j=31; j>=I+15; j--) {
+                VITIS_LOOP_2460_13: for(int j=31; j>=I+15; j--) {
 #pragma HLS unroll
  y[j] = 0;
                 }
-                for(int j=I+14; j>=0; j--) {
+                VITIS_LOOP_2464_14: for(int j=I+14; j>=0; j--) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -62731,11 +62731,11 @@ ap_fixed<W,I> exp2(ap_fixed<W,I> x) {
 
     } else {
         ap_fixed<65,33> x_l = 0;
-        for(int j=32-F; j<32+I; j++) {
+        VITIS_LOOP_2474_15: for(int j=32-F; j<32+I; j++) {
 #pragma HLS unroll
  x_l[j] = x[j-(32-F)];
         }
-        for(int j=32+I; j<=64; j++) {
+        VITIS_LOOP_2478_16: for(int j=32+I; j<=64; j++) {
 #pragma HLS unroll
  x_l[j] = x[W-1];
         }
@@ -62746,7 +62746,7 @@ ap_fixed<W,I> exp2(ap_fixed<W,I> x) {
         x_l_fract(31,0) = x_l(31,0);
 
         bool overf_1 = 0;
-        for(int j=37; j<64; j++) {
+        VITIS_LOOP_2489_17: for(int j=37; j<64; j++) {
 #pragma HLS unroll
  if(x_l[j]!=x_l[64]) {
                 overf_1 = 1;
@@ -62754,7 +62754,7 @@ ap_fixed<W,I> exp2(ap_fixed<W,I> x) {
         }
         if(overf_1) {
             if(!x_l[64]) {
-                for(int j=0; j<64; j++) {
+                VITIS_LOOP_2497_18: for(int j=0; j<64; j++) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -63079,18 +63079,18 @@ ap_fixed<W,I> exp2(ap_fixed<W,I> x) {
 
         if(I<33) {
             bool overf_2 = 0;
-            for(int j=63; j>=I+31; j--) {
+            VITIS_LOOP_2822_19: for(int j=63; j>=I+31; j--) {
 #pragma HLS unroll
  if(y[j]) {
                     overf_2 = 1;
                 }
             }
             if(overf_2) {
-                for(int j=63; j>=I+31; j--) {
+                VITIS_LOOP_2829_20: for(int j=63; j>=I+31; j--) {
 #pragma HLS unroll
  y[j] = 0;
                 }
-                for(int j=I+30; j>=0; j--) {
+                VITIS_LOOP_2833_21: for(int j=I+30; j>=0; j--) {
 #pragma HLS unroll
  y[j] = 1;
                 }
@@ -63178,18 +63178,18 @@ ap_fixed<W_,I_> exp10(ap_fixed<W_,I_> x) {
   }
   if(I_<4){
    bool overf = 0;
-   for(int j = 5; j>=I_+2; j--) {
+   VITIS_LOOP_2921_1: for(int j = 5; j>=I_+2; j--) {
 #pragma HLS unroll
  if(y[j]) {
      overf = 1;
     }
    }
    if(overf) {
-    for(int j = 5; j>=I_+2; j--) {
+    VITIS_LOOP_2928_2: for(int j = 5; j>=I_+2; j--) {
 #pragma HLS unroll
  y[j] = 0;
     }
-    for(int j = I_+1; j>=0; j--) {
+    VITIS_LOOP_2932_3: for(int j = I_+1; j>=0; j--) {
 #pragma HLS unroll
  y[j] = 1;
     }
@@ -63204,7 +63204,7 @@ ap_fixed<W_,I_> exp10(ap_fixed<W_,I_> x) {
   ap_ufixed<6,0> x_l_fract;
   x_l_fract(5,0) = x_l(5,0);
   bool overf = 0;
-  for(int j = 11; j >=7; j--) {
+  VITIS_LOOP_2947_4: for(int j = 11; j >=7; j--) {
 #pragma HLS unroll
  if(x_l[12]!=x_l[j]) {
     overf = 1;
@@ -63236,18 +63236,18 @@ ap_fixed<W_,I_> exp10(ap_fixed<W_,I_> x) {
   }
   if(I_<7) {
    bool overf = 0;
-   for(int j = 11; j >= I_+5; j--) {
+   VITIS_LOOP_2979_5: for(int j = 11; j >= I_+5; j--) {
 #pragma HLS unroll
  if(y[j]) {
      overf = 1;
     }
    }
    if(overf) {
-    for(int j = 11; j>= I_+5; j--) {
+    VITIS_LOOP_2986_6: for(int j = 11; j>= I_+5; j--) {
 #pragma HLS unroll
  y[j] = 0;
     }
-    for(int j = I_+4; j>=0; j--) {
+    VITIS_LOOP_2990_7: for(int j = I_+4; j>=0; j--) {
 #pragma HLS unroll
  y[j] = 1;
     }
@@ -63262,7 +63262,7 @@ ap_fixed<W_,I_> exp10(ap_fixed<W_,I_> x) {
   ap_ufixed<13,0> x_l_fract;
   x_l_fract(12,0) = x_l(12,0);
   bool overf = 0;
-  for(int j = 25; j>=15; j--) {
+  VITIS_LOOP_3005_8: for(int j = 25; j>=15; j--) {
 #pragma HLS unroll
  if(x_l[26]!=x_l[j]) {
     overf = 1;
@@ -63312,18 +63312,18 @@ ap_fixed<W_,I_> exp10(ap_fixed<W_,I_> x) {
   }
   if(I_<14) {
    bool overf = 0;
-   for(int j = 25; j>= I_+12; j--) {
+   VITIS_LOOP_3055_9: for(int j = 25; j>= I_+12; j--) {
 #pragma HLS unroll
  if(y[j]) {
      overf = 1;
     }
    }
    if(overf) {
-    for(int j = 25; j>=I_+12; j--) {
+    VITIS_LOOP_3062_10: for(int j = 25; j>=I_+12; j--) {
 #pragma HLS unroll
  y[j] = 0;
     }
-    for(int j = I_+11; j>=0; j--) {
+    VITIS_LOOP_3066_11: for(int j = I_+11; j>=0; j--) {
 #pragma HLS unroll
  y[j] = 1;
     }
@@ -63338,7 +63338,7 @@ ap_fixed<W_,I_> exp10(ap_fixed<W_,I_> x) {
   ap_ufixed<26,0> x_l_fract;
   x_l_fract(25,0) = x_l(25,0);
   bool overf = 0;
-  for(int j = 51; j >= 29; j--) {
+  VITIS_LOOP_3081_12: for(int j = 51; j >= 29; j--) {
 #pragma HLS unroll
  if(x_l[52]!=x_l[j]) {
     overf = 1;
@@ -63475,18 +63475,18 @@ ap_fixed<W_,I_> exp10(ap_fixed<W_,I_> x) {
   }
   if(I_<27) {
    bool overf = 0;
-   for(int j = 51; j >= 25 + I_; j--) {
+   VITIS_LOOP_3218_13: for(int j = 51; j >= 25 + I_; j--) {
 #pragma HLS unroll
  if(y[j]) {
      overf = 1;
     }
    }
    if(overf) {
-    for(int j = 51; j>=25 + I_; j--) {
+    VITIS_LOOP_3225_14: for(int j = 51; j>=25 + I_; j--) {
 #pragma HLS unroll
  y[j] = 0;
     }
-    for(int j = 24 + I_; j >= 0; j--) {
+    VITIS_LOOP_3229_15: for(int j = 24 + I_; j >= 0; j--) {
 #pragma HLS unroll
  y[j] = 1;
     }
@@ -63501,7 +63501,7 @@ ap_fixed<W_,I_> exp10(ap_fixed<W_,I_> x) {
   ap_ufixed<32,0> x_l_fract;
   x_l_fract(31,0) = x_l(31,0);
   bool overf = 0;
-  for(int j = 63; j >= 36; j--) {
+  VITIS_LOOP_3244_16: for(int j = 63; j >= 36; j--) {
 #pragma HLS unroll
  if(x_l[64]!=x_l[j]) {
     overf = 1;
@@ -63661,18 +63661,18 @@ ap_fixed<W_,I_> exp10(ap_fixed<W_,I_> x) {
   }
   if(I_<33) {
    bool overf = 0;
-   for(int j = 63; j >= 31 + I_; j--) {
+   VITIS_LOOP_3404_17: for(int j = 63; j >= 31 + I_; j--) {
 #pragma HLS unroll
  if(y[j]) {
      overf = 1;
     }
    }
    if(overf) {
-    for(int j = 63; j >= 31 + I_; j--) {
+    VITIS_LOOP_3411_18: for(int j = 63; j >= 31 + I_; j--) {
 #pragma HLS unroll
  y[j] = 0;
     }
-    for(int j = 30 + I_; j >= 0; j--) {
+    VITIS_LOOP_3415_19: for(int j = 30 + I_; j >= 0; j--) {
 #pragma HLS unroll
  y[j] = 1;
     }
@@ -64387,7 +64387,7 @@ ap_fixed<W_,I_> log(ap_fixed<W_,I_> x)
             ap_ufixed<1 + org_wf,1> b_frac=0;
             b_frac[org_wf] = 0;
             b_frac(org_wf-1,org_wf-W_+1) = x(W_-2,0);
-            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            VITIS_LOOP_703_1: for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
 #pragma HLS unroll
  if ((!b_frac[org_wf]&b_frac[org_wf-1]&b_frac[org_wf-2])|(b_frac[org_wf]&!b_frac[org_wf-1]))
                     break;
@@ -64605,7 +64605,7 @@ ap_fixed<W_,I_> log10(ap_fixed<W_,I_> x)
             ap_ufixed<1 + org_wf,1> b_frac=0;
             b_frac[org_wf] = 0;
             b_frac(org_wf-1,org_wf-W_+1) = x(W_-2,0);
-            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            VITIS_LOOP_921_1: for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
 #pragma HLS unroll
  if ((!b_frac[org_wf]&b_frac[org_wf-1]&b_frac[org_wf-2])|(b_frac[org_wf]&!b_frac[org_wf-1]))
                     break;
@@ -65022,7 +65022,7 @@ ap_fixed<W_,I_> log2(ap_fixed<W_,I_> x)
             ap_ufixed<1 + org_wf,1> b_frac=0;
             b_frac[org_wf] = 0;
             b_frac(org_wf-1,org_wf-W_+1) = x(W_-2,0);
-            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            VITIS_LOOP_1345_1: for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
 #pragma HLS unroll
  if ((!b_frac[org_wf]&b_frac[org_wf-1]&b_frac[org_wf-2])|(b_frac[org_wf]&!b_frac[org_wf-1]))
                     break;
@@ -65342,7 +65342,7 @@ ap_fixed<W_,I_> sqrt_fixed(ap_fixed<W_,I_> x)
         ap_ufixed< prcs/2, 0> res_FH = 0;
 # 239 "/opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h"
     if (I_>0)
-        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        VITIS_LOOP_240_1: for ( int pos = msbr-1; pos >= 0; pos-- ) {
 #pragma HLS unroll
  ap_ufixed<msbm , msbm> mul_I = 0;
 
@@ -65370,7 +65370,7 @@ ap_fixed<W_,I_> sqrt_fixed(ap_fixed<W_,I_> x)
                 res_I [ pos ] = 1;
             }
         }
-        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        VITIS_LOOP_268_2: for ( int pos = -1; pos >= -F_-1; pos-- ) {
 #pragma HLS unroll
  ap_ufixed<msbm + prcs , msbm> mul = 0;
 
@@ -66072,7 +66072,7 @@ ap_fixed<W_,I_> pow(ap_fixed<W_,I_> x, ap_fixed<W_,I_> y) {
             return 0;
         } else {
 
-            for (int j = 0; j < W_-1; j++){
+            VITIS_LOOP_48_1: for (int j = 0; j < W_-1; j++){
 #pragma HLS unroll
  r[j] = 1;
             }
@@ -66125,7 +66125,7 @@ ap_fixed<W_,I_> pow(ap_fixed<W_,I_> x, ap_fixed<W_,I_> y) {
     bool e_overf = 0;
     bool overf = 0;
 
-    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    VITIS_LOOP_109_2: for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
 #pragma HLS unroll
  if (mul_y_ln[F_l+W_+5]!=mul_y_ln[j])
             m_overf = 1;
@@ -66139,7 +66139,7 @@ ap_fixed<W_,I_> pow(ap_fixed<W_,I_> x, ap_fixed<W_,I_> y) {
 
 
         if (I_<I_m) {
-            for (int j = WO_m-1; j >= W_-1; j--) {
+            VITIS_LOOP_123_3: for (int j = WO_m-1; j >= W_-1; j--) {
 #pragma HLS unroll
  if (exp_r[j])
                     e_overf=1;
@@ -66169,7 +66169,7 @@ ap_fixed<W_,I_> pow(ap_fixed<W_,I_> x, ap_fixed<W_,I_> y) {
 
         if(overf) {
             r[W_-1] = 0;
-            for (int j = W_-2; j >= 0; j--){
+            VITIS_LOOP_153_4: for (int j = W_-2; j >= 0; j--){
 #pragma HLS unroll
  r[j] = 1;
             }
@@ -66254,7 +66254,7 @@ ap_fixed<W_,I_> pown(ap_fixed<W_,I_> x, int n) {
 
 
 
-           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           VITIS_LOOP_281_1: for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
 #pragma HLS unroll
  if(x_log_mul_n[i] != x_log_mul_n[wf_log+we_log-1]){
 
@@ -66274,7 +66274,7 @@ ap_fixed<W_,I_> pown(ap_fixed<W_,I_> x, int n) {
 
 
            if (I_<I_e) {
-               for (int j = WO_e-1; j >= W_-1; j--) {
+               VITIS_LOOP_301_2: for (int j = WO_e-1; j >= W_-1; j--) {
 #pragma HLS unroll
 
  if (exp_r[j])
@@ -66288,7 +66288,7 @@ ap_fixed<W_,I_> pown(ap_fixed<W_,I_> x, int n) {
                if(x_sig && !n_is_odd) {
                    r[W_-1] = 1;
                } else {
-                   for(int i = 0; i < W_-1; ++i) {
+                   VITIS_LOOP_315_3: for(int i = 0; i < W_-1; ++i) {
 #pragma HLS unroll
  r[W_-1] = 1;
                    }
@@ -66381,7 +66381,7 @@ ap_fixed<W_,I_> rootn(ap_fixed<W_,I_> x, int n) {
         bool ovf = 0;
 
         if(I_ < I_d) {
-           for (int j =WO_d-1; j >= W_-1; j--) {
+           VITIS_LOOP_433_1: for (int j =WO_d-1; j >= W_-1; j--) {
 #pragma HLS unroll
 
  if (exp_r[j])
@@ -66395,7 +66395,7 @@ ap_fixed<W_,I_> rootn(ap_fixed<W_,I_> x, int n) {
            if(x[W_-1]&&n_is_odd) {
               r[W_-1] = 1;
            } else {
-              for(int i = 0; i < W_-1; ++i) {
+              VITIS_LOOP_447_2: for(int i = 0; i < W_-1; ++i) {
 #pragma HLS unroll
  r[i] = 1;
               }
@@ -66515,7 +66515,7 @@ ap_fixed<W_,I_> fdim_fixed(ap_fixed<W_,I_> x, ap_fixed<W_,I_> y )
         x_overf = x - y;
         overf = x_overf[W_-1];
         if(overf) {
-            for (int i = 0; i < W_-1; i++){
+            VITIS_LOOP_33_1: for (int i = 0; i < W_-1; i++){
 #pragma HLS UNROLL
  xs[i] = 1;
             }
@@ -66639,7 +66639,7 @@ ap_fixed<W_,I_> maxmag_fixed(ap_fixed<W_,I_> x, ap_fixed<W_,I_> y )
 
     if(xs_t[W_-1])
     {
-            for (int i = 0; i < W_-1; i++){
+            VITIS_LOOP_183_1: for (int i = 0; i < W_-1; i++){
 #pragma HLS UNROLL
  xs[i] = 1;
             }
@@ -66694,7 +66694,7 @@ ap_fixed<W_,I_> minmag_fixed(ap_fixed<W_,I_> x, ap_fixed<W_,I_> y )
     }
     if(xs_t[W_-1])
     {
-            for (int i = 0; i < W_-1; i++){
+            VITIS_LOOP_248_1: for (int i = 0; i < W_-1; i++){
 #pragma HLS UNROLL
  xs[i] = 1;
             }
@@ -67213,7 +67213,7 @@ template <int W_, int I_>
 bool generic_all(ap_fixed<W_,I_> x)
 {
 #pragma HLS pipeline II=1
- for (int i=0; i<W_;i++)
+ VITIS_LOOP_16_1: for (int i=0; i<W_;i++)
      if (x[i]==0)
       return false;
     return true;
@@ -67224,7 +67224,7 @@ template <int W_, int I_>
 bool generic_all(ap_ufixed<W_,I_> x)
 {
 #pragma HLS pipeline II=1
- for (int i=0; i<W_;i++)
+ VITIS_LOOP_27_1: for (int i=0; i<W_;i++)
      if (x[i]==0)
       return false;
     return true;
@@ -67235,7 +67235,7 @@ template <int I_>
 bool generic_all(ap_int<I_> x)
 {
 #pragma HLS pipeline II=1
- for (int i=0; i<I_;i++)
+ VITIS_LOOP_38_1: for (int i=0; i<I_;i++)
      if (x[i]==0)
       return false;
     return true;
@@ -67246,7 +67246,7 @@ template <int I_>
 bool generic_all(ap_uint<I_> x)
 {
 #pragma HLS pipeline II=1
- for (int i=0; i<I_;i++)
+ VITIS_LOOP_49_1: for (int i=0; i<I_;i++)
      if (x[i]==0)
       return false;
     return true;
@@ -67257,7 +67257,7 @@ template <int W_, int I_>
 bool generic_any(ap_fixed<W_,I_> x)
 {
 #pragma HLS pipeline II=1
- for (int i=0; i<W_;i++)
+ VITIS_LOOP_60_1: for (int i=0; i<W_;i++)
      if (x[i]==1)
       return true;
     return false;
@@ -67268,7 +67268,7 @@ template <int W_, int I_>
 bool generic_any(ap_ufixed<W_,I_> x)
 {
 #pragma HLS pipeline II=1
- for (int i=0; i<W_;i++)
+ VITIS_LOOP_71_1: for (int i=0; i<W_;i++)
      if (x[i]==1)
       return true;
     return false;
@@ -67279,7 +67279,7 @@ template <int I_>
 bool generic_any(ap_int<I_> x)
 {
 #pragma HLS pipeline II=1
- for (int i=0; i<I_;i++)
+ VITIS_LOOP_82_1: for (int i=0; i<I_;i++)
      if (x[i]==1)
       return true;
     return false;
@@ -67290,7 +67290,7 @@ template <int I_>
 bool generic_any(ap_uint<I_> x)
 {
 #pragma HLS pipeline II=1
- for (int i=0; i<I_;i++)
+ VITIS_LOOP_93_1: for (int i=0; i<I_;i++)
      if (x[i]==1)
       return true;
     return false;
@@ -69615,7 +69615,7 @@ namespace hls_mad {
         ap_fixed<W_,I_> r = 0;
 
         if(sum[W_-1]!=sum[W_]) {
-           for(int i = 0; i < W_-1; ++i) {
+           VITIS_LOOP_26_1: for(int i = 0; i < W_-1; ++i) {
 #pragma HLS unroll
  r[i] = !sum[W_];
            }
@@ -69679,7 +69679,7 @@ ap_fixed<W, I> cbrt_fixed(ap_fixed<W,I> x) {
       ap_ufixed<2*msbr+prcs+2,2*msbr+2> resq = 0;
       ap_ufixed<msbr+prcs+1, msbr+1> res = 0;
       ap_ufixed<3*msbr+prcs+4, 3*msbr+4> x_rem = x_p;
-      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      VITIS_LOOP_40_1: for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
           ap_ufixed<3*msbr+prcs+2, 3*msbr+2> mul1a = 0;
           ap_ufixed<3*msbr+prcs+1, 3*msbr+1> mul1b = 0;
 
@@ -69796,7 +69796,7 @@ ap_fixed<W, I> hypot_fixed(ap_fixed<W, I> x, ap_fixed<W, I> y) {
     ap_ufixed<2*msbr+1,2*msbr+1> x_l_I = 0;
     if(I>0) {
         x_l_I = xy_sq(2*W-1, 2*W-2*I);
-        for(int pos = msbr - 1; pos >= 0; pos--) {
+        VITIS_LOOP_49_1: for(int pos = msbr - 1; pos >= 0; pos--) {
             ap_ufixed<2*msbr,2*msbr> mul_I = 0;
 
 
@@ -69821,7 +69821,7 @@ ap_fixed<W, I> hypot_fixed(ap_fixed<W, I> x, ap_fixed<W, I> y) {
     ap_ufixed<prcs/2,0> res_F = 0;
     ap_ufixed<prcs/2,0> x_l_FH = xy_sq;
     ap_ufixed<prcs/2, -prcs/2> x_l_FL = xy_sq;
-    for(int pos = -1; pos >= -F-1; pos--) {
+    VITIS_LOOP_81_2: for(int pos = -1; pos >= -F-1; pos--) {
         ap_ufixed<msbr+prcs, msbr> mul = 0;
 
 
@@ -69891,7 +69891,7 @@ ap_fixed<W, I> hypot_fixed(ap_fixed<W, I> x, ap_fixed<W, I> y) {
     ap_fixed<W,I> r = 0;
     if(res[msbr+prcs/2-1]) {
 
-       for(int i = 0; i < W - 1; ++i) {
+       VITIS_LOOP_169_3: for(int i = 0; i < W - 1; ++i) {
 #pragma HLS unroll
  r[i] = 1;
        }
@@ -72111,7 +72111,7 @@ namespace hls {
     uint32_t logb(uint32_t);
 
 };
-# 5 "firmware/nnet_utils/nnet_hept.h" 2
+# 5 "firmware/nnet_utils/nnet_hept_simplified.h" 2
 
 
 # 1 "firmware/nnet_utils/nnet_dense.h" 1
@@ -72562,7 +72562,7 @@ class DenseResource_rf_gt_nin_rem0 : public DenseKernel<data_T, res_T, CONFIG_T>
 };
 
 }
-# 8 "firmware/nnet_utils/nnet_hept.h" 2
+# 8 "firmware/nnet_utils/nnet_hept_simplified.h" 2
 
 
 # 1 "firmware/nnet_utils/nnet_transpose.h" 1
@@ -72586,7 +72586,7 @@ struct transpose_config {
 template <typename CONFIG_T> unsigned transfer_idx(int index) {
 
     int idx = 0;
-    for (int i = CONFIG_T::dims - 1; i >= 0; i--) {
+    VITIS_LOOP_21_1: for (int i = CONFIG_T::dims - 1; i >= 0; i--) {
         idx += (index % CONFIG_T::to_shape[i]) * CONFIG_T::perm_strides[i];
         index /= CONFIG_T::to_shape[i];
     }
@@ -72595,7 +72595,7 @@ template <typename CONFIG_T> unsigned transfer_idx(int index) {
 
 template <typename data_T, typename res_T, typename CONFIG_T>
 void transpose(const data_T data[CONFIG_T::N], res_T res[CONFIG_T::N]) {
-    for (int i = 0; i < CONFIG_T::N; i++) {
+    VITIS_LOOP_30_1: for (int i = 0; i < CONFIG_T::N; i++) {
 #pragma HLS UNROLL
  int idx = transfer_idx<CONFIG_T>(i);
         res[i] = data[idx];
@@ -72603,36 +72603,32 @@ void transpose(const data_T data[CONFIG_T::N], res_T res[CONFIG_T::N]) {
 }
 
 }
-# 11 "firmware/nnet_utils/nnet_hept.h" 2
+# 11 "firmware/nnet_utils/nnet_hept_simplified.h" 2
 
 # 1 "/opt/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 1 3
 # 40 "/opt/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 3
-# 13 "firmware/nnet_utils/nnet_hept.h" 2
+# 13 "firmware/nnet_utils/nnet_hept_simplified.h" 2
 
 
 namespace nnet {
 
-struct hept_config {
+struct hept_simplified_config {
 
-    static const unsigned table_size = 1024;
-    static const int table_min = -8;
-    static const int table_max = 0;
+    static const unsigned exp_table_size = 1024;
+    static const int exp_table_min = -8;
+    static const int exp_table_max = 0;
 
 
     typedef ap_fixed<16, 6> accum_t;
-    typedef ap_fixed<16, 1> table_t;
+    typedef ap_fixed<16, 0> exp_table_t;
     typedef void dense_conf_qk;
-
     typedef void transpose_conf_qk;
 
 
     static const unsigned n_heads = 5;
     static const unsigned batch_size = 5;
     static const unsigned seq_len = 5;
-
-
     static const unsigned dim_per_head = 5;
-
 
 
     static const unsigned io_type = io_parallel;
@@ -72645,132 +72641,69 @@ struct hept_config {
     template <class x_T, class y_T> using product = nnet::product::mult<x_T, y_T>;
 };
 
-template <class data_T, class res_T, typename CONFIG_T>
-void negative_half_sum_square(
-    data_T input[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len * CONFIG_T::dim_per_head],
-    res_T output[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len]) {
-
-#pragma HLS ARRAY_PARTITION variable=output complete
-#pragma HLS ARRAY_PARTITION variable=input complete
-
- const typename CONFIG_T::accum_t negative_half = -0.5;
-    for (unsigned i = 0; i < CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len; i++) {
-#pragma HLS UNROLL factor=CONFIG_T::parallelization_factor
- typename CONFIG_T::accum_t sum = 0;
-        for (unsigned j = 0; j < CONFIG_T::dim_per_head; j++) {
-#pragma HLS UNROLL
- sum += input[i * CONFIG_T::dim_per_head + j] *
-                   input[i * CONFIG_T::dim_per_head + j];
-        }
-        output[i] = sum * negative_half;
-    }
-}
-
-template <typename CONFIG_T, int N_TABLE> void init_exp_table(typename CONFIG_T::table_t table_out[N_TABLE]) {
-    float step = (float)(CONFIG_T::table_max - CONFIG_T::table_min) / (float)(N_TABLE);
-    for (int i = 0; i < N_TABLE; i++) {
-        table_out[i] = (typename CONFIG_T::table_t)(std::exp(CONFIG_T::table_min + step * i));
+template <typename CONFIG_T, int N_TABLE> void init_exp_table(typename CONFIG_T::exp_table_t table_out[N_TABLE]) {
+    float step = (float)(CONFIG_T::exp_table_max - CONFIG_T::exp_table_min) / (float)(N_TABLE);
+    VITIS_LOOP_48_1: for (int i = 0; i < N_TABLE; i++) {
+        table_out[i] = (typename CONFIG_T::exp_table_t)(std::exp(CONFIG_T::exp_table_min + step * i));
     }
 }
 
 template <class data_T, class res_T, typename CONFIG_T>
-void add_clamp_exp(
-    data_T cluster_sum[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len * CONFIG_T::seq_len],
-    data_T q_sq_05[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len],
-    data_T k_sq_05[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len],
-    res_T output[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len * CONFIG_T::seq_len]) {
+void pairwise_dist_sq_rbf(data_T query[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len * CONFIG_T::dim_per_head],
+                      data_T key[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len * CONFIG_T::dim_per_head],
+                      res_T output[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len * CONFIG_T::seq_len]) {
 
 
-
-        bool initialized = false;
-        typename CONFIG_T::table_t exp_table[CONFIG_T::table_size];
+        bool exp_table_initialized = false;
+        typename CONFIG_T::exp_table_t exp_table[CONFIG_T::exp_table_size];
 
 
 
 
-    if (!initialized) {
-        init_exp_table<CONFIG_T, CONFIG_T::table_size>(exp_table);
-        initialized = true;
+    if (!exp_table_initialized) {
+        nnet::init_exp_table<CONFIG_T, CONFIG_T::exp_table_size>(exp_table);
+        exp_table_initialized = true;
     }
-    static const unsigned inv_table_range = CONFIG_T::table_size / (CONFIG_T::table_max - CONFIG_T::table_min);
-
-#pragma HLS ARRAY_PARTITION variable=output complete
-#pragma HLS ARRAY_PARTITION variable=cluster_sum complete
-#pragma HLS ARRAY_PARTITION variable=q_sq_05 complete
-#pragma HLS ARRAY_PARTITION variable=k_sq_05 complete
-
- constexpr unsigned A = CONFIG_T::batch_size * CONFIG_T::n_heads;
-    constexpr unsigned B = CONFIG_T::seq_len;
-
-    for (unsigned a = 0; a < A; a++) {
-#pragma HLS UNROLL factor=CONFIG_T::parallelization_factor
- for (unsigned b = 0; b < B; b++) {
-#pragma HLS UNROLL
- for (unsigned b1 = 0; b1 < B; b1++) {
-#pragma HLS UNROLL
- typename CONFIG_T::accum_t sum = (typename CONFIG_T::accum_t)cluster_sum[a * B * B + b * B + b1] +
-                    (typename CONFIG_T::accum_t)q_sq_05[a * B + b] +
-                    (typename CONFIG_T::accum_t)k_sq_05[a * B + b1];
-                typename CONFIG_T::accum_t clamp_out = sum < 0 ? sum : (typename CONFIG_T::accum_t)0.0;
-                int index = (clamp_out + CONFIG_T::table_max - CONFIG_T::table_min) * inv_table_range;
-                if (index < 0) index = 0;
-                if (index > CONFIG_T::table_size - 1) index = CONFIG_T::table_size - 1;
-                output[a * B * B + b * B + b1] = exp_table[index];
-            }
-        }
-    }
-}
-
-
-template <class data_T, class res_T, typename CONFIG_T>
-void qk_einsum(
-    data_T query[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len * CONFIG_T::dim_per_head],
-    data_T key[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len * CONFIG_T::dim_per_head],
-    res_T output[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len * CONFIG_T::seq_len]) {
-    data_T key_transpose[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len * CONFIG_T::dim_per_head];
-    res_T out_buffer[CONFIG_T::seq_len];
-    typename CONFIG_T::dense_conf_qk::bias_t biases[CONFIG_T::seq_len];
-    nnet::fill_zero<typename CONFIG_T::dense_conf_qk::bias_t, CONFIG_T::seq_len>(biases);
+    static const unsigned exp_table_range_inv = CONFIG_T::exp_table_size / (CONFIG_T::exp_table_max - CONFIG_T::exp_table_min);
 
 #pragma HLS ARRAY_PARTITION variable=query complete
-#pragma HLS ARRAY_PARTITION variable=key_transpose complete
+#pragma HLS ARRAY_PARTITION variable=key complete
 #pragma HLS ARRAY_PARTITION variable=output complete
 
- nnet::transpose<data_T, data_T, typename CONFIG_T::transpose_conf_qk>(key, key_transpose);
+ constexpr unsigned B = CONFIG_T::batch_size * CONFIG_T::n_heads;
+    constexpr unsigned N = CONFIG_T::seq_len;
+    constexpr unsigned D = CONFIG_T::dim_per_head;
 
-    constexpr unsigned A = CONFIG_T::batch_size * CONFIG_T::n_heads;
-    constexpr unsigned B = CONFIG_T::seq_len;
-    constexpr unsigned C = CONFIG_T::dim_per_head;
-
-    for (unsigned a = 0; a < A; a++) {
+    const typename CONFIG_T::accum_t negative_half = -0.5;
+    VITIS_LOOP_80_1: for (unsigned b = 0; b < B; b++) {
 #pragma HLS UNROLL factor=CONFIG_T::parallelization_factor
- for (unsigned b = 0; b < B; b++) {
+ VITIS_LOOP_82_2: for (unsigned nq = 0; nq < N; nq++) {
 #pragma HLS UNROLL
- dense<data_T, res_T, typename CONFIG_T::dense_conf_qk>(&query[(a * B * C + b * C)], out_buffer,
-                                                                &key_transpose[(a * B * C)], biases);
-            for (unsigned b1 = 0; b1 < B; b1++) {
+ VITIS_LOOP_84_3: for (unsigned nk = 0; nk < N; nk++) {
 #pragma HLS UNROLL
- output[(a * B * B + b * B + b1)] = out_buffer[b1];
+ typename CONFIG_T::accum_t sum = 0;
+                VITIS_LOOP_87_4: for (unsigned d = 0; d < D; d++) {
+#pragma HLS UNROLL
+ sum +=
+                        (query[b * N * D + nq * D + d] - key[b * N * D + nk * D + d]) *
+                        (query[b * N * D + nq * D + d] - key[b * N * D + nk * D + d]);
+                }
+                sum *= negative_half;
+                int index = (sum + CONFIG_T::exp_table_max - CONFIG_T::exp_table_min) * exp_table_range_inv;
+                if (index < 0) index = 0;
+                if (index > CONFIG_T::exp_table_size - 1) index = CONFIG_T::exp_table_size - 1;
+                output[b * N * N + nq * N + nk] = exp_table[index];
             }
         }
     }
 }
-# 192 "firmware/nnet_utils/nnet_hept.h"
+
+
 template <class data_T, class res_T, typename CONFIG_T>
-void hept(data_T query[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len * CONFIG_T::dim_per_head],
+void hept_simplified(data_T query[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len * CONFIG_T::dim_per_head],
           data_T key[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len * CONFIG_T::dim_per_head],
-
           res_T output[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len * CONFIG_T::seq_len]) {
-    res_T q_sq_05[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len];
-    res_T k_sq_05[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len];
-    res_T cluster_sum[CONFIG_T::batch_size * CONFIG_T::n_heads * CONFIG_T::seq_len * CONFIG_T::seq_len];
-
-
-    nnet::negative_half_sum_square<data_T, res_T, CONFIG_T>(query, q_sq_05);
-    nnet::negative_half_sum_square<data_T, res_T, CONFIG_T>(key, k_sq_05);
-    nnet::qk_einsum<data_T, res_T, CONFIG_T>(query, key, cluster_sum);
-    nnet::add_clamp_exp<res_T, res_T, CONFIG_T>(cluster_sum, q_sq_05, k_sq_05, output);
-
+    nnet::pairwise_dist_sq_rbf<data_T, res_T, CONFIG_T>(query, key, output);
 }
 
 }
@@ -72820,7 +72753,7 @@ const unsigned* const config3_transpose_qk::to_shape = config3_transpose_qk_to_s
 const unsigned* const config3_transpose_qk::perm = config3_transpose_qk_perm;
 const unsigned* const config3_transpose_qk::perm_strides = config3_transpose_qk_perm_strides;
 
-struct config3 : nnet::hept_config {
+struct config3 : nnet::hept_simplified_config {
     static const unsigned exp_table_size = 1024;
     static const int exp_table_min = -8;
     static const int exp_table_max = 0;
@@ -72844,10 +72777,14 @@ struct config3 : nnet::hept_config {
 # 5 "firmware/myproject.cpp" 2
 
 
-void myproject(
+__attribute__((sdx_kernel("myproject", 0))) void myproject(
     input_t query[5*3*2*7], input2_t key[5*3*2*7],
     result_t layer3_out[5*3*2*2]
 ) {
+#line 183 "/data/hlssynt-users/rflynn/hept_model/hls4ml/hls4ml_projects/hept_simplified_kernel/build_prj.tcl"
+#pragma HLSDIRECTIVE TOP name=myproject
+# 10 "firmware/myproject.cpp"
+
 
 
 #pragma HLS ARRAY_RESHAPE variable=query complete dim=0
@@ -72856,6 +72793,6 @@ void myproject(
 #pragma HLS INTERFACE ap_vld port=query,key,layer3_out
 #pragma HLS PIPELINE
 # 31 "firmware/myproject.cpp"
- nnet::hept<input_t, result_t, config3>(query, key, layer3_out);
+ nnet::hept_simplified<input_t, result_t, config3>(query, key, layer3_out);
 
 }
