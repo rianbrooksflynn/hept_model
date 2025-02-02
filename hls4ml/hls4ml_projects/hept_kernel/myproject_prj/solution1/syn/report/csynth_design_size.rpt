@@ -1,0 +1,82 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             |   9,146      | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 280,794 *    | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 135,708 *    | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 136,386 *    | user inline pragmas are applied                                                        |
+|               | (4) simplification          | 126,439 *    | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 337,798 *    | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 126,088 *    | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 126,088 *    | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 126,088 *    | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 126,088 *    | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 124,144 *    | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 123,838 *    | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 122,974 *    | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 122,974 *    | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                | 123,850 *    | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 120,852 *    | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+    * - Exceeded design size warning message threshold
+
+* Instructions per Function for each Compilation Phase
++-----------------------------------------+-------------------------+----------------+--------------------+--------------------+--------------------+--------------------+
+| Function                                | Location                | Compile/Link   | Unroll/Inline      | Array/Struct       | Performance        | HW Transforms      |
++-----------------------------------------+-------------------------+----------------+--------------------+--------------------+--------------------+--------------------+
+| + myproject                             | myproject.cpp:7         | 9,146          | 126,439 *          | 126,088 *          | 122,974 *          | 120,852 *          |
+|  + hept<ap_fixed<16, 6, AP_RND_...      | nnet_hept.h:238         | 9,134          |                    |                    |                    |                    |
+|   + transpose_qk<ap_fixed<16, 6,...     | nnet_hept.h:59          |   92 (2 calls) |                    |                    |                    |                    |
+|    + transpose<ap_fixed<16, 6, AP...    | nnet_transpose.h:29     |   84 (2 calls) |                    |                    |                    |                    |
+|       transfer_idx<config5_transpo...   | nnet_transpose.h:18     |   50 (2 calls) |                    |                    |                    |                    |
+|   + transpose_v<ap_fixed<16, 6, ...     | nnet_hept.h:67          |   46           |                    |                    |                    |                    |
+|    + transpose<ap_fixed<16, 6, AP...    | nnet_transpose.h:29     |   42           |                    |                    |                    |                    |
+|       transfer_idx<config5_transpo...   | nnet_transpose.h:18     |   25           |                    |                    |                    |                    |
+|   + pairwise_dist_sq_rbf<ap_fixe...     | nnet_hept.h:90          | 3,938          |                    |                    |                    |                    |
+|      init_exp_table<config5, 1024...    | nnet_hept.h:82          |  422           |                    |                    |                    |                    |
+|   + mask_and_normalize<ap_fixed<...     | nnet_hept.h:150         | 3,212          |                    |                    |                    |                    |
+|      init_invert_table<config5, 1...    | nnet_hept.h:140         |  676           |                    |                    |                    |                    |
+|   + bmm<ap_fixed<16, 6, AP_RND_C...     | nnet_hept.h:207         | 1,750          |                    |                    |                    |                    |
+|      fill_zero<ap_fixed<16, 6, AP...    | nnet_helpers.h:304      |  755           |                    |                    |                    |                    |
+|    + dense<ap_fixed<16, 6, AP_RND...    | nnet_dense.h:41         |  928           |                    |                    |                    |                    |
+|     + dense                             | nnet_dense.h:50         |  926           |                    |                    |                    |                    |
+|      + dense_latency<ap_fixed<16, 6...  | nnet_dense_latency.h:13 |  924           |                    |                    |                    |                    |
+|         product                         | nnet_mult.h:70          |  137           |                    |                    |                    |                    |
+|         cast<ap_fixed<16, 6, AP_RND_... | nnet_mult.h:110         |    3           |                    |                    |                    |                    |
+|   + transpose_output<ap_fixed<16...     | nnet_hept.h:75          |   46           |                    |                    |                    |                    |
+|    + transpose<ap_fixed<16, 6, AP...    | nnet_transpose.h:29     |   42           |                    |                    |                    |                    |
+|       transfer_idx<config5_transpo...   | nnet_transpose.h:18     |   25           |                    |                    |                    |                    |
+|  + transpose<ap_fixed<16, 6, AP...      | nnet_transpose.h:29     |                | 11,520 (2 calls)   | 10,946 (2 calls)   | 10,370 (2 calls)   | 10,370 (2 calls)   |
+|     transfer_idx<config5_transpo...     | nnet_transpose.h:18     |                |  8,064 (576 calls) |  8,064 (576 calls) |  8,064 (576 calls) |  8,064 (576 calls) |
+|  + transpose<ap_fixed<16, 6, AP...      | nnet_transpose.h:29     |                |  2,880             |  2,737             |  2,593             |  2,593             |
+|     transfer_idx<config5_transpo...     | nnet_transpose.h:18     |                |  2,016 (144 calls) |  2,016 (144 calls) |  2,016 (144 calls) |  2,016 (144 calls) |
+|    pairwise_dist_sq_rbf<ap_fixe...      | nnet_hept.h:90          |                | 58,390             | 57,745             | 57,169             | 57,169             |
+|    mask_and_normalize<ap_fixed<...      | nnet_hept.h:150         |                | 10,174             | 10,021             |  9,937             |  9,937             |
+|  + bmm<ap_fixed<16, 6, AP_RND_C...      | nnet_hept.h:207         |                | 40,540             | 36,986             | 33,656             | 33,680             |
+|     dense_latency<ap_fixed<16, 6...     | nnet_dense_latency.h:13 |                | 40,032 (24 calls)  | 36,648 (24 calls)  | 33,336 (24 calls)  | 33,360 (24 calls)  |
+|  + transpose<ap_fixed<16, 6, AP...      | nnet_transpose.h:29     |                |  2,880             |  2,737             |  2,593             |  2,593             |
+|     transfer_idx<config5_transpo...     | nnet_transpose.h:18     |                |  2,016 (144 calls) |  2,016 (144 calls) |  2,016 (144 calls) |  2,016 (144 calls) |
++-----------------------------------------+-------------------------+----------------+--------------------+--------------------+--------------------+--------------------+
+    * - Exceeded design size warning message threshold
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+
