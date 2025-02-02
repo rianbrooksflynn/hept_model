@@ -131,15 +131,15 @@ if __name__ == "__main__":
     n_heads = 2
     seq_len = 3
     batch_size = 4
-    dim_per_head = 5
+    dim_per_head = 6
     coords_dim = 6
 
     model = HEPTModel(n_heads, seq_len, batch_size, dim_per_head, coords_dim)
     model.eval()
 
-    query = np.random.randn(n_heads, batch_size * seq_len, dim_per_head + coords_dim)
-    key = np.random.randn(n_heads, batch_size * seq_len, dim_per_head + coords_dim)
-    value = np.random.randn(n_heads, batch_size * seq_len, dim_per_head)
+    query = 0.1 * np.random.randn(n_heads, batch_size * seq_len, dim_per_head + coords_dim)
+    key = 0.1 * np.random.randn(n_heads, batch_size * seq_len, dim_per_head + coords_dim)
+    value = 0.1 * np.random.randn(n_heads, batch_size * seq_len, dim_per_head)
     padding_mask = np.where(np.random.rand(batch_size, seq_len) < 0.8, 1.0, 0.0)
     pytorch_prediction = model(torch.Tensor(query), torch.Tensor(key), torch.Tensor(value), torch.Tensor(padding_mask)).detach().numpy().flatten()
     in_file = str(Path(__file__).parent / 'data' / 'hept_in.dat')

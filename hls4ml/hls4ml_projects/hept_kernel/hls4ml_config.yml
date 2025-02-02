@@ -42,15 +42,15 @@ InputShape:
 - !!python/tuple
   - 2
   - 12
-  - 11
+  - 12
 - !!python/tuple
   - 2
   - 12
-  - 11
+  - 12
 - !!python/tuple
   - 2
   - 12
-  - 5
+  - 6
 - !!python/tuple
   - 4
   - 3
@@ -115,7 +115,7 @@ PytorchModel: !!python/object:__main__.HEPTModel
         - []
         batch_size: 4
         coords_dim: 6
-        dim_per_head: 5
+        dim_per_head: 6
         n_heads: 2
         seq_len: 3
         training: false
@@ -127,7 +127,7 @@ PytorchModel: !!python/object:__main__.HEPTModel
   _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
   - []
   training: false
-Stamp: 23869b8c
+Stamp: 10a2510a
 Version: 1.0.0
 WriterConfig:
   Namespace: null

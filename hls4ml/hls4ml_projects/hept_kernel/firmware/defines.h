@@ -10,17 +10,17 @@
 // hls-fpga-machine-learning insert numbers
 #define N_INPUT_1_1 2
 #define N_INPUT_2_1 12
-#define N_INPUT_3_1 11
+#define N_INPUT_3_1 12
 #define N_INPUT_1_2 2
 #define N_INPUT_2_2 12
-#define N_INPUT_3_2 11
+#define N_INPUT_3_2 12
 #define N_INPUT_1_3 2
 #define N_INPUT_2_3 12
-#define N_INPUT_3_3 5
+#define N_INPUT_3_3 6
 #define N_INPUT_1_4 4
 #define N_INPUT_2_4 3
 #define BATCH_SEQ_5 12
-#define DIM_PER_HEAD_5 5
+#define DIM_PER_HEAD_5 6
 #define N_HEADS_5 2
 
 
