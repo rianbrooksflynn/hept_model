@@ -45,7 +45,9 @@ def attention(Q, K, V, padding_mask):
     Returns:
       out: Tensor of shape (h, N*B, d), same layout as Q/K/V.
     """
-    h, NB, d_model = Q.shape
+    h, NB, d_coords = Q.shape
+    _, _, d = V.shape
+
     # We assume NB = N * B
     # You must know B and N from context (e.g., your data loader).
     # For this example, let's pass them in or compute them:
@@ -57,9 +59,9 @@ def attention(Q, K, V, padding_mask):
     assert NB == N * B, f"Mismatch: NB={NB} != N*B={N*B}"
 
     # 1. Reshape from (h, N*B, d) -> (h, B, N, d) -> permute to (B, h, N, d)
-    Q_4d = Q.view(h, B, N, d_model)  # (h, B, N, d)
-    K_4d = K.view(h, B, N, d_model)
-    V_4d = V.view(h, B, N, d_model)
+    Q_4d = Q.view(h, B, N, d_coords)  # (h, B, N, d)
+    K_4d = K.view(h, B, N, d_coords)
+    V_4d = V.view(h, B, N, d)
 
     # permute so that batch dimension is first: (B, h, N, d)
     Q_bhnd = Q_4d.permute(1, 0, 2, 3).contiguous()
@@ -67,7 +69,7 @@ def attention(Q, K, V, padding_mask):
     V_bhnd = V_4d.permute(1, 0, 2, 3).contiguous()
 
     # 2. Compute pairwise squared distances => (B, h, N, N)
-    dist_sq = (Q_bhnd.unsqueeze(3) - K_bhnd.unsqueeze(2)).pow(2).sum(dim=-1)
+    dist_sq = (Q_bhnd.unsqueeze(-2) - K_bhnd.unsqueeze(-3)).pow(2).sum(dim=-1)
     # dist_sq shape: (B, h, N, N)
 
     # 3. Apply RBF kernel
@@ -83,7 +85,7 @@ def attention(Q, K, V, padding_mask):
     kernel_masked = kernel * attn_mask_f  # (B, h, N, N)
 
     # 6. Normalize row-wise (across N dimension for keys)
-    eps = pow(2, -10)
+    eps = pow(2, -4)
     denom = kernel_masked.sum(dim=-1, keepdim=True) + eps  # (B, h, N, 1)
     attn_weights = kernel_masked / denom  # (B, h, N, N)
 
@@ -93,7 +95,7 @@ def attention(Q, K, V, padding_mask):
     # 8. Reshape back to (h, N*B, d)
     # permute (B, h, N, d) -> (h, B, N, d) -> flatten B*N
     out_hbnd = out_bhnd.permute(1, 0, 2, 3).contiguous()  # (h, B, N, d)
-    out = out_hbnd.view(h, NB, d_model)  # (h, N*B, d)
+    out = out_hbnd.view(h, NB, d)  # (h, N*B, d)
 
     return out
 
@@ -102,21 +104,22 @@ class HEPTKernel(nn.Module):
     '''
     The reworked HEPT attention kernel.
     '''
-    def __init__(self, n_heads, seq_len, batch_size, dim_per_head):
+    def __init__(self, n_heads, seq_len, batch_size, dim_per_head, coords_dim):
         super().__init__()
         self.n_heads = n_heads
         self.seq_len = seq_len
         self.batch_size = batch_size
         self.dim_per_head = dim_per_head
+        self.coords_dim = coords_dim
 
     def forward(self, query, key, value, padding_mask):
         return attention(query, key, value, padding_mask)
 
 
 class HEPTModel(nn.Module): 
-    def __init__(self, n_heads, seq_len, batch_size, dim_per_head):
+    def __init__(self, n_heads, seq_len, batch_size, dim_per_head, coords_dim):
         super().__init__()
-        self.hept = HEPTKernel(n_heads, seq_len, batch_size, dim_per_head)
+        self.hept = HEPTKernel(n_heads, seq_len, batch_size, dim_per_head, coords_dim)
 
     def forward(self, query, key, value, padding_mask):
         return self.hept(query, key, value, padding_mask)
@@ -125,52 +128,56 @@ class HEPTModel(nn.Module):
 if __name__ == "__main__":
     np.random.seed(0)
 
-    n_heads = 8
-    seq_len = 12
-    batch_size = 8
-    dim_per_head = 4
+    n_heads = 2
+    seq_len = 3
+    batch_size = 4
+    dim_per_head = 5
+    coords_dim = 6
 
-    model = HEPTModel(n_heads, seq_len, batch_size, dim_per_head)
+    model = HEPTModel(n_heads, seq_len, batch_size, dim_per_head, coords_dim)
     model.eval()
 
-    query = np.random.randn(n_heads, batch_size * seq_len, dim_per_head)
-    key = np.random.randn(n_heads, batch_size * seq_len, dim_per_head)
+    query = np.random.randn(n_heads, batch_size * seq_len, dim_per_head + coords_dim)
+    key = np.random.randn(n_heads, batch_size * seq_len, dim_per_head + coords_dim)
     value = np.random.randn(n_heads, batch_size * seq_len, dim_per_head)
-    # padding_mask = np.random.randint(0, 2, (batch_size, seq_len))
-    padding_mask = np.ones((batch_size, seq_len))
+    padding_mask = np.where(np.random.rand(batch_size, seq_len) < 0.8, 1.0, 0.0)
     pytorch_prediction = model(torch.Tensor(query), torch.Tensor(key), torch.Tensor(value), torch.Tensor(padding_mask)).detach().numpy().flatten()
-    # in_file = str(Path(__file__).parent / 'data' / 'hept_in.dat')
-    # out_file = str(Path(__file__).parent / 'data' / 'hept_out.dat')
-    # save_data([query.flatten(), key.flatten(), value.flatten()], in_file)
-    # save_data([pytorch_prediction], out_file)
+    in_file = str(Path(__file__).parent / 'data' / 'hept_in.dat')
+    out_file = str(Path(__file__).parent / 'data' / 'hept_out.dat')
+    save_data([query.flatten(), key.flatten(), value.flatten(), padding_mask.flatten()], in_file)
+    save_data([pytorch_prediction], out_file)
 
-    # config = hls4ml.utils.config_from_pytorch_model(
-    #     model, 
-    #     [(n_heads, n_blocks, block_size, dim_per_head + coords_dim),
-    #      (n_heads, n_blocks, block_size, dim_per_head + coords_dim),
-    #      (n_heads, n_blocks, block_size, dim_per_head)],
-    #     granularity='name',
-    #     backend='Vivado',
-    #     channels_last_conversion='off',
-    #     transpose_outputs=False,
-    # )
-    # config['LayerName']['query']['Precision']['result'] = (f'ap_fixed<16,4,AP_RND_CONV,AP_SAT>')
-    # config['LayerName']['key']['Precision']['result'] = (f'ap_fixed<16,4,AP_RND_CONV,AP_SAT>')
-    # config['LayerName']['value']['Precision']['result'] = (f'ap_fixed<16,4,AP_RND_CONV,AP_SAT>')
-    # config['LayerName']['hept']['Precision']['result'] = (f'ap_fixed<16,4,AP_RND_CONV,AP_SAT>')
-    # config['LayerName']['hept']['Precision']['accum'] = (f'ap_fixed<16,4,AP_RND_CONV,AP_SAT>')
-    # config['LayerName']['hept']['Precision']['table'] = (f'ap_ufixed<16,0>')
-    # output_dir = str(Path(__file__).parent / 'hls4ml_projects' / 'hept_einsum')
+    config = hls4ml.utils.config_from_pytorch_model(
+        model, 
+        [(n_heads, batch_size * seq_len, dim_per_head + coords_dim),
+         (n_heads, batch_size * seq_len, dim_per_head + coords_dim),
+         (n_heads, batch_size * seq_len, dim_per_head),
+         (batch_size, seq_len)],
+        granularity='name',
+        backend='Vivado',
+        channels_last_conversion='off',
+        transpose_outputs=False,
+    )
+    config['LayerName']['query']['Precision']['result'] = (f'ap_fixed<16,6,AP_RND_CONV,AP_SAT>')
+    config['LayerName']['key']['Precision']['result'] = (f'ap_fixed<16,6,AP_RND_CONV,AP_SAT>')
+    config['LayerName']['value']['Precision']['result'] = (f'ap_fixed<16,6,AP_RND_CONV,AP_SAT>')
+    config['LayerName']['padding_mask']['Precision']['result'] = (f'ap_fixed<16,6,AP_RND_CONV,AP_SAT>')
+    config['LayerName']['hept']['Precision']['result'] = (f'ap_fixed<16,6,AP_RND_CONV,AP_SAT>')
+    config['LayerName']['hept']['Precision']['accum'] = (f'ap_fixed<16,6,AP_RND_CONV,AP_SAT>')
+    config['LayerName']['hept']['Precision']['exp_table'] = (f'ap_ufixed<16,0>')
+    config['LayerName']['hept']['Precision']['inv_table'] = (f'ap_ufixed<16,10,AP_RND_CONV,AP_SAT>')
+    output_dir = str(Path(__file__).parent / 'hls4ml_projects' / 'hept_kernel')
 
-    # hls_model = hls4ml.converters.convert_from_pytorch_model(model, hls_config=config, io_type='io_parallel', output_dir=output_dir, input_data_tb=in_file, output_data_tb=out_file)
-    # hls_model.compile()
+    hls_model = hls4ml.converters.convert_from_pytorch_model(model, hls_config=config, io_type='io_parallel', output_dir=output_dir, input_data_tb=in_file, output_data_tb=out_file)
+    hls_model.compile()
 
-    # hls_prediction = hls_model.predict([query, key, value]).flatten()
-    # hls_out_file = str(Path(__file__).parent / 'data' / 'hept_hls_out.dat')
-    # save_data([hls_prediction], hls_out_file)
-    # diff = np.abs(pytorch_prediction - hls_prediction)
-    # rel_diff = diff / pytorch_prediction
-    # print(f"Max absolute difference: {np.max(diff)}")
-    # print(f"Average absolute difference: {np.mean(diff)}")
-    # print(f"Max relative difference: {np.max(rel_diff)}")
-    # print(f"Average relative difference: {np.mean(rel_diff)}")
+    hls_prediction = hls_model.predict([query, key, value, padding_mask]).flatten()
+    hls_out_file = str(Path(__file__).parent / 'data' / 'hept_hls_out.dat')
+    save_data([hls_prediction], hls_out_file)
+    diff = np.abs(pytorch_prediction - hls_prediction)
+    nonzeros = np.where(pytorch_prediction != 0.0)
+    rel_diff = np.abs(diff[nonzeros] / pytorch_prediction[nonzeros])
+    print(f"Max absolute difference: {np.max(diff)}")
+    print(f"Average absolute difference: {np.mean(diff)}")
+    print(f"Max relative difference: {np.max(rel_diff)}")
+    print(f"Average relative difference: {np.mean(rel_diff)}")

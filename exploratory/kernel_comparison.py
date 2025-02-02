@@ -13,15 +13,14 @@ def original_hept_kernel(query, key):
     return qk
 
 if __name__ == "__main__":
-    query = torch.randn(10, 10, 10, 10)
-    key = torch.randn(10, 10, 10, 10)
+    query = torch.randn(100, 8, 20, 30)
+    key = torch.randn(100, 8, 20, 30)
     simplified = simplified_hept_kernel(query, key).flatten()
     original = original_hept_kernel(query, key).flatten()
     diff = torch.abs(simplified - original)
     rel_diff = diff / original
-    print(f"Max diff: {torch.max(diff)}")
-    print(f"Min diff: {torch.min(diff)}")
-    print(f"Average diff: {torch.mean(diff)}")
-    print(f"Max rel diff: {torch.max(rel_diff)}")
-    print(f"Min rel diff: {torch.min(rel_diff)}")
-    print(f"Average rel diff: {torch.mean(rel_diff)}")
+    print(f"Maximum absolute difference: {torch.max(diff):.2e}")
+    print(f"Average absolute difference: {torch.mean(diff):.2e}")
+    print(f"Maximum relative difference: {torch.max(rel_diff):.2e}")
+    print(f"Average relative difference: {torch.mean(rel_diff):.2e}")
+
