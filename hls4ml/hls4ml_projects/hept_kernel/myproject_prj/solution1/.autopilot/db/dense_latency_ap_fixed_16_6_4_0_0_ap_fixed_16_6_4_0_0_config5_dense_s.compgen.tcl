@@ -1,7 +1,69 @@
 # This script segment is generated automatically by AutoPilot
 
+set id 1097
+set name myproject_mul_16s_16s_32_1_1
+set corename simcore_mul
+set op mul
+set stage_num 1
+set max_latency -1
+set registered_input 1
+set in0_width 16
+set in0_signed 1
+set in1_width 16
+set in1_signed 1
+set out_width 32
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
+eval "ap_gen_simcore_mul { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    out_width ${out_width} \
+}"
+} else {
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
+}
+}
+
+
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler myproject_sparsemux_15_3_16_1_1 BINDTYPE {op} TYPE {sparsemux} IMPL {auto}
+	::AP::rtl_comp_handler ${name}
+}
+
+
+set op mul
+set corename Multiplier
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul] == "::AESL_LIB_VIRTEX::xil_gen_multicycle_mul"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_multicycle_mul { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    out_width ${out_width} \
+}"
+} else {
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, check your platform lib"
+}
 }
 
 
@@ -12,423 +74,71 @@ if {${::AESL::PGuard_autoexp_gen}} {
     AESL_LIB_XILADAPTER::native_axis_begin
 }
 
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1116 \
+    name data \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename data \
+    op interface \
+    ports { data_address0 { O 7 vector } data_ce0 { O 1 bit } data_q0 { I 16 vector } data_address1 { O 7 vector } data_ce1 { O 1 bit } data_q1 { I 16 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'data'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1118 \
+    name weights \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename weights \
+    op interface \
+    ports { weights_address0 { O 8 vector } weights_ce0 { O 1 bit } weights_q0 { I 16 vector } weights_address1 { O 8 vector } weights_ce1 { O 1 bit } weights_q1 { I 16 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'weights'"
+}
+}
+
+
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2201 \
-    name data_0_val \
+    id 1117 \
+    name data_offset \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_data_0_val \
+    corename dc_data_offset \
     op interface \
-    ports { data_0_val { I 16 vector } } \
+    ports { data_offset { I 7 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2202 \
-    name data_1_val \
+    id 1119 \
+    name weights_offset \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_data_1_val \
+    corename dc_weights_offset \
     op interface \
-    ports { data_1_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2203 \
-    name data_2_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_2_val \
-    op interface \
-    ports { data_2_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2204 \
-    name data_3_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_3_val \
-    op interface \
-    ports { data_3_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2205 \
-    name data_4_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_4_val \
-    op interface \
-    ports { data_4_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2206 \
-    name data_5_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_5_val \
-    op interface \
-    ports { data_5_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2207 \
-    name data_6_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_6_val \
-    op interface \
-    ports { data_6_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2208 \
-    name data_7_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_7_val \
-    op interface \
-    ports { data_7_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2209 \
-    name data_8_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_8_val \
-    op interface \
-    ports { data_8_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2210 \
-    name weights_0_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_0_val \
-    op interface \
-    ports { weights_0_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2211 \
-    name weights_1_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_1_val \
-    op interface \
-    ports { weights_1_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2212 \
-    name weights_2_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_2_val \
-    op interface \
-    ports { weights_2_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2213 \
-    name weights_3_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_3_val \
-    op interface \
-    ports { weights_3_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2214 \
-    name weights_4_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_4_val \
-    op interface \
-    ports { weights_4_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2215 \
-    name weights_5_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_5_val \
-    op interface \
-    ports { weights_5_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2216 \
-    name weights_6_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_6_val \
-    op interface \
-    ports { weights_6_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2217 \
-    name weights_7_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_7_val \
-    op interface \
-    ports { weights_7_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2218 \
-    name weights_8_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_8_val \
-    op interface \
-    ports { weights_8_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2219 \
-    name weights_9_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_9_val \
-    op interface \
-    ports { weights_9_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2220 \
-    name weights_10_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_10_val \
-    op interface \
-    ports { weights_10_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2221 \
-    name weights_11_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_11_val \
-    op interface \
-    ports { weights_11_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2222 \
-    name weights_12_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_12_val \
-    op interface \
-    ports { weights_12_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2223 \
-    name weights_13_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_13_val \
-    op interface \
-    ports { weights_13_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2224 \
-    name weights_14_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_14_val \
-    op interface \
-    ports { weights_14_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2225 \
-    name weights_15_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_15_val \
-    op interface \
-    ports { weights_15_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2226 \
-    name weights_16_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_16_val \
-    op interface \
-    ports { weights_16_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2227 \
-    name weights_17_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_weights_17_val \
-    op interface \
-    ports { weights_17_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2228 \
-    name idx \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_idx \
-    op interface \
-    ports { idx { I 3 vector } } \
+    ports { weights_offset { I 7 vector } } \
 } "
 }
 
@@ -436,6 +146,20 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id -1 \
+    name ap_ctrl \
+    type ap_ctrl \
+    reset_level 1 \
+    sync_rst true \
+    corename ap_ctrl \
+    op interface \
+    ports { ap_start { I 1 bit } ap_ready { O 1 bit } ap_done { O 1 bit } ap_idle { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id -2 \
     name ap_return \
     type ap_return \
     reset_level 1 \
@@ -453,7 +177,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_clock] == "cg_default_interface_gen_clock"} {
 eval "cg_default_interface_gen_clock { \
-    id -2 \
+    id -3 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
@@ -473,7 +197,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_reset] == "cg_default_interface_gen_reset"} {
 eval "cg_default_interface_gen_reset { \
-    id -3 \
+    id -4 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
@@ -493,7 +217,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_ce] == "cg_default_interface_gen_ce"} {
 eval "cg_default_interface_gen_ce { \
-    id -4 \
+    id -5 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \

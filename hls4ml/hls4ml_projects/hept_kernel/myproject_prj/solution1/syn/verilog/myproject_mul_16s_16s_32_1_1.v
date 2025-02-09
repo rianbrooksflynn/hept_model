@@ -1,47 +1,38 @@
-// 67d7842dbbe25473c3c32b93c0da8047785f30d78e8a024de1b57352245f9689
+// ==============================================================
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// ==============================================================
 
 `timescale 1 ns / 1 ps
 
-  module myproject_mul_16s_16s_32_1_1(din0, din1, dout);
-parameter ID = 1;
-parameter NUM_STAGE = 0;
-parameter din0_WIDTH = 14;
-parameter din1_WIDTH = 12;
-parameter dout_WIDTH = 26;
+module myproject_mul_16s_16s_32_1_1_Multiplier_0(a, b, p);
+input[16 - 1 : 0] a; 
+input[16 - 1 : 0] b; 
+output[32 - 1 : 0] p;
 
-input [din0_WIDTH - 1 : 0] din0; 
-input [din1_WIDTH - 1 : 0] din1; 
-output [dout_WIDTH - 1 : 0] dout;
+assign p = $signed(a) * $signed(b);
+endmodule
+`timescale 1 ns / 1 ps
+module myproject_mul_16s_16s_32_1_1(
+    din0,
+    din1,
+    dout);
 
-wire signed [dout_WIDTH - 1 : 0] tmp_product;
-
-
-
-
-
-
-
-
-
-
-
-
-
-assign tmp_product = $signed(din0) * $signed(din1);
+parameter ID = 32'd1;
+parameter NUM_STAGE = 32'd1;
+parameter din0_WIDTH = 32'd1;
+parameter din1_WIDTH = 32'd1;
+parameter dout_WIDTH = 32'd1;
+input[din0_WIDTH - 1:0] din0;
+input[din1_WIDTH - 1:0] din1;
+output[dout_WIDTH - 1:0] dout;
 
 
 
-
-
-
-
-
-assign dout = tmp_product;
-
-
-
-
-
-
+myproject_mul_16s_16s_32_1_1_Multiplier_0 myproject_mul_16s_16s_32_1_1_Multiplier_0_U(
+    .a( din0 ),
+    .b( din1 ),
+    .p( dout ));
 
 endmodule
+

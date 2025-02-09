@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/hls_component/myproject/hls/./sim/autowrap/testbench/myproject.cpp_pre.cpp.tb.cpp

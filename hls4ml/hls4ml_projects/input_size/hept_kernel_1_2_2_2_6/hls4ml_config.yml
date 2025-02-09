@@ -1,0 +1,135 @@
+Backend: Vivado
+ClockPeriod: 5
+ClockUncertainty: 12.5%
+HLSConfig:
+  LayerName:
+    hept:
+      Precision:
+        accum: ap_fixed<13,4,AP_RND_CONV,AP_SAT>
+        exp_table: ap_ufixed<13,0>
+        inv_table: ap_ufixed<13,4,AP_RND_CONV,AP_SAT>
+        result: ap_fixed<13,4,AP_RND_CONV,AP_SAT>
+      ReuseFactor: 1
+      Trace: false
+    key:
+      Precision:
+        result: ap_fixed<13,4,AP_RND_CONV,AP_SAT>
+      Trace: false
+    padding_mask:
+      Precision:
+        result: ap_fixed<13,4,AP_RND_CONV,AP_SAT>
+      Trace: false
+    query:
+      Precision:
+        result: ap_fixed<13,4,AP_RND_CONV,AP_SAT>
+      Trace: false
+    value:
+      Precision:
+        result: ap_fixed<13,4,AP_RND_CONV,AP_SAT>
+      Trace: false
+  Model:
+    BramFactor: 1000000000
+    ChannelsLastConversion: 'off'
+    Precision:
+      default: ap_fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+    TransposeOutputs: false
+IOType: io_parallel
+InputData: null
+InputShape:
+- !!python/tuple
+  - 1
+  - 4
+  - 8
+- !!python/tuple
+  - 1
+  - 4
+  - 8
+- !!python/tuple
+  - 1
+  - 4
+  - 2
+- !!python/tuple
+  - 2
+  - 2
+OutputDir: /home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/input_size/hept_kernel_1_2_2_2_6
+OutputPredictions: null
+Part: xcvu13p-flga2577-2-e
+ProjectName: myproject
+PytorchModel: !!python/object:__main__.HEPTModel
+  _backward_hooks: !!python/object/apply:collections.OrderedDict
+  - []
+  _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+  - []
+  _buffers: !!python/object/apply:collections.OrderedDict
+  - []
+  _forward_hooks: !!python/object/apply:collections.OrderedDict
+  - []
+  _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+  - []
+  _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+  - []
+  _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+  - []
+  _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+  - []
+  _is_full_backward_hook: null
+  _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+  - []
+  _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+  - []
+  _modules: !!python/object/apply:collections.OrderedDict
+  - - - hept
+      - !!python/object:__main__.HEPTKernel
+        _backward_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        _buffers: !!python/object/apply:collections.OrderedDict
+        - []
+        _forward_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+        - []
+        _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+        - []
+        _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+        - []
+        _is_full_backward_hook: null
+        _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        _modules: !!python/object/apply:collections.OrderedDict
+        - []
+        _non_persistent_buffers_set: !!set {}
+        _parameters: !!python/object/apply:collections.OrderedDict
+        - []
+        _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+        - []
+        batch_size: 2
+        coords_dim: 6
+        dim_per_head: 2
+        n_heads: 1
+        seq_len: 2
+        training: false
+  _non_persistent_buffers_set: !!set {}
+  _parameters: !!python/object/apply:collections.OrderedDict
+  - []
+  _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+  - []
+  _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+  - []
+  training: false
+Stamp: 0074bc9a
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  WriteTar: false
+  WriteWeightsTxt: true

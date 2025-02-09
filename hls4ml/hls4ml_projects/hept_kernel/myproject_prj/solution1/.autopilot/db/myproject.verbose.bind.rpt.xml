@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'myproject'" level="0">
-<item name = "Date">Sun Feb  2 21:00:39 2025
+<item name = "Date">Thu Feb  6 04:44:29 2025
 </item>
-<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Version">2020.1 (Build 2902540 on Wed May 27 20:16:15 MDT 2020)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">virtexuplus</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.322 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.347 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,20 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">17, 17, 85.000 ns, 85.000 ns, 1, 1, yes</column>
+<column name="">1047, 1047, 5.235 us, 5.235 us, 1048, 1048, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="call_ret1_transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_qk_s_fu_7190">transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_qk_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="call_ret2_transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_qk_s_fu_7770">transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_qk_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="grp_pairwise_dist_sq_rbf_ap_fixed_ap_fixed_16_6_4_0_0_config5_s_fu_8350">pairwise_dist_sq_rbf_ap_fixed_ap_fixed_16_6_4_0_0_config5_s, 9, 9, 45.000 ns, 45.000 ns, 1, 1, yes</column>
-<column name="grp_mask_and_normalize_ap_fixed_16_6_4_0_0_ap_fixed_16_6_4_0_0_config5_s_fu_8932">mask_and_normalize_ap_fixed_16_6_4_0_0_ap_fixed_16_6_4_0_0_config5_s, 5, 5, 25.000 ns, 25.000 ns, 1, 1, yes</column>
-<column name="call_ret_transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_v_s_fu_9022">transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_v_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="grp_bmm_ap_fixed_16_6_4_0_0_ap_fixed_16_6_4_0_0_config5_s_fu_9170">bmm_ap_fixed_16_6_4_0_0_ap_fixed_16_6_4_0_0_config5_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
-<column name="call_ret6_transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_output_s_fu_9390">transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_output_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="grp_pairwise_dist_sq_rbf_ap_fixed_ap_fixed_16_6_4_0_0_config5_s_fu_72">pairwise_dist_sq_rbf_ap_fixed_ap_fixed_16_6_4_0_0_config5_s, 197, 197, 0.985 us, 0.985 us, 144, 144, function</column>
+<column name="grp_mask_and_normalize_ap_fixed_16_6_4_0_0_ap_fixed_16_6_4_0_0_config5_s_fu_81">mask_and_normalize_ap_fixed_16_6_4_0_0_ap_fixed_16_6_4_0_0_config5_s, 42, 42, 0.210 us, 0.210 us, 36, 36, function</column>
+<column name="grp_transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_qk_s_fu_91">transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_qk_s, 144, 144, 0.720 us, 0.720 us, 144, 144, function</column>
+<column name="grp_transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_qk_s_fu_99">transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_qk_s, 144, 144, 0.720 us, 0.720 us, 144, 144, function</column>
+<column name="grp_bmm_ap_fixed_16_6_4_0_0_ap_fixed_16_6_4_0_0_config5_s_fu_107">bmm_ap_fixed_16_6_4_0_0_ap_fixed_16_6_4_0_0_config5_s, 426, 426, 2.130 us, 2.130 us, 426, 426, none</column>
+<column name="grp_transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_v_s_fu_114">transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_v_s, 72, 72, 0.360 us, 0.360 us, 72, 72, function</column>
+<column name="grp_transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_output_s_fu_121">transpose_ap_fixed_ap_fixed_16_6_4_0_0_config5_transpose_output_s, 72, 72, 0.360 us, 0.360 us, 72, 72, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

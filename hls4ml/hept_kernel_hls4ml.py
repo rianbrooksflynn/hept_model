@@ -1,7 +1,9 @@
 from pathlib import Path
+from itertools import product
 import numpy as np
 import torch
 import torch.nn as nn
+import matplotlib.pyplot as plt
 import hls4ml
 
 def save_data(data, file_path):
@@ -125,13 +127,11 @@ class HEPTModel(nn.Module):
         return self.hept(query, key, value, padding_mask)
 
 
-if __name__ == "__main__":
-    np.random.seed(0)
-
-    n_heads = 2
-    seq_len = 3
-    batch_size = 4
-    dim_per_head = 6
+def iter_quantization(bit_width, int_bits):
+    n_heads = 1
+    seq_len = 20
+    batch_size = 10
+    dim_per_head = 24
     coords_dim = 6
 
     model = HEPTModel(n_heads, seq_len, batch_size, dim_per_head, coords_dim)
@@ -140,11 +140,9 @@ if __name__ == "__main__":
     query = 0.1 * np.random.randn(n_heads, batch_size * seq_len, dim_per_head + coords_dim)
     key = 0.1 * np.random.randn(n_heads, batch_size * seq_len, dim_per_head + coords_dim)
     value = 0.1 * np.random.randn(n_heads, batch_size * seq_len, dim_per_head)
-    padding_mask = np.where(np.random.rand(batch_size, seq_len) < 0.8, 1.0, 0.0)
+    padding_mask = np.where(np.random.rand(batch_size, seq_len) < 0.75, 1.0, 0.0)
     pytorch_prediction = model(torch.Tensor(query), torch.Tensor(key), torch.Tensor(value), torch.Tensor(padding_mask)).detach().numpy().flatten()
-    in_file = str(Path(__file__).parent / 'data' / 'hept_in.dat')
-    out_file = str(Path(__file__).parent / 'data' / 'hept_out.dat')
-    save_data([query.flatten(), key.flatten(), value.flatten(), padding_mask.flatten()], in_file)
+    out_file = str(Path(__file__).parent / 'data' / 'hept_quantization_out.txt')
     save_data([pytorch_prediction], out_file)
 
     config = hls4ml.utils.config_from_pytorch_model(
@@ -158,26 +156,124 @@ if __name__ == "__main__":
         channels_last_conversion='off',
         transpose_outputs=False,
     )
-    config['LayerName']['query']['Precision']['result'] = (f'ap_fixed<16,6,AP_RND_CONV,AP_SAT>')
-    config['LayerName']['key']['Precision']['result'] = (f'ap_fixed<16,6,AP_RND_CONV,AP_SAT>')
-    config['LayerName']['value']['Precision']['result'] = (f'ap_fixed<16,6,AP_RND_CONV,AP_SAT>')
-    config['LayerName']['padding_mask']['Precision']['result'] = (f'ap_fixed<16,6,AP_RND_CONV,AP_SAT>')
-    config['LayerName']['hept']['Precision']['result'] = (f'ap_fixed<16,6,AP_RND_CONV,AP_SAT>')
-    config['LayerName']['hept']['Precision']['accum'] = (f'ap_fixed<16,6,AP_RND_CONV,AP_SAT>')
-    config['LayerName']['hept']['Precision']['exp_table'] = (f'ap_ufixed<16,0>')
-    config['LayerName']['hept']['Precision']['inv_table'] = (f'ap_ufixed<16,10,AP_RND_CONV,AP_SAT>')
-    output_dir = str(Path(__file__).parent / 'hls4ml_projects' / 'hept_kernel')
+    # Inversion table will use at most 5 integer bits since epsilon is 2^(-4)
+    inv_int_bits = min(int_bits, 5)
+    config['LayerName']['query']['Precision']['result'] = (f'ap_fixed<{bit_width},{int_bits},AP_RND_CONV,AP_SAT>')
+    config['LayerName']['key']['Precision']['result'] = (f'ap_fixed<{bit_width},{int_bits},AP_RND_CONV,AP_SAT>')
+    config['LayerName']['value']['Precision']['result'] = (f'ap_fixed<{bit_width},{int_bits},AP_RND_CONV,AP_SAT>')
+    config['LayerName']['padding_mask']['Precision']['result'] = (f'ap_fixed<{bit_width},{int_bits},AP_RND_CONV,AP_SAT>')
+    config['LayerName']['hept']['Precision']['result'] = (f'ap_fixed<{bit_width},{int_bits},AP_RND_CONV,AP_SAT>')
+    config['LayerName']['hept']['Precision']['accum'] = (f'ap_fixed<{bit_width},{int_bits},AP_RND_CONV,AP_SAT>')
+    config['LayerName']['hept']['Precision']['exp_table'] = (f'ap_ufixed<{bit_width},0>')
+    config['LayerName']['hept']['Precision']['inv_table'] = (f'ap_ufixed<{bit_width},{inv_int_bits},AP_RND_CONV,AP_SAT>')
 
-    hls_model = hls4ml.converters.convert_from_pytorch_model(model, hls_config=config, io_type='io_parallel', output_dir=output_dir, input_data_tb=in_file, output_data_tb=out_file)
+    output_dir = str(Path(__file__).parent / 'hls4ml_projects' / 'quantization' / f'hept_kernel_{bit_width}_{int_bits}')
+    hls_model = hls4ml.converters.convert_from_pytorch_model(model, hls_config=config, io_type='io_parallel', output_dir=output_dir)
     hls_model.compile()
 
     hls_prediction = hls_model.predict([query, key, value, padding_mask]).flatten()
-    hls_out_file = str(Path(__file__).parent / 'data' / 'hept_hls_out.dat')
-    save_data([hls_prediction], hls_out_file)
-    diff = np.abs(pytorch_prediction - hls_prediction)
-    nonzeros = np.where(pytorch_prediction != 0.0)
-    rel_diff = np.abs(diff[nonzeros] / pytorch_prediction[nonzeros])
-    print(f"Max absolute difference: {np.max(diff)}")
-    print(f"Average absolute difference: {np.mean(diff)}")
-    print(f"Max relative difference: {np.max(rel_diff)}")
-    print(f"Average relative difference: {np.mean(rel_diff)}")
+    rmse = np.sqrt(np.mean((hls_prediction - pytorch_prediction)**2))
+    return rmse
+
+
+def quantization_sweep():
+    np.random.seed(42)
+
+    # Iterate over number of integer bits, with 9 fractional bits
+    int_bits_range = np.arange(1, 16)
+    rmse_int = np.array([iter_quantization(i + 9, i) for i in int_bits_range])
+    rmse_int = np.column_stack((int_bits_range, rmse_int))
+    
+    # Iterate over number of fractional bits, with 4 integer bits
+    frac_bits_range = np.arange(2, 17)
+    rmse_frac = np.array([iter_quantization(4 + i, 4) for i in frac_bits_range])
+    rmse_frac = np.column_stack((frac_bits_range, rmse_frac))
+
+    # Save results to npy files
+    np.save(str(Path(__file__).parent / 'data' / 'rmse_int.npy'), rmse_int)
+    np.save(str(Path(__file__).parent / 'data' / 'rmse_frac.npy'), rmse_frac)
+
+    # Print results
+    print(rmse_int)
+    print(rmse_frac)
+
+    # Plot results
+    plt.rcParams['figure.dpi'] = 192
+    fig1, ax1 = plt.subplots()
+    ax1.plot(rmse_int[:, 0], rmse_int[:, 1], '-s', label='Integer bits')
+    ax1.set_xticks(np.arange(1, 16, 2), [f'<{i+8},{i}>' for i in np.arange(1, 16, 2)])
+    ax1.set_title('Integer-part quantization with 9 fractional bits')
+    ax1.set_xlabel('Fixed-point precision')
+    ax1.set_ylabel('Root mean squared error (RMSE)')
+    ax1.grid(color='0.8')
+
+    fig2, ax2 = plt.subplots()
+    ax2.plot(rmse_frac[:, 0], rmse_frac[:, 1], '-s', label='Fractional bits')
+    ax2.set_xticks(np.arange(2, 17, 2), [f'<{4+i},{4}>' for i in np.arange(2, 17, 2)])
+    ax2.set_title('Fractional-part quantization with 4 integer bits')
+    ax2.set_xlabel('Fixed-point precision')
+    ax2.set_ylabel('Root mean squared error (RMSE)')
+    ax2.grid(color='0.8')
+
+    fig1.savefig(str(Path(__file__).parent / 'plots' / 'hept_kernel_quantization_int.png'))
+    fig2.savefig(str(Path(__file__).parent / 'plots' / 'hept_kernel_quantization_frac.png'))
+    plt.show()
+
+
+def iter_input_size(n_heads, seq_len, batch_size, dim_per_head, coords_dim):
+    model = HEPTModel(n_heads, seq_len, batch_size, dim_per_head, coords_dim)
+    model.eval()
+
+    query = 0.1 * np.random.randn(n_heads, batch_size * seq_len, dim_per_head + coords_dim)
+    key = 0.1 * np.random.randn(n_heads, batch_size * seq_len, dim_per_head + coords_dim)
+    value = 0.1 * np.random.randn(n_heads, batch_size * seq_len, dim_per_head)
+    padding_mask = np.where(np.random.rand(batch_size, seq_len) < 0.75, 1.0, 0.0)
+    pytorch_prediction = model(torch.Tensor(query), torch.Tensor(key), torch.Tensor(value), torch.Tensor(padding_mask)).detach().numpy().flatten()
+    in_file = str(Path(__file__).parent / 'data' / 'hept_input.txt')
+    out_file = str(Path(__file__).parent / 'data' / 'hept_output.txt')
+    save_data([query, key, value, padding_mask], in_file)
+    save_data([pytorch_prediction], out_file)
+
+    config = hls4ml.utils.config_from_pytorch_model(
+        model, 
+        [(n_heads, batch_size * seq_len, dim_per_head + coords_dim),
+         (n_heads, batch_size * seq_len, dim_per_head + coords_dim),
+         (n_heads, batch_size * seq_len, dim_per_head),
+         (batch_size, seq_len)],
+        granularity='name',
+        backend='Vivado',
+        channels_last_conversion='off',
+        transpose_outputs=False,
+    )
+
+    bit_width = 13
+    int_bits = 4
+    config['LayerName']['query']['Precision']['result'] = (f'ap_fixed<{bit_width},{int_bits},AP_RND_CONV,AP_SAT>')
+    config['LayerName']['key']['Precision']['result'] = (f'ap_fixed<{bit_width},{int_bits},AP_RND_CONV,AP_SAT>')
+    config['LayerName']['value']['Precision']['result'] = (f'ap_fixed<{bit_width},{int_bits},AP_RND_CONV,AP_SAT>')
+    config['LayerName']['padding_mask']['Precision']['result'] = (f'ap_fixed<{bit_width},{int_bits},AP_RND_CONV,AP_SAT>')
+    config['LayerName']['hept']['Precision']['result'] = (f'ap_fixed<{bit_width},{int_bits},AP_RND_CONV,AP_SAT>')
+    config['LayerName']['hept']['Precision']['accum'] = (f'ap_fixed<{bit_width},{int_bits},AP_RND_CONV,AP_SAT>')
+    config['LayerName']['hept']['Precision']['exp_table'] = (f'ap_ufixed<{bit_width},0>')
+    config['LayerName']['hept']['Precision']['inv_table'] = (f'ap_ufixed<{bit_width},{int_bits},AP_RND_CONV,AP_SAT>')
+
+    output_dir = str(Path(__file__).parent / 'hls4ml_projects' / 'input_size' / f'hept_kernel_{n_heads}_{seq_len}_{batch_size}_{dim_per_head}_{coords_dim}')
+    hls_model = hls4ml.converters.convert_from_pytorch_model(model, hls_config=config, io_type='io_parallel', output_dir=output_dir, input_data=in_file, output_data=out_file)
+    hls_model.compile()
+
+
+def input_size_sweep():
+    np.random.seed(42)
+
+    n_heads = [1]
+    seq_lens = [2, 4]
+    batch_sizes = [2, 4]
+    dims_per_head = [2, 4, 6]
+    coords_dims = [6]
+
+    for n_head, seq_len, batch_size, dim_per_head, coords_dim in product(n_heads, seq_lens, batch_sizes, dims_per_head, coords_dims):
+        iter_input_size(n_head, seq_len, batch_size, dim_per_head, coords_dim)
+
+
+if __name__ == "__main__":
+    input_size_sweep()

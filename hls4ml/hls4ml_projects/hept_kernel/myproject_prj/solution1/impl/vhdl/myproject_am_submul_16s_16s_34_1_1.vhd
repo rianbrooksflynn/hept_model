@@ -1,9 +1,6 @@
 -- ==============================================================
--- Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
--- Tool Version Limit: 2023.10
--- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
--- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
--- 
+-- Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- ==============================================================
 library IEEE;
 use IEEE.std_logic_1164.all;

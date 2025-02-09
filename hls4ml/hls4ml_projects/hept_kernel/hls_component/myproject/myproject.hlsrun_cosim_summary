@@ -1,0 +1,226 @@
+<ENTRY>
+{
+ "thisFile": "/home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/hls_component/myproject/myproject.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Feb  2 15:55:11 2025",
+ "timestampMillis": "1738529711055",
+ "buildStep": {
+  "cmdId": "0146466a-c47f-4579-97c6-afb053cf3dfa",
+  "name": "vitis-run",
+  "logFile": "/home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/hls_component/myproject/logs/myproject.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --cosim --config /home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/hls_component/hls_config.cfg --work_dir myproject ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "/home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/hls_component/hls_config.cfg",
+   "--work_dir",
+   "myproject"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Feb  2 15:55:11 2025",
+ "timestampMillis": "1738529711055",
+ "status": {
+  "cmdId": "0146466a-c47f-4579-97c6-afb053cf3dfa",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun Feb  2 15:55:13 2025",
+ "timestampMillis": "1738529713880",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "myproject",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/firmware/myproject.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2023.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Feb  2 15:55:13 2025",
+ "timestampMillis": "1738529713881",
+ "buildStep": {
+  "cmdId": "d4ca5077-466f-442b-be50-6d0c65cbc986",
+  "name": "cosim_design",
+  "logFile": "/home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/hls_component/myproject/hls/hls.log",
+  "commandLine": "cosim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Feb  2 15:55:13 2025",
+ "timestampMillis": "1738529713881",
+ "status": {
+  "cmdId": "d4ca5077-466f-442b-be50-6d0c65cbc986",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb  2 15:55:13 2025",
+ "timestampMillis": "1738529713881",
+ "report": {
+  "path": "/home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/hls_component/myproject/hls/sim/report/myproject_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb  2 15:55:13 2025",
+ "timestampMillis": "1738529713881",
+ "report": {
+  "path": "/home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/hls_component/myproject/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb  2 15:55:13 2025",
+ "timestampMillis": "1738529713882",
+ "report": {
+  "path": "/home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/hls_component/myproject/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb  2 15:55:13 2025",
+ "timestampMillis": "1738529713882",
+ "report": {
+  "path": "/home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/hls_component/myproject/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb  2 15:55:13 2025",
+ "timestampMillis": "1738529713882",
+ "report": {
+  "path": "/home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/hls_component/myproject/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Feb  2 16:02:24 2025",
+ "timestampMillis": "1738530144084",
+ "status": {
+  "cmdId": "d4ca5077-466f-442b-be50-6d0c65cbc986",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Feb  2 16:02:24 2025",
+ "timestampMillis": "1738530144166",
+ "status": {
+  "cmdId": "0146466a-c47f-4579-97c6-afb053cf3dfa",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb  2 16:02:24 2025",
+ "timestampMillis": "1738530144167",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Feb  2 16:02:24 2025",
+ "timestampMillis": "1738530144167",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

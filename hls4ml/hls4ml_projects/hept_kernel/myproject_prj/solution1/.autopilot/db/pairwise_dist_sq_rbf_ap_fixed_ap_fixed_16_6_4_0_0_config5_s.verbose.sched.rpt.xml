@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'pairwise_dist_sq_rbf_ap_fixed_ap_fixed_16_6_4_0_0_config5_s'" level="0">
-<item name = "Date">Sun Feb  2 20:58:39 2025
+<item name = "Date">Thu Feb  6 04:40:31 2025
 </item>
-<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Version">2020.1 (Build 2902540 on Wed May 27 20:16:15 MDT 2020)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">virtexuplus</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.322 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.329 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">9, 9, 45.000 ns, 45.000 ns, 1, 1, yes</column>
+<column name="">197, 197, 0.985 us, 0.985 us, 144, 144, function</column>
 </table>
 </item>
 <item name = "Detail">

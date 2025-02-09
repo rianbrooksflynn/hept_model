@@ -1,1 +1,1 @@
-set ::AESL_AUTOSIM::gTopFileName /data/hlssynt-users/rflynn/hept_model/hls4ml/hls4ml_projects/hept_kernel/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp.tb.cpp
+set ::AESL_AUTOSIM::gTopFileName /home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp.tb.cpp

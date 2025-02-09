@@ -15,12 +15,14 @@
     </targetInfo>
     <libraryList>
         <library value="xilinx/virtexuplus/virtexuplus" name="DefaultPlatform"/>
+        <library value="xilinx/virtexuplus/virtexuplus_fpv7" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
         <clock default="false" name="default" uncertainty="12.5%" period="5"/>
     </clockList>
     <Simulation argv="">
-        <SimFlow name="cosim" setup="true" dumpTrace="all" optimizeCompile="false" ldflags="" mflags="" compiledLibrary="" toolName="xsim">
+        <SimFlow name="cosim" setup="true" dumpTrace="all" optimizeCompile="false" ldflags="" mflags="" compiledLibrary="" toolName="auto">
+            <Rtl name="systemc" active="false"/>
             <Rtl name="verilog" active="true"/>
             <Rtl name="vhdl" active="false"/>
         </SimFlow>

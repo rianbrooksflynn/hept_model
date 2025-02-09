@@ -1,0 +1,3 @@
+relativeroot=/home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/hls_component
+original_argv=--mode hls --cosim --config /home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_kernel/hls_component/hls_config.cfg --work_dir myproject 
+

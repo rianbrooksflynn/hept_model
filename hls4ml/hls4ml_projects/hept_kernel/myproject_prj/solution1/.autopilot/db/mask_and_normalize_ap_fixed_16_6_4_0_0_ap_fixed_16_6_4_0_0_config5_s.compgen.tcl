@@ -1,25 +1,316 @@
 # This script segment is generated automatically by AutoPilot
 
-set name myproject_mul_32s_16s_48_1_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
+set id 874
+set name myproject_mul_mul_16s_11ns_27_1_1
+set corename simcore_mul
+set op mul
+set stage_num 1
+set max_latency -1
+set registered_input 1
+set in0_width 16
+set in0_signed 1
+set in1_width 11
+set in1_signed 0
+set out_width 27
+set exp i0*i1
+set arg_lists {i0 {16 1 +} i1 {11 0 +} p {27 1 +} acc {0} }
+set TrueReset 0
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
+eval "ap_gen_simcore_mul { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    true_reset ${TrueReset} \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    out_width ${out_width} \
+    exp ${exp} \
+    arg_lists {${arg_lists}} \
+}"
+} else {
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
+}
 }
 
 
-set name myproject_mul_16s_16s_32_1_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler ${name}
 }
 
 
-set name myproject_mul_11ns_16s_27_1_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
+set op mul
+set corename DSP48
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_dsp48] == "::AESL_LIB_VIRTEX::xil_gen_dsp48"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    true_reset ${TrueReset} \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    out_width ${out_width} \
+    exp ${exp} \
+    arg_lists {${arg_lists}} \
+}"
+} else {
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your platform lib"
+}
+}
+
+
+set id 875
+set name myproject_mul_mul_11ns_16s_27_1_1
+set corename simcore_mul
+set op mul
+set stage_num 1
+set max_latency -1
+set registered_input 1
+set in0_width 11
+set in0_signed 0
+set in1_width 16
+set in1_signed 1
+set out_width 27
+set exp i0*i1
+set arg_lists {i0 {11 0 +} i1 {16 1 +} p {27 1 +} acc {0} }
+set TrueReset 0
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
+eval "ap_gen_simcore_mul { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    true_reset ${TrueReset} \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    out_width ${out_width} \
+    exp ${exp} \
+    arg_lists {${arg_lists}} \
+}"
+} else {
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
+}
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler myproject_mask_and_normalize_ap_fixed_16_6_4_0_0_ap_fixed_16_6_4_0_0_config5_s_inv_tablcud BINDTYPE {storage} TYPE {rom} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler ${name}
+}
+
+
+set op mul
+set corename DSP48
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_dsp48] == "::AESL_LIB_VIRTEX::xil_gen_dsp48"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    true_reset ${TrueReset} \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    out_width ${out_width} \
+    exp ${exp} \
+    arg_lists {${arg_lists}} \
+}"
+} else {
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your platform lib"
+}
+}
+
+
+set id 876
+set name myproject_mul_mul_16s_27s_43_1_1
+set corename simcore_mul
+set op mul
+set stage_num 1
+set max_latency -1
+set registered_input 1
+set in0_width 16
+set in0_signed 1
+set in1_width 27
+set in1_signed 1
+set out_width 43
+set exp i0*i1
+set arg_lists {i0 {16 1 +} i1 {27 1 +} p {43 1 +} acc {0} }
+set TrueReset 0
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
+eval "ap_gen_simcore_mul { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    true_reset ${TrueReset} \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    out_width ${out_width} \
+    exp ${exp} \
+    arg_lists {${arg_lists}} \
+}"
+} else {
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler ${name}
+}
+
+
+set op mul
+set corename DSP48
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_dsp48] == "::AESL_LIB_VIRTEX::xil_gen_dsp48"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    true_reset ${TrueReset} \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    out_width ${out_width} \
+    exp ${exp} \
+    arg_lists {${arg_lists}} \
+}"
+} else {
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your platform lib"
+}
+}
+
+
+# Memory (RAM/ROM)  definition:
+set ID 1093
+set hasByteEnable 0
+set MemName myproject_mask_and_normalize_ap_fixed_16_6_4_0_0_ap_fixed_16_6_4_0_0_config5_s_inv_table
+set CoreName ap_simcore_mem
+set PortList { 1 }
+set DataWd 11
+set AddrRange 1024
+set AddrWd 10
+set impl_style auto
+set TrueReset 0
+set IsROM 1
+set ROMData { "10000000000" "01110001110" "01100110011" "01011101000" "01010101010" "01001110110" "01001001001" "01000100010" "01000000000" "00111100001" "00111000111" "00110101111" "00110011001" "00110000110" "00101110100" "00101100100" "00101010101" "00101000111" "00100111011" "00100101111" "00100100100" "00100011010" "00100010001" "00100001000" "00100000000" "00011111000" "00011110000" "00011101010" "00011100011" "00011011101" "00011010111" "00011010010" "00011001100" "00011000111" "00011000011" "00010111110" "00010111010" "00010110110" "00010110010" "00010101110" "00010101010" "00010100111" "00010100011" "00010100000" "00010011101" "00010011010" "00010010111" "00010010100" "00010010010" "00010001111" "00010001101" "00010001010" "00010001000" "00010000110" "00010000100" "00010000010" "00010000000" "00001111110" "00001111100" "00001111010" "00001111000" "00001110110" "00001110101" "00001110011" "00001110001" "00001110000" "00001101110" "00001101101" "00001101011" "00001101010" "00001101001" "00001100111" "00001100110" "00001100101" "00001100011" "00001100010" "00001100001" "00001100000" "00001011111" "00001011110" "00001011101" "00001011100" "00001011011" "00001011010" "00001011001" "00001011000" "00001010111" "00001010110" "00001010101" "00001010100" "00001010011" "00001010010" "00001010001" "00001010001" "00001010000" "00001001111" "00001001110" "00001001110" "00001001101" "00001001100" "00001001011" "00001001011" "00001001010" "00001001001" "00001001001" "00001001000" "00001000111" "00001000111" "00001000110" "00001000110" "00001000101" "00001000100" "00001000100" "00001000011" "00001000011" "00001000010" "00001000010" "00001000001" "00001000001" "00001000000" "00001000000" "00000111111" "00000111111" "00000111110" "00000111110" "00000111101" "00000111101" "00000111100" "00000111100" "00000111011" "00000111011" "00000111010" "00000111010" "00000111010" "00000111001" "00000111001" "00000111000" "00000111000" "00000111000" "00000110111" "00000110111" "00000110110" "00000110110" "00000110110" "00000110101" "00000110101" "00000110101" "00000110100" "00000110100" "00000110100" "00000110011" "00000110011" "00000110011" "00000110010" "00000110010" "00000110010" "00000110001" "00000110001" "00000110001" "00000110001" "00000110000" "00000110000" "00000110000" "00000101111" "00000101111" "00000101111" "00000101111" "00000101110" "00000101110" "00000101110" "00000101110" "00000101101" "00000101101" "00000101101" "00000101101" "00000101100" "00000101100" "00000101100" "00000101100" "00000101011" "00000101011" "00000101011" "00000101011" "00000101010" "00000101010" "00000101010" "00000101010" "00000101010" "00000101001" "00000101001" "00000101001" "00000101001" "00000101000" "00000101000" "00000101000" "00000101000" "00000101000" "00000100111" "00000100111" "00000100111" "00000100111" "00000100111" "00000100111" "00000100110" "00000100110" "00000100110" "00000100110" "00000100110" "00000100101" "00000100101" "00000100101" "00000100101" "00000100101" "00000100101" "00000100100" "00000100100" "00000100100" "00000100100" "00000100100" "00000100100" "00000100011" "00000100011" "00000100011" "00000100011" "00000100011" "00000100011" "00000100011" "00000100010" "00000100010" "00000100010" "00000100010" "00000100010" "00000100010" "00000100001" "00000100001" "00000100001" "00000100001" "00000100001" "00000100001" "00000100001" "00000100001" "00000100000" "00000100000" "00000100000" "00000100000" "00000100000" "00000100000" "00000100000" "00000100000" "00000011111" "00000011111" "00000011111" "00000011111" "00000011111" "00000011111" "00000011111" "00000011111" "00000011110" "00000011110" "00000011110" "00000011110" "00000011110" "00000011110" "00000011110" "00000011110" "00000011110" "00000011101" "00000011101" "00000011101" "00000011101" "00000011101" "00000011101" "00000011101" "00000011101" "00000011101" "00000011100" "00000011100" "00000011100" "00000011100" "00000011100" "00000011100" "00000011100" "00000011100" "00000011100" "00000011100" "00000011011" "00000011011" "00000011011" "00000011011" "00000011011" "00000011011" "00000011011" "00000011011" "00000011011" "00000011011" "00000011011" "00000011010" "00000011010" "00000011010" "00000011010" "00000011010" "00000011010" "00000011010" "00000011010" "00000011010" "00000011010" "00000011010" "00000011010" "00000011001" "00000011001" "00000011001" "00000011001" "00000011001" "00000011001" "00000011001" "00000011001" "00000011001" "00000011001" "00000011001" "00000011001" "00000011000" "00000011000" "00000011000" "00000011000" "00000011000" "00000011000" "00000011000" "00000011000" "00000011000" "00000011000" "00000011000" "00000011000" "00000011000" "00000011000" "00000010111" "00000010111" "00000010111" "00000010111" "00000010111" "00000010111" "00000010111" "00000010111" "00000010111" "00000010111" "00000010111" "00000010111" "00000010111" "00000010111" "00000010111" "00000010110" "00000010110" "00000010110" "00000010110" "00000010110" "00000010110" "00000010110" "00000010110" "00000010110" "00000010110" "00000010110" "00000010110" "00000010110" "00000010110" "00000010110" "00000010110" "00000010101" "00000010101" "00000010101" "00000010101" "00000010101" "00000010101" "00000010101" "00000010101" "00000010101" "00000010101" "00000010101" "00000010101" "00000010101" "00000010101" "00000010101" "00000010101" "00000010101" "00000010101" "00000010100" "00000010100" "00000010100" "00000010100" "00000010100" "00000010100" "00000010100" "00000010100" "00000010100" "00000010100" "00000010100" "00000010100" "00000010100" "00000010100" "00000010100" "00000010100" "00000010100" "00000010100" "00000010100" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010011" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010010" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010001" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000010000" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001111" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001110" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001101" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001100" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001011" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001010" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001001" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000001000" "00000000111" "00000000111" "00000000111" "00000000111" "00000000111" "00000000111" "00000000111" }
+set HasInitializer 1
+set Initializer $ROMData
+set NumOfStage 2
+set MaxLatency -1
+set DelayBudget 1.158
+set ClkPeriod 5
+set RegisteredInput 0
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
+    eval "ap_gen_simcore_mem { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    hasByteEnable ${hasByteEnable} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${NumOfStage}  \
+    registered_input ${RegisteredInput} \
+    port_num 1 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    style ${impl_style} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+} else {
+    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+  ::AP::rtl_comp_handler $MemName
+}
+
+
+set CoreName ROM
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_ROM"} {
+    eval "::AESL_LIB_VIRTEX::xil_gen_ROM { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    hasByteEnable ${hasByteEnable} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${NumOfStage}  \
+    registered_input ${RegisteredInput} \
+    port_num 1 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    style ${impl_style} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+  } else {
+    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_ROM, check your platform lib"
+  }
 }
 
 
@@ -30,1265 +321,62 @@ if {${::AESL::PGuard_autoexp_gen}} {
     AESL_LIB_XILADAPTER::native_axis_begin
 }
 
-# Direct connection:
+# XIL_BRAM:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2095 \
-    name kernel_0_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_0_val \
-    op interface \
-    ports { kernel_0_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2096 \
-    name kernel_1_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_1_val \
-    op interface \
-    ports { kernel_1_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2097 \
-    name kernel_2_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_2_val \
-    op interface \
-    ports { kernel_2_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2098 \
-    name kernel_3_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_3_val \
-    op interface \
-    ports { kernel_3_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2099 \
-    name kernel_4_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_4_val \
-    op interface \
-    ports { kernel_4_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2100 \
-    name kernel_5_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_5_val \
-    op interface \
-    ports { kernel_5_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2101 \
-    name kernel_6_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_6_val \
-    op interface \
-    ports { kernel_6_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2102 \
-    name kernel_7_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_7_val \
-    op interface \
-    ports { kernel_7_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2103 \
-    name kernel_8_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_8_val \
-    op interface \
-    ports { kernel_8_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2104 \
-    name kernel_9_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_9_val \
-    op interface \
-    ports { kernel_9_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2105 \
-    name kernel_10_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_10_val \
-    op interface \
-    ports { kernel_10_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2106 \
-    name kernel_11_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_11_val \
-    op interface \
-    ports { kernel_11_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2107 \
-    name kernel_12_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_12_val \
-    op interface \
-    ports { kernel_12_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2108 \
-    name kernel_13_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_13_val \
-    op interface \
-    ports { kernel_13_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2109 \
-    name kernel_14_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_14_val \
-    op interface \
-    ports { kernel_14_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2110 \
-    name kernel_15_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_15_val \
-    op interface \
-    ports { kernel_15_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2111 \
-    name kernel_16_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_16_val \
-    op interface \
-    ports { kernel_16_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2112 \
-    name kernel_17_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_17_val \
-    op interface \
-    ports { kernel_17_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2113 \
-    name kernel_18_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_18_val \
-    op interface \
-    ports { kernel_18_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2114 \
-    name kernel_19_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_19_val \
-    op interface \
-    ports { kernel_19_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2115 \
-    name kernel_20_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_20_val \
-    op interface \
-    ports { kernel_20_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2116 \
-    name kernel_21_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_21_val \
-    op interface \
-    ports { kernel_21_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2117 \
-    name kernel_22_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_22_val \
-    op interface \
-    ports { kernel_22_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2118 \
-    name kernel_23_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_23_val \
-    op interface \
-    ports { kernel_23_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2119 \
-    name kernel_24_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_24_val \
-    op interface \
-    ports { kernel_24_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2120 \
-    name kernel_25_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_25_val \
-    op interface \
-    ports { kernel_25_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2121 \
-    name kernel_26_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_26_val \
-    op interface \
-    ports { kernel_26_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2122 \
-    name kernel_27_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_27_val \
-    op interface \
-    ports { kernel_27_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2123 \
-    name kernel_28_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_28_val \
-    op interface \
-    ports { kernel_28_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2124 \
-    name kernel_29_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_29_val \
-    op interface \
-    ports { kernel_29_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2125 \
-    name kernel_30_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_30_val \
-    op interface \
-    ports { kernel_30_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2126 \
-    name kernel_31_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_31_val \
-    op interface \
-    ports { kernel_31_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2127 \
-    name kernel_32_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_32_val \
-    op interface \
-    ports { kernel_32_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2128 \
-    name kernel_33_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_33_val \
-    op interface \
-    ports { kernel_33_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2129 \
-    name kernel_34_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_34_val \
-    op interface \
-    ports { kernel_34_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2130 \
-    name kernel_35_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_35_val \
-    op interface \
-    ports { kernel_35_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2131 \
-    name kernel_36_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_36_val \
-    op interface \
-    ports { kernel_36_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2132 \
-    name kernel_37_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_37_val \
-    op interface \
-    ports { kernel_37_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2133 \
-    name kernel_38_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_38_val \
-    op interface \
-    ports { kernel_38_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2134 \
-    name kernel_39_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_39_val \
-    op interface \
-    ports { kernel_39_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2135 \
-    name kernel_40_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_40_val \
-    op interface \
-    ports { kernel_40_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2136 \
-    name kernel_41_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_41_val \
-    op interface \
-    ports { kernel_41_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2137 \
-    name kernel_42_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_42_val \
-    op interface \
-    ports { kernel_42_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2138 \
-    name kernel_43_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_43_val \
-    op interface \
-    ports { kernel_43_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2139 \
-    name kernel_44_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_44_val \
-    op interface \
-    ports { kernel_44_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2140 \
-    name kernel_45_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_45_val \
-    op interface \
-    ports { kernel_45_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2141 \
-    name kernel_46_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_46_val \
-    op interface \
-    ports { kernel_46_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2142 \
-    name kernel_47_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_47_val \
-    op interface \
-    ports { kernel_47_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2143 \
-    name kernel_48_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_48_val \
-    op interface \
-    ports { kernel_48_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2144 \
-    name kernel_49_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_49_val \
-    op interface \
-    ports { kernel_49_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2145 \
-    name kernel_50_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_50_val \
-    op interface \
-    ports { kernel_50_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2146 \
-    name kernel_51_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_51_val \
-    op interface \
-    ports { kernel_51_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2147 \
-    name kernel_52_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_52_val \
-    op interface \
-    ports { kernel_52_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2148 \
-    name kernel_53_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_53_val \
-    op interface \
-    ports { kernel_53_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2149 \
-    name kernel_54_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_54_val \
-    op interface \
-    ports { kernel_54_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2150 \
-    name kernel_55_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_55_val \
-    op interface \
-    ports { kernel_55_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2151 \
-    name kernel_56_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_56_val \
-    op interface \
-    ports { kernel_56_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2152 \
-    name kernel_57_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_57_val \
-    op interface \
-    ports { kernel_57_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2153 \
-    name kernel_58_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_58_val \
-    op interface \
-    ports { kernel_58_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2154 \
-    name kernel_59_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_59_val \
-    op interface \
-    ports { kernel_59_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2155 \
-    name kernel_60_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_60_val \
-    op interface \
-    ports { kernel_60_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2156 \
-    name kernel_61_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_61_val \
-    op interface \
-    ports { kernel_61_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2157 \
-    name kernel_62_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_62_val \
-    op interface \
-    ports { kernel_62_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2158 \
-    name kernel_63_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_63_val \
-    op interface \
-    ports { kernel_63_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2159 \
-    name kernel_64_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_64_val \
-    op interface \
-    ports { kernel_64_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2160 \
-    name kernel_65_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_65_val \
-    op interface \
-    ports { kernel_65_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2161 \
-    name kernel_66_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_66_val \
-    op interface \
-    ports { kernel_66_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2162 \
-    name kernel_67_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_67_val \
-    op interface \
-    ports { kernel_67_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2163 \
-    name kernel_68_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_68_val \
-    op interface \
-    ports { kernel_68_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2164 \
-    name kernel_69_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_69_val \
-    op interface \
-    ports { kernel_69_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2165 \
-    name kernel_70_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_70_val \
-    op interface \
-    ports { kernel_70_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2166 \
-    name kernel_71_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_kernel_71_val \
-    op interface \
-    ports { kernel_71_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2167 \
-    name padding_mask_0_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_padding_mask_0_val \
-    op interface \
-    ports { padding_mask_0_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2168 \
-    name padding_mask_1_val \
-    type other \
-    dir I \
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1094 \
+    name padding_mask \
     reset_level 1 \
     sync_rst true \
-    corename dc_padding_mask_1_val \
-    op interface \
-    ports { padding_mask_1_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2169 \
-    name padding_mask_2_val \
-    type other \
     dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_padding_mask_2_val \
+    corename padding_mask \
     op interface \
-    ports { padding_mask_2_val { I 16 vector } } \
+    ports { padding_mask_address0 { O 4 vector } padding_mask_ce0 { O 1 bit } padding_mask_q0 { I 16 vector } padding_mask_address1 { O 4 vector } padding_mask_ce1 { O 1 bit } padding_mask_q1 { I 16 vector } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'padding_mask'"
 }
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2170 \
-    name padding_mask_3_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_padding_mask_3_val \
-    op interface \
-    ports { padding_mask_3_val { I 16 vector } } \
-} "
 }
 
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2171 \
-    name padding_mask_4_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_padding_mask_4_val \
-    op interface \
-    ports { padding_mask_4_val { I 16 vector } } \
-} "
-}
 
-# Direct connection:
+# XIL_BRAM:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2172 \
-    name padding_mask_5_val \
-    type other \
-    dir I \
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1095 \
+    name kernel \
     reset_level 1 \
     sync_rst true \
-    corename dc_padding_mask_5_val \
-    op interface \
-    ports { padding_mask_5_val { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2173 \
-    name padding_mask_6_val \
-    type other \
     dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_padding_mask_6_val \
+    corename kernel \
     op interface \
-    ports { padding_mask_6_val { I 16 vector } } \
+    ports { kernel_address0 { O 7 vector } kernel_ce0 { O 1 bit } kernel_q0 { I 11 vector } kernel_address1 { O 7 vector } kernel_ce1 { O 1 bit } kernel_q1 { I 11 vector } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'kernel'"
 }
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2174 \
-    name padding_mask_7_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_padding_mask_7_val \
-    op interface \
-    ports { padding_mask_7_val { I 16 vector } } \
-} "
 }
 
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2175 \
-    name padding_mask_8_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_padding_mask_8_val \
-    op interface \
-    ports { padding_mask_8_val { I 16 vector } } \
-} "
-}
 
-# Direct connection:
+# XIL_BRAM:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2176 \
-    name padding_mask_9_val \
-    type other \
-    dir I \
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 1096 \
+    name output_r \
     reset_level 1 \
     sync_rst true \
-    corename dc_padding_mask_9_val \
+    dir O \
+    corename output_r \
     op interface \
-    ports { padding_mask_9_val { I 16 vector } } \
+    ports { output_r_address0 { O 7 vector } output_r_ce0 { O 1 bit } output_r_we0 { O 1 bit } output_r_d0 { O 16 vector } output_r_address1 { O 7 vector } output_r_ce1 { O 1 bit } output_r_we1 { O 1 bit } output_r_d1 { O 16 vector } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_r'"
 }
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2177 \
-    name padding_mask_10_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_padding_mask_10_val \
-    op interface \
-    ports { padding_mask_10_val { I 16 vector } } \
-} "
 }
 
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2178 \
-    name padding_mask_11_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_padding_mask_11_val \
-    op interface \
-    ports { padding_mask_11_val { I 16 vector } } \
-} "
-}
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
@@ -1304,20 +392,6 @@ eval "cg_default_interface_gen_dc { \
 } "
 }
 
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id -2 \
-    name ap_return \
-    type ap_return \
-    reset_level 1 \
-    sync_rst true \
-    corename ap_return \
-    op interface \
-    ports { ap_return { O 1 vector } } \
-} "
-}
-
 
 # Adapter definition:
 set PortName ap_clk
@@ -1325,7 +399,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_clock] == "cg_default_interface_gen_clock"} {
 eval "cg_default_interface_gen_clock { \
-    id -3 \
+    id -2 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
@@ -1345,7 +419,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_reset] == "cg_default_interface_gen_reset"} {
 eval "cg_default_interface_gen_reset { \
-    id -4 \
+    id -3 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
@@ -1355,26 +429,6 @@ eval "cg_default_interface_gen_reset { \
 }"
 } else {
 puts "@W \[IMPL-114\] Cannot find bus interface model in the library. Ignored generation of bus interface for '${PortName}'"
-}
-}
-
-
-# Adapter definition:
-set PortName ap_ce
-set DataWd 1 
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc cg_default_interface_gen_ce] == "cg_default_interface_gen_ce"} {
-eval "cg_default_interface_gen_ce { \
-    id -5 \
-    name ${PortName} \
-    reset_level 1 \
-    sync_rst true \
-    corename apif_ap_ce \
-    data_wd ${DataWd} \
-    op interface \
-}"
-} else {
-puts "@W \[IMPL-113\] Cannot find bus interface model in the library. Ignored generation of bus interface for '${PortName}'"
 }
 }
 
