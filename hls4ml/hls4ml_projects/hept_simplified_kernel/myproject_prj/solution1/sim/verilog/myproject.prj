@@ -1,8 +1,0 @@
-sv work "glbl.v"
-sv xil_defaultlib "myproject.autotb.v"
-sv xil_defaultlib "myproject_pairwise_dist_sq_rbf_ap_fixed_ap_fixed_16_4_4_0_0_config3_s.v"
-sv xil_defaultlib "myproject.v"
-sv xil_defaultlib "myproject_pairwise_dist_sq_rbf_ap_fixed_ap_fixed_16_4_4_0_0_config3_s_exp_table_ROM_AUTbkb.v"
-sv xil_defaultlib "myproject_am_submul_16s_16s_34_1_1.v"
-sv xil_defaultlib "dataflow_monitor.sv"
-

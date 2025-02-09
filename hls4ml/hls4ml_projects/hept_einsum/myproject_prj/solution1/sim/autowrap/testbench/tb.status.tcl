@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /data/hlssynt-users/rflynn/hept_model/hls4ml_projects/hept_einsum/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp.tb.cpp
