@@ -266,16 +266,16 @@ def input_size_sweep():
     np.random.seed(42)
 
     default_n_heads = 2
-    default_seq_len = 4
-    default_batch_size = 4
-    default_dim_per_head = 4
+    default_seq_len = 2
+    default_batch_size = 2
+    default_dim_per_head = 2
     default_coords_dim = 2
 
-    n_heads = [1, 3, 4]
-    seq_len = [2, 6, 8]
-    batch_size = [2, 6, 8]
-    dim_per_head = [2, 6, 8]
-    coords_dim = [1, 3, 4]
+    n_heads = [4, 6]
+    seq_len = [4, 6]
+    batch_size = [4, 6]
+    dim_per_head = [4, 6]
+    coords_dim = [4, 6]
 
     iter_input_size(
         default_n_heads, 

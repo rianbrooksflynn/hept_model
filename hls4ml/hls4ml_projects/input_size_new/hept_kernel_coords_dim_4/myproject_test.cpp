@@ -62,11 +62,11 @@ int main(int argc, char **argv) {
       input_t query[N_INPUT_1_1*N_INPUT_2_1*N_INPUT_3_1];
       nnet::copy_data<float, input_t, 0, N_INPUT_1_1*N_INPUT_2_1*N_INPUT_3_1>(in, query);
       input2_t key[N_INPUT_1_2*N_INPUT_2_2*N_INPUT_3_2];
-      nnet::copy_data<float, input2_t, 256, N_INPUT_1_2*N_INPUT_2_2*N_INPUT_3_2>(in, key);
+      nnet::copy_data<float, input2_t, 48, N_INPUT_1_2*N_INPUT_2_2*N_INPUT_3_2>(in, key);
       input3_t value[N_INPUT_1_3*N_INPUT_2_3*N_INPUT_3_3];
-      nnet::copy_data<float, input3_t, 512, N_INPUT_1_3*N_INPUT_2_3*N_INPUT_3_3>(in, value);
+      nnet::copy_data<float, input3_t, 96, N_INPUT_1_3*N_INPUT_2_3*N_INPUT_3_3>(in, value);
       input4_t padding_mask[N_INPUT_1_4*N_INPUT_2_4];
-      nnet::copy_data<float, input4_t, 640, N_INPUT_1_4*N_INPUT_2_4>(in, padding_mask);
+      nnet::copy_data<float, input4_t, 112, N_INPUT_1_4*N_INPUT_2_4>(in, padding_mask);
       result_t layer5_out[BATCH_SEQ_5*DIM_PER_HEAD_5*N_HEADS_5];
 
             // hls-fpga-machine-learning insert top-level-function

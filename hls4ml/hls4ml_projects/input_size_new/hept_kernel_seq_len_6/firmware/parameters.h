@@ -16,12 +16,12 @@
 // hept
 struct config5_dense : nnet::dense_config {
     static const unsigned n_in = 6;
-    static const unsigned n_out = 4;
+    static const unsigned n_out = 2;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
     static const unsigned n_zeros = 0;
-    static const unsigned n_nonzeros = 24;
+    static const unsigned n_nonzeros = 12;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in * n_out, reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef hept_accum_t accum_t;
@@ -36,17 +36,17 @@ struct config5_dense : nnet::dense_config {
 
 struct config5_transpose_qk {
     static const unsigned dims = 4;
-    static const unsigned N = 288;
+    static const unsigned N = 96;
     static const unsigned* const from_shape;
     static const unsigned* const to_shape;
     static const unsigned* const perm;
     static const unsigned* const perm_strides;
 };
 
-unsigned config5_transpose_qk_from_shape[4] = {2, 4, 6, 6};
-unsigned config5_transpose_qk_to_shape[4] = {4, 2, 6, 6};
+unsigned config5_transpose_qk_from_shape[4] = {2, 2, 6, 4};
+unsigned config5_transpose_qk_to_shape[4] = {2, 2, 6, 4};
 unsigned config5_transpose_qk_perm[4] = {1, 0, 2, 3};
-unsigned config5_transpose_qk_perm_strides[4] = {36, 144, 6, 1};
+unsigned config5_transpose_qk_perm_strides[4] = {24, 48, 4, 1};
 
 const unsigned* const config5_transpose_qk::from_shape = config5_transpose_qk_from_shape;
 const unsigned* const config5_transpose_qk::to_shape = config5_transpose_qk_to_shape;
@@ -55,17 +55,17 @@ const unsigned* const config5_transpose_qk::perm_strides = config5_transpose_qk_
 
 struct config5_transpose_v {
     static const unsigned dims = 4;
-    static const unsigned N = 192;
+    static const unsigned N = 48;
     static const unsigned* const from_shape;
     static const unsigned* const to_shape;
     static const unsigned* const perm;
     static const unsigned* const perm_strides;
 };
 
-unsigned config5_transpose_v_from_shape[4] = {2, 4, 6, 4};
-unsigned config5_transpose_v_to_shape[4] = {4, 2, 6, 4};
+unsigned config5_transpose_v_from_shape[4] = {2, 2, 6, 2};
+unsigned config5_transpose_v_to_shape[4] = {2, 2, 6, 2};
 unsigned config5_transpose_v_perm[4] = {1, 0, 2, 3};
-unsigned config5_transpose_v_perm_strides[4] = {24, 96, 4, 1};
+unsigned config5_transpose_v_perm_strides[4] = {12, 24, 2, 1};
 
 const unsigned* const config5_transpose_v::from_shape = config5_transpose_v_from_shape;
 const unsigned* const config5_transpose_v::to_shape = config5_transpose_v_to_shape;
@@ -74,17 +74,17 @@ const unsigned* const config5_transpose_v::perm_strides = config5_transpose_v_pe
 
 struct config5_transpose_output {
     static const unsigned dims = 4;
-    static const unsigned N = 192;
+    static const unsigned N = 48;
     static const unsigned* const from_shape;
     static const unsigned* const to_shape;
     static const unsigned* const perm;
     static const unsigned* const perm_strides;
 };
 
-unsigned config5_transpose_output_from_shape[4] = {4, 2, 6, 4};
-unsigned config5_transpose_output_to_shape[4] = {2, 4, 6, 4};
+unsigned config5_transpose_output_from_shape[4] = {2, 2, 6, 2};
+unsigned config5_transpose_output_to_shape[4] = {2, 2, 6, 2};
 unsigned config5_transpose_output_perm[4] = {1, 0, 2, 3};
-unsigned config5_transpose_output_perm_strides[4] = {24, 48, 4, 1};
+unsigned config5_transpose_output_perm_strides[4] = {12, 24, 2, 1};
 
 const unsigned* const config5_transpose_output::from_shape = config5_transpose_output_from_shape;
 const unsigned* const config5_transpose_output::to_shape = config5_transpose_output_to_shape;
@@ -110,9 +110,9 @@ struct config5 : nnet::hept_config {
     typedef config5_transpose_output transpose_conf_output;
 
     static const unsigned n_heads = 2;
-    static const unsigned batch_size = 4;
+    static const unsigned batch_size = 2;
     static const unsigned seq_len = 6;
-    static const unsigned dim_per_head = 4;
+    static const unsigned dim_per_head = 2;
     static const unsigned coords_dim = 2;
 
     static const unsigned io_type = nnet::io_parallel;

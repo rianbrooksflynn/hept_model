@@ -41,19 +41,19 @@ InputData: /home/rian/A3D3/hept_model/hls4ml/data/hept_input.dat
 InputShape:
 - !!python/tuple
   - 4
-  - 16
-  - 6
-- !!python/tuple
   - 4
-  - 16
-  - 6
-- !!python/tuple
-  - 4
-  - 16
   - 4
 - !!python/tuple
   - 4
   - 4
+  - 4
+- !!python/tuple
+  - 4
+  - 4
+  - 2
+- !!python/tuple
+  - 2
+  - 2
 OutputDir: /home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/input_size_new/hept_kernel_n_heads_4
 OutputPredictions: /home/rian/A3D3/hept_model/hls4ml/data/hept_output.dat
 Part: xcvu13p-flga2577-2-e
@@ -113,11 +113,11 @@ PytorchModel: !!python/object:__main__.HEPTModel
         - []
         _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
         - []
-        batch_size: 4
+        batch_size: 2
         coords_dim: 2
-        dim_per_head: 4
+        dim_per_head: 2
         n_heads: 4
-        seq_len: 4
+        seq_len: 2
         training: false
   _non_persistent_buffers_set: !!set {}
   _parameters: !!python/object/apply:collections.OrderedDict
@@ -127,7 +127,7 @@ PytorchModel: !!python/object:__main__.HEPTModel
   _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
   - []
   training: false
-Stamp: 1ca3904e
+Stamp: c5cf69a5
 Version: 1.0.0
 WriterConfig:
   Namespace: null
