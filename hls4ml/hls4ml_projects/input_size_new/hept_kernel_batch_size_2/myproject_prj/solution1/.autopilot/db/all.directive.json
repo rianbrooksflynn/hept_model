@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "myproject",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "myproject"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/input_size_new/hept_kernel_batch_size_2/build_prj.tcl",
+    "sourceLine": 183,
+    "success": true
+  }
+]

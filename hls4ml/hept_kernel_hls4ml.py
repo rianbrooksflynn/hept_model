@@ -220,7 +220,7 @@ def quantization_sweep():
     plt.show()
 
 
-def iter_input_size(n_heads, seq_len, batch_size, dim_per_head, coords_dim):
+def iter_input_size(n_heads, seq_len, batch_size, dim_per_head, coords_dim, trial_name):
     model = HEPTModel(n_heads, seq_len, batch_size, dim_per_head, coords_dim)
     model.eval()
 
@@ -229,9 +229,9 @@ def iter_input_size(n_heads, seq_len, batch_size, dim_per_head, coords_dim):
     value = 0.1 * np.random.randn(n_heads, batch_size * seq_len, dim_per_head)
     padding_mask = np.where(np.random.rand(batch_size, seq_len) < 0.75, 1.0, 0.0)
     pytorch_prediction = model(torch.Tensor(query), torch.Tensor(key), torch.Tensor(value), torch.Tensor(padding_mask)).detach().numpy().flatten()
-    in_file = str(Path(__file__).parent / 'data' / 'hept_input.txt')
-    out_file = str(Path(__file__).parent / 'data' / 'hept_output.txt')
-    save_data([query, key, value, padding_mask], in_file)
+    in_file = str(Path(__file__).parent / 'data' / 'hept_input.dat')
+    out_file = str(Path(__file__).parent / 'data' / 'hept_output.dat')
+    save_data([query.flatten(), key.flatten(), value.flatten(), padding_mask.flatten()], in_file)
     save_data([pytorch_prediction], out_file)
 
     config = hls4ml.utils.config_from_pytorch_model(
@@ -257,22 +257,84 @@ def iter_input_size(n_heads, seq_len, batch_size, dim_per_head, coords_dim):
     config['LayerName']['hept']['Precision']['exp_table'] = (f'ap_ufixed<{bit_width},0>')
     config['LayerName']['hept']['Precision']['inv_table'] = (f'ap_ufixed<{bit_width},{int_bits},AP_RND_CONV,AP_SAT>')
 
-    output_dir = str(Path(__file__).parent / 'hls4ml_projects' / 'input_size' / f'hept_kernel_{n_heads}_{seq_len}_{batch_size}_{dim_per_head}_{coords_dim}')
-    hls_model = hls4ml.converters.convert_from_pytorch_model(model, hls_config=config, io_type='io_parallel', output_dir=output_dir, input_data=in_file, output_data=out_file)
+    output_dir = str(Path(__file__).parent / 'hls4ml_projects' / 'input_size_new' / f'hept_kernel_{trial_name}')
+    hls_model = hls4ml.converters.convert_from_pytorch_model(model, hls_config=config, io_type='io_parallel', output_dir=output_dir, input_data_tb=in_file, output_data_tb=out_file)
     hls_model.compile()
 
 
 def input_size_sweep():
     np.random.seed(42)
 
-    n_heads = [1]
-    seq_lens = [2, 4]
-    batch_sizes = [2, 4]
-    dims_per_head = [2, 4, 6]
-    coords_dims = [6]
+    default_n_heads = 2
+    default_seq_len = 4
+    default_batch_size = 4
+    default_dim_per_head = 4
+    default_coords_dim = 2
 
-    for n_head, seq_len, batch_size, dim_per_head, coords_dim in product(n_heads, seq_lens, batch_sizes, dims_per_head, coords_dims):
-        iter_input_size(n_head, seq_len, batch_size, dim_per_head, coords_dim)
+    n_heads = [1, 3, 4]
+    seq_len = [2, 6, 8]
+    batch_size = [2, 6, 8]
+    dim_per_head = [2, 6, 8]
+    coords_dim = [1, 3, 4]
+
+    iter_input_size(
+        default_n_heads, 
+        default_seq_len, 
+        default_batch_size, 
+        default_dim_per_head, 
+        default_coords_dim, 
+        f"default_{default_n_heads}_{default_seq_len}_{default_batch_size}_{default_dim_per_head}_{default_coords_dim}"
+    )
+    
+    for i in n_heads:
+        iter_input_size(
+            i,
+            default_seq_len,
+            default_batch_size,
+            default_dim_per_head,
+            default_coords_dim,
+            f"n_heads_{i}"
+        )
+    
+    for i in seq_len:
+        iter_input_size(
+            default_n_heads,
+            i,
+            default_batch_size,
+            default_dim_per_head,
+            default_coords_dim,
+            f"seq_len_{i}"
+        )
+
+    for i in batch_size:
+        iter_input_size(
+            default_n_heads,
+            default_seq_len,
+            i,
+            default_dim_per_head,
+            default_coords_dim,
+            f"batch_size_{i}"
+        )
+
+    for i in dim_per_head:
+        iter_input_size(
+            default_n_heads,
+            default_seq_len,
+            default_batch_size,
+            i,
+            default_coords_dim,
+            f"dim_per_head_{i}"
+        )
+    
+    for i in coords_dim:
+        iter_input_size(
+            default_n_heads,
+            default_seq_len,
+            default_batch_size,
+            default_dim_per_head,
+            i,
+            f"coords_dim_{i}"
+        )
 
 
 if __name__ == "__main__":
