@@ -1,0 +1,98 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">,   9227, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 621626 *, user unroll pragmas are applied</column>
+            <column name="">(2) simplification, 309198 *, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline, 309524 *, user inline pragmas are applied</column>
+            <column name="">(4) simplification, 288623 *, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 507866 *, user array partition pragmas are applied</column>
+            <column name="">(2) simplification, 298704 *, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate , 298704 *, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape, 298704 *, apply array reshape pragmas</column>
+            <column name="">(5) access patterns, 298704 *, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification, 282384 *, loop and instruction simplification</column>
+            <column name="">(2) parallelization, 282218 *, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 281738 *, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification, 281738 *, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering, 282238 *, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations, 278440 *, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="myproject" col1="myproject.cpp:7" col2="9227" col3="288623" col3_note="*" col4="298704" col4_note="*" col5="281738" col5_note="*" col6="278440" col6_note="*">
+                    <row id="10" col0="hept&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5&gt;" col1="nnet_hept.h:238" col2="9215" col3="" col4="" col5="" col6="">
+                        <row id="7" col0="transpose_qk&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5&gt;" col1="nnet_hept.h:59" col2="92" col2_disp="  92 (2 calls)" col3="" col4="" col5="" col6="">
+                            <row id="18" col0="transpose&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5_transpose_qk&gt;" col1="nnet_transpose.h:29" col2="84" col2_disp="  84 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="19" col0="transfer_idx&lt;config5_transpose_qk&gt;" col1="nnet_transpose.h:18" col2="50" col2_disp="  50 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="4" col0="transpose_v&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5&gt;" col1="nnet_hept.h:67" col2="46" col3="" col4="" col5="" col6="">
+                            <row id="21" col0="transpose&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5_transpose_v&gt;" col1="nnet_transpose.h:29" col2="42" col3="" col4="" col5="" col6="">
+                                <row id="15" col0="transfer_idx&lt;config5_transpose_v&gt;" col1="nnet_transpose.h:18" col2="25" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="3" col0="pairwise_dist_sq_rbf&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5&gt;" col1="nnet_hept.h:90" col2="3963" col3="" col4="" col5="" col6="">
+                            <row id="13" col0="init_exp_table&lt;config5, 1024&gt;" col1="nnet_hept.h:82" col2="422" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="2" col0="mask_and_normalize&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5&gt;" col1="nnet_hept.h:150" col2="3242" col3="" col4="" col5="" col6="">
+                            <row id="5" col0="init_invert_table&lt;config5, 1024&gt;" col1="nnet_hept.h:140" col2="676" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="14" col0="bmm&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5&gt;" col1="nnet_hept.h:207" col2="1776" col3="" col4="" col5="" col6="">
+                            <row id="9" col0="fill_zero&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, 2&gt;" col1="nnet_helpers.h:304" col2="755" col3="" col4="" col5="" col6=""/>
+                            <row id="12" col0="dense&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5_dense&gt;" col1="nnet_dense.h:41" col2="954" col3="" col4="" col5="" col6="">
+                                <row id="11" col0="dense" col1="nnet_dense.h:50" col2="952" col3="" col4="" col5="" col6="">
+                                    <row id="8" col0="dense_latency&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5_dense&gt;" col1="nnet_dense_latency.h:13" col2="950" col3="" col4="" col5="" col6="">
+                                        <row id="6" col0="product" col1="nnet_mult.h:70" col2="141" col3="" col4="" col5="" col6=""/>
+                                        <row id="16" col0="cast&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5_dense&gt;" col1="nnet_mult.h:110" col2="3" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                        </row>
+                        <row id="20" col0="transpose_output&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5&gt;" col1="nnet_hept.h:75" col2="46" col3="" col4="" col5="" col6="">
+                            <row id="17" col0="transpose&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5_transpose_output&gt;" col1="nnet_transpose.h:29" col2="42" col3="" col4="" col5="" col6="">
+                                <row id="1" col0="transfer_idx&lt;config5_transpose_output&gt;" col1="nnet_transpose.h:18" col2="25" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                    </row>
+                    <row id="18" col0="transpose&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5_transpose_qk&gt;" col1="nnet_transpose.h:29" col2="" col3="6400" col3_disp=" 6,400 (2 calls)" col4="6082" col4_disp=" 6,082 (2 calls)" col5="5762" col5_disp=" 5,762 (2 calls)" col6="5762" col6_disp=" 5,762 (2 calls)">
+                        <row id="19" col0="transfer_idx&lt;config5_transpose_qk&gt;" col1="nnet_transpose.h:18" col2="" col3="4480" col3_disp=" 4,480 (320 calls)" col4="4480" col4_disp=" 4,480 (320 calls)" col5="4480" col5_disp=" 4,480 (320 calls)" col6="4480" col6_disp=" 4,480 (320 calls)"/>
+                    </row>
+                    <row id="21" col0="transpose&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5_transpose_v&gt;" col1="nnet_transpose.h:29" col2="" col3="1600" col4="1521" col5="1441" col6="1441">
+                        <row id="15" col0="transfer_idx&lt;config5_transpose_v&gt;" col1="nnet_transpose.h:18" col2="" col3="1120" col3_disp=" 1,120 (80 calls)" col4="1120" col4_disp=" 1,120 (80 calls)" col5="1120" col5_disp=" 1,120 (80 calls)" col6="1120" col6_disp=" 1,120 (80 calls)"/>
+                    </row>
+                    <row id="3" col0="pairwise_dist_sq_rbf&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5&gt;" col1="nnet_hept.h:90" col2="" col3="146078" col4="145361" col5="145041" col6="145041"/>
+                    <row id="2" col0="mask_and_normalize&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5&gt;" col1="nnet_hept.h:150" col2="" col3="56758" col4="55941" col5="55521" col6="55521"/>
+                    <row id="14" col0="bmm&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5&gt;" col1="nnet_hept.h:207" col2="" col3="76132" col4="82650" col5="65204" col6="65244">
+                        <row id="8" col0="dense_latency&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5_dense&gt;" col1="nnet_dense_latency.h:13" col2="" col3="75800" col3_disp="75,800 (40 calls)" col4="82440" col4_disp="82,440 (40 calls)" col5="65000" col5_disp="65,000 (40 calls)" col6="65040" col6_disp="65,040 (40 calls)"/>
+                    </row>
+                    <row id="17" col0="transpose&lt;ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, ap_fixed&lt;13, 4, AP_RND_CONV, AP_SAT, 0&gt;, config5_transpose_output&gt;" col1="nnet_transpose.h:29" col2="" col3="1600" col4="1521" col5="1441" col6="1441">
+                        <row id="1" col0="transfer_idx&lt;config5_transpose_output&gt;" col1="nnet_transpose.h:18" col2="" col3="1120" col3_disp=" 1,120 (80 calls)" col4="1120" col4_disp=" 1,120 (80 calls)" col5="1120" col5_disp=" 1,120 (80 calls)" col6="1120" col6_disp=" 1,120 (80 calls)"/>
+                    </row>
+                </row>
+            </rows>
+            <notes>
+                <note name="*" desc="Exceeded design size warning message threshold"/>
+            </notes>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+
