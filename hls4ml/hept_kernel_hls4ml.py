@@ -338,4 +338,19 @@ def input_size_sweep():
 
 
 if __name__ == "__main__":
-    input_size_sweep()
+    iter_input_size(
+        2, 
+        8, 
+        2, 
+        2, 
+        2, 
+        f"seq_len_8"
+    )
+    iter_input_size(
+        2, 
+        10, 
+        2, 
+        2, 
+        2, 
+        f"seq_len_10"
+    )
