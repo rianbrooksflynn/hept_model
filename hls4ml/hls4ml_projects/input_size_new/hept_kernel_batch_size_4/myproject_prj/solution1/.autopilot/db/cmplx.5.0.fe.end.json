@@ -1,0 +1,116 @@
+{
+    "0": {
+        "name": "myproject",
+        "file": "myproject.cpp",
+        "fileloc": "7",
+        "instructions": "847",
+        "total_instructions": "14155",
+        "calls": "1 1 7 3 4 4 2 2 11 11 5 5 6 6 8 8 9 9 10 10",
+        "basicblocks": "1"
+    },
+    "1": {
+        "name": "transpose<ap_fixed,ap_fixed<13,4,4,0,0>,config5_transpose_qk>",
+        "file": "firmware\/nnet_utils\/nnet_transpose.h",
+        "fileloc": "35",
+        "instructions": "129",
+        "total_instructions": "129",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "dense_latency<ap_fixed<13, 4, 4, 0, 0>, ap_fixed<13, 4, 4, 0, 0>, config5_dense>.1",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "202",
+        "total_instructions": "202",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "3": {
+        "name": "mask_and_normalize<ap_fixed<13, 4, 4, 0, 0>, ap_fixed<13, 4, 4, 0, 0>, config5>",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "168",
+        "instructions": "3065",
+        "total_instructions": "3065",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "16"
+        }
+    },
+    "4": {
+        "name": "dense_latency<ap_fixed<13, 4, 4, 0, 0>, ap_fixed<13, 4, 4, 0, 0>, config5_dense>",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "202",
+        "total_instructions": "202",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "5": {
+        "name": "dense_latency<ap_fixed<13, 4, 4, 0, 0>, ap_fixed<13, 4, 4, 0, 0>, config5_dense>.3",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "202",
+        "total_instructions": "202",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "6": {
+        "name": "dense_latency<ap_fixed<13, 4, 4, 0, 0>, ap_fixed<13, 4, 4, 0, 0>, config5_dense>.4",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "202",
+        "total_instructions": "202",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "7": {
+        "name": "pairwise_dist_sq_rbf<ap_fixed,ap_fixed<13,4,4,0,0>,config5>",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "122",
+        "instructions": "6753",
+        "total_instructions": "6753",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "32"
+        }
+    },
+    "8": {
+        "name": "dense_latency<ap_fixed<13, 4, 4, 0, 0>, ap_fixed<13, 4, 4, 0, 0>, config5_dense>.5",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "202",
+        "total_instructions": "202",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "9": {
+        "name": "dense_latency<ap_fixed<13, 4, 4, 0, 0>, ap_fixed<13, 4, 4, 0, 0>, config5_dense>.6",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "202",
+        "total_instructions": "202",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "10": {
+        "name": "dense_latency<ap_fixed<13, 4, 4, 0, 0>, ap_fixed<13, 4, 4, 0, 0>, config5_dense>.7",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "202",
+        "total_instructions": "202",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "11": {
+        "name": "dense_latency<ap_fixed<13, 4, 4, 0, 0>, ap_fixed<13, 4, 4, 0, 0>, config5_dense>.2",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "202",
+        "total_instructions": "202",
+        "calls": "",
+        "basicblocks": "1"
+    }
+}

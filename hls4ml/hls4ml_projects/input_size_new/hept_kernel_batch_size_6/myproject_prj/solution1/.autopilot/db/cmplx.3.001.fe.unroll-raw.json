@@ -1,0 +1,235 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "11",
+    "file": "myproject.cpp",
+    "fileloc": 7,
+    "instructions": 7,
+    "name": "myproject",
+    "total_instructions": 81854
+  },
+  "1": {
+    "basicblocks": 40,
+    "calls": "16 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13",
+    "file": "nnet_hept.h",
+    "fileloc": 207,
+    "instructions": 297,
+    "loads": {
+      "L": 48
+    },
+    "name": "bmm<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, config5>",
+    "stores": {
+      "L": 48
+    },
+    "total_instructions": 18575
+  },
+  "10": {
+    "basicblocks": 4,
+    "calls": "19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19",
+    "file": "nnet_transpose.h",
+    "fileloc": 29,
+    "instructions": 291,
+    "loads": {
+      "L": 48
+    },
+    "name": "transpose<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, config5_transpose_v>",
+    "stores": {
+      "L": 48
+    },
+    "total_instructions": 1107
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "6 6 3 18 7 1 15",
+    "file": "nnet_hept.h",
+    "fileloc": 238,
+    "instructions": 38,
+    "name": "hept<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, config5>",
+    "total_instructions": 81847
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "5 2",
+    "file": "stl_algobase.h",
+    "fileloc": 784,
+    "instructions": 3,
+    "name": "fill_n<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0> *, unsigned long, double>",
+    "total_instructions": 12
+  },
+  "13": {
+    "basicblocks": 289,
+    "calls": "9 9",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 755,
+    "loads": {
+      "L": 36
+    },
+    "name": "dense_latency<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, config5_dense>",
+    "stores": {
+      "L": 38
+    },
+    "total_instructions": 761
+  },
+  "14": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "nnet_transpose.h",
+    "fileloc": 18,
+    "instructions": 17,
+    "name": "transfer_idx<config5_transpose_output>",
+    "total_instructions": 17
+  },
+  "15": {
+    "basicblocks": 1,
+    "calls": "17",
+    "file": "nnet_hept.h",
+    "fileloc": 75,
+    "instructions": 2,
+    "name": "transpose_output<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, config5>",
+    "total_instructions": 1109
+  },
+  "16": {
+    "basicblocks": 1,
+    "calls": "12",
+    "file": "nnet_helpers.h",
+    "fileloc": 304,
+    "instructions": 2,
+    "name": "fill_zero<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, 2>",
+    "total_instructions": 14
+  },
+  "17": {
+    "basicblocks": 4,
+    "calls": "14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14",
+    "file": "nnet_transpose.h",
+    "fileloc": 29,
+    "instructions": 291,
+    "loads": {
+      "L": 48
+    },
+    "name": "transpose<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, config5_transpose_output>",
+    "stores": {
+      "L": 48
+    },
+    "total_instructions": 1107
+  },
+  "18": {
+    "basicblocks": 16746,
+    "calls": "",
+    "file": "nnet_hept.h",
+    "fileloc": 90,
+    "instructions": 43457,
+    "loads": {
+      "G": 240,
+      "L": 2304
+    },
+    "name": "pairwise_dist_sq_rbf<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, config5>",
+    "stores": {
+      "L": 48
+    },
+    "total_instructions": 43457
+  },
+  "19": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "nnet_transpose.h",
+    "fileloc": 18,
+    "instructions": 17,
+    "name": "transfer_idx<config5_transpose_v>",
+    "total_instructions": 17
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "stl_algobase.h",
+    "fileloc": 749,
+    "instructions": 8,
+    "name": "__fill_n_a<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0> *, unsigned long, double>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 8
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "10",
+    "file": "nnet_hept.h",
+    "fileloc": 67,
+    "instructions": 2,
+    "name": "transpose_v<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, config5>",
+    "total_instructions": 1109
+  },
+  "4": {
+    "basicblocks": 4,
+    "calls": "8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8",
+    "file": "nnet_transpose.h",
+    "fileloc": 29,
+    "instructions": 579,
+    "loads": {
+      "L": 96
+    },
+    "name": "transpose<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, config5_transpose_qk>",
+    "stores": {
+      "L": 96
+    },
+    "total_instructions": 2211
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "stl_algobase.h",
+    "fileloc": 277,
+    "instructions": 1,
+    "name": "__niter_base<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0> *>",
+    "total_instructions": 1
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "4",
+    "file": "nnet_hept.h",
+    "fileloc": 59,
+    "instructions": 2,
+    "name": "transpose_qk<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, config5>",
+    "total_instructions": 2213
+  },
+  "7": {
+    "basicblocks": 5672,
+    "calls": "",
+    "file": "nnet_hept.h",
+    "fileloc": 150,
+    "instructions": 13133,
+    "loads": {
+      "G": 24,
+      "L": 312
+    },
+    "name": "mask_and_normalize<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, config5>",
+    "stores": {
+      "L": 96
+    },
+    "total_instructions": 13133
+  },
+  "8": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "nnet_transpose.h",
+    "fileloc": 18,
+    "instructions": 17,
+    "name": "transfer_idx<config5_transpose_qk>",
+    "total_instructions": 17
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_mult.h",
+    "fileloc": 110,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "cast<ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, ap_fixed<13, 4, AP_RND_CONV, AP_SAT, 0>, config5_dense>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  }
+}

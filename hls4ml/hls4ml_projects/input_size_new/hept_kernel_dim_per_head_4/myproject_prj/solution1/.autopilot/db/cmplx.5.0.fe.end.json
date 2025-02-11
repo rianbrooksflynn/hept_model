@@ -1,0 +1,80 @@
+{
+    "0": {
+        "name": "myproject",
+        "file": "myproject.cpp",
+        "fileloc": "7",
+        "instructions": "667",
+        "total_instructions": "10315",
+        "calls": "2 2 3 4 6 6 5 5 1 1 7 7",
+        "basicblocks": "1"
+    },
+    "1": {
+        "name": "dense_latency<ap_fixed<13, 4, 4, 0, 0>, ap_fixed<13, 4, 4, 0, 0>, config5_dense>.2",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "392",
+        "total_instructions": "392",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "transpose<ap_fixed,ap_fixed<13,4,4,0,0>,config5_transpose_qk>",
+        "file": "firmware\/nnet_utils\/nnet_transpose.h",
+        "fileloc": "35",
+        "instructions": "97",
+        "total_instructions": "97",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "3": {
+        "name": "pairwise_dist_sq_rbf<ap_fixed,ap_fixed<13,4,4,0,0>,config5>",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "122",
+        "instructions": "4785",
+        "total_instructions": "4785",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "16"
+        }
+    },
+    "4": {
+        "name": "mask_and_normalize<ap_fixed<13, 4, 4, 0, 0>, ap_fixed<13, 4, 4, 0, 0>, config5>",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "168",
+        "instructions": "1533",
+        "total_instructions": "1533",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "8"
+        }
+    },
+    "5": {
+        "name": "dense_latency<ap_fixed<13, 4, 4, 0, 0>, ap_fixed<13, 4, 4, 0, 0>, config5_dense>.1",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "392",
+        "total_instructions": "392",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "6": {
+        "name": "dense_latency<ap_fixed<13, 4, 4, 0, 0>, ap_fixed<13, 4, 4, 0, 0>, config5_dense>",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "392",
+        "total_instructions": "392",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "7": {
+        "name": "dense_latency<ap_fixed<13, 4, 4, 0, 0>, ap_fixed<13, 4, 4, 0, 0>, config5_dense>.3",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "392",
+        "total_instructions": "392",
+        "calls": "",
+        "basicblocks": "1"
+    }
+}

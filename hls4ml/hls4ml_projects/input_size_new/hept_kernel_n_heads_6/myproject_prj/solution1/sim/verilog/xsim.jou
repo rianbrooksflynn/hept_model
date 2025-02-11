@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# xsim v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Feb 11 01:33:29 2025
+# Process ID: 2866094
+# Current directory: /data/hlssynt-users/rflynn/hept_model/hls4ml/hls4ml_projects/input_size_new/hept_kernel_n_heads_6/myproject_prj/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/myproject/xsim_script.tcl}
+# Log file: /data/hlssynt-users/rflynn/hept_model/hls4ml/hls4ml_projects/input_size_new/hept_kernel_n_heads_6/myproject_prj/solution1/sim/verilog/xsim.log
+# Journal file: /data/hlssynt-users/rflynn/hept_model/hls4ml/hls4ml_projects/input_size_new/hept_kernel_n_heads_6/myproject_prj/solution1/sim/verilog/xsim.jou
+# Running On: olhsw-01.cern.ch, OS: Linux, CPU Frequency: 3600.000 MHz, CPU Physical cores: 23, Host memory: 134520 MB
+#-----------------------------------------------------------
+source xsim.dir/myproject/xsim_script.tcl
+open_wave_config myproject_dataflow_ana.wcfg
+source myproject.tcl

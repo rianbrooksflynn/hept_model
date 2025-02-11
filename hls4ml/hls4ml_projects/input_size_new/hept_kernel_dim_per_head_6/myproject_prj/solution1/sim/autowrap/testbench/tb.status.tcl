@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /data/hlssynt-users/rflynn/hept_model/hls4ml/hls4ml_projects/input_size_new/hept_kernel_dim_per_head_6/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp.tb.cpp
