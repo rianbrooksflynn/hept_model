@@ -23,8 +23,8 @@ HLSConfig:
 IOType: io_parallel
 InputData: null
 InputShape: !!python/tuple
-- 100
-OutputDir: /home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/random/uniform_random_1_100
+- 200
+OutputDir: /home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/random/uniform_random_1_200
 OutputPredictions: null
 Part: xcvu13p-flga2577-2-e
 ProjectName: myproject
@@ -83,7 +83,7 @@ PytorchModel: !!python/object:__main__.RandomModel
         - []
         _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
         - []
-        n_out: 100
+        n_out: 200
         training: false
   _non_persistent_buffers_set: !!set {}
   _parameters: !!python/object/apply:collections.OrderedDict
@@ -93,7 +93,7 @@ PytorchModel: !!python/object:__main__.RandomModel
   _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
   - []
   training: false
-Stamp: 1340a29f
+Stamp: 3a7de89f
 Version: 1.0.0
 WriterConfig:
   Namespace: null

@@ -32,7 +32,7 @@ class RandomModel(nn.Module):
 
 def plot_random_hls4ml():
     batch_size = 1
-    n_out = 10
+    n_out = 200
     model = RandomModel(n_out)
     model.eval()
 
