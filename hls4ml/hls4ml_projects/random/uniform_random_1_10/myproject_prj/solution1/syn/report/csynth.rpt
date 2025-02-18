@@ -1,0 +1,266 @@
+
+
+================================================================
+== Synthesis Summary Report of 'myproject'
+================================================================
++ General Information: 
+    * Date:           Tue Feb 18 18:25:29 2025
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        myproject_prj
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu13p-flga2577-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |   Modules   | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |           |           |     |
+    |   & Loops   | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ myproject  |    II|  3.58|        0|   0.000|         -|        1|     -|       yes|     -|   -|  171 (~0%)|  592 (~0%)|    -|
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++--------------+--------+-----------+----------+
+| Port         | Mode   | Direction | Bitwidth |
++--------------+--------+-----------+----------+
+| layer2_out_0 | ap_vld | out       | 16       |
+| layer2_out_1 | ap_vld | out       | 16       |
+| layer2_out_2 | ap_vld | out       | 16       |
+| layer2_out_3 | ap_vld | out       | 16       |
+| layer2_out_4 | ap_vld | out       | 16       |
+| layer2_out_5 | ap_vld | out       | 16       |
+| layer2_out_6 | ap_vld | out       | 16       |
+| layer2_out_7 | ap_vld | out       | 16       |
+| layer2_out_8 | ap_vld | out       | 16       |
+| layer2_out_9 | ap_vld | out       | 16       |
+| x_0          | ap_vld | in        | 16       |
+| x_1          | ap_vld | in        | 16       |
+| x_10         | ap_vld | in        | 16       |
+| x_11         | ap_vld | in        | 16       |
+| x_12         | ap_vld | in        | 16       |
+| x_13         | ap_vld | in        | 16       |
+| x_14         | ap_vld | in        | 16       |
+| x_15         | ap_vld | in        | 16       |
+| x_16         | ap_vld | in        | 16       |
+| x_17         | ap_vld | in        | 16       |
+| x_18         | ap_vld | in        | 16       |
+| x_19         | ap_vld | in        | 16       |
+| x_2          | ap_vld | in        | 16       |
+| x_20         | ap_vld | in        | 16       |
+| x_21         | ap_vld | in        | 16       |
+| x_22         | ap_vld | in        | 16       |
+| x_23         | ap_vld | in        | 16       |
+| x_24         | ap_vld | in        | 16       |
+| x_25         | ap_vld | in        | 16       |
+| x_26         | ap_vld | in        | 16       |
+| x_27         | ap_vld | in        | 16       |
+| x_28         | ap_vld | in        | 16       |
+| x_29         | ap_vld | in        | 16       |
+| x_3          | ap_vld | in        | 16       |
+| x_30         | ap_vld | in        | 16       |
+| x_31         | ap_vld | in        | 16       |
+| x_4          | ap_vld | in        | 16       |
+| x_5          | ap_vld | in        | 16       |
+| x_6          | ap_vld | in        | 16       |
+| x_7          | ap_vld | in        | 16       |
+| x_8          | ap_vld | in        | 16       |
+| x_9          | ap_vld | in        | 16       |
++--------------+--------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+---------------------------------------+
+| Argument   | Direction | Datatype                              |
++------------+-----------+---------------------------------------+
+| x          | in        | ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>*  |
+| layer2_out | out       | ap_ufixed<16, 0, AP_TRN, AP_WRAP, 0>* |
++------------+-----------+---------------------------------------+
+
+* SW-to-HW Mapping
++------------+---------------------+---------+
+| Argument   | HW Interface        | HW Type |
++------------+---------------------+---------+
+| x          | x_0                 | port    |
+| x          | x_0_ap_vld          | port    |
+| x          | x_1                 | port    |
+| x          | x_1_ap_vld          | port    |
+| x          | x_2                 | port    |
+| x          | x_2_ap_vld          | port    |
+| x          | x_3                 | port    |
+| x          | x_3_ap_vld          | port    |
+| x          | x_4                 | port    |
+| x          | x_4_ap_vld          | port    |
+| x          | x_5                 | port    |
+| x          | x_5_ap_vld          | port    |
+| x          | x_6                 | port    |
+| x          | x_6_ap_vld          | port    |
+| x          | x_7                 | port    |
+| x          | x_7_ap_vld          | port    |
+| x          | x_8                 | port    |
+| x          | x_8_ap_vld          | port    |
+| x          | x_9                 | port    |
+| x          | x_9_ap_vld          | port    |
+| x          | x_10                | port    |
+| x          | x_10_ap_vld         | port    |
+| x          | x_11                | port    |
+| x          | x_11_ap_vld         | port    |
+| x          | x_12                | port    |
+| x          | x_12_ap_vld         | port    |
+| x          | x_13                | port    |
+| x          | x_13_ap_vld         | port    |
+| x          | x_14                | port    |
+| x          | x_14_ap_vld         | port    |
+| x          | x_15                | port    |
+| x          | x_15_ap_vld         | port    |
+| x          | x_16                | port    |
+| x          | x_16_ap_vld         | port    |
+| x          | x_17                | port    |
+| x          | x_17_ap_vld         | port    |
+| x          | x_18                | port    |
+| x          | x_18_ap_vld         | port    |
+| x          | x_19                | port    |
+| x          | x_19_ap_vld         | port    |
+| x          | x_20                | port    |
+| x          | x_20_ap_vld         | port    |
+| x          | x_21                | port    |
+| x          | x_21_ap_vld         | port    |
+| x          | x_22                | port    |
+| x          | x_22_ap_vld         | port    |
+| x          | x_23                | port    |
+| x          | x_23_ap_vld         | port    |
+| x          | x_24                | port    |
+| x          | x_24_ap_vld         | port    |
+| x          | x_25                | port    |
+| x          | x_25_ap_vld         | port    |
+| x          | x_26                | port    |
+| x          | x_26_ap_vld         | port    |
+| x          | x_27                | port    |
+| x          | x_27_ap_vld         | port    |
+| x          | x_28                | port    |
+| x          | x_28_ap_vld         | port    |
+| x          | x_29                | port    |
+| x          | x_29_ap_vld         | port    |
+| x          | x_30                | port    |
+| x          | x_30_ap_vld         | port    |
+| x          | x_31                | port    |
+| x          | x_31_ap_vld         | port    |
+| layer2_out | layer2_out_0        | port    |
+| layer2_out | layer2_out_0_ap_vld | port    |
+| layer2_out | layer2_out_1        | port    |
+| layer2_out | layer2_out_1_ap_vld | port    |
+| layer2_out | layer2_out_2        | port    |
+| layer2_out | layer2_out_2_ap_vld | port    |
+| layer2_out | layer2_out_3        | port    |
+| layer2_out | layer2_out_3_ap_vld | port    |
+| layer2_out | layer2_out_4        | port    |
+| layer2_out | layer2_out_4_ap_vld | port    |
+| layer2_out | layer2_out_5        | port    |
+| layer2_out | layer2_out_5_ap_vld | port    |
+| layer2_out | layer2_out_6        | port    |
+| layer2_out | layer2_out_6_ap_vld | port    |
+| layer2_out | layer2_out_7        | port    |
+| layer2_out | layer2_out_7_ap_vld | port    |
+| layer2_out | layer2_out_8        | port    |
+| layer2_out | layer2_out_8_ap_vld | port    |
+| layer2_out | layer2_out_9        | port    |
+| layer2_out | layer2_out_9_ap_vld | port    |
++------------+---------------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------+-----+--------+------------+-----+--------+---------+
+| Name           | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++----------------+-----+--------+------------+-----+--------+---------+
+| + myproject    | 0   |        |            |     |        |         |
+|   layer2_out_0 |     |        | add_ln91   | add | fabric | 0       |
+|   layer2_out_1 |     |        | add_ln91_1 | add | fabric | 0       |
+|   layer2_out_2 |     |        | add_ln91_2 | add | fabric | 0       |
+|   layer2_out_3 |     |        | add_ln91_3 | add | fabric | 0       |
+|   layer2_out_4 |     |        | add_ln91_4 | add | fabric | 0       |
+|   layer2_out_5 |     |        | add_ln91_5 | add | fabric | 0       |
+|   layer2_out_6 |     |        | add_ln91_6 | add | fabric | 0       |
+|   layer2_out_7 |     |        | add_ln91_7 | add | fabric | 0       |
+|   layer2_out_8 |     |        | add_ln91_8 | add | fabric | 0       |
+|   layer2_out_9 |     |        | add_ln91_9 | add | fabric | 0       |
++----------------+-----+--------+------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
+| Type                 | Options                                                               | Location                                                                                      |
++----------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
+| array_reshape        | variable=x complete dim=0                                             | firmware/myproject.cpp:13 in myproject, x                                                     |
+| array_partition      | variable=layer2_out complete dim=0                                    | firmware/myproject.cpp:14 in myproject, layer2_out                                            |
+| interface            | ap_vld port=x,layer2_out                                              | firmware/myproject.cpp:15 in myproject, x,layer2_out                                          |
+| pipeline             |                                                                       | firmware/myproject.cpp:16 in myproject                                                        |
+| array_partition      | variable=data_buf complete dim=0                                      | firmware/nnet_utils/nnet_conv1d_latency.h:19 in conv_1d_latency_cl, data_buf                  |
+| array_partition      | variable=mult complete                                                | firmware/nnet_utils/nnet_conv1d_latency.h:22 in conv_1d_latency_cl, mult                      |
+| array_partition      | variable=acc complete                                                 | firmware/nnet_utils/nnet_conv1d_latency.h:25 in conv_1d_latency_cl, acc                       |
+| array_partition      | variable=weights complete                                             | firmware/nnet_utils/nnet_conv1d_latency.h:27 in conv_1d_latency_cl, weights                   |
+| array_partition      | variable=biases complete                                              | firmware/nnet_utils/nnet_conv1d_latency.h:28 in conv_1d_latency_cl, biases                    |
+| allocation           | operation instances=mul limit=CONFIG_T::mult_config::multiplier_limit | firmware/nnet_utils/nnet_conv1d_latency.h:31 in conv_1d_latency_cl                            |
+| pipeline             | II=CONFIG_T::reuse_factor rewind                                      | firmware/nnet_utils/nnet_conv1d_latency.h:35 in conv_1d_latency_cl                            |
+| unroll               |                                                                       | firmware/nnet_utils/nnet_conv1d_latency.h:41 in conv_1d_latency_cl                            |
+| unroll               |                                                                       | firmware/nnet_utils/nnet_conv1d_latency.h:48 in conv_1d_latency_cl                            |
+| unroll               |                                                                       | firmware/nnet_utils/nnet_conv1d_latency.h:52 in conv_1d_latency_cl                            |
+| unroll               |                                                                       | firmware/nnet_utils/nnet_conv1d_latency.h:62 in conv_1d_latency_cl                            |
+| unroll               |                                                                       | firmware/nnet_utils/nnet_conv1d_latency.h:69 in conv_1d_latency_cl                            |
+| unroll               |                                                                       | firmware/nnet_utils/nnet_conv1d_latency.h:72 in conv_1d_latency_cl                            |
+| unroll               |                                                                       | firmware/nnet_utils/nnet_conv1d_latency.h:80 in conv_1d_latency_cl                            |
+| array_partition      | variable=mult complete dim=0                                          | firmware/nnet_utils/nnet_conv1d_latency.h:97 in pointwise_conv_1d_latency_cl, mult            |
+| array_partition      | variable=acc complete dim=0                                           | firmware/nnet_utils/nnet_conv1d_latency.h:98 in pointwise_conv_1d_latency_cl, acc             |
+| function_instantiate | variable=weights,biases                                               | firmware/nnet_utils/nnet_conv1d_latency.h:101 in pointwise_conv_1d_latency_cl, weights,biases |
+| pipeline             | II=CONFIG_T::reuse_factor                                             | firmware/nnet_utils/nnet_conv1d_latency.h:104 in pointwise_conv_1d_latency_cl                 |
+| array_partition      | variable=weights complete dim=0                                       | firmware/nnet_utils/nnet_conv1d_latency.h:105 in pointwise_conv_1d_latency_cl, weights        |
+| array_partition      | variable=biases complete dim=0                                        | firmware/nnet_utils/nnet_conv1d_latency.h:106 in pointwise_conv_1d_latency_cl, biases         |
+| allocation           | operation instances=mul limit=CONFIG_T::mult_config::multiplier_limit | firmware/nnet_utils/nnet_conv1d_latency.h:109 in pointwise_conv_1d_latency_cl                 |
+| unroll               |                                                                       | firmware/nnet_utils/nnet_conv1d_latency.h:118 in pointwise_conv_1d_latency_cl                 |
+| unroll               |                                                                       | firmware/nnet_utils/nnet_conv1d_latency.h:137 in pointwise_conv_1d_latency_cl                 |
+| unroll               |                                                                       | firmware/nnet_utils/nnet_conv1d_latency.h:159 in pointwise_conv_1d_latency_cl                 |
+| inline               |                                                                       | firmware/nnet_utils/nnet_math.h:42 in sincos_lut                                              |
+| inline               |                                                                       | firmware/nnet_utils/nnet_math.h:161 in sin_lut                                                |
+| inline               |                                                                       | firmware/nnet_utils/nnet_math.h:169 in cos_lut                                                |
+| inline               |                                                                       | firmware/nnet_utils/nnet_mult.h:25 in product                                                 |
+| inline               |                                                                       | firmware/nnet_utils/nnet_mult.h:34 in product                                                 |
+| inline               |                                                                       | firmware/nnet_utils/nnet_mult.h:46 in product                                                 |
+| inline               |                                                                       | firmware/nnet_utils/nnet_mult.h:58 in product                                                 |
+| inline               |                                                                       | firmware/nnet_utils/nnet_mult.h:72 in product                                                 |
+| inline               |                                                                       | firmware/nnet_utils/nnet_mult.h:82 in product                                                 |
+| array_partition      | variable=lfsrs complete                                               | firmware/nnet_utils/nnet_random.h:75 in uniform, lfsrs                                        |
+| array_partition      | variable=res type=block factor=32                                     | firmware/nnet_utils/nnet_random.h:76 in uniform, res                                          |
+| array_partition      | variable=input type=block factor=32                                   | firmware/nnet_utils/nnet_random.h:77 in uniform, input                                        |
+| unroll               |                                                                       | firmware/nnet_utils/nnet_random.h:83 in uniform                                               |
+| pipeline             |                                                                       | firmware/nnet_utils/nnet_random.h:89 in uniform                                               |
+| unroll               |                                                                       | firmware/nnet_utils/nnet_types.h:28 in operator=                                              |
++----------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
+
+

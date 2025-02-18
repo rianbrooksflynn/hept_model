@@ -1,0 +1,139 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel src_name="myproject" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
+    <args>
+      <arg id="0" access_type="r" src_name="x" src_type="ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="10">
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_0" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_1" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_2" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_3" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_4" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_5" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_6" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_7" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_8" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_9" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_10" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_11" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_12" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_13" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_14" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_15" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_16" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_17" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_18" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_19" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_20" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_21" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_22" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_23" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_24" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_25" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_26" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_27" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_28" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_29" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_30" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="x_31" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="1" access_type="w" src_name="layer2_out" src_type="ap_ufixed&lt;16, 0, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="10">
+        <hw hw_usage="data" hw_interface="Register" hw_name="layer2_out_0" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="layer2_out_1" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="layer2_out_2" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="layer2_out_3" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="layer2_out_4" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="layer2_out_5" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="layer2_out_6" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="layer2_out_7" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="layer2_out_8" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+        <hw hw_usage="data" hw_interface="Register" hw_name="layer2_out_9" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+      </arg>
+    </args>
+    <return src_type="void" src_bitwidth="0" offset="0x0">
+      <hw hw_usage="data" hw_interface="" hw_name="" hw_bitwidth="0" hw_kernel_support="true"/>
+    </return>
+  </kernel>
+</root>
