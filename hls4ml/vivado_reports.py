@@ -18,9 +18,9 @@ def run_reports_for_all_subfolders(folder_path):
     base_path = Path(folder_path)
     for subfolder in base_path.iterdir():
         if subfolder.is_dir():
-            print_report(f'hls4ml/hls4ml_projects/input_size_new/{subfolder.stem}', reports_dir / f"{subfolder.stem}_report.txt")
+            print_report(f'hls4ml/hls4ml_projects/random/{subfolder.stem}', reports_dir / f"{subfolder.stem}_report.txt")
 
 
 if __name__ == "__main__":
-    base_path = Path(__file__).parent / 'hls4ml_projects' / 'input_size_new'
+    base_path = Path(__file__).parent / 'hls4ml_projects' / 'random'
     run_reports_for_all_subfolders(base_path)
