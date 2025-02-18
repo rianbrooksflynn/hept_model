@@ -272,10 +272,10 @@ def input_size_sweep():
     default_coords_dim = 2
 
     n_heads = [4, 6]
-    seq_len = [4, 6]
+    seq_len = [4, 6, 8, 10]
     batch_size = [4, 6]
-    dim_per_head = [4, 6]
-    coords_dim = [4, 6]
+    dim_per_head = [4, 6, 8, 10]
+    coords_dim = [4, 6, 8, 10]
 
     iter_input_size(
         default_n_heads, 
@@ -338,19 +338,4 @@ def input_size_sweep():
 
 
 if __name__ == "__main__":
-    iter_input_size(
-        2, 
-        8, 
-        2, 
-        2, 
-        2, 
-        f"seq_len_8"
-    )
-    iter_input_size(
-        2, 
-        10, 
-        2, 
-        2, 
-        2, 
-        f"seq_len_10"
-    )
+    input_size_sweep()
