@@ -36,7 +36,7 @@ def plot_random_hls4ml():
     model = RandomModel(n_out)
     model.eval()
 
-    x = torch.randn(batch_size, n_out)
+    x = torch.zeros(batch_size, n_out)
 
     config = hls4ml.utils.config_from_pytorch_model(
         model,

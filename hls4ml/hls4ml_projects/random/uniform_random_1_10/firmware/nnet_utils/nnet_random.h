@@ -74,6 +74,7 @@ void uniform(data_T input[CONFIG_T::n_out], res_T res[CONFIG_T::n_out]) {
 
     #pragma HLS ARRAY_PARTITION variable=lfsrs complete
     #pragma HLS ARRAY_PARTITION variable=res type=block factor=32
+    #pragma HLS ARRAY_PARTITION variable=input type=block factor=32
     
     int batch_size = CONFIG_T::n_out / n_lfsrs;
     int remainder = CONFIG_T::n_out % n_lfsrs;
@@ -87,7 +88,8 @@ void uniform(data_T input[CONFIG_T::n_out], res_T res[CONFIG_T::n_out]) {
         for (int j = 0; j < full_batch; j++) {
             #pragma HLS PIPELINE
             lfsrs[i] = nnet::lfsr_16bit<CONFIG_T>(lfsrs[i]);
-            res[idx++] = static_cast<res_T>(*reinterpret_cast<ap_ufixed<16, 0> *>(&lfsrs[i])); // Reinterpret as number between 0 and 1, then cast to res_T
+            res[idx] = input[idx] + static_cast<res_T>(*reinterpret_cast<ap_ufixed<16, 0> *>(&lfsrs[i])); // Reinterpret as number between 0 and 1, then cast to res_T
+            idx++;
         }
     }
 }
