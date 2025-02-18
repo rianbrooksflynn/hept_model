@@ -93,7 +93,7 @@ PytorchModel: !!python/object:__main__.RandomModel
   _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
   - []
   training: false
-Stamp: 7a7af386
+Stamp: 2fe70149
 Version: 1.0.0
 WriterConfig:
   Namespace: null

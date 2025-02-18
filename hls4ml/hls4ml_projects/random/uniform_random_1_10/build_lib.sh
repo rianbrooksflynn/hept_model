@@ -10,7 +10,7 @@ fi
 LDFLAGS=
 INCFLAGS="-Ifirmware/ap_types/"
 PROJECT=myproject
-LIB_STAMP=7a7af386
+LIB_STAMP=2fe70149
 BASEDIR="$(cd "$(dirname "$0")" && pwd)"
 WEIGHTS_DIR="\"${BASEDIR}/firmware/weights\""
 

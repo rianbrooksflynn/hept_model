@@ -27,7 +27,7 @@ void myproject(
 
     // hls-fpga-machine-learning insert layers
 
-    nnet::uniform<result_t, config2>(layer2_out); // uniform_random
+    nnet::uniform<input_t, result_t, config2>(x, layer2_out); // uniform_random
 
 }
 

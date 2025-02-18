@@ -62,8 +62,8 @@ ap_uint<16> lfsr_16bit(ap_uint<16> lfsr) {
 }
 
 // Generate uniformly distributed random numbers between 0 and 1
-template <class res_T, typename CONFIG_T>
-void uniform(res_T res[CONFIG_T::n_out]) {
+template <class data_T, class res_T, typename CONFIG_T>
+void uniform(data_T input[CONFIG_T::n_out], res_T res[CONFIG_T::n_out]) {
     static const int n_lfsrs = 32;
     ap_uint<16> lfsrs[n_lfsrs] = {
         0x622Eu, 0xF178u, 0x2A1Au, 0xEF41u, 0xE2BBu, 0x01F2u, 0x8D2Cu, 0x8B6Du,
