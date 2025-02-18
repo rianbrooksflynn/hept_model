@@ -1,0 +1,20 @@
+{
+    "1": {
+        "name": "uniform<ap_fixed<16, 6, 5, 3, 0>, ap_ufixed<16, 0, 5, 3, 0>, config2>",
+        "file": "firmware\/nnet_utils\/nnet_random.h",
+        "fileloc": "91",
+        "instructions": "426",
+        "total_instructions": "426",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "0": {
+        "name": "myproject",
+        "file": "myproject.cpp",
+        "fileloc": "7",
+        "instructions": "518",
+        "total_instructions": "944",
+        "calls": "1",
+        "basicblocks": "1"
+    }
+}

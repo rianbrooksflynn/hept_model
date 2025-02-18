@@ -1,0 +1,41 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "myproject.cpp",
+    "fileloc": 7,
+    "instructions": 4,
+    "name": "myproject",
+    "total_instructions": 18306
+  },
+  "1": {
+    "basicblocks": 3028,
+    "calls": "2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2",
+    "file": "nnet_random.h",
+    "fileloc": 66,
+    "instructions": 10302,
+    "loads": {
+      "L": 832
+    },
+    "name": "uniform<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_ufixed<16, 0, AP_TRN, AP_WRAP, 0>, config2>",
+    "stores": {
+      "L": 496
+    },
+    "total_instructions": 18302
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_random.h",
+    "fileloc": 58,
+    "instructions": 40,
+    "loads": {
+      "L": 6
+    },
+    "name": "lfsr_16bit<config2>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 40
+  }
+}
