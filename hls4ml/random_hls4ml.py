@@ -37,6 +37,8 @@ def plot_random_hls4ml():
     model.eval()
 
     x = torch.zeros(batch_size, n_out)
+    x_save_location = str(Path(__file__).parent / 'data' / f'uniform_random_{batch_size}_{n_out}.dat')
+    save_data([x.detach().numpy().flatten()], x_save_location)
 
     config = hls4ml.utils.config_from_pytorch_model(
         model,
@@ -49,7 +51,7 @@ def plot_random_hls4ml():
     config['LayerName']['uniform_random']['Precision']['result'] = 'ap_ufixed<16,0>'
 
     output_dir = str(Path(__file__).parent / 'hls4ml_projects' / 'random' / f'uniform_random_{batch_size}_{n_out}')
-    hls_model = hls4ml.converters.convert_from_pytorch_model(model, hls_config=config, io_type='io_parallel', output_dir=output_dir)
+    hls_model = hls4ml.converters.convert_from_pytorch_model(model, hls_config=config, io_type='io_parallel', output_dir=output_dir, input_data_tb=x_save_location)
     hls_model.compile()
 
     hls_prediction = hls_model.predict(x.detach().numpy()).flatten()

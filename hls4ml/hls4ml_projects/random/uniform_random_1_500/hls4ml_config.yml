@@ -21,7 +21,7 @@ HLSConfig:
     TraceOutput: false
     TransposeOutputs: false
 IOType: io_parallel
-InputData: null
+InputData: /home/rian/A3D3/hept_model/hls4ml/data/uniform_random_1_500.dat
 InputShape: !!python/tuple
 - 500
 OutputDir: /home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/random/uniform_random_1_500
@@ -93,7 +93,7 @@ PytorchModel: !!python/object:__main__.RandomModel
   _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
   - []
   training: false
-Stamp: 5e26ad62
+Stamp: '66737123'
 Version: 1.0.0
 WriterConfig:
   Namespace: null
