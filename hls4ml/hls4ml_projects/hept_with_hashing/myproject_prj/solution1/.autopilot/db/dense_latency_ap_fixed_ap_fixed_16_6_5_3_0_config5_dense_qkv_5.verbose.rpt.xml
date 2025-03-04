@@ -1,0 +1,172 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_5'" level="0">
+<item name = "Date">Tue Mar  4 14:24:47 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu13p-flga2577-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 3.987 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 220, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 16, 0, 340, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, -, -, -</column>
+<specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, ~0, 0, ~0, 0</specialColumn>
+<specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, 0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="mul_16s_16s_26_1_1_U4830">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_16s_26_1_1_U4831">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_16s_26_1_1_U4832">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_16s_26_1_1_U4833">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_16s_26_1_1_U4834">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_16s_26_1_1_U4835">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_16s_26_1_1_U4836">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_16s_26_1_1_U4837">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_16s_26_1_1_U4838">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_16s_26_1_1_U4839">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_16s_26_1_1_U4840">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_16s_26_1_1_U4841">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_16s_26_1_1_U4842">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_16s_26_1_1_U4843">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_16s_26_1_1_U4844">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_16s_26_1_1_U4845">mul_16s_16s_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="sparsemux_27_7_16_1_1_U4846">sparsemux_27_7_16_1_1, 0, 0, 0, 65, 0</column>
+<column name="sparsemux_27_7_16_1_1_U4847">sparsemux_27_7_16_1_1, 0, 0, 0, 65, 0</column>
+<column name="sparsemux_27_7_16_1_1_U4848">sparsemux_27_7_16_1_1, 0, 0, 0, 65, 0</column>
+<column name="sparsemux_27_7_16_1_1_U4849">sparsemux_27_7_16_1_1, 0, 0, 0, 65, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln58_45_fu_1719_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln58_46_fu_1725_p2">+, 0, 0, 16, 16, 16</column>
+<column name="add_ln58_47_fu_1731_p2">+, 0, 0, 16, 16, 16</column>
+<column name="add_ln58_48_fu_1737_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln58_49_fu_1743_p2">+, 0, 0, 16, 16, 16</column>
+<column name="add_ln58_50_fu_1749_p2">+, 0, 0, 16, 16, 16</column>
+<column name="add_ln58_51_fu_1755_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln58_52_fu_1761_p2">+, 0, 0, 16, 16, 16</column>
+<column name="add_ln58_53_fu_1767_p2">+, 0, 0, 16, 16, 16</column>
+<column name="add_ln58_54_fu_1773_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln58_55_fu_1779_p2">+, 0, 0, 16, 16, 16</column>
+<column name="add_ln58_fu_1713_p2">+, 0, 0, 16, 16, 16</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_ready">out, 1, ap_ctrl_hs, dense_latency&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config5_dense_qkv&gt;.5, return value</column>
+<column name="ap_return_0">out, 16, ap_ctrl_hs, dense_latency&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config5_dense_qkv&gt;.5, return value</column>
+<column name="ap_return_1">out, 16, ap_ctrl_hs, dense_latency&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config5_dense_qkv&gt;.5, return value</column>
+<column name="ap_return_2">out, 16, ap_ctrl_hs, dense_latency&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config5_dense_qkv&gt;.5, return value</column>
+<column name="ap_return_3">out, 16, ap_ctrl_hs, dense_latency&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config5_dense_qkv&gt;.5, return value</column>
+<column name="data_64_val">in, 16, ap_none, data_64_val, scalar</column>
+<column name="data_65_val">in, 16, ap_none, data_65_val, scalar</column>
+<column name="data_66_val">in, 16, ap_none, data_66_val, scalar</column>
+<column name="data_67_val">in, 16, ap_none, data_67_val, scalar</column>
+<column name="data_68_val">in, 16, ap_none, data_68_val, scalar</column>
+<column name="data_69_val">in, 16, ap_none, data_69_val, scalar</column>
+<column name="data_70_val">in, 16, ap_none, data_70_val, scalar</column>
+<column name="data_71_val">in, 16, ap_none, data_71_val, scalar</column>
+<column name="data_72_val">in, 16, ap_none, data_72_val, scalar</column>
+<column name="data_73_val">in, 16, ap_none, data_73_val, scalar</column>
+<column name="data_74_val">in, 16, ap_none, data_74_val, scalar</column>
+<column name="data_75_val">in, 16, ap_none, data_75_val, scalar</column>
+<column name="data_76_val">in, 16, ap_none, data_76_val, scalar</column>
+<column name="data_77_val">in, 16, ap_none, data_77_val, scalar</column>
+<column name="data_78_val">in, 16, ap_none, data_78_val, scalar</column>
+<column name="data_79_val">in, 16, ap_none, data_79_val, scalar</column>
+<column name="weights_64_val">in, 16, ap_none, weights_64_val, scalar</column>
+<column name="weights_65_val">in, 16, ap_none, weights_65_val, scalar</column>
+<column name="weights_66_val">in, 16, ap_none, weights_66_val, scalar</column>
+<column name="weights_67_val">in, 16, ap_none, weights_67_val, scalar</column>
+<column name="weights_68_val">in, 16, ap_none, weights_68_val, scalar</column>
+<column name="weights_69_val">in, 16, ap_none, weights_69_val, scalar</column>
+<column name="weights_70_val">in, 16, ap_none, weights_70_val, scalar</column>
+<column name="weights_71_val">in, 16, ap_none, weights_71_val, scalar</column>
+<column name="weights_72_val">in, 16, ap_none, weights_72_val, scalar</column>
+<column name="weights_73_val">in, 16, ap_none, weights_73_val, scalar</column>
+<column name="weights_74_val">in, 16, ap_none, weights_74_val, scalar</column>
+<column name="weights_75_val">in, 16, ap_none, weights_75_val, scalar</column>
+<column name="weights_76_val">in, 16, ap_none, weights_76_val, scalar</column>
+<column name="weights_77_val">in, 16, ap_none, weights_77_val, scalar</column>
+<column name="weights_78_val">in, 16, ap_none, weights_78_val, scalar</column>
+<column name="weights_79_val">in, 16, ap_none, weights_79_val, scalar</column>
+<column name="idx">in, 7, ap_none, idx, scalar</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,192 @@
+
+
+================================================================
+== Vitis HLS Report for 'reduce_ap_fixed_16_6_5_3_0_8_Op_min_ap_fixed_16_6_5_3_0_s'
+================================================================
+* Date:           Tue Mar  4 14:24:06 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu13p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.832 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        0|      287|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        -|      -|        0|     1448|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        -|        -|     -|
+|Register             |        -|      -|        -|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|      0|        0|     1735|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|      0|        0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|      0|        0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+-----------------------+---------+----+---+-----+-----+
+    |          Instance          |         Module        | BRAM_18K| DSP| FF| LUT | URAM|
+    +----------------------------+-----------------------+---------+----+---+-----+-----+
+    |sparsemux_83_6_16_1_1_U413  |sparsemux_83_6_16_1_1  |        0|   0|  0|  181|    0|
+    |sparsemux_83_6_16_1_1_U414  |sparsemux_83_6_16_1_1  |        0|   0|  0|  181|    0|
+    |sparsemux_83_6_16_1_1_U415  |sparsemux_83_6_16_1_1  |        0|   0|  0|  181|    0|
+    |sparsemux_83_6_16_1_1_U416  |sparsemux_83_6_16_1_1  |        0|   0|  0|  181|    0|
+    |sparsemux_83_6_16_1_1_U417  |sparsemux_83_6_16_1_1  |        0|   0|  0|  181|    0|
+    |sparsemux_83_6_16_1_1_U418  |sparsemux_83_6_16_1_1  |        0|   0|  0|  181|    0|
+    |sparsemux_83_6_16_1_1_U419  |sparsemux_83_6_16_1_1  |        0|   0|  0|  181|    0|
+    |sparsemux_83_6_16_1_1_U420  |sparsemux_83_6_16_1_1  |        0|   0|  0|  181|    0|
+    +----------------------------+-----------------------+---------+----+---+-----+-----+
+    |Total                       |                       |        0|   0|  0| 1448|    0|
+    +----------------------------+-----------------------+---------+----+---+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |icmp_ln71_1_fu_1192_p2    |      icmp|   0|  0|  23|          16|          16|
+    |icmp_ln71_2_fu_1212_p2    |      icmp|   0|  0|  23|          16|          16|
+    |icmp_ln71_3_fu_1576_p2    |      icmp|   0|  0|  23|          16|          16|
+    |icmp_ln71_4_fu_1940_p2    |      icmp|   0|  0|  23|          16|          16|
+    |icmp_ln71_5_fu_1960_p2    |      icmp|   0|  0|  23|          16|          16|
+    |icmp_ln71_6_fu_1980_p2    |      icmp|   0|  0|  23|          16|          16|
+    |icmp_ln71_fu_828_p2       |      icmp|   0|  0|  23|          16|          16|
+    |ap_return                 |    select|   0|  0|  16|           1|          16|
+    |select_ln71_1_fu_1204_p3  |    select|   0|  0|  16|           1|          16|
+    |select_ln71_2_fu_1224_p3  |    select|   0|  0|  16|           1|          16|
+    |select_ln71_3_fu_1588_p3  |    select|   0|  0|  16|           1|          16|
+    |select_ln71_4_fu_1952_p3  |    select|   0|  0|  16|           1|          16|
+    |select_ln71_5_fu_1972_p3  |    select|   0|  0|  16|           1|          16|
+    |select_ln71_fu_840_p3     |    select|   0|  0|  16|           1|          16|
+    |xor_ln71_1_fu_1198_p2     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln71_2_fu_1218_p2     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln71_3_fu_1582_p2     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln71_4_fu_1946_p2     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln71_5_fu_1966_p2     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln71_6_fu_1986_p2     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln71_fu_834_p2        |       xor|   0|  0|   2|           1|           2|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |Total                     |          |   0|  0| 287|         126|         238|
+    +--------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------+-----+-----+------------+-------------------------------------------------------------------------+--------------+
+| RTL Ports | Dir | Bits|  Protocol  |                              Source Object                              |    C Type    |
++-----------+-----+-----+------------+-------------------------------------------------------------------------+--------------+
+|ap_ready   |  out|    1|  ap_ctrl_hs|  reduce<ap_fixed<16, 6, 5, 3, 0>, 8, Op_min<ap_fixed<16, 6, 5, 3, 0> > >|  return value|
+|ap_return  |  out|   16|  ap_ctrl_hs|  reduce<ap_fixed<16, 6, 5, 3, 0>, 8, Op_min<ap_fixed<16, 6, 5, 3, 0> > >|  return value|
+|x_0_val    |   in|   16|     ap_none|                                                                  x_0_val|        scalar|
+|x_1_val    |   in|   16|     ap_none|                                                                  x_1_val|        scalar|
+|x_2_val    |   in|   16|     ap_none|                                                                  x_2_val|        scalar|
+|x_3_val    |   in|   16|     ap_none|                                                                  x_3_val|        scalar|
+|x_4_val    |   in|   16|     ap_none|                                                                  x_4_val|        scalar|
+|x_5_val    |   in|   16|     ap_none|                                                                  x_5_val|        scalar|
+|x_6_val    |   in|   16|     ap_none|                                                                  x_6_val|        scalar|
+|x_7_val    |   in|   16|     ap_none|                                                                  x_7_val|        scalar|
+|x_8_val    |   in|   16|     ap_none|                                                                  x_8_val|        scalar|
+|x_9_val    |   in|   16|     ap_none|                                                                  x_9_val|        scalar|
+|x_10_val   |   in|   16|     ap_none|                                                                 x_10_val|        scalar|
+|x_11_val   |   in|   16|     ap_none|                                                                 x_11_val|        scalar|
+|x_12_val   |   in|   16|     ap_none|                                                                 x_12_val|        scalar|
+|x_13_val   |   in|   16|     ap_none|                                                                 x_13_val|        scalar|
+|x_14_val   |   in|   16|     ap_none|                                                                 x_14_val|        scalar|
+|x_15_val   |   in|   16|     ap_none|                                                                 x_15_val|        scalar|
+|x_16_val   |   in|   16|     ap_none|                                                                 x_16_val|        scalar|
+|x_17_val   |   in|   16|     ap_none|                                                                 x_17_val|        scalar|
+|x_18_val   |   in|   16|     ap_none|                                                                 x_18_val|        scalar|
+|x_19_val   |   in|   16|     ap_none|                                                                 x_19_val|        scalar|
+|x_20_val   |   in|   16|     ap_none|                                                                 x_20_val|        scalar|
+|x_21_val   |   in|   16|     ap_none|                                                                 x_21_val|        scalar|
+|x_22_val   |   in|   16|     ap_none|                                                                 x_22_val|        scalar|
+|x_23_val   |   in|   16|     ap_none|                                                                 x_23_val|        scalar|
+|x_24_val   |   in|   16|     ap_none|                                                                 x_24_val|        scalar|
+|x_25_val   |   in|   16|     ap_none|                                                                 x_25_val|        scalar|
+|x_26_val   |   in|   16|     ap_none|                                                                 x_26_val|        scalar|
+|x_27_val   |   in|   16|     ap_none|                                                                 x_27_val|        scalar|
+|x_28_val   |   in|   16|     ap_none|                                                                 x_28_val|        scalar|
+|x_29_val   |   in|   16|     ap_none|                                                                 x_29_val|        scalar|
+|x_30_val   |   in|   16|     ap_none|                                                                 x_30_val|        scalar|
+|x_31_val   |   in|   16|     ap_none|                                                                 x_31_val|        scalar|
+|x_32_val   |   in|   16|     ap_none|                                                                 x_32_val|        scalar|
+|x_33_val   |   in|   16|     ap_none|                                                                 x_33_val|        scalar|
+|x_34_val   |   in|   16|     ap_none|                                                                 x_34_val|        scalar|
+|x_35_val   |   in|   16|     ap_none|                                                                 x_35_val|        scalar|
+|x_36_val   |   in|   16|     ap_none|                                                                 x_36_val|        scalar|
+|x_37_val   |   in|   16|     ap_none|                                                                 x_37_val|        scalar|
+|x_38_val   |   in|   16|     ap_none|                                                                 x_38_val|        scalar|
+|x_39_val   |   in|   16|     ap_none|                                                                 x_39_val|        scalar|
+|x_40_val   |   in|   16|     ap_none|                                                                 x_40_val|        scalar|
+|x_41_val   |   in|   16|     ap_none|                                                                 x_41_val|        scalar|
+|x_42_val   |   in|   16|     ap_none|                                                                 x_42_val|        scalar|
+|x_43_val   |   in|   16|     ap_none|                                                                 x_43_val|        scalar|
+|x_44_val   |   in|   16|     ap_none|                                                                 x_44_val|        scalar|
+|x_45_val   |   in|   16|     ap_none|                                                                 x_45_val|        scalar|
+|x_46_val   |   in|   16|     ap_none|                                                                 x_46_val|        scalar|
+|x_47_val   |   in|   16|     ap_none|                                                                 x_47_val|        scalar|
+|idx        |   in|    6|     ap_none|                                                                      idx|        scalar|
++-----------+-----+-----+------------+-------------------------------------------------------------------------+--------------+
+

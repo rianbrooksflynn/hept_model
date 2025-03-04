@@ -1,0 +1,192 @@
+
+
+================================================================
+== Vitis HLS Report for 'dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1'
+================================================================
+* Date:           Tue Mar  4 14:24:05 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu13p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  4.148 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        0|      206|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        -|     11|        0|     1189|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        -|        -|     -|
+|Register             |        -|      -|        -|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|     11|        0|     1395|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|     ~0|        0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|     ~0|        0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+-----------------------+---------+----+---+-----+-----+
+    |          Instance         |         Module        | BRAM_18K| DSP| FF| LUT | URAM|
+    +---------------------------+-----------------------+---------+----+---+-----+-----+
+    |mul_16s_10ns_26_1_1_U76    |mul_16s_10ns_26_1_1    |        0|   1|  0|    5|    0|
+    |mul_16s_10ns_26_1_1_U79    |mul_16s_10ns_26_1_1    |        0|   1|  0|    5|    0|
+    |mul_16s_11ns_26_1_1_U74    |mul_16s_11ns_26_1_1    |        0|   1|  0|    5|    0|
+    |mul_16s_11ns_26_1_1_U77    |mul_16s_11ns_26_1_1    |        0|   1|  0|    5|    0|
+    |mul_16s_11ns_26_1_1_U82    |mul_16s_11ns_26_1_1    |        0|   1|  0|    5|    0|
+    |mul_16s_12ns_26_1_1_U73    |mul_16s_12ns_26_1_1    |        0|   1|  0|    5|    0|
+    |mul_16s_12ns_26_1_1_U80    |mul_16s_12ns_26_1_1    |        0|   1|  0|    5|    0|
+    |mul_16s_12s_26_1_1_U78     |mul_16s_12s_26_1_1     |        0|   1|  0|    5|    0|
+    |mul_16s_12s_26_1_1_U81     |mul_16s_12s_26_1_1     |        0|   1|  0|    5|    0|
+    |mul_16s_8ns_24_1_1_U75     |mul_16s_8ns_24_1_1     |        0|   1|  0|    5|    0|
+    |mul_16s_8ns_24_1_1_U83     |mul_16s_8ns_24_1_1     |        0|   1|  0|    5|    0|
+    |sparsemux_87_7_16_1_1_U84  |sparsemux_87_7_16_1_1  |        0|   0|  0|  189|    0|
+    |sparsemux_87_7_16_1_1_U85  |sparsemux_87_7_16_1_1  |        0|   0|  0|  189|    0|
+    |sparsemux_87_7_16_1_1_U86  |sparsemux_87_7_16_1_1  |        0|   0|  0|  189|    0|
+    |sparsemux_87_7_16_1_1_U87  |sparsemux_87_7_16_1_1  |        0|   0|  0|  189|    0|
+    |sparsemux_87_7_16_1_1_U88  |sparsemux_87_7_16_1_1  |        0|   0|  0|  189|    0|
+    |sparsemux_87_7_16_1_1_U89  |sparsemux_87_7_16_1_1  |        0|   0|  0|  189|    0|
+    +---------------------------+-----------------------+---------+----+---+-----+-----+
+    |Total                      |                       |        0|  11|  0| 1189|    0|
+    +---------------------------+-----------------------+---------+----+---+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------+----------+----+---+----+------------+------------+
+    |add_ln58_87_fu_2455_p2  |         +|   0|  0|  16|          16|          16|
+    |add_ln58_88_fu_2461_p2  |         +|   0|  0|  16|          16|          16|
+    |add_ln58_89_fu_2467_p2  |         +|   0|  0|  16|          16|          16|
+    |add_ln58_90_fu_2473_p2  |         +|   0|  0|  16|          16|          16|
+    |add_ln58_91_fu_2479_p2  |         +|   0|  0|  23|          16|          16|
+    |add_ln58_92_fu_2485_p2  |         +|   0|  0|  16|          16|          16|
+    |add_ln58_93_fu_2491_p2  |         +|   0|  0|  16|          16|          16|
+    |add_ln58_94_fu_2497_p2  |         +|   0|  0|  16|          16|          16|
+    |add_ln58_95_fu_2503_p2  |         +|   0|  0|  16|          16|          16|
+    |add_ln58_fu_2449_p2     |         +|   0|  0|  23|          16|          16|
+    |sub_ln73_fu_1597_p2     |         -|   0|  0|  32|          25|          25|
+    +------------------------+----------+----+---+----+------------+------------+
+    |Total                   |          |   0|  0| 206|         185|         185|
+    +------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+--------------------------------------------------------------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  |                            Source Object                           |    C Type    |
++-------------+-----+-----+------------+--------------------------------------------------------------------+--------------+
+|ap_ready     |  out|    1|  ap_ctrl_hs|  dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_alpha>.1|  return value|
+|ap_return_0  |  out|   16|  ap_ctrl_hs|  dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_alpha>.1|  return value|
+|ap_return_1  |  out|   16|  ap_ctrl_hs|  dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_alpha>.1|  return value|
+|data_48_val  |   in|   16|     ap_none|                                                         data_48_val|        scalar|
+|data_49_val  |   in|   16|     ap_none|                                                         data_49_val|        scalar|
+|data_50_val  |   in|   16|     ap_none|                                                         data_50_val|        scalar|
+|data_51_val  |   in|   16|     ap_none|                                                         data_51_val|        scalar|
+|data_52_val  |   in|   16|     ap_none|                                                         data_52_val|        scalar|
+|data_53_val  |   in|   16|     ap_none|                                                         data_53_val|        scalar|
+|data_54_val  |   in|   16|     ap_none|                                                         data_54_val|        scalar|
+|data_55_val  |   in|   16|     ap_none|                                                         data_55_val|        scalar|
+|data_56_val  |   in|   16|     ap_none|                                                         data_56_val|        scalar|
+|data_57_val  |   in|   16|     ap_none|                                                         data_57_val|        scalar|
+|data_58_val  |   in|   16|     ap_none|                                                         data_58_val|        scalar|
+|data_59_val  |   in|   16|     ap_none|                                                         data_59_val|        scalar|
+|data_60_val  |   in|   16|     ap_none|                                                         data_60_val|        scalar|
+|data_61_val  |   in|   16|     ap_none|                                                         data_61_val|        scalar|
+|data_62_val  |   in|   16|     ap_none|                                                         data_62_val|        scalar|
+|data_63_val  |   in|   16|     ap_none|                                                         data_63_val|        scalar|
+|data_64_val  |   in|   16|     ap_none|                                                         data_64_val|        scalar|
+|data_65_val  |   in|   16|     ap_none|                                                         data_65_val|        scalar|
+|data_66_val  |   in|   16|     ap_none|                                                         data_66_val|        scalar|
+|data_67_val  |   in|   16|     ap_none|                                                         data_67_val|        scalar|
+|data_68_val  |   in|   16|     ap_none|                                                         data_68_val|        scalar|
+|data_69_val  |   in|   16|     ap_none|                                                         data_69_val|        scalar|
+|data_70_val  |   in|   16|     ap_none|                                                         data_70_val|        scalar|
+|data_71_val  |   in|   16|     ap_none|                                                         data_71_val|        scalar|
+|data_72_val  |   in|   16|     ap_none|                                                         data_72_val|        scalar|
+|data_73_val  |   in|   16|     ap_none|                                                         data_73_val|        scalar|
+|data_74_val  |   in|   16|     ap_none|                                                         data_74_val|        scalar|
+|data_75_val  |   in|   16|     ap_none|                                                         data_75_val|        scalar|
+|data_76_val  |   in|   16|     ap_none|                                                         data_76_val|        scalar|
+|data_77_val  |   in|   16|     ap_none|                                                         data_77_val|        scalar|
+|data_78_val  |   in|   16|     ap_none|                                                         data_78_val|        scalar|
+|data_79_val  |   in|   16|     ap_none|                                                         data_79_val|        scalar|
+|data_80_val  |   in|   16|     ap_none|                                                         data_80_val|        scalar|
+|data_81_val  |   in|   16|     ap_none|                                                         data_81_val|        scalar|
+|data_82_val  |   in|   16|     ap_none|                                                         data_82_val|        scalar|
+|data_83_val  |   in|   16|     ap_none|                                                         data_83_val|        scalar|
+|data_84_val  |   in|   16|     ap_none|                                                         data_84_val|        scalar|
+|data_85_val  |   in|   16|     ap_none|                                                         data_85_val|        scalar|
+|data_86_val  |   in|   16|     ap_none|                                                         data_86_val|        scalar|
+|data_87_val  |   in|   16|     ap_none|                                                         data_87_val|        scalar|
+|data_88_val  |   in|   16|     ap_none|                                                         data_88_val|        scalar|
+|data_89_val  |   in|   16|     ap_none|                                                         data_89_val|        scalar|
+|data_90_val  |   in|   16|     ap_none|                                                         data_90_val|        scalar|
+|data_91_val  |   in|   16|     ap_none|                                                         data_91_val|        scalar|
+|data_92_val  |   in|   16|     ap_none|                                                         data_92_val|        scalar|
+|data_93_val  |   in|   16|     ap_none|                                                         data_93_val|        scalar|
+|data_94_val  |   in|   16|     ap_none|                                                         data_94_val|        scalar|
+|data_95_val  |   in|   16|     ap_none|                                                         data_95_val|        scalar|
+|idx          |   in|    7|     ap_none|                                                                 idx|        scalar|
++-------------+-----+-----+------------+--------------------------------------------------------------------+--------------+
+

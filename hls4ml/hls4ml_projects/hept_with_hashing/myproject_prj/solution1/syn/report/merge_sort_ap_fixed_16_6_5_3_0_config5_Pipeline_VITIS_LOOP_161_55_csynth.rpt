@@ -1,0 +1,203 @@
+
+
+================================================================
+== Vitis HLS Report for 'merge_sort_ap_fixed_16_6_5_3_0_config5_Pipeline_VITIS_LOOP_161_55'
+================================================================
+* Date:           Tue Mar  4 14:24:08 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu13p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  1.267 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_161_5  |        ?|        ?|         1|          1|          1|     ?|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        0|       77|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        -|      -|        0|       31|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        -|      108|     -|
+|Register             |        -|      -|      294|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|      0|      294|      216|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|      0|       ~0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|      0|       ~0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------+-----------------------+---------+----+---+----+-----+
+    |           Instance          |         Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +-----------------------------+-----------------------+---------+----+---+----+-----+
+    |sparsemux_13_3_32_1_1_U1005  |sparsemux_13_3_32_1_1  |        0|   0|  0|  31|    0|
+    +-----------------------------+-----------------------+---------+----+---+----+-----+
+    |Total                        |                       |        0|   0|  0|  31|    0|
+    +-----------------------------+-----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln163_fu_344_p2   |         +|   0|  0|  10|           3|           1|
+    |k_2_fu_376_p2         |         +|   0|  0|  39|          32|           1|
+    |ap_condition_263      |       and|   0|  0|   2|           1|           1|
+    |ap_condition_266      |       and|   0|  0|   2|           1|           1|
+    |ap_condition_269      |       and|   0|  0|   2|           1|           1|
+    |ap_condition_272      |       and|   0|  0|   2|           1|           1|
+    |ap_condition_275      |       and|   0|  0|   2|           1|           1|
+    |ap_condition_278      |       and|   0|  0|   2|           1|           1|
+    |ap_condition_281      |       and|   0|  0|   2|           1|           1|
+    |ap_condition_284      |       and|   0|  0|   2|           1|           1|
+    |icmp_ln161_fu_331_p2  |      icmp|   0|  0|  10|           3|           3|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  77|          47|          15|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |j_fu_90                  |   9|          2|    3|          6|
+    |k_fu_86                  |   9|          2|   32|         64|
+    |temp_10_fu_102           |   9|          2|   32|         64|
+    |temp_11_fu_106           |   9|          2|   32|         64|
+    |temp_12_fu_110           |   9|          2|   32|         64|
+    |temp_13_fu_114           |   9|          2|   32|         64|
+    |temp_14_fu_118           |   9|          2|   32|         64|
+    |temp_15_fu_122           |   9|          2|   32|         64|
+    |temp_9_fu_98             |   9|          2|   32|         64|
+    |temp_fu_94               |   9|          2|   32|         64|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    | 108|         24|  293|        586|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |j_fu_90                  |   3|   0|    3|          0|
+    |k_fu_86                  |  32|   0|   32|          0|
+    |temp_10_fu_102           |  32|   0|   32|          0|
+    |temp_11_fu_106           |  32|   0|   32|          0|
+    |temp_12_fu_110           |  32|   0|   32|          0|
+    |temp_13_fu_114           |  32|   0|   32|          0|
+    |temp_14_fu_118           |  32|   0|   32|          0|
+    |temp_15_fu_122           |  32|   0|   32|          0|
+    |temp_9_fu_98             |  32|   0|   32|          0|
+    |temp_fu_94               |  32|   0|   32|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 294|   0|  294|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+--------------------------------------------------------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |                               Source Object                              |    C Type    |
++---------------------+-----+-----+------------+--------------------------------------------------------------------------+--------------+
+|ap_clk               |   in|    1|  ap_ctrl_hs|  merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_161_55|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_161_55|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_161_55|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_161_55|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_161_55|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_161_55|  return value|
+|temp_153             |   in|   32|     ap_none|                                                                  temp_153|        scalar|
+|temp_152             |   in|   32|     ap_none|                                                                  temp_152|        scalar|
+|temp_151             |   in|   32|     ap_none|                                                                  temp_151|        scalar|
+|temp_150             |   in|   32|     ap_none|                                                                  temp_150|        scalar|
+|temp_149             |   in|   32|     ap_none|                                                                  temp_149|        scalar|
+|temp_148             |   in|   32|     ap_none|                                                                  temp_148|        scalar|
+|temp_147             |   in|   32|     ap_none|                                                                  temp_147|        scalar|
+|temp_146             |   in|   32|     ap_none|                                                                  temp_146|        scalar|
+|empty                |   in|    3|     ap_none|                                                                     empty|        scalar|
+|k_18                 |   in|   32|     ap_none|                                                                      k_18|        scalar|
+|mux_case_0189107     |   in|   32|     ap_none|                                                          mux_case_0189107|        scalar|
+|mux_case_1190111     |   in|   32|     ap_none|                                                          mux_case_1190111|        scalar|
+|mux_case_2191115     |   in|   32|     ap_none|                                                          mux_case_2191115|        scalar|
+|mux_case_3192119     |   in|   32|     ap_none|                                                          mux_case_3192119|        scalar|
+|mux_case_4193123     |   in|   32|     ap_none|                                                          mux_case_4193123|        scalar|
+|mux_case_5194127     |   in|   32|     ap_none|                                                          mux_case_5194127|        scalar|
+|temp_170_out         |  out|   32|      ap_vld|                                                              temp_170_out|       pointer|
+|temp_170_out_ap_vld  |  out|    1|      ap_vld|                                                              temp_170_out|       pointer|
+|temp_169_out         |  out|   32|      ap_vld|                                                              temp_169_out|       pointer|
+|temp_169_out_ap_vld  |  out|    1|      ap_vld|                                                              temp_169_out|       pointer|
+|temp_168_out         |  out|   32|      ap_vld|                                                              temp_168_out|       pointer|
+|temp_168_out_ap_vld  |  out|    1|      ap_vld|                                                              temp_168_out|       pointer|
+|temp_167_out         |  out|   32|      ap_vld|                                                              temp_167_out|       pointer|
+|temp_167_out_ap_vld  |  out|    1|      ap_vld|                                                              temp_167_out|       pointer|
+|temp_166_out         |  out|   32|      ap_vld|                                                              temp_166_out|       pointer|
+|temp_166_out_ap_vld  |  out|    1|      ap_vld|                                                              temp_166_out|       pointer|
+|temp_165_out         |  out|   32|      ap_vld|                                                              temp_165_out|       pointer|
+|temp_165_out_ap_vld  |  out|    1|      ap_vld|                                                              temp_165_out|       pointer|
+|temp_164_out         |  out|   32|      ap_vld|                                                              temp_164_out|       pointer|
+|temp_164_out_ap_vld  |  out|    1|      ap_vld|                                                              temp_164_out|       pointer|
+|temp_163_out         |  out|   32|      ap_vld|                                                              temp_163_out|       pointer|
+|temp_163_out_ap_vld  |  out|    1|      ap_vld|                                                              temp_163_out|       pointer|
++---------------------+-----+-----+------------+--------------------------------------------------------------------------+--------------+
+

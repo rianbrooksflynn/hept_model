@@ -1,0 +1,212 @@
+
+
+================================================================
+== Vitis HLS Report for 'merge_sort_ap_fixed_16_6_5_3_0_config5_Pipeline_VITIS_LOOP_161_517'
+================================================================
+* Date:           Tue Mar  4 14:23:40 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu13p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  1.267 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_161_5  |        ?|        ?|         1|          1|          1|     ?|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.38>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%k = alloca i32 1" [firmware/nnet_utils/nnet_hept.h:147]   --->   Operation 4 'alloca' 'k' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%j = alloca i32 1" [firmware/nnet_utils/nnet_hept.h:147]   --->   Operation 5 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%temp = alloca i32 1" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 6 'alloca' 'temp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%temp_25 = alloca i32 1" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 7 'alloca' 'temp_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%temp_26 = alloca i32 1" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 8 'alloca' 'temp_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%temp_27 = alloca i32 1" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 9 'alloca' 'temp_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%temp_28 = alloca i32 1" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 10 'alloca' 'temp_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%temp_29 = alloca i32 1" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 11 'alloca' 'temp_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%temp_30 = alloca i32 1" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 12 'alloca' 'temp_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%temp_31 = alloca i32 1" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 13 'alloca' 'temp_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%mux_case_7644519_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mux_case_7644519"   --->   Operation 14 'read' 'mux_case_7644519_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%mux_case_6643515_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mux_case_6643515"   --->   Operation 15 'read' 'mux_case_6643515_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%mux_case_5642511_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mux_case_5642511"   --->   Operation 16 'read' 'mux_case_5642511_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%mux_case_4641507_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mux_case_4641507"   --->   Operation 17 'read' 'mux_case_4641507_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%mux_case_3640503_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mux_case_3640503"   --->   Operation 18 'read' 'mux_case_3640503_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%mux_case_2639499_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mux_case_2639499"   --->   Operation 19 'read' 'mux_case_2639499_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%mux_case_1638495_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mux_case_1638495"   --->   Operation 20 'read' 'mux_case_1638495_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%mux_case_0637491_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mux_case_0637491"   --->   Operation 21 'read' 'mux_case_0637491_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%k_53_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %k_53"   --->   Operation 22 'read' 'k_53_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln161_4_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %zext_ln161_4"   --->   Operation 23 'read' 'zext_ln161_4_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%temp_418_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %temp_418"   --->   Operation 24 'read' 'temp_418_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%temp_419_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %temp_419"   --->   Operation 25 'read' 'temp_419_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%temp_420_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %temp_420"   --->   Operation 26 'read' 'temp_420_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%temp_421_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %temp_421"   --->   Operation 27 'read' 'temp_421_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%temp_422_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %temp_422"   --->   Operation 28 'read' 'temp_422_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%temp_423_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %temp_423"   --->   Operation 29 'read' 'temp_423_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%temp_424_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %temp_424"   --->   Operation 30 'read' 'temp_424_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%temp_425_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %temp_425"   --->   Operation 31 'read' 'temp_425_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%zext_ln161_4_cast = zext i3 %zext_ln161_4_read"   --->   Operation 32 'zext' 'zext_ln161_4_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_425_read, i32 %temp_31" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 33 'store' 'store_ln136' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 34 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_424_read, i32 %temp_30" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 34 'store' 'store_ln136' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 35 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_423_read, i32 %temp_29" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 35 'store' 'store_ln136' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 36 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_422_read, i32 %temp_28" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 36 'store' 'store_ln136' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 37 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_421_read, i32 %temp_27" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 37 'store' 'store_ln136' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 38 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_420_read, i32 %temp_26" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 38 'store' 'store_ln136' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 39 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_419_read, i32 %temp_25" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 39 'store' 'store_ln136' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 40 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_418_read, i32 %temp" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 40 'store' 'store_ln136' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 41 [1/1] (0.38ns)   --->   "%store_ln147 = store i4 %zext_ln161_4_cast, i4 %j" [firmware/nnet_utils/nnet_hept.h:147]   --->   Operation 41 'store' 'store_ln147' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 42 [1/1] (0.38ns)   --->   "%store_ln147 = store i32 %k_53_read, i32 %k" [firmware/nnet_utils/nnet_hept.h:147]   --->   Operation 42 'store' 'store_ln147' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln0 = br void %while.body55.2"   --->   Operation 43 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.26>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%j_4 = load i4 %j" [firmware/nnet_utils/nnet_hept.h:147]   --->   Operation 44 'load' 'j_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i4.i32, i4 %j_4, i32 3" [firmware/nnet_utils/nnet_hept.h:161]   --->   Operation 45 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%br_ln161 = br i1 %tmp, void %while.body55.2.split, void %VITIS_LOOP_167_6.2.loopexit.exitStub" [firmware/nnet_utils/nnet_hept.h:161]   --->   Operation 46 'br' 'br_ln161' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%k_load = load i32 %k" [firmware/nnet_utils/nnet_hept.h:147]   --->   Operation 47 'load' 'k_load' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%specpipeline_ln162 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [firmware/nnet_utils/nnet_hept.h:162]   --->   Operation 48 'specpipeline' 'specpipeline_ln162' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%specloopname_ln161 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [firmware/nnet_utils/nnet_hept.h:161]   --->   Operation 49 'specloopname' 'specloopname_ln161' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%trunc_ln147 = trunc i4 %j_4" [firmware/nnet_utils/nnet_hept.h:147]   --->   Operation 50 'trunc' 'trunc_ln147' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%trunc_ln147_3 = trunc i32 %k_load" [firmware/nnet_utils/nnet_hept.h:147]   --->   Operation 51 'trunc' 'trunc_ln147_3' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.70ns)   --->   "%add_ln163 = add i4 %j_4, i4 1" [firmware/nnet_utils/nnet_hept.h:163]   --->   Operation 52 'add' 'add_ln163' <Predicate = (!tmp)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 53 [1/1] (0.58ns)   --->   "%temp_32 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.8i32.i32.i3, i3 0, i32 %mux_case_0637491_read, i3 1, i32 %mux_case_1638495_read, i3 2, i32 %mux_case_2639499_read, i3 3, i32 %mux_case_3640503_read, i3 4, i32 %mux_case_4641507_read, i3 5, i32 %mux_case_5642511_read, i3 6, i32 %mux_case_6643515_read, i3 7, i32 %mux_case_7644519_read, i32 0, i3 %trunc_ln147" [firmware/nnet_utils/nnet_hept.h:163]   --->   Operation 53 'sparsemux' 'temp_32' <Predicate = (!tmp)> <Delay = 0.58> <CoreInst = "SparseMux">   --->   Core 147 'SparseMux' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 54 [1/1] (0.88ns)   --->   "%k_4 = add i32 %k_load, i32 1" [firmware/nnet_utils/nnet_hept.h:163]   --->   Operation 54 'add' 'k_4' <Predicate = (!tmp)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 55 [1/1] (0.67ns)   --->   "%switch_ln163 = switch i3 %trunc_ln147_3, void %arrayidx61.2.case.7, i3 0, void %while.body55.2.split.arrayidx61.2.exit_crit_edge22, i3 1, void %arrayidx61.2.case.1, i3 2, void %arrayidx61.2.case.2, i3 3, void %arrayidx61.2.case.3, i3 4, void %arrayidx61.2.case.4, i3 5, void %arrayidx61.2.case.5, i3 6, void %while.body55.2.split.arrayidx61.2.exit_crit_edge" [firmware/nnet_utils/nnet_hept.h:163]   --->   Operation 55 'switch' 'switch_ln163' <Predicate = (!tmp)> <Delay = 0.67>
+ST_2 : Operation 56 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_32, i32 %temp_30" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 56 'store' 'store_ln136' <Predicate = (!tmp & trunc_ln147_3 == 6)> <Delay = 0.38>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%br_ln163 = br void %arrayidx61.2.exit" [firmware/nnet_utils/nnet_hept.h:163]   --->   Operation 57 'br' 'br_ln163' <Predicate = (!tmp & trunc_ln147_3 == 6)> <Delay = 0.00>
+ST_2 : Operation 58 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_32, i32 %temp_29" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 58 'store' 'store_ln136' <Predicate = (!tmp & trunc_ln147_3 == 5)> <Delay = 0.38>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%br_ln163 = br void %arrayidx61.2.exit" [firmware/nnet_utils/nnet_hept.h:163]   --->   Operation 59 'br' 'br_ln163' <Predicate = (!tmp & trunc_ln147_3 == 5)> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_32, i32 %temp_28" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 60 'store' 'store_ln136' <Predicate = (!tmp & trunc_ln147_3 == 4)> <Delay = 0.38>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%br_ln163 = br void %arrayidx61.2.exit" [firmware/nnet_utils/nnet_hept.h:163]   --->   Operation 61 'br' 'br_ln163' <Predicate = (!tmp & trunc_ln147_3 == 4)> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_32, i32 %temp_27" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 62 'store' 'store_ln136' <Predicate = (!tmp & trunc_ln147_3 == 3)> <Delay = 0.38>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%br_ln163 = br void %arrayidx61.2.exit" [firmware/nnet_utils/nnet_hept.h:163]   --->   Operation 63 'br' 'br_ln163' <Predicate = (!tmp & trunc_ln147_3 == 3)> <Delay = 0.00>
+ST_2 : Operation 64 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_32, i32 %temp_26" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 64 'store' 'store_ln136' <Predicate = (!tmp & trunc_ln147_3 == 2)> <Delay = 0.38>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%br_ln163 = br void %arrayidx61.2.exit" [firmware/nnet_utils/nnet_hept.h:163]   --->   Operation 65 'br' 'br_ln163' <Predicate = (!tmp & trunc_ln147_3 == 2)> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_32, i32 %temp_25" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 66 'store' 'store_ln136' <Predicate = (!tmp & trunc_ln147_3 == 1)> <Delay = 0.38>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%br_ln163 = br void %arrayidx61.2.exit" [firmware/nnet_utils/nnet_hept.h:163]   --->   Operation 67 'br' 'br_ln163' <Predicate = (!tmp & trunc_ln147_3 == 1)> <Delay = 0.00>
+ST_2 : Operation 68 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_32, i32 %temp" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 68 'store' 'store_ln136' <Predicate = (!tmp & trunc_ln147_3 == 0)> <Delay = 0.38>
+ST_2 : Operation 69 [1/1] (0.00ns)   --->   "%br_ln163 = br void %arrayidx61.2.exit" [firmware/nnet_utils/nnet_hept.h:163]   --->   Operation 69 'br' 'br_ln163' <Predicate = (!tmp & trunc_ln147_3 == 0)> <Delay = 0.00>
+ST_2 : Operation 70 [1/1] (0.38ns)   --->   "%store_ln136 = store i32 %temp_32, i32 %temp_31" [firmware/nnet_utils/nnet_hept.h:136]   --->   Operation 70 'store' 'store_ln136' <Predicate = (!tmp & trunc_ln147_3 == 7)> <Delay = 0.38>
+ST_2 : Operation 71 [1/1] (0.00ns)   --->   "%br_ln163 = br void %arrayidx61.2.exit" [firmware/nnet_utils/nnet_hept.h:163]   --->   Operation 71 'br' 'br_ln163' <Predicate = (!tmp & trunc_ln147_3 == 7)> <Delay = 0.00>
+ST_2 : Operation 72 [1/1] (0.38ns)   --->   "%store_ln147 = store i4 %add_ln163, i4 %j" [firmware/nnet_utils/nnet_hept.h:147]   --->   Operation 72 'store' 'store_ln147' <Predicate = (!tmp)> <Delay = 0.38>
+ST_2 : Operation 73 [1/1] (0.38ns)   --->   "%store_ln147 = store i32 %k_4, i32 %k" [firmware/nnet_utils/nnet_hept.h:147]   --->   Operation 73 'store' 'store_ln147' <Predicate = (!tmp)> <Delay = 0.38>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%br_ln161 = br void %while.body55.2" [firmware/nnet_utils/nnet_hept.h:161]   --->   Operation 74 'br' 'br_ln161' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%temp_load = load i32 %temp"   --->   Operation 75 'load' 'temp_load' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%temp_25_load = load i32 %temp_25"   --->   Operation 76 'load' 'temp_25_load' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 77 [1/1] (0.00ns)   --->   "%temp_26_load = load i32 %temp_26"   --->   Operation 77 'load' 'temp_26_load' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 78 [1/1] (0.00ns)   --->   "%temp_27_load = load i32 %temp_27"   --->   Operation 78 'load' 'temp_27_load' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 79 [1/1] (0.00ns)   --->   "%temp_28_load = load i32 %temp_28"   --->   Operation 79 'load' 'temp_28_load' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%temp_29_load = load i32 %temp_29"   --->   Operation 80 'load' 'temp_29_load' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 81 [1/1] (0.00ns)   --->   "%temp_30_load = load i32 %temp_30"   --->   Operation 81 'load' 'temp_30_load' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 82 [1/1] (0.00ns)   --->   "%temp_31_load = load i32 %temp_31"   --->   Operation 82 'load' 'temp_31_load' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 83 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %temp_442_out, i32 %temp_31_load"   --->   Operation 83 'write' 'write_ln0' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 84 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %temp_441_out, i32 %temp_30_load"   --->   Operation 84 'write' 'write_ln0' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 85 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %temp_440_out, i32 %temp_29_load"   --->   Operation 85 'write' 'write_ln0' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 86 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %temp_439_out, i32 %temp_28_load"   --->   Operation 86 'write' 'write_ln0' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 87 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %temp_438_out, i32 %temp_27_load"   --->   Operation 87 'write' 'write_ln0' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 88 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %temp_437_out, i32 %temp_26_load"   --->   Operation 88 'write' 'write_ln0' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 89 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %temp_436_out, i32 %temp_25_load"   --->   Operation 89 'write' 'write_ln0' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 90 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %temp_435_out, i32 %temp_load"   --->   Operation 90 'write' 'write_ln0' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 91 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 91 'ret' 'ret_ln0' <Predicate = (tmp)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 0.387ns
+The critical path consists of the following:
+	'alloca' operation 32 bit ('temp', firmware/nnet_utils/nnet_hept.h:136) [36]  (0.000 ns)
+	'store' operation 0 bit ('store_ln136', firmware/nnet_utils/nnet_hept.h:136) of variable 'temp_425_read' on local variable 'temp', firmware/nnet_utils/nnet_hept.h:136 [56]  (0.387 ns)
+
+ <State 2>: 1.267ns
+The critical path consists of the following:
+	'load' operation 32 bit ('k_load', firmware/nnet_utils/nnet_hept.h:147) on local variable 'k', firmware/nnet_utils/nnet_hept.h:147 [72]  (0.000 ns)
+	'add' operation 32 bit ('k', firmware/nnet_utils/nnet_hept.h:163) [79]  (0.880 ns)
+	'store' operation 0 bit ('store_ln147', firmware/nnet_utils/nnet_hept.h:147) of variable 'k', firmware/nnet_utils/nnet_hept.h:163 on local variable 'k', firmware/nnet_utils/nnet_hept.h:147 [107]  (0.387 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,611 @@
+{
+    "1": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_157_416",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "84",
+        "total_instructions": "84",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "pairwise_dist_sq_rbf<ap_fixed,ap_fixed<16,6,5,3,0>,config5>",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "296",
+        "instructions": "13057",
+        "total_instructions": "13057",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "192"
+        }
+    },
+    "3": {
+        "name": "dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_qkv>.6",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "108",
+        "total_instructions": "108",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "4": {
+        "name": "dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_qkv>.7",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "108",
+        "total_instructions": "108",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "5": {
+        "name": "dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_qkv>.1",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "108",
+        "total_instructions": "108",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "6": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_149_31",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "192",
+        "total_instructions": "192",
+        "calls": "",
+        "basicblocks": "22",
+        "loads": {
+            "L": "13"
+        },
+        "stores": {
+            "L": "44"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_157_413",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "84",
+        "total_instructions": "84",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_qkv>.9",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "108",
+        "total_instructions": "108",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "9": {
+        "name": "merge_sort<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+        "file": "nnet_hept.h",
+        "fileloc": "132",
+        "instructions": "1094",
+        "total_instructions": "3547",
+        "calls": "31 37 6 16 30 20 1 36 7 42 23 40 32 27 25 26 43 39 18 24",
+        "basicblocks": "111",
+        "loads": {
+            "L": "265"
+        },
+        "stores": {
+            "L": "110"
+        },
+        "loops": {
+            "L": "7"
+        }
+    },
+    "10": {
+        "name": "dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_qkv>.5",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "108",
+        "total_instructions": "108",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "11": {
+        "name": "dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_qkv>",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "108",
+        "total_instructions": "108",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "12": {
+        "name": "dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_qkv>.4",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "108",
+        "total_instructions": "108",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "13": {
+        "name": "dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_alpha>",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "114",
+        "total_instructions": "114",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "14": {
+        "name": "bmm_alpha<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config5>",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "89",
+        "instructions": "265",
+        "total_instructions": "2889",
+        "calls": "35 35 35 35 35 35 35 35 38 38 38 38 38 38 38 38 13 13 13 13 13 13 13 13",
+        "basicblocks": "1"
+    },
+    "15": {
+        "name": "bmm_qkv<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config5>",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "334",
+        "instructions": "817",
+        "total_instructions": "6001",
+        "calls": "29 29 29 29 33 33 33 33 4 4 4 4 3 3 3 3 10 10 10 10 12 12 12 12 22 22 22 22 28 28 28 28 5 5 5 5 11 11 11 11 8 8 8 8 34 34 34 34",
+        "basicblocks": "1"
+    },
+    "16": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_157_410",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "100",
+        "total_instructions": "100",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "17": {
+        "name": "sort_to_buckets_kv<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config5>",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "239",
+        "instructions": "1407",
+        "total_instructions": "22689",
+        "calls": "9 9 9 9 9 9",
+        "basicblocks": "1",
+        "loads": {
+            "L": "48"
+        },
+        "stores": {
+            "L": "48"
+        }
+    },
+    "18": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_161_58",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "88",
+        "total_instructions": "88",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "reduce<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 8, nnet::Op_min<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0> > >",
+        "file": "nnet_common.h",
+        "fileloc": "37",
+        "instructions": "79",
+        "total_instructions": "79",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "20": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_149_312",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "192",
+        "total_instructions": "192",
+        "calls": "",
+        "basicblocks": "22",
+        "loads": {
+            "L": "13"
+        },
+        "stores": {
+            "L": "44"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "21": {
+        "name": "reduce<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 8, nnet::Op_max<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0> > >",
+        "file": "nnet_common.h",
+        "fileloc": "37",
+        "instructions": "79",
+        "total_instructions": "79",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "22": {
+        "name": "dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_qkv>.3",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "108",
+        "total_instructions": "108",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "23": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_149_315",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "193",
+        "total_instructions": "193",
+        "calls": "",
+        "basicblocks": "22",
+        "loads": {
+            "L": "13"
+        },
+        "stores": {
+            "L": "44"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "24": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_149_39",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "190",
+        "total_instructions": "190",
+        "calls": "",
+        "basicblocks": "22",
+        "loads": {
+            "L": "13"
+        },
+        "stores": {
+            "L": "44"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "25": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_157_44",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "83",
+        "total_instructions": "83",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "26": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_161_55",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "84",
+        "total_instructions": "84",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "27": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_149_33",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "191",
+        "total_instructions": "191",
+        "calls": "",
+        "basicblocks": "22",
+        "loads": {
+            "L": "13"
+        },
+        "stores": {
+            "L": "44"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "28": {
+        "name": "dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_qkv>.2",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "108",
+        "total_instructions": "108",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "29": {
+        "name": "dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_qkv>.11",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "108",
+        "total_instructions": "108",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "30": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_161_511",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "84",
+        "total_instructions": "84",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "31": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_149_3",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "170",
+        "total_instructions": "170",
+        "calls": "",
+        "basicblocks": "22",
+        "loads": {
+            "L": "12"
+        },
+        "stores": {
+            "L": "34"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "32": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_161_52",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "84",
+        "total_instructions": "84",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "33": {
+        "name": "dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_qkv>.10",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "108",
+        "total_instructions": "108",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "34": {
+        "name": "dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_qkv>.8",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "108",
+        "total_instructions": "108",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "35": {
+        "name": "dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_alpha>.2",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "105",
+        "total_instructions": "105",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "36": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_161_517",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "88",
+        "total_instructions": "88",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "myproject",
+        "file": "myproject.cpp",
+        "fileloc": "7",
+        "instructions": "3226",
+        "total_instructions": "75541",
+        "calls": "14 14 44 41 17 2 15",
+        "basicblocks": "1"
+    },
+    "37": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_161_5",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "100",
+        "total_instructions": "100",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "38": {
+        "name": "dense_latency<ap_fixed,ap_fixed<16,6,5,3,0>,config5_dense_alpha>.1",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "109",
+        "total_instructions": "109",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "39": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_157_47",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "85",
+        "total_instructions": "85",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "40": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_157_4",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "81",
+        "total_instructions": "81",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "41": {
+        "name": "sort_to_buckets_q<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config5>",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "205",
+        "instructions": "927",
+        "total_instructions": "22209",
+        "calls": "9 9 9 9 9 9",
+        "basicblocks": "1",
+        "loads": {
+            "L": "48"
+        },
+        "stores": {
+            "L": "48"
+        }
+    },
+    "42": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_161_514",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "88",
+        "total_instructions": "88",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "10"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "43": {
+        "name": "merge_sort<ap_fixed<16, 6, 5, 3, 0>, config5>_Pipeline_VITIS_LOOP_149_36",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "136",
+        "instructions": "192",
+        "total_instructions": "192",
+        "calls": "",
+        "basicblocks": "22",
+        "loads": {
+            "L": "13"
+        },
+        "stores": {
+            "L": "44"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "44": {
+        "name": "shift_hashed<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config5>",
+        "file": "firmware\/nnet_utils\/nnet_hept.h",
+        "fileloc": "116",
+        "instructions": "685",
+        "total_instructions": "2581",
+        "calls": "21 19 21 19 21 19 21 19 21 19 21 19 21 19 21 19 21 19 21 19 21 19 21 19",
+        "basicblocks": "1"
+    }
+}

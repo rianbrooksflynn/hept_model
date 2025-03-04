@@ -1,0 +1,93 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'bmm_qkv_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s'" level="0">
+<item name = "Date">Tue Mar  4 14:24:02 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu13p-flga2577-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 3.987 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="call_ret1_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_11_fu_3172">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_11, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret2_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_11_fu_3242">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_11, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret3_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_11_fu_3312">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_11, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret4_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_11_fu_3382">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_11, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret5_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_10_fu_3452">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_10, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret6_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_10_fu_3522">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_10, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret7_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_10_fu_3592">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_10, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret8_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_10_fu_3662">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_10, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret9_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_7_fu_3732">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_7, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret10_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_7_fu_3802">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_7, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret11_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_7_fu_3872">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_7, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret12_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_7_fu_3942">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_7, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret13_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_6_fu_4012">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_6, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret14_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_6_fu_4082">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_6, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret15_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_6_fu_4152">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_6, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret16_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_6_fu_4222">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_6, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret17_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_5_fu_4292">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_5, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret18_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_5_fu_4362">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_5, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret19_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_5_fu_4432">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_5, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret20_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_5_fu_4502">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_5, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret21_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_4_fu_4572">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_4, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret22_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_4_fu_4642">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_4, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret23_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_4_fu_4712">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_4, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret24_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_4_fu_4782">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_4, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret25_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_3_fu_4852">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_3, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret26_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_3_fu_4922">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_3, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret27_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_3_fu_4992">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_3, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret28_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_3_fu_5062">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_3, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret29_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_2_fu_5132">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_2, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret30_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_2_fu_5202">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_2, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret31_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_2_fu_5272">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_2, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret32_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_2_fu_5342">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_2, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret33_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_1_fu_5412">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_1, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret34_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_1_fu_5482">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_1, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret35_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_1_fu_5552">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_1, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret36_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_1_fu_5622">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_1, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_s_fu_5692">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret37_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_s_fu_5762">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret38_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_s_fu_5832">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret39_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_s_fu_5902">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret40_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_9_fu_5972">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_9, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret41_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_9_fu_6042">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_9, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret42_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_9_fu_6112">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_9, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret43_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_9_fu_6182">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_9, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret44_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_8_fu_6252">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_8, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret45_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_8_fu_6322">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_8, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret46_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_8_fu_6392">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_8, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret47_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_8_fu_6462">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_qkv_8, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
