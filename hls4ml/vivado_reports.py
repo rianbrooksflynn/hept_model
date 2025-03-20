@@ -14,13 +14,14 @@ def print_report(report_dir, save_path):
             hls4ml.report.read_vivado_report(report_dir)
 
 
-def run_reports_for_all_subfolders(folder_path):
-    base_path = Path(folder_path)
-    for subfolder in base_path.iterdir():
-        if subfolder.is_dir():
-            print_report(f'hls4ml/hls4ml_projects/random/{subfolder.stem}', reports_dir / f"{subfolder.stem}_report.txt")
+# def run_reports_for_all_subfolders(folder_path):
+#     base_path = Path(folder_path)
+#     for subfolder in base_path.iterdir():
+#         if subfolder.is_dir():
+#             print_report(f'hls4ml/hls4ml_projects/random/{subfolder.stem}', reports_dir / f"{subfolder.stem}_report.txt")
 
 
 if __name__ == "__main__":
-    base_path = Path(__file__).parent / 'hls4ml_projects' / 'random'
-    run_reports_for_all_subfolders(base_path)
+    base_path = str(Path(__file__).parent / 'hls4ml_projects' / 'hept_with_hashing')
+    print_path = Path(__file__).parent / 'reports' / 'hept_with_hashing_report.txt'
+    print_report(base_path, print_path)

@@ -147,6 +147,7 @@ void merge_sort(unsigned indices[CONFIG_T::padded_size], data_T arr[CONFIG_T::pa
             unsigned i = left, j = mid + 1, k = 0;
 
             while (i <= mid && j <= right) {
+                #pragma HLS loop_tripcount min=1 max=8
                 #pragma HLS PIPELINE
                 if (arr[indices[i]] <= arr[indices[j]]) {
                     temp[k++] = indices[i++];
@@ -155,10 +156,12 @@ void merge_sort(unsigned indices[CONFIG_T::padded_size], data_T arr[CONFIG_T::pa
                 }
             }
             while (i <= mid) {
+                #pragma HLS loop_tripcount min=1 max=4
                 #pragma HLS PIPELINE
                 temp[k++] = indices[i++];
             }
             while (j <= right) {
+                #pragma HLS loop_tripcount min=1 max=4
                 #pragma HLS PIPELINE
                 temp[k++] = indices[j++];
             }

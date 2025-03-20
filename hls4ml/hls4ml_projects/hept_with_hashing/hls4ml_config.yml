@@ -115,8 +115,8 @@ PytorchModel: !!python/object:__main__.HEPTModel
                     gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
                     AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
                     aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
-                    Z2UKcQFYDwAAADEwNTg4NjM1ODEyMjQ5NnECWAMAAABjcHVxA0skTnRxBFEugAJdcQBYDwAAADEw
-                    NTg4NjM1ODEyMjQ5NnEBYS4kAAAAAAAAAIUbkL+KgJO/1kuAvl0l3r4VRVk/gycxP23Mob7BXwfA
+                    Z2UKcQFYDwAAADExMTM4MjAzNTAyMDY1NnECWAMAAABjcHVxA0skTnRxBFEugAJdcQBYDwAAADEx
+                    MTM4MjAzNTAyMDY1NnEBYS4kAAAAAAAAAIUbkL+KgJO/1kuAvl0l3r4VRVk/gycxP23Mob7BXwfA
                     OAGlPvS0ob//MLM+u8OdPndv9T2Ta54/jvKOP3w2fb7CI62/RhTZvwQQET9dI0s/0B/hPtY35j34
                     CiQ/PN/hPkILXb6jFz6/gg4QP+LthD4v2gU/VVcTQLcEvL+eGMu/PAOaP4cgrT0rnpm/rtGcuw==
                 - 0
@@ -154,7 +154,7 @@ PytorchModel: !!python/object:__main__.HEPTModel
   _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
   - []
   training: false
-Stamp: d70fcdbd
+Stamp: 96969cd2
 Version: 1.0.0
 WriterConfig:
   Namespace: null
