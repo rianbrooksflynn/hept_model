@@ -62,11 +62,11 @@ int main(int argc, char **argv) {
       input_t query[N_INPUT_1_1*N_INPUT_2_1*N_INPUT_3_1];
       nnet::copy_data<float, input_t, 0, N_INPUT_1_1*N_INPUT_2_1*N_INPUT_3_1>(in, query);
       input2_t key[N_INPUT_1_2*N_INPUT_2_2*N_INPUT_3_2];
-      nnet::copy_data<float, input2_t, 144, N_INPUT_1_2*N_INPUT_2_2*N_INPUT_3_2>(in, key);
+      nnet::copy_data<float, input2_t, 1080, N_INPUT_1_2*N_INPUT_2_2*N_INPUT_3_2>(in, key);
       input3_t value[N_INPUT_1_3*N_INPUT_2_3*N_INPUT_3_3];
-      nnet::copy_data<float, input3_t, 288, N_INPUT_1_3*N_INPUT_2_3*N_INPUT_3_3>(in, value);
+      nnet::copy_data<float, input3_t, 2160, N_INPUT_1_3*N_INPUT_2_3*N_INPUT_3_3>(in, value);
       input4_t combined_shifts[N_INPUT_1_4*N_INPUT_2_4*N_INPUT_3_4];
-      nnet::copy_data<float, input4_t, 384, N_INPUT_1_4*N_INPUT_2_4*N_INPUT_3_4>(in, combined_shifts);
+      nnet::copy_data<float, input4_t, 3120, N_INPUT_1_4*N_INPUT_2_4*N_INPUT_3_4>(in, combined_shifts);
       result_t layer5_out[N_HASHES_5*N_HEADS_5*N_BLOCKS_5*BLOCK_SIZE_5*DIM_PER_HEAD_5];
 
             // hls-fpga-machine-learning insert top-level-function

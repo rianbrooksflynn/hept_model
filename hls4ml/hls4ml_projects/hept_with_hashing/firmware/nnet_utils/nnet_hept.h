@@ -63,12 +63,24 @@ void bmm_alpha(
     data_T input[CONFIG_T::n_heads * CONFIG_T::padded_size * (CONFIG_T::dim_per_head + CONFIG_T::coords_dim)],
     res_T output[CONFIG_T::n_hashes * CONFIG_T::n_heads * CONFIG_T::padded_size]) {
     typename CONFIG_T::dense_alpha_conf::weight_t alpha[CONFIG_T::n_heads * (CONFIG_T::dim_per_head + CONFIG_T::coords_dim) * CONFIG_T::n_hashes] =
-        {-1.1258, -1.1524, -0.2506, -0.4339,  0.8487,  0.6920, 
-        -0.3160, -2.1152, 0.3223, -1.2633,  0.3500,  0.3081,  
-        0.1198,  1.2377,  1.1168, -0.2473, -1.3527, -1.6959,  
-        0.5667,  0.7935,  0.4397,  0.1124,  0.6408,  0.4412,
-        -0.2159, -0.7425,  0.5627,  0.2596,  0.5229,  2.3022, 
-        -1.4689, -1.5867, 1.2032,  0.0845, -1.2001, -0.0048};
+        {-1.1258,-1.1524,-0.2506,-0.4339,0.8487,0.6920,
+        -0.3160,-2.1152,0.3223,-1.2633,0.3500,0.3081,
+        0.1198,1.2377,1.1168,-0.2473,-1.3527,-1.6959,
+        0.5667,0.7935,0.5988,-1.5551,-0.3414,1.8530,
+        0.7502,-0.5855,-0.1734,0.1835,1.3894,1.5863,
+        0.9463,-0.8437,-0.6136,0.0316,-0.4927,0.2484,
+        0.4397,0.1124,0.6408,0.4412,-0.1023,0.7924,
+        -0.2897,0.0525,0.5229,2.3022,-1.4689,-1.5867,
+        -0.6731,0.8728,1.0554,0.1778,-0.2303,-0.3918,
+        0.5433,-0.3952,-0.4462,0.7440,1.5210,3.4105,
+        -1.5312,-1.2341,1.8197,-0.5515,-0.5692,0.9200,
+        1.1108,1.2899,-1.4782,2.5672,-0.4731,0.3356,
+        -1.6293,-0.5497,-0.4798,-0.4997,-1.0670,1.1149,
+        -0.1407,0.8058,-0.0933,0.6871,-0.8383,0.0009,
+        0.8419,-0.4000,1.0395,0.3582,-0.2460,2.3025,
+        -1.8817,-0.0497,-0.8025,-1.2952,-0.7502,-1.3120,
+        -0.2188,-2.4351,-0.0729,-0.0340,0.7969,-0.1848,
+        -0.3701,-1.2103,-0.6227,-0.4637,1.9218,-0.4025};
     res_T out_buffer[CONFIG_T::n_hashes];
     typename CONFIG_T::dense_alpha_conf::bias_t biases[CONFIG_T::n_hashes];
     nnet::fill_zero<typename CONFIG_T::dense_alpha_conf::bias_t, CONFIG_T::n_hashes>(biases);
@@ -146,30 +158,23 @@ void merge_sort(unsigned indices[CONFIG_T::padded_size], data_T arr[CONFIG_T::pa
             // Merge two halves
             unsigned i = left, j = mid + 1, k = 0;
 
-            while (i <= mid && j <= right) {
-                #pragma HLS loop_tripcount min=1 max=8
+            for (k; k < right - left + 1; k++) {
                 #pragma HLS PIPELINE
-                if (arr[indices[i]] <= arr[indices[j]]) {
-                    temp[k++] = indices[i++];
+                if (i > mid) {
+                    temp[k] = indices[j++];
+                } else if (j > right) {
+                    temp[k] = indices[i++];
+                } else if (arr[indices[i]] <= arr[indices[j]]) {
+                    temp[k] = indices[i++];
                 } else {
-                    temp[k++] = indices[j++];
+                    temp[k] = indices[j++];
                 }
-            }
-            while (i <= mid) {
-                #pragma HLS loop_tripcount min=1 max=4
-                #pragma HLS PIPELINE
-                temp[k++] = indices[i++];
-            }
-            while (j <= right) {
-                #pragma HLS loop_tripcount min=1 max=4
-                #pragma HLS PIPELINE
-                temp[k++] = indices[j++];
             }
 
             // Copy back sorted indices to original array
-            for (unsigned i = 0; i < k; i++) {
+            for (unsigned l = 0; l < k; l++) {
                 #pragma HLS UNROLL factor=CONFIG_T::parallelization_factor
-                indices[left + i] = temp[i];
+                indices[left + l] = temp[l];
             }
         }
     }

@@ -15,13 +15,13 @@
 // hls-fpga-machine-learning insert layer-config
 // hept
 struct config5_dense_alpha : nnet::dense_config {
-    static const unsigned n_in = 6;
-    static const unsigned n_out = 2;
+    static const unsigned n_in = 18;
+    static const unsigned n_out = 3;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
     static const unsigned n_zeros = 0;
-    static const unsigned n_nonzeros = 12;
+    static const unsigned n_nonzeros = 54;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in * n_out, reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef hept_accum_t accum_t;
@@ -35,13 +35,13 @@ struct config5_dense_alpha : nnet::dense_config {
 };
 
 struct config5_dense_qkv : nnet::dense_config {
-    static const unsigned n_in = 4;
-    static const unsigned n_out = 4;
+    static const unsigned n_in = 5;
+    static const unsigned n_out = 16;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
     static const unsigned n_zeros = 0;
-    static const unsigned n_nonzeros = 16;
+    static const unsigned n_nonzeros = 80;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in * n_out, reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef hept_accum_t accum_t;
@@ -70,12 +70,12 @@ struct config5 : nnet::hept_config {
     typedef config5_dense_alpha dense_alpha_conf;
     typedef config5_dense_qkv dense_qkv_conf;
 
-    static const unsigned n_hashes = 2;
-    static const unsigned n_heads = 3;
-    static const unsigned padded_size = 8;
-    static const unsigned n_blocks = 2;
-    static const unsigned block_size = 4;
-    static const unsigned dim_per_head = 4;
+    static const unsigned n_hashes = 3;
+    static const unsigned n_heads = 2;
+    static const unsigned padded_size = 30;
+    static const unsigned n_blocks = 6;
+    static const unsigned block_size = 5;
+    static const unsigned dim_per_head = 16;
     static const unsigned coords_dim = 2;
 
     static const unsigned io_type = nnet::io_parallel;

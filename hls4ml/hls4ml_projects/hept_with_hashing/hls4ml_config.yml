@@ -38,21 +38,21 @@ IOType: io_parallel
 InputData: null
 InputShape:
 - !!python/tuple
-  - 3
-  - 8
-  - 6
-- !!python/tuple
-  - 3
-  - 8
-  - 6
-- !!python/tuple
-  - 3
-  - 8
-  - 4
+  - 2
+  - 30
+  - 18
 - !!python/tuple
   - 2
+  - 30
+  - 18
+- !!python/tuple
+  - 2
+  - 30
+  - 16
+- !!python/tuple
   - 3
-  - 8
+  - 2
+  - 30
 OutputDir: /home/rian/A3D3/hept_model/hls4ml/hls4ml_projects/hept_with_hashing
 OutputPredictions: null
 Part: xcvu13p-flga2577-2-e
@@ -115,18 +115,24 @@ PytorchModel: !!python/object:__main__.HEPTModel
                     gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
                     AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
                     aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
-                    Z2UKcQFYDwAAADExMTM4MjAzNTAyMDY1NnECWAMAAABjcHVxA0skTnRxBFEugAJdcQBYDwAAADEx
-                    MTM4MjAzNTAyMDY1NnEBYS4kAAAAAAAAAIUbkL+KgJO/1kuAvl0l3r4VRVk/gycxP23Mob7BXwfA
-                    OAGlPvS0ob//MLM+u8OdPndv9T2Ta54/jvKOP3w2fb7CI62/RhTZvwQQET9dI0s/0B/hPtY35j34
-                    CiQ/PN/hPkILXb6jFz6/gg4QP+LthD4v2gU/VVcTQLcEvL+eGMu/PAOaP4cgrT0rnpm/rtGcuw==
+                    Z2UKcQFYDwAAADEwMDEzNjkxODA1NTc5MnECWAMAAABjcHVxA0tsTnRxBFEugAJdcQBYDwAAADEw
+                    MDEzNjkxODA1NTc5MnEBYS5sAAAAAAAAAIUbkL+KgJO/1kuAvl0l3r4VRVk/gycxP23Mob7BXwfA
+                    OAGlPvS0ob//MLM+u8OdPndv9T2Ta54/jvKOP3w2fb7CI62/RhTZvwQQET9dI0s/i00ZP1sNx7/K
+                    xq6+Ti/tP2sMQD8r4xW/644xvqThOz7A1rE/AA3LP5xAcj8z+1e/yBMdv2RnAT0oQPy+cGB+PtAf
+                    4T7WN+Y9+AokPzzf4T65h9G9nN1KP1NPlL4XElc9L9oFP1VXE0C3BLy/nhjLv59PLL/ecV8/9BWH
+                    P6ocNj4Q3Wu+CJTIvl0VCz8XUsq+lHbkviR4Pj91r8I/rUVaQNn9w78j+J2/wuzoP/wwDb8+uhG/
+                    P4NrPzkvjj+YGqU/zjS9v4tNJEDCPPK+T82rPsGN0L8AvAy/1qz1vkLW/77Qkoi/V7aOPywMEL7e
+                    RU4/XC2/vYbiLz/Wm1a/JclpOl+GVz9H0cy+Fw2FP9hftz6s53u+blwTQDHb8L+Qrku9LXBNv6nI
+                    pb/lC0C/fu6nv/AVYL4c2BvAVVSVvVU1C73MAEw/IEc9vvGDvb6B6pq/K2kfv/5s7b73/PU/cxrO
+                    vg==
                 - 0
                 - !!python/tuple
+                  - 2
+                  - 18
                   - 3
-                  - 6
-                  - 2
                 - !!python/tuple
-                  - 12
-                  - 2
+                  - 54
+                  - 3
                   - 1
                 - false
                 - !!python/object/apply:collections.OrderedDict
@@ -138,13 +144,13 @@ PytorchModel: !!python/object:__main__.HEPTModel
         - []
         _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
         - []
-        block_size: 4
+        block_size: 5
         coords_dim: 2
-        dim_per_head: 4
-        n_blocks: 2
-        n_hashes: 2
-        n_heads: 3
-        padded_size: 8
+        dim_per_head: 16
+        n_blocks: 6
+        n_hashes: 3
+        n_heads: 2
+        padded_size: 30
         training: false
   _non_persistent_buffers_set: !!set {}
   _parameters: !!python/object/apply:collections.OrderedDict
@@ -154,7 +160,7 @@ PytorchModel: !!python/object:__main__.HEPTModel
   _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
   - []
   training: false
-Stamp: 96969cd2
+Stamp: 27dbd7cf
 Version: 1.0.0
 WriterConfig:
   Namespace: null

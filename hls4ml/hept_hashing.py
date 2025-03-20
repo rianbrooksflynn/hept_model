@@ -37,6 +37,8 @@ class HEPT(nn.Module):
         value: (num_heads, padded_size, dim_per_head)
         combined_shifts: (n_hashes, num_heads, padded_size)
         """
+        torch.set_printoptions(precision=4, sci_mode=False)
+        print(f"self.alpha: {self.alpha}")
         # E2LSH
         with torch.no_grad():
             q_hashed = torch.bmm(query, self.alpha).permute(2, 0, 1) # (n_hashes, num_heads, padded_size)
@@ -90,11 +92,11 @@ if __name__ == "__main__":
     torch.manual_seed(0)
     np.random.seed(0)
 
-    n_hashes = 2
-    n_heads = 3
-    padded_size = 8
-    block_size = 4
-    dim_per_head = 4
+    n_hashes = 3
+    n_heads = 2
+    padded_size = 30
+    block_size = 5
+    dim_per_head = 16
     coords_dim = 2
 
     hept_model = HEPTModel(n_hashes, n_heads, padded_size, block_size, dim_per_head, coords_dim)
