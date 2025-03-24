@@ -37,8 +37,6 @@ class HEPT(nn.Module):
         value: (num_heads, padded_size, dim_per_head)
         combined_shifts: (n_hashes, num_heads, padded_size)
         """
-        torch.set_printoptions(precision=4, sci_mode=False)
-        print(f"self.alpha: {self.alpha}")
         # E2LSH
         with torch.no_grad():
             q_hashed = torch.bmm(query, self.alpha).permute(2, 0, 1) # (n_hashes, num_heads, padded_size)
@@ -76,7 +74,15 @@ class HEPT(nn.Module):
         qk = torch.exp(-0.5 * dist_sq)
 
         so = torch.einsum("...ij,...jd->...id", qk, s_value) # (n_hashes, n_heads, n_blocks, block_size, dim_per_head)
-        return so
+
+        # Unsort from buckets
+        arange = torch.arange(q_positions.shape[-1], device=q_positions.device).expand_as(q_positions)
+        q_rev_positions = torch.empty_like(q_positions).scatter(-1, q_positions, arange) # (n_hashes, n_heads, padded_size)
+
+        so_squeezed = so.view(self.n_hashes, self.n_heads, -1, self.dim_per_head) # (n_hashes, n_heads, padded_size, dim_per_head)
+        q_rev_positions_expanded = q_rev_positions.unsqueeze(-1).expand(q_rev_positions.shape + (self.dim_per_head,)) # (n_hashes, n_heads, padded_size, dim_per_head)
+        o = so_squeezed.gather(-2, q_rev_positions_expanded)
+        return o
 
 
 class HEPTModel(nn.Module):
@@ -123,7 +129,7 @@ if __name__ == "__main__":
         transpose_outputs=False,
     )
 
-    output_dir = str(Path(__file__).parent / 'hls4ml_projects' / 'hept_with_hashing')
+    output_dir = str(Path(__file__).parent / 'hls4ml_projects' / 'hept_with_unbucketing')
     hls_model = hls4ml.converters.convert_from_pytorch_model(hept_model, hls_config=config, io_type='io_parallel', output_dir=output_dir)
     hls_model.compile()
 
