@@ -212,7 +212,7 @@ void sort_to_buckets_q(
     constexpr unsigned SHP = S * H * P;
 
     #pragma HLS ARRAY_PARTITION variable=q_hashed type=block factor=SH
-    #pragma HLS ARRAY_PARTITION variable=sorted_indices_q type=block factor=SH
+    #pragma HLS ARRAY_PARTITION variable=sorted_indices type=block factor=SH
     #pragma HLS ARRAY_PARTITION variable=q type=block factor=HP
     #pragma HLS ARRAY_PARTITION variable=output type=block factor=SHP
 
