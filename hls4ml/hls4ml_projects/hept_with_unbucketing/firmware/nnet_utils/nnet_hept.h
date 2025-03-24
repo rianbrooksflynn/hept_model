@@ -93,7 +93,7 @@ void bmm_alpha(
 
     #pragma HLS ARRAY_PARTITION variable=input type=block factor=HP
     #pragma HLS ARRAY_PARTITION variable=alpha type=block factor=H
-    #pragma HLS ARRAY_PARTITION variable=output type=cyclic factor=HP
+    #pragma HLS ARRAY_PARTITION variable=output complete
 
     for (unsigned h = 0; h < H; h++) {
         #pragma HLS UNROLL
@@ -119,11 +119,11 @@ void shift_hashed(
     res_T k_output[CONFIG_T::n_hashes * CONFIG_T::n_heads * CONFIG_T::padded_size]) {
     constexpr unsigned SH = CONFIG_T::n_hashes * CONFIG_T::n_heads;
 
-    #pragma HLS ARRAY_PARTITION variable=q_hashed type=block factor=SH
-    #pragma HLS ARRAY_PARTITION variable=k_hashed type=block factor=SH
+    #pragma HLS ARRAY_PARTITION variable=q_hashed complete
+    #pragma HLS ARRAY_PARTITION variable=k_hashed complete
     #pragma HLS ARRAY_PARTITION variable=shifts type=block factor=SH
-    #pragma HLS ARRAY_PARTITION variable=q_output type=cyclic factor=SH
-    #pragma HLS ARRAY_PARTITION variable=k_output type=cyclic factor=SH
+    #pragma HLS ARRAY_PARTITION variable=q_output complete
+    #pragma HLS ARRAY_PARTITION variable=k_output complete
 
     for (unsigned s = 0; s < SH; s++) {
         #pragma HLS UNROLL
@@ -211,7 +211,7 @@ void sort_to_buckets_q(
     constexpr unsigned HP = H * P;
     constexpr unsigned SHP = S * H * P;
 
-    #pragma HLS ARRAY_PARTITION variable=q_hashed type=block factor=SH
+    #pragma HLS ARRAY_PARTITION variable=q_hashed complete
     #pragma HLS ARRAY_PARTITION variable=sorted_indices type=block factor=SH
     #pragma HLS ARRAY_PARTITION variable=q type=block factor=HP
     #pragma HLS ARRAY_PARTITION variable=output type=block factor=SHP
@@ -248,7 +248,7 @@ void sort_to_buckets_kv(
     constexpr unsigned HP = H * P;
     constexpr unsigned SHP = S * H * P;
 
-    #pragma HLS ARRAY_PARTITION variable=k_hashed type=block factor=SH
+    #pragma HLS ARRAY_PARTITION variable=k_hashed complete
     #pragma HLS ARRAY_PARTITION variable=k type=block factor=HP
     #pragma HLS ARRAY_PARTITION variable=v type=block factor=HP
     #pragma HLS ARRAY_PARTITION variable=k_output type=block factor=SHP
