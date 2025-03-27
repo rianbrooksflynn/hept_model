@@ -1,0 +1,1479 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "81 81 76 35 83 46 55 87",
+    "file": "myproject.cpp",
+    "fileloc": 7,
+    "instructions": 13203,
+    "name": "myproject",
+    "total_instructions": 2215329
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "54",
+    "file": "nnet_hept.h",
+    "fileloc": 190,
+    "instructions": 32,
+    "name": "argsort<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 30
+    },
+    "total_instructions": 2726
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "100": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "48 48 61",
+    "file": "nnet_common.h",
+    "fileloc": 37,
+    "instructions": 10,
+    "name": "reduce<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 30, nnet::Op_min<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0> > >",
+    "total_instructions": 637
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "15": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "16": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "17": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "18": {
+    "basicblocks": 1431,
+    "calls": "",
+    "file": "nnet_hept.h",
+    "fileloc": 148,
+    "instructions": 9797,
+    "loads": {
+      "L": 2124
+    },
+    "name": "merge_sort<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 900
+    },
+    "total_instructions": 9797
+  },
+  "19": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "36 11 36 11 36 11 36 11 36 11 36 11 36 11 36 11 36 11 36 11 36 11 36 11",
+    "file": "nnet_hept.h",
+    "fileloc": 114,
+    "instructions": 3481,
+    "loads": {
+      "L": 540
+    },
+    "name": "shift_hashed<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 360
+    },
+    "total_instructions": 18769
+  },
+  "20": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "21": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "22": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "23": {
+    "basicblocks": 211,
+    "calls": "18",
+    "file": "nnet_hept.h",
+    "fileloc": 190,
+    "instructions": 751,
+    "name": "argsort<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 180
+    },
+    "total_instructions": 10548
+  },
+  "24": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "25": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "26": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2475,
+    "loads": {
+      "L": 1083
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_alpha>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 2475
+  },
+  "27": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "28": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_common.h",
+    "fileloc": 37,
+    "instructions": 221,
+    "loads": {
+      "L": 180
+    },
+    "name": "reduce<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 14, nnet::Op_max<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0> > >",
+    "total_instructions": 221
+  },
+  "29": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2479,
+    "loads": {
+      "L": 1083
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_alpha>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 2479
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "30": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "31": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "32": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "33": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "34": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "35": {
+    "basicblocks": 1,
+    "calls": "23 23 23 23 23 23",
+    "file": "nnet_hept.h",
+    "fileloc": 201,
+    "instructions": 316267,
+    "loads": {
+      "L": 145980
+    },
+    "name": "sort_to_buckets_q<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 3240
+    },
+    "total_instructions": 379555
+  },
+  "36": {
+    "basicblocks": 1,
+    "calls": "74 74 28",
+    "file": "nnet_common.h",
+    "fileloc": 37,
+    "instructions": 10,
+    "name": "reduce<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 30, nnet::Op_max<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0> > >",
+    "total_instructions": 637
+  },
+  "37": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "38": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "39": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "40": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "41": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "42": {
+    "basicblocks": 1,
+    "calls": "73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 73 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96",
+    "file": "nnet_hept.h",
+    "fileloc": 62,
+    "instructions": 434,
+    "loads": {
+      "L": 180
+    },
+    "name": "bmm_alpha<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 183
+    },
+    "total_instructions": 18374
+  },
+  "43": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "44": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "45": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "46": {
+    "basicblocks": 1801,
+    "calls": "",
+    "file": "nnet_hept.h",
+    "fileloc": 287,
+    "instructions": 210421,
+    "loads": {
+      "G": 900,
+      "L": 6480
+    },
+    "name": "pairwise_dist_sq_rbf<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 900
+    },
+    "total_instructions": 210421
+  },
+  "47": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "48": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_common.h",
+    "fileloc": 37,
+    "instructions": 203,
+    "loads": {
+      "L": 180
+    },
+    "name": "reduce<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 8, nnet::Op_min<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0> > >",
+    "total_instructions": 203
+  },
+  "49": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "50": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "51": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "52": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "53": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "54": {
+    "basicblocks": 381,
+    "calls": "",
+    "file": "nnet_hept.h",
+    "fileloc": 148,
+    "instructions": 2694,
+    "loads": {
+      "L": 210
+    },
+    "name": "merge_sort<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 150
+    },
+    "total_instructions": 2694
+  },
+  "55": {
+    "basicblocks": 1,
+    "calls": "93 93 93 93 93 21 21 21 21 21 98 98 98 98 98 20 20 20 20 20 88 88 88 88 88 84 84 84 84 84 15 15 15 15 15 30 30 30 30 30 56 56 56 56 56 95 95 95 95 95 22 22 22 22 22 59 59 59 59 59 75 75 75 75 75 43 43 43 43 43 24 24 24 24 24 14 14 14 14 14 17 17 17 17 17 97 97 97 97 97 77 77 77 77 77 37 37 37 37 37 82 82 82 82 82 52 52 52 52 52 33 33 33 33 33 72 72 72 72 72 62 62 62 62 62 85 85 85 85 85 53 53 53 53 53 69 69 69 69 69 99 99 99 99 99 31 31 31 31 31 63 63 63 63 63 25 25 25 25 25 70 70 70 70 70 12 12 12 12 12 49 49 49 49 49 3 3 3 3 3",
+    "file": "nnet_hept.h",
+    "fileloc": 338,
+    "instructions": 8886,
+    "loads": {
+      "L": 2880
+    },
+    "name": "bmm_qkv<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 2896
+    },
+    "total_instructions": 449886
+  },
+  "56": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "57": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "58": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "59": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "60": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "61": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_common.h",
+    "fileloc": 37,
+    "instructions": 221,
+    "loads": {
+      "L": 180
+    },
+    "name": "reduce<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 14, nnet::Op_min<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0> > >",
+    "total_instructions": 221
+  },
+  "62": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "63": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "64": {
+    "basicblocks": 1,
+    "calls": "1 1 1 1 1 1",
+    "file": "nnet_hept.h",
+    "fileloc": 236,
+    "instructions": 37507,
+    "loads": {
+      "L": 6300
+    },
+    "name": "sort_to_buckets_kv<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 6120
+    },
+    "total_instructions": 53863
+  },
+  "65": {
+    "basicblocks": 1,
+    "calls": "94",
+    "file": "nnet_hept.h",
+    "fileloc": 190,
+    "instructions": 32,
+    "name": "argsort<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 30
+    },
+    "total_instructions": 2812
+  },
+  "66": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "67": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "68": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "69": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "70": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "71": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "72": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "73": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 301,
+    "loads": {
+      "L": 21
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_alpha>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 301
+  },
+  "74": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_common.h",
+    "fileloc": 37,
+    "instructions": 203,
+    "loads": {
+      "L": 180
+    },
+    "name": "reduce<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 8, nnet::Op_max<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0> > >",
+    "total_instructions": 203
+  },
+  "75": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "76": {
+    "basicblocks": 1,
+    "calls": "36 11 36 11 36 11 36 11 36 11 36 11 36 11 36 11 36 11 36 11 36 11 36 11",
+    "file": "nnet_hept.h",
+    "fileloc": 114,
+    "instructions": 3481,
+    "loads": {
+      "L": 540
+    },
+    "name": "shift_hashed<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 360
+    },
+    "total_instructions": 18769
+  },
+  "77": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "78": {
+    "basicblocks": 1,
+    "calls": "23 23 23 23 23 23",
+    "file": "nnet_hept.h",
+    "fileloc": 201,
+    "instructions": 19897,
+    "loads": {
+      "L": 3420
+    },
+    "name": "sort_to_buckets_q<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 3240
+    },
+    "total_instructions": 83185
+  },
+  "79": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "80": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "81": {
+    "basicblocks": 1,
+    "calls": "29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26",
+    "file": "nnet_hept.h",
+    "fileloc": 62,
+    "instructions": 434,
+    "loads": {
+      "L": 180
+    },
+    "name": "bmm_alpha<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 183
+    },
+    "total_instructions": 149054
+  },
+  "82": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "83": {
+    "basicblocks": 1,
+    "calls": "1 1 1 1 1 1",
+    "file": "nnet_hept.h",
+    "fileloc": 236,
+    "instructions": 461467,
+    "loads": {
+      "L": 275580
+    },
+    "name": "sort_to_buckets_kv<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 6120
+    },
+    "total_instructions": 477823
+  },
+  "84": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "85": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "86": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "87": {
+    "basicblocks": 32223,
+    "calls": "",
+    "file": "nnet_hept.h",
+    "fileloc": 370,
+    "instructions": 367564,
+    "loads": {
+      "L": 288180
+    },
+    "name": "unsort_from_buckets<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 2880
+    },
+    "total_instructions": 367564
+  },
+  "88": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "89": {
+    "basicblocks": 32223,
+    "calls": "",
+    "file": "nnet_hept.h",
+    "fileloc": 370,
+    "instructions": 370474,
+    "loads": {
+      "L": 288210
+    },
+    "name": "unsort_from_buckets<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 2880
+    },
+    "total_instructions": 370474
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "90": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "91": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "92": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 645,
+    "loads": {
+      "L": 101
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 645
+  },
+  "93": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "94": {
+    "basicblocks": 381,
+    "calls": "",
+    "file": "nnet_hept.h",
+    "fileloc": 148,
+    "instructions": 2780,
+    "loads": {
+      "L": 296
+    },
+    "name": "merge_sort<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5>",
+    "stores": {
+      "L": 150
+    },
+    "total_instructions": 2780
+  },
+  "95": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "96": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 297,
+    "loads": {
+      "L": 21
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_alpha>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 297
+  },
+  "97": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "98": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  },
+  "99": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2450,
+    "loads": {
+      "L": 996
+    },
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config5_dense_qkv>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2450
+  }
+}

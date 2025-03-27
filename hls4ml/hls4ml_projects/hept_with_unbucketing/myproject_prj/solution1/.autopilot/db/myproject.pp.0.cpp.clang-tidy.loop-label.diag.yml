@@ -1,0 +1,1787 @@
+---
+MainSourceFile:  /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1223_1:  '
+    FileOffset:      1223
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          791467
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1223_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1019477
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1019945
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1020414
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1304146
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_1:  '
+    FileOffset:      27
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_types.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1678602
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_1:  '
+    FileOffset:      40
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_types.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1678977
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_265_1:  '
+    FileOffset:      265
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2345735
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_265_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_275_1:  '
+    FileOffset:      275
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2346122
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_275_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_286_1:  '
+    FileOffset:      286
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2346457
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_286_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_293_1:  '
+    FileOffset:      293
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2346680
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_293_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_295_2:  '
+    FileOffset:      295
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2346775
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_295_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_307_1:  '
+    FileOffset:      307
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2347139
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_307_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_309_2:  '
+    FileOffset:      309
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2347221
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_309_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_324_1:  '
+    FileOffset:      324
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2347564
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_324_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_344_1:  '
+    FileOffset:      344
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2348017
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_344_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_345_2:  '
+    FileOffset:      345
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2348062
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_345_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_360_1:  '
+    FileOffset:      360
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2348471
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_360_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_367_1:  '
+    FileOffset:      367
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2348684
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_367_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_135_1:  '
+    FileOffset:      135
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_conv1d_latency.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2358134
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_135_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_136_2:  '
+    FileOffset:      136
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_conv1d_latency.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2358218
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_136_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_157_3:  '
+    FileOffset:      157
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_conv1d_latency.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2358760
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_157_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_158_4:  '
+    FileOffset:      158
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_conv1d_latency.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2358844
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_158_4: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      91
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      92
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      93
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      94
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      95
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      125
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      126
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      127
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      128
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      129
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      130
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      131
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      132
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      133
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      134
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      184
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      185
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      186
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      213
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      214
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      215
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      216
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      217
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      218
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      254
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      255
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hotbm_apfixed.h
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_1:  '
+    FileOffset:      61
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2421441
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_117_1:  '
+    FileOffset:      117
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2422264
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_117_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_289_1:  '
+    FileOffset:      289
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2424920
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_289_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_449_1:  '
+    FileOffset:      449
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2427652
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_449_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_629_1:  '
+    FileOffset:      629
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2430813
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_629_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_633_2:  '
+    FileOffset:      633
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2430894
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_633_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_743_1:  '
+    FileOffset:      743
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2433203
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_743_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_840_1:  '
+    FileOffset:      840
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2434706
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_840_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_859_2:  '
+    FileOffset:      859
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2434936
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_859_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1173_1:  '
+    FileOffset:      1173
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2441136
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1173_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1256_1:  '
+    FileOffset:      1256
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cordic_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2442739
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1256_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_68_1:  '
+    FileOffset:      68
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2450613
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_68_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_74_2:  '
+    FileOffset:      74
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2450763
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_74_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_78_3:  '
+    FileOffset:      78
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2450860
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_78_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_145_4:  '
+    FileOffset:      145
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2452729
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_145_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_151_5:  '
+    FileOffset:      151
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2452879
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_151_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_155_6:  '
+    FileOffset:      155
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2452976
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_155_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_170_7:  '
+    FileOffset:      170
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2453357
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_170_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_178_8:  '
+    FileOffset:      178
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2453588
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_178_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_243_9:  '
+    FileOffset:      243
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2457035
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_243_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_249_10:  '
+    FileOffset:      249
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2457187
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_249_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_253_11:  '
+    FileOffset:      253
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2457287
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_253_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_12:  '
+    FileOffset:      268
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2457669
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_276_13:  '
+    FileOffset:      276
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2457907
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_276_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_505_14:  '
+    FileOffset:      505
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2473462
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_505_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_511_15:  '
+    FileOffset:      511
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2473614
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_511_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_515_16:  '
+    FileOffset:      515
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2473713
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_515_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_525_17:  '
+    FileOffset:      525
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2473890
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_525_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_529_18:  '
+    FileOffset:      529
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2473988
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_529_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_539_19:  '
+    FileOffset:      539
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2474273
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_539_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_547_20:  '
+    FileOffset:      547
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2474528
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_547_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_908_21:  '
+    FileOffset:      908
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2506767
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_908_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_914_22:  '
+    FileOffset:      914
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2506919
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_914_22: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_918_23:  '
+    FileOffset:      918
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2507019
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_918_23: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1034_1:  '
+    FileOffset:      1034
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2509695
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1034_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1040_2:  '
+    FileOffset:      1040
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2509845
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1040_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1044_3:  '
+    FileOffset:      1044
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2509943
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1044_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1131_4:  '
+    FileOffset:      1131
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2513413
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1131_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1137_5:  '
+    FileOffset:      1137
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2513564
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1137_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1141_6:  '
+    FileOffset:      1141
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2513663
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1141_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1160_7:  '
+    FileOffset:      1160
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2514143
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1160_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1167_8:  '
+    FileOffset:      1167
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2514385
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1167_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1283_9:  '
+    FileOffset:      1283
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2519957
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1283_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1289_10:  '
+    FileOffset:      1289
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2520109
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1289_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1293_11:  '
+    FileOffset:      1293
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2520208
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1293_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1313_12:  '
+    FileOffset:      1313
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2520717
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1313_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1320_13:  '
+    FileOffset:      1320
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2520966
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1320_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1582_14:  '
+    FileOffset:      1582
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2538323
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1582_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1588_15:  '
+    FileOffset:      1588
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2538475
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1588_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1592_16:  '
+    FileOffset:      1592
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2538575
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1592_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1616_17:  '
+    FileOffset:      1616
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2539049
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1616_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1623_18:  '
+    FileOffset:      1623
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2539316
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1623_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2053_19:  '
+    FileOffset:      2053
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2577887
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2053_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2059_20:  '
+    FileOffset:      2059
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2578039
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2059_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2063_21:  '
+    FileOffset:      2063
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2578139
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2063_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2193_1:  '
+    FileOffset:      2193
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2580759
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2193_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2200_2:  '
+    FileOffset:      2200
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2580922
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2200_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2204_3:  '
+    FileOffset:      2204
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2581014
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2204_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2251_4:  '
+    FileOffset:      2251
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2582623
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2251_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2258_5:  '
+    FileOffset:      2258
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2582785
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2258_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2262_6:  '
+    FileOffset:      2262
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2582877
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2262_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2280_7:  '
+    FileOffset:      2280
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2583250
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2280_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2335_8:  '
+    FileOffset:      2335
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2585716
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2335_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2342_9:  '
+    FileOffset:      2342
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2585883
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2342_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2346_10:  '
+    FileOffset:      2346
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2585976
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2346_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2364_11:  '
+    FileOffset:      2364
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2586357
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2364_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2453_12:  '
+    FileOffset:      2453
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2591798
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2453_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2460_13:  '
+    FileOffset:      2460
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2591966
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2460_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2464_14:  '
+    FileOffset:      2464
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2592060
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2464_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2474_15:  '
+    FileOffset:      2474
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2592231
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2474_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2478_16:  '
+    FileOffset:      2478
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2592322
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2478_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2489_17:  '
+    FileOffset:      2489
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2592604
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2489_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2497_18:  '
+    FileOffset:      2497
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2592791
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2497_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2822_19:  '
+    FileOffset:      2822
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2627261
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2822_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2829_20:  '
+    FileOffset:      2829
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2627429
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2829_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2833_21:  '
+    FileOffset:      2833
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2627523
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2833_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2921_1:  '
+    FileOffset:      2921
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2629325
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2921_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2928_2:  '
+    FileOffset:      2928
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2629433
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2928_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2932_3:  '
+    FileOffset:      2932
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2629504
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2932_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2947_4:  '
+    FileOffset:      2947
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2629792
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2947_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2979_5:  '
+    FileOffset:      2979
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2631006
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2979_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2986_6:  '
+    FileOffset:      2986
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2631117
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2986_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2990_7:  '
+    FileOffset:      2990
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2631190
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2990_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3005_8:  '
+    FileOffset:      3005
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2631485
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3005_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3055_9:  '
+    FileOffset:      3055
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2634818
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3055_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3062_10:  '
+    FileOffset:      3062
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2634929
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3062_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3066_11:  '
+    FileOffset:      3066
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2635002
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3066_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3081_12:  '
+    FileOffset:      3081
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2635298
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3081_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3218_13:  '
+    FileOffset:      3218
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2654610
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3218_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3225_14:  '
+    FileOffset:      3225
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2654724
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3225_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3229_15:  '
+    FileOffset:      3229
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2654799
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3229_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3244_16:  '
+    FileOffset:      3244
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2655086
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3244_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3404_17:  '
+    FileOffset:      3404
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2680696
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3404_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3411_18:  '
+    FileOffset:      3411
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2680810
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3411_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3415_19:  '
+    FileOffset:      3415
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_exp_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2680887
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3415_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_703_1:  '
+    FileOffset:      703
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_log_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2714990
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_703_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_921_1:  '
+    FileOffset:      921
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_log_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2723379
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_921_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1345_1:  '
+    FileOffset:      1345
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_log_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2742361
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1345_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_240_1:  '
+    FileOffset:      240
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_sqrt_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2757260
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_240_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_2:  '
+    FileOffset:      268
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_sqrt_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2757781
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_48_1:  '
+    FileOffset:      48
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2773773
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_48_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_109_2:  '
+    FileOffset:      109
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2774932
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_109_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_123_3:  '
+    FileOffset:      123
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2775241
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_123_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_153_4:  '
+    FileOffset:      153
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2775751
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_153_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_281_1:  '
+    FileOffset:      281
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2777683
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_281_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_301_2:  '
+    FileOffset:      301
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2778048
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_301_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_315_3:  '
+    FileOffset:      315
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2778356
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_315_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_433_1:  '
+    FileOffset:      433
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2780193
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_433_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_447_2:  '
+    FileOffset:      447
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_pow_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2780518
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_447_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_33_1:  '
+    FileOffset:      33
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_diff_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2783214
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_33_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_183_1:  '
+    FileOffset:      183
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_diff_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2786133
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_183_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_248_1:  '
+    FileOffset:      248
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_diff_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2787429
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_16_1:  '
+    FileOffset:      16
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2798474
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_16_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_1:  '
+    FileOffset:      27
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2798649
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_38_1:  '
+    FileOffset:      38
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2798810
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_38_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_1:  '
+    FileOffset:      49
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2798972
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_60_1:  '
+    FileOffset:      60
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2799146
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_60_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_71_1:  '
+    FileOffset:      71
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2799321
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_71_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_82_1:  '
+    FileOffset:      82
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2799482
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_82_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_93_1:  '
+    FileOffset:      93
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_all_any_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2799644
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_93_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_1:  '
+    FileOffset:      26
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_mad_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2871515
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_1:  '
+    FileOffset:      40
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_cbrt_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2873285
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_1:  '
+    FileOffset:      49
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hypot_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2877862
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_81_2:  '
+    FileOffset:      81
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hypot_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2878602
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_81_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_169_3:  '
+    FileOffset:      169
+    FilePath:        /home/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/hls_hypot_apfixed.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2880296
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_169_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      33
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_dense_resource.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      107
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_dense_resource.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      189
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_dense_resource.h
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_21_1:  '
+    FileOffset:      21
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_transpose.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2948231
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_21_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_30_1:  '
+    FileOffset:      30
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_transpose.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2948559
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_30_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_98_1:  '
+    FileOffset:      98
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2952225
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_98_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_100_2:  '
+    FileOffset:      100
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2952280
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_100_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_3:  '
+    FileOffset:      104
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2952586
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_128_1:  '
+    FileOffset:      128
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2953576
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_128_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_139_2:  '
+    FileOffset:      139
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2954452
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_139_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_158_1:  '
+    FileOffset:      158
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2955268
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_158_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_159_2:  '
+    FileOffset:      159
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2955326
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_159_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_167_3:  '
+    FileOffset:      167
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2955629
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_167_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_181_4:  '
+    FileOffset:      181
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2956055
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_181_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_192_1:  '
+    FileOffset:      192
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2956358
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_192_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_219_1:  '
+    FileOffset:      219
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2957650
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_219_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_221_2:  '
+    FileOffset:      221
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2957705
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_221_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_224_3:  '
+    FileOffset:      224
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2957870
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_224_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_226_4:  '
+    FileOffset:      226
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2957965
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_226_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_257_1:  '
+    FileOffset:      257
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2959475
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_257_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_259_2:  '
+    FileOffset:      259
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2959530
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_259_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_264_3:  '
+    FileOffset:      264
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2959765
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_264_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_266_4:  '
+    FileOffset:      266
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2959860
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_266_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_270_5:  '
+    FileOffset:      270
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2960047
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_270_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_281_1:  '
+    FileOffset:      281
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2960460
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_281_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_314_1:  '
+    FileOffset:      314
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2962008
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_314_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_316_2:  '
+    FileOffset:      316
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2962103
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_316_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_318_3:  '
+    FileOffset:      318
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2962161
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_318_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_321_4:  '
+    FileOffset:      321
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2962271
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_321_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_355_1:  '
+    FileOffset:      355
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2963975
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_355_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_357_2:  '
+    FileOffset:      357
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2964070
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_357_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_361_3:  '
+    FileOffset:      361
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2964326
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_361_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_383_1:  '
+    FileOffset:      383
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2965307
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_383_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_385_2:  '
+    FileOffset:      385
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2965362
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_385_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_394_3:  '
+    FileOffset:      394
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2965660
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_394_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_396_4:  '
+    FileOffset:      396
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2965715
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_396_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_398_5:  '
+    FileOffset:      398
+    FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/firmware/nnet_utils/nnet_hept.h
+    Replacements:    
+      - FilePath:        /home/rflynn/hept_model/hls4ml/hls4ml_projects/hept_with_unbucketing/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2965810
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_398_5: '
+...

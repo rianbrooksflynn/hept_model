@@ -1,0 +1,105 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'bmm_alpha_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s'" level="0">
+<item name = "Date">Tue Mar 25 09:20:23 2025
+</item>
+<item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu13p-flga2577-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 4.226 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_608">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_674">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_740">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_806">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_872">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_938">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1004">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1070">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1136">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1202">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1268">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1334">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1400">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1466">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1532">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1598">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1664">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1730">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1796">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1862">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1928">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_1994">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_2060">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_2126">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_2192">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_2258">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_2324">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_2390">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_2456">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s_fu_2522">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_s, 16, 16, 80.000 ns, 80.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_2588">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_2654">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_2720">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_2786">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_2852">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_2918">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_2984">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_3050">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_3116">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_3182">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_3248">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_3314">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_3380">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_3446">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_3512">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_3578">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_3644">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_3710">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_3776">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_3842">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_3908">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_3974">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_4040">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_4106">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_4172">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_4238">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_4304">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_4370">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_4436">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+<column name="grp_dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1_fu_4502">dense_latency_ap_fixed_ap_fixed_16_6_5_3_0_config5_dense_alpha_1, 15, 15, 75.000 ns, 75.000 ns, 2, 2, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
